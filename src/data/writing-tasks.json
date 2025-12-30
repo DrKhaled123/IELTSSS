@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "type": "task1",
+    "title": "Bar Chart: University Subjects",
+    "description": "The chart below shows the number of students enrolled in different subjects at a university in 2020 and 2023.",
+    "imageUrl": null,
+    "sampleAnswer": "The bar chart illustrates the enrollment figures for various academic subjects at a university, comparing data from 2020 and 2023. Overall, there was a notable increase in STEM subjects, while humanities showed a decline.\n\nIn 2020, Computer Science had 450 students, which rose dramatically to 720 in 2023, representing a 60% increase. Similarly, Engineering grew from 380 to 510 students. However, Literature decreased from 320 to 210 students, and History fell from 280 to 190 students.\n\nBusiness Studies remained relatively stable, with a slight increase from 400 to 430 students. Medicine showed the highest enrollment in both years, rising from 550 to 600 students.\n\nIn conclusion, the data reveals a clear trend toward technical and scientific disciplines, possibly reflecting changing job market demands and student career preferences.",
+    "bandScore": "7.5",
+    "keyFeatures": [
+      "Clear overview statement",
+      "Specific data comparisons",
+      "Trend identification",
+      "Logical organization",
+      "Appropriate conclusion"
+    ]
+  },
+  {
+    "id": 2,
+    "type": "task2",
+    "question": "Some people believe that universities should focus on providing skills for employment, while others think the true function of a university is to give access to knowledge for its own sake. Discuss both views and give your own opinion.",
+    "category": "Education",
+    "sampleAnswer": "The debate over whether universities should prioritize vocational training or pursue knowledge for its inherent value reflects fundamental questions about the purpose of higher education. While both perspectives have merit, I believe a balanced approach yields the most benefits.\n\nProponents of employment-focused education argue that universities must prepare students for competitive job markets. In today's economy, practical skills in technology, business, and applied sciences directly enhance employability. For instance, coding bootcamps and internship programs have proven highly successful in securing graduate employment. Moreover, the substantial financial investment in university education demands tangible career returns.\n\nConversely, advocates for knowledge-oriented learning maintain that universities should cultivate critical thinking, creativity, and intellectual curiosity. Pure research in fields like philosophy, mathematics, and theoretical physics has historically led to unexpected breakthroughs and innovations. Furthermore, education focused solely on current market needs may become obsolete as industries evolve, whereas fundamental knowledge provides adaptable thinking skills.\n\nIn my opinion, the most effective approach integrates both philosophies. Universities should offer rigorous academic foundations while incorporating practical applications and industry connections. For example, engineering programs can combine theoretical principles with hands-on projects, and humanities courses can develop transferable skills like communication and analysis.\n\nIn conclusion, rather than viewing vocational and academic purposes as mutually exclusive, universities should synthesize both to produce well-rounded graduates equipped for both professional success and lifelong learning.",
+    "bandScore": "8.0",
+    "structure": {
+      "introduction": "Paraphrase question + thesis statement",
+      "body1": "First viewpoint with examples",
+      "body2": "Second viewpoint with examples",
+      "body3": "Personal opinion with justification",
+      "conclusion": "Summary and final thoughts"
+    }
+  }
+]

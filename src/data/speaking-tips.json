@@ -1,0 +1,602 @@
+[
+  {
+    "id": 1,
+    "category": "pronunciation",
+    "tip": "Focus on word stress patterns. English is a stress-timed language, so emphasize the stressed syllables clearly.",
+    "example": "In 'photograph' stress the first syllable: PHO-to-graph"
+  },
+  {
+    "id": 2,
+    "category": "pronunciation",
+    "tip": "Pay attention to minimal pairs - words that differ by only one sound can change meaning completely.",
+    "example": "ship vs sheep, bit vs beat, cap vs cup"
+  },
+  {
+    "id": 3,
+    "category": "pronunciation",
+    "tip": "Practice the 'th' sounds (/θ/ and /ð/) which are unique to English. Place tongue between teeth lightly.",
+    "example": "think, this, thumb, the, that"
+  },
+  {
+    "id": 4,
+    "category": "pronunciation",
+    "tip": "Master the schwa sound /ə/ - it's the most common vowel in English and appears in unstressed syllables.",
+    "example": "about, banana, camera - the 'a' sounds are schwas"
+  },
+  {
+    "id": 5,
+    "category": "pronunciation",
+    "tip": "Work on consonant clusters at word beginnings and endings. Don't add extra vowels between consonants.",
+    "example": "street (not 'suh-treet'), asked (not 'ask-ed')"
+  },
+  {
+    "id": 6,
+    "category": "intonation",
+    "tip": "Use rising intonation for yes/no questions and falling intonation for statements.",
+    "example": "Are you coming? ↗ vs I'm coming. ↘"
+  },
+  {
+    "id": 7,
+    "category": "intonation",
+    "tip": "Apply contrastive stress to emphasize different meanings in the same sentence.",
+    "example": "I didn't say YOU took it. vs I didn't SAY you took it."
+  },
+  {
+    "id": 8,
+    "category": "intonation",
+    "tip": "Break longer sentences into thought groups with slight pauses. This makes speech clearer and more natural.",
+    "example": "When I arrived at the station, / the train had already left."
+  },
+  {
+    "id": 9,
+    "category": "intonation",
+    "tip": "Use falling-rising intonation to show uncertainty or politeness.",
+    "example": "I think so... ↘↗ (shows hesitation)"
+  },
+  {
+    "id": 10,
+    "category": "intonation",
+    "tip": "Emphasize key content words (nouns, verbs, adjectives) and reduce function words (articles, prepositions).",
+    "example": "The CAT is ON the MAT (stress capitals, reduce others)"
+  },
+  {
+    "id": 11,
+    "category": "fluency",
+    "tip": "Use natural fillers when thinking, but don't overuse them. Common ones: well, you know, actually, I mean.",
+    "example": "Well, I think that, you know, it's quite important."
+  },
+  {
+    "id": 12,
+    "category": "fluency",
+    "tip": "Practice linking words together. Join consonant to vowel sounds across word boundaries.",
+    "example": "take it → 'tai-kit', turn off → 'tur-noff'"
+  },
+  {
+    "id": 13,
+    "category": "fluency",
+    "tip": "Pause at natural points (punctuation) not in the middle of phrases. This improves comprehension.",
+    "example": "I enjoy reading books [pause] especially mystery novels."
+  },
+  {
+    "id": 14,
+    "category": "fluency",
+    "tip": "Self-correct naturally when you make mistakes. Don't stop completely - rephrase smoothly.",
+    "example": "I went to the... I mean, I visited the museum yesterday."
+  },
+  {
+    "id": 15,
+    "category": "fluency",
+    "tip": "Build rhythm by practicing phrases in chunks rather than individual words.",
+    "example": "on the other hand / as a matter of fact / to be honest"
+  },
+  {
+    "id": 16,
+    "category": "vocabulary",
+    "tip": "Use topic-specific vocabulary to show range. Learn synonyms to avoid repetition.",
+    "example": "Instead of always saying 'good': excellent, outstanding, superior, remarkable"
+  },
+  {
+    "id": 17,
+    "category": "vocabulary",
+    "tip": "Incorporate idiomatic expressions naturally - but only ones you're confident about.",
+    "example": "It's not rocket science, piece of cake, hit the nail on the head"
+  },
+  {
+    "id": 18,
+    "category": "vocabulary",
+    "tip": "Use precise vocabulary instead of general words. Be specific to demonstrate language competence.",
+    "example": "Instead of 'walk': stroll, march, stride, wander, trudge"
+  },
+  {
+    "id": 19,
+    "category": "vocabulary",
+    "tip": "Learn collocations - words that naturally go together in English.",
+    "example": "make a decision, take a break, do homework, heavy rain"
+  },
+  {
+    "id": 20,
+    "category": "vocabulary",
+    "tip": "Use discourse markers to structure your speech and connect ideas logically.",
+    "example": "Firstly, moreover, however, consequently, in conclusion"
+  },
+  {
+    "id": 21,
+    "category": "grammar",
+    "tip": "Mix simple and complex sentences to demonstrate grammatical range.",
+    "example": "I like reading. + It's relaxing. → I like reading because it's relaxing."
+  },
+  {
+    "id": 22,
+    "category": "grammar",
+    "tip": "Use a variety of tenses accurately to describe past, present, and future clearly.",
+    "example": "I have been studying English for five years."
+  },
+  {
+    "id": 23,
+    "category": "grammar",
+    "tip": "Include conditional sentences to express hypothetical situations.",
+    "example": "If I had more time, I would travel more frequently."
+  },
+  {
+    "id": 24,
+    "category": "grammar",
+    "tip": "Use passive voice appropriately, especially for formal or academic topics.",
+    "example": "The research was conducted over two years."
+  },
+  {
+    "id": 25,
+    "category": "grammar",
+    "tip": "Practice relative clauses to add detail and sophistication to your speech.",
+    "example": "The book which I read yesterday was fascinating."
+  },
+  {
+    "id": 26,
+    "category": "pronunciation",
+    "tip": "Mind your vowel length. Long and short vowels distinguish many English words.",
+    "example": "sit /sɪt/ vs seat /siːt/, full /fʊl/ vs fool /fuːl/"
+  },
+  {
+    "id": 27,
+    "category": "pronunciation",
+    "tip": "Practice word endings clearly, especially -ed, -s, and -ing endings.",
+    "example": "walked /wɔːkt/, watches /wɒtʃɪz/, running /rʌnɪŋ/"
+  },
+  {
+    "id": 28,
+    "category": "pronunciation",
+    "tip": "Distinguish between voiced and voiceless consonants. Place your hand on throat to feel vibration.",
+    "example": "b vs p, d vs t, g vs k, v vs f, z vs s"
+  },
+  {
+    "id": 29,
+    "category": "pronunciation",
+    "tip": "Be aware of silent letters in English. Many words have letters that aren't pronounced.",
+    "example": "knight, wrong, psychology, lamb, receipt"
+  },
+  {
+    "id": 30,
+    "category": "pronunciation",
+    "tip": "Practice the 'r' sound in various positions. American /r/ is retroflex; British /r/ only before vowels.",
+    "example": "American: car /kɑr/, British: car /kɑː/"
+  },
+  {
+    "id": 31,
+    "category": "intonation",
+    "tip": "Use list intonation: rising for items in the middle, falling for the last item.",
+    "example": "I bought apples, ↗ oranges, ↗ and bananas. ↘"
+  },
+  {
+    "id": 32,
+    "category": "intonation",
+    "tip": "Apply emphatic stress to show strong emotion or contrast.",
+    "example": "I REALLY loved that movie! (enthusiasm)"
+  },
+  {
+    "id": 33,
+    "category": "intonation",
+    "tip": "Use high pitch for new information and lower pitch for known information.",
+    "example": "I saw JOHN yesterday. He was at the STORE."
+  },
+  {
+    "id": 34,
+    "category": "intonation",
+    "tip": "Match your intonation to your attitude: enthusiasm, skepticism, agreement, etc.",
+    "example": "Really? ↗ (surprise) vs Really. ↘ (confirmation)"
+  },
+  {
+    "id": 35,
+    "category": "intonation",
+    "tip": "Practice sentence-final intonation to signal completeness or continuation.",
+    "example": "I'm going to the store ↗ (more to say) vs I'm done. ↘ (finished)"
+  },
+  {
+    "id": 36,
+    "category": "fluency",
+    "tip": "Increase speaking pace gradually. Native speakers generally speak at 150-180 words per minute.",
+    "example": "Practice with recordings, gradually matching native speed"
+  },
+  {
+    "id": 37,
+    "category": "fluency",
+    "tip": "Use shadowing technique: listen to native speakers and repeat immediately after them.",
+    "example": "Play podcast → pause → repeat sentence → continue"
+  },
+  {
+    "id": 38,
+    "category": "fluency",
+    "tip": "Reduce hesitations by preparing topic vocabulary in advance for common IELTS themes.",
+    "example": "Education, technology, environment, health, culture"
+  },
+  {
+    "id": 39,
+    "category": "fluency",
+    "tip": "Practice answering questions without long pauses. Use thinking time to structure your answer.",
+    "example": "That's an interesting question. I think... (buys thinking time)"
+  },
+  {
+    "id": 40,
+    "category": "fluency",
+    "tip": "Develop the habit of extending answers with examples, reasons, or personal experience.",
+    "example": "Yes, I enjoy sports. For example, I play tennis twice a week."
+  },
+  {
+    "id": 41,
+    "category": "vocabulary",
+    "tip": "Learn phrasal verbs and use them naturally in speech.",
+    "example": "give up, look forward to, run into, put off, come across"
+  },
+  {
+    "id": 42,
+    "category": "vocabulary",
+    "tip": "Use hedge words to soften statements and sound more natural.",
+    "example": "kind of, sort of, perhaps, relatively, somewhat"
+  },
+  {
+    "id": 43,
+    "category": "vocabulary",
+    "tip": "Avoid overusing basic adjectives. Use more descriptive alternatives.",
+    "example": "Instead of 'very': extremely, incredibly, remarkably, exceptionally"
+  },
+  {
+    "id": 44,
+    "category": "vocabulary",
+    "tip": "Use abstract nouns to discuss complex ideas and concepts.",
+    "example": "development, implementation, significance, perception, diversity"
+  },
+  {
+    "id": 45,
+    "category": "vocabulary",
+    "tip": "Learn topic-specific terminology for common IELTS subjects.",
+    "example": "Climate: emissions, sustainability, renewable, biodiversity"
+  },
+  {
+    "id": 46,
+    "category": "grammar",
+    "tip": "Use modal verbs to express possibility, necessity, and ability with precision.",
+    "example": "might, should, could, must, would, may"
+  },
+  {
+    "id": 47,
+    "category": "grammar",
+    "tip": "Practice using reported speech when describing what others said.",
+    "example": "She said that she was coming. He told me he would help."
+  },
+  {
+    "id": 48,
+    "category": "grammar",
+    "tip": "Use participle clauses to make speech more concise and sophisticated.",
+    "example": "Having finished my work, I went home. The report, written yesterday, was excellent."
+  },
+  {
+    "id": 49,
+    "category": "grammar",
+    "tip": "Master articles (a, an, the) usage rules for natural-sounding English.",
+    "example": "I bought a book. The book was interesting. Books are important."
+  },
+  {
+    "id": 50,
+    "category": "grammar",
+    "tip": "Use comparative and superlative forms correctly to make comparisons.",
+    "example": "more interesting, the most beautiful, better than, the best"
+  },
+  {
+    "id": 51,
+    "category": "pronunciation",
+    "tip": "Practice homophones - words that sound the same but have different meanings.",
+    "example": "their/there/they're, to/too/two, right/write, peace/piece"
+  },
+  {
+    "id": 52,
+    "category": "pronunciation",
+    "tip": "Work on the 'l' sound in different positions: clear 'l' at start, dark 'l' at end.",
+    "example": "light (clear), ball (dark), lily (both)"
+  },
+  {
+    "id": 53,
+    "category": "pronunciation",
+    "tip": "Practice nasal sounds /m/, /n/, /ŋ/ distinctly. Air flows through nose.",
+    "example": "man, pan, rang - feel nasal vibration"
+  },
+  {
+    "id": 54,
+    "category": "pronunciation",
+    "tip": "Master the difference between /v/ and /w/ sounds.",
+    "example": "very vs wary, vine vs wine, vest vs west"
+  },
+  {
+    "id": 55,
+    "category": "pronunciation",
+    "tip": "Practice multisyllabic words slowly first, then increase speed maintaining clarity.",
+    "example": "un-for-get-ta-ble, in-ter-na-tion-al, com-mu-ni-cation"
+  },
+  {
+    "id": 56,
+    "category": "intonation",
+    "tip": "Use pitch range to show engagement. Monotone speech sounds uninterested.",
+    "example": "Vary pitch naturally across sentences for dynamic speech"
+  },
+  {
+    "id": 57,
+    "category": "intonation",
+    "tip": "Practice tag questions with correct intonation: rising for genuine questions, falling for confirmation.",
+    "example": "You're coming, aren't you? ↗ (asking) vs You're coming, aren't you. ↘ (confirming)"
+  },
+  {
+    "id": 58,
+    "category": "intonation",
+    "tip": "Use prosody to signal emotional nuance and speaker attitude.",
+    "example": "Same sentence, different emotion: I'm fine. (sad vs happy vs angry)"
+  },
+  {
+    "id": 59,
+    "category": "intonation",
+    "tip": "Place nuclear stress (main stress) on the most important word in each phrase.",
+    "example": "I didn't expect THAT. (emphasizing 'that')"
+  },
+  {
+    "id": 60,
+    "category": "intonation",
+    "tip": "Use consistent rhythm patterns. English follows stress-timed rhythm, not syllable-timed.",
+    "example": "Stressed syllables occur at regular intervals"
+  },
+  {
+    "id": 61,
+    "category": "fluency",
+    "tip": "Record yourself speaking and analyze your performance. Listen for areas to improve.",
+    "example": "Record 2-minute speech → listen → note issues → practice → re-record"
+  },
+  {
+    "id": 62,
+    "category": "fluency",
+    "tip": "Practice thinking in English rather than translating from your native language.",
+    "example": "Describe daily activities mentally in English throughout the day"
+  },
+  {
+    "id": 63,
+    "category": "fluency",
+    "tip": "Use conversational strategies like asking for clarification when needed.",
+    "example": "Could you repeat that? What do you mean by...? I'm not sure I understand."
+  },
+  {
+    "id": 64,
+    "category": "fluency",
+    "tip": "Develop topic-specific templates for common IELTS Part 2 cue cards.",
+    "example": "Describe method: Where, When, Why, How, Feelings"
+  },
+  {
+    "id": 65,
+    "category": "fluency",
+    "tip": "Practice spontaneous speech by describing objects around you without preparation.",
+    "example": "Look at an object → speak for 1 minute describing it in detail"
+  },
+  {
+    "id": 66,
+    "category": "vocabulary",
+    "tip": "Learn academic word list vocabulary for formal discussions.",
+    "example": "analyze, approach, concept, establish, indicate, principle"
+  },
+  {
+    "id": 67,
+    "category": "vocabulary",
+    "tip": "Use intensifiers and downtoners to add nuance to your expressions.",
+    "example": "Intensifiers: absolutely, totally. Downtoners: fairly, rather, quite"
+  },
+  {
+    "id": 68,
+    "category": "vocabulary",
+    "tip": "Master transition words for different relationships between ideas.",
+    "example": "Addition: furthermore. Contrast: nevertheless. Result: therefore"
+  },
+  {
+    "id": 69,
+    "category": "vocabulary",
+    "tip": "Learn synonyms for common IELTS topics to demonstrate lexical resource.",
+    "example": "Important: crucial, vital, essential, significant, fundamental"
+  },
+  {
+    "id": 70,
+    "category": "vocabulary",
+    "tip": "Use descriptive language to create vivid imagery in your responses.",
+    "example": "Instead of 'nice day': beautiful, sunny day with clear blue skies"
+  },
+  {
+    "id": 71,
+    "category": "grammar",
+    "tip": "Use inversion for emphasis in formal contexts.",
+    "example": "Never have I seen such beauty. Only then did I understand."
+  },
+  {
+    "id": 72,
+    "category": "grammar",
+    "tip": "Practice using cleft sentences to emphasize specific information.",
+    "example": "What I love most is... It was John who... The reason I came is..."
+  },
+  {
+    "id": 73,
+    "category": "grammar",
+    "tip": "Use subjunctive mood for formal suggestions and requirements.",
+    "example": "I suggest that he study harder. It's essential that she be present."
+  },
+  {
+    "id": 74,
+    "category": "grammar",
+    "tip": "Vary sentence starters to avoid repetitive patterns.",
+    "example": "Start with: Time phrases, -ing forms, Adverbs, Prepositional phrases"
+  },
+  {
+    "id": 75,
+    "category": "grammar",
+    "tip": "Use perfect aspect correctly to show time relationships clearly.",
+    "example": "I have lived here for 5 years. I had finished before they arrived."
+  },
+  {
+    "id": 76,
+    "category": "pronunciation",
+    "tip": "Be consistent with either British or American pronunciation. Don't mix.",
+    "example": "Choose one accent variety and stick with it throughout"
+  },
+  {
+    "id": 77,
+    "category": "pronunciation",
+    "tip": "Practice weak forms of function words in connected speech.",
+    "example": "can /kən/, to /tə/, of /əv/, and /ən/"
+  },
+  {
+    "id": 78,
+    "category": "pronunciation",
+    "tip": "Work on diphthongs - vowel sounds that glide from one to another.",
+    "example": "day /deɪ/, time /taɪm/, boy /bɔɪ/, now /naʊ/, go /goʊ/"
+  },
+  {
+    "id": 79,
+    "category": "pronunciation",
+    "tip": "Practice elision - dropping sounds in fast speech for natural flow.",
+    "example": "next door → 'nek door', exactly → 'ekzactly'"
+  },
+  {
+    "id": 80,
+    "category": "pronunciation",
+    "tip": "Master tricky consonant sounds like /ʒ/ as in 'measure' and /ʃ/ as in 'ship'.",
+    "example": "vision, pleasure, treasure vs show, ship, shop"
+  },
+  {
+    "id": 81,
+    "category": "intonation",
+    "tip": "Use appropriate intonation for interruptions and interjections.",
+    "example": "Sorry to interrupt, ↗ but... Actually, ↗ I think..."
+  },
+  {
+    "id": 82,
+    "category": "intonation",
+    "tip": "Match intonation to discourse function: agreeing, disagreeing, requesting.",
+    "example": "I agree. ↘ (definite) vs I'm not sure... ↗ (hesitant)"
+  },
+  {
+    "id": 83,
+    "category": "intonation",
+    "tip": "Use pitch movement to signal topic shifts in conversations.",
+    "example": "Higher pitch for new topic, return to normal for continuation"
+  },
+  {
+    "id": 84,
+    "category": "intonation",
+    "tip": "Practice emphatic do/does/did with appropriate stress.",
+    "example": "I DO like it! She DID finish on time!"
+  },
+  {
+    "id": 85,
+    "category": "intonation",
+    "tip": "Use rising intonation on statement to encourage listener response.",
+    "example": "I went to the beach? ↗ (inviting comment or checking understanding)"
+  },
+  {
+    "id": 86,
+    "category": "fluency",
+    "tip": "Develop confidence by practicing with native speakers or language partners regularly.",
+    "example": "Join conversation clubs, online language exchange, or speaking groups"
+  },
+  {
+    "id": 87,
+    "category": "fluency",
+    "tip": "Learn to paraphrase when you don't know a specific word.",
+    "example": "Instead of 'thermometer': thing you use to measure temperature"
+  },
+  {
+    "id": 88,
+    "category": "fluency",
+    "tip": "Use backchanneling to show active listening: mm-hmm, I see, right, exactly.",
+    "example": "Shows engagement in conversation and natural interaction"
+  },
+  {
+    "id": 89,
+    "category": "fluency",
+    "tip": "Practice different speech registers: formal, informal, academic.",
+    "example": "Adjust vocabulary and grammar based on context and audience"
+  },
+  {
+    "id": 90,
+    "category": "fluency",
+    "tip": "Use approximation strategies when exact word escapes you.",
+    "example": "It's like a... It's similar to... It's a type of..."
+  },
+  {
+    "id": 91,
+    "category": "vocabulary",
+    "tip": "Learn common metaphors and figurative language used by native speakers.",
+    "example": "time flies, break the ice, tip of the iceberg, food for thought"
+  },
+  {
+    "id": 92,
+    "category": "vocabulary",
+    "tip": "Use word families to expand vocabulary efficiently.",
+    "example": "educate, education, educational, educator, educative"
+  },
+  {
+    "id": 93,
+    "category": "vocabulary",
+    "tip": "Learn connotations of words - positive, negative, or neutral associations.",
+    "example": "slim (positive) vs skinny (negative), both meaning thin"
+  },
+  {
+    "id": 94,
+    "category": "vocabulary",
+    "tip": "Study common prefixes and suffixes to decode unfamiliar words.",
+    "example": "un-, re-, pre-, -tion, -ment, -ness, -ful"
+  },
+  {
+    "id": 95,
+    "category": "vocabulary",
+    "tip": "Use precise prepositions - they're essential for natural English.",
+    "example": "depend on, interested in, good at, responsible for"
+  },
+  {
+    "id": 96,
+    "category": "grammar",
+    "tip": "Master gerunds vs infinitives after different verbs.",
+    "example": "enjoy doing (gerund), want to do (infinitive)"
+  },
+  {
+    "id": 97,
+    "category": "grammar",
+    "tip": "Use quantifiers correctly with countable and uncountable nouns.",
+    "example": "many books, much water, a few people, a little time"
+  },
+  {
+    "id": 98,
+    "category": "grammar",
+    "tip": "Practice using wish and if only for hypothetical situations.",
+    "example": "I wish I had more time. If only I could speak better!"
+  },
+  {
+    "id": 99,
+    "category": "grammar",
+    "tip": "Use adjective order correctly when using multiple adjectives.",
+    "example": "a beautiful old Italian villa (opinion, age, origin, noun)"
+  },
+  {
+    "id": 100,
+    "category": "grammar",
+    "tip": "Master question formation - word order changes for different question types.",
+    "example": "Do you...? Where did you...? What have you...? Who is...?"
+  }
+]

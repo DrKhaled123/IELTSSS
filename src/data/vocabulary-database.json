@@ -1,0 +1,1188 @@
+{
+  "vocabulary": [
+    {
+      "german": "hallo",
+      "english": "hello",
+      "arabic": "مرحباً",
+      "pronunciation": "HAH-loh",
+      "level": "A1",
+      "category": "greetings",
+      "gender": "neutral",
+      "type": "interjection",
+      "ipa": "/ˈhalo/",
+      "examples": {
+        "german": [
+          "Hallo! Wie geht es dir?",
+          "Hallo, ich bin Anna."
+        ],
+        "english": [
+          "Hello! How are you?",
+          "Hello, I'm Anna."
+        ],
+        "arabic": [
+          "مرحباً! كيف حالك؟",
+          "مرحباً، أنا آنا."
+        ]
+      },
+      "synonyms": [
+        "guten tag",
+        "servus"
+      ],
+      "antonyms": [],
+      "conjugation": null,
+      "plural": null,
+      "context": "Common greeting used in informal situations",
+      "frequency": "high",
+      "difficulty": 1,
+      "mnemonic": "HA-llo -> HAppy to see you",
+      "visual_cue": "Two friends waving nicely at each other.",
+      "memory_hook": "Sounds almost exactly like 'Hello'!"
+    },
+    {
+      "german": "der Mann",
+      "english": "the man",
+      "arabic": "الرجل",
+      "pronunciation": "dair mahn",
+      "level": "A1",
+      "category": "nouns",
+      "gender": "masculine",
+      "type": "noun",
+      "ipa": "/deːɐ̯ man/",
+      "examples": {
+        "german": [
+          "Der Mann liest ein Buch.",
+          "Wo ist der Mann?"
+        ],
+        "english": [
+          "The man is reading a book.",
+          "Where is the man?"
+        ],
+        "arabic": [
+          "الرجل يقرأ كتاباً.",
+          "أين الرجل؟"
+        ]
+      },
+      "synonyms": [
+        "der Herr"
+      ],
+      "antonyms": [
+        "die Frau"
+      ],
+      "conjugation": null,
+      "plural": "die Männer",
+      "context": "Adult male person",
+      "frequency": "high",
+      "difficulty": 1,
+      "mnemonic": "MANN -> MAN",
+      "visual_cue": "A strong man lifting a heavy box.",
+      "memory_hook": "Just add an 'n' to 'Man'!"
+    },
+    {
+      "german": "die Frau",
+      "english": "the woman",
+      "arabic": "المرأة",
+      "pronunciation": "dee frow",
+      "level": "A1",
+      "category": "nouns",
+      "gender": "feminine",
+      "type": "noun",
+      "ipa": "/diː frau̯/",
+      "examples": {
+        "german": [
+          "Die Frau arbeitet im Büro.",
+          "Das ist eine nette Frau."
+        ],
+        "english": [
+          "The woman works in the office.",
+          "This is a nice woman."
+        ],
+        "arabic": [
+          "المرأة تعمل في المكتب.",
+          "هذه امرأة لطيفة."
+        ]
+      },
+      "synonyms": [
+        "die Dame"
+      ],
+      "antonyms": [
+        "der Mann"
+      ],
+      "conjugation": null,
+      "plural": "die Frauen",
+      "context": "Adult female person",
+      "frequency": "high",
+      "difficulty": 1,
+      "mnemonic": "FRAU -> FROWN (but she is not frowning!)",
+      "visual_cue": "A woman with a flower (Frau/Flower sound link).",
+      "memory_hook": "Frau -> Flower -> Female"
+    },
+    {
+      "german": "das Kind",
+      "english": "the child",
+      "arabic": "الطفل",
+      "pronunciation": "dahs kint",
+      "level": "A1",
+      "category": "nouns",
+      "gender": "neutral",
+      "type": "noun",
+      "ipa": "/das kɪnt/",
+      "examples": {
+        "german": [
+          "Das Kind spielt im Garten.",
+          "Das Kind geht zur Schule."
+        ],
+        "english": [
+          "The child plays in the garden.",
+          "The child goes to school."
+        ],
+        "arabic": [
+          "الطفل يلعب في الحديقة.",
+          "الطفل يذهب إلى المدرسة."
+        ]
+      },
+      "synonyms": [
+        "der Junge",
+        "das Mädchen"
+      ],
+      "antonyms": [
+        "der Erwachsene"
+      ],
+      "conjugation": null,
+      "plural": "die Kinder",
+      "context": "Young person, not yet adult",
+      "frequency": "high",
+      "difficulty": 1,
+      "mnemonic": "KIND -> KINDergarten",
+      "visual_cue": "A small child playing with blocks.",
+      "memory_hook": "Kindergarten implies a garden for children (Kind)."
+    },
+    {
+      "german": "sein",
+      "english": "to be",
+      "arabic": "يكون",
+      "pronunciation": "zain",
+      "level": "A1",
+      "category": "verbs",
+      "gender": null,
+      "type": "verb",
+      "ipa": "/zaɪ̯n/",
+      "examples": {
+        "german": [
+          "Ich bin müde.",
+          "Er ist zu Hause.",
+          "Wir sind Freunde."
+        ],
+        "english": [
+          "I am tired.",
+          "He is at home.",
+          "We are friends."
+        ],
+        "arabic": [
+          "أنا متعب.",
+          "هو في المنزل.",
+          "نحن أصدقاء."
+        ]
+      },
+      "synonyms": [
+        "existieren"
+      ],
+      "antonyms": [
+        "nicht sein"
+      ],
+      "conjugation": {
+        "ich": "bin",
+        "du": "bist",
+        "er/sie/es": "ist",
+        "wir": "sind",
+        "ihr": "seid",
+        "sie/Sie": "sind"
+      },
+      "plural": null,
+      "context": "Fundamental verb expressing existence or state",
+      "frequency": "high",
+      "difficulty": 1,
+      "mnemonic": "SEIN -> SIGN of existence",
+      "visual_cue": "A glowing 'I AM' sign.",
+      "memory_hook": "To be or not to be, that is the SEIN."
+    },
+    {
+      "german": "haben",
+      "english": "to have",
+      "arabic": "يملك",
+      "pronunciation": "HAH-ben",
+      "level": "A1",
+      "category": "verbs",
+      "gender": null,
+      "type": "verb",
+      "ipa": "/ˈhaːbn̩/",
+      "examples": {
+        "german": [
+          "Ich habe ein Auto.",
+          "Sie hat zwei Kinder.",
+          "Wir haben Zeit."
+        ],
+        "english": [
+          "I have a car.",
+          "She has two children.",
+          "We have time."
+        ],
+        "arabic": [
+          "أنا أمتلك سيارة.",
+          "هي لديها طفلان.",
+          "نحن لدينا وقت."
+        ]
+      },
+      "synonyms": [
+        "besitzen"
+      ],
+      "antonyms": [
+        "nicht haben"
+      ],
+      "conjugation": {
+        "ich": "habe",
+        "du": "hast",
+        "er/sie/es": "hat",
+        "wir": "haben",
+        "ihr": "habt",
+        "sie/Sie": "haben"
+      },
+      "plural": null,
+      "context": "Fundamental verb expressing possession",
+      "frequency": "high",
+      "difficulty": 1,
+      "mnemonic": "HABEN -> HAVE a bin (storage)",
+      "visual_cue": "A person holding a large bin filled with treasures.",
+      "memory_hook": "Sounds like 'Have' with a 'n' at the end!"
+    },
+    {
+      "german": "gehen",
+      "english": "to go",
+      "arabic": "يذهب",
+      "pronunciation": "GAY-en",
+      "level": "A1",
+      "category": "verbs",
+      "gender": null,
+      "type": "verb",
+      "ipa": "/ˈɡeːən/",
+      "examples": {
+        "german": [
+          "Ich gehe zur Schule.",
+          "Wir gehen ins Kino.",
+          "Geh du bitte einkaufen."
+        ],
+        "english": [
+          "I go to school.",
+          "We go to the cinema.",
+          "Please go shopping."
+        ],
+        "arabic": [
+          "أنا أذهب إلى المدرسة.",
+          "نحن نذهب إلى السينما.",
+          "اذهب من فضلك للتسوق."
+        ]
+      },
+      "synonyms": [
+        "laufen",
+        "fahren"
+      ],
+      "antonyms": [
+        "kommen",
+        "bleiben"
+      ],
+      "conjugation": {
+        "ich": "gehe",
+        "du": "gehst",
+        "er/sie/es": "geht",
+        "wir": "gehen",
+        "ihr": "geht",
+        "sie/Sie": "gehen"
+      },
+      "plural": null,
+      "context": "Movement from one place to another",
+      "frequency": "high",
+      "difficulty": 1,
+      "mnemonic": "GEHEN -> GO (G-en)",
+      "visual_cue": "A person walking towards a glowing 'Go' sign.",
+      "memory_hook": "Gehen starts with G, just like Go!"
+    },
+    {
+      "german": "sprechen",
+      "english": "to speak",
+      "arabic": "يتحدث",
+      "pronunciation": "SHPREKH-en",
+      "level": "A1",
+      "category": "verbs",
+      "gender": null,
+      "type": "verb",
+      "ipa": "/ˈʃprɛçn̩/",
+      "examples": {
+        "german": [
+          "Ich spreche Deutsch.",
+          "Wir sprechen über das Wetter.",
+          "Sprich bitte lauter."
+        ],
+        "english": [
+          "I speak German.",
+          "We talk about the weather.",
+          "Please speak louder."
+        ],
+        "arabic": [
+          "أنا أتحدث الألمانية.",
+          "نحن نتحدث عن الطقس.",
+          "تحدث من فضلك بصوت أعلى."
+        ]
+      },
+      "synonyms": [
+        "reden",
+        "unterhalten"
+      ],
+      "antonyms": [
+        "schweigen"
+      ],
+      "conjugation": {
+        "ich": "spreche",
+        "du": "sprichst",
+        "er/sie/es": "spricht",
+        "wir": "sprechen",
+        "ihr": "sprecht",
+        "sie/Sie": "sprechen"
+      },
+      "plural": null,
+      "context": "Communication through speech",
+      "frequency": "high",
+      "difficulty": 2,
+      "mnemonic": "SPRECHEN -> SPEAK (S-prech)",
+      "visual_cue": "A person with a large mouth speaking loudly.",
+      "memory_hook": "Sprechen sounds like 'Speech'!"
+    },
+    {
+      "german": "essen",
+      "english": "to eat",
+      "arabic": "يأكل",
+      "pronunciation": "ES-en",
+      "level": "A1",
+      "category": "verbs",
+      "gender": null,
+      "type": "verb",
+      "ipa": "/ˈɛsn̩/",
+      "examples": {
+        "german": [
+          "Ich esse einen Apfel.",
+          "Wir essen zu Hause.",
+          "Esst bitte langsam."
+        ],
+        "english": [
+          "I eat an apple.",
+          "We eat at home.",
+          "Please eat slowly."
+        ],
+        "arabic": [
+          "أنا آكل تفاحة.",
+          "نحن نأكل في المنزل.",
+          "كلوا من فضلك ببطء."
+        ]
+      },
+      "synonyms": [
+        "speisen",
+        "mampfen"
+      ],
+      "antonyms": [
+        "fasten"
+      ],
+      "conjugation": {
+        "ich": "esse",
+        "du": "isst",
+        "er/sie/es": "isst",
+        "wir": "essen",
+        "ihr": "esst",
+        "sie/Sie": "essen"
+      },
+      "plural": null,
+      "context": "Consuming food",
+      "frequency": "high",
+      "difficulty": 1,
+      "mnemonic": "ESSEN -> EAT (E-ssen)",
+      "visual_cue": "A plate with a large 'E' made of sausages.",
+      "memory_hook": "Sounds like 'Eat' if you say it fast!"
+    },
+    {
+      "german": "trinken",
+      "english": "to drink",
+      "arabic": "يشرب",
+      "pronunciation": "TRINK-en",
+      "level": "A1",
+      "category": "verbs",
+      "gender": null,
+      "type": "verb",
+      "ipa": "/ˈtʁɪŋkn̩/",
+      "examples": {
+        "german": [
+          "Ich trinke Kaffee.",
+          "Wir trinken Wasser.",
+          "Trink nicht zu viel."
+        ],
+        "english": [
+          "I drink coffee.",
+          "We drink water.",
+          "Don't drink too much."
+        ],
+        "arabic": [
+          "أنا أشرب القهوة.",
+          "نحن نشرب الماء.",
+          "لا تشرب الكثير."
+        ]
+      },
+      "synonyms": [
+        "saufen",
+        "konsumieren"
+      ],
+      "antonyms": [],
+      "conjugation": {
+        "ich": "trinke",
+        "du": "trinkst",
+        "er/sie/es": "trinkt",
+        "wir": "trinken",
+        "ihr": "trinkt",
+        "sie/Sie": "trinken"
+      },
+      "plural": null,
+      "context": "Consuming liquids",
+      "frequency": "high",
+      "difficulty": 1,
+      "mnemonic": "TRINKEN -> DRINK (T-rink)",
+      "visual_cue": "A glass of water with a straw shaped like a 'T'.",
+      "memory_hook": "Trinken is almost 'Drink'!"
+    },
+    {
+      "german": "danke",
+      "english": "thank you",
+      "arabic": "شكراً",
+      "pronunciation": "DAHN-keh",
+      "level": "A1",
+      "category": "politeness",
+      "gender": null,
+      "type": "interjection",
+      "ipa": "/ˈdaŋkə/",
+      "examples": {
+        "german": [
+          "Danke für deine Hilfe.",
+          "Vielen Dank!",
+          "Danke schön."
+        ],
+        "english": [
+          "Thanks for your help.",
+          "Thank you very much!",
+          "Thank you kindly."
+        ],
+        "arabic": [
+          "شكراً لمساعدتك.",
+          "شكراً جزيلاً!",
+          "شكراً جميلاً."
+        ]
+      },
+      "synonyms": [
+        "dankeschön",
+        "vielen dank"
+      ],
+      "antonyms": [],
+      "conjugation": null,
+      "plural": null,
+      "context": "Expression of gratitude",
+      "frequency": "high",
+      "difficulty": 1
+    },
+    {
+      "german": "bitte",
+      "english": "please",
+      "arabic": "من فضلك",
+      "pronunciation": "BIT-teh",
+      "level": "A1",
+      "category": "politeness",
+      "gender": null,
+      "type": "interjection",
+      "ipa": "/ˈbɪtə/",
+      "examples": {
+        "german": [
+          "Bitte helfen Sie mir.",
+          "Ein Kaffee, bitte.",
+          "Bitte sehr."
+        ],
+        "english": [
+          "Please help me.",
+          "A coffee, please.",
+          "You're welcome."
+        ],
+        "arabic": [
+          "من فضلك ساعدني.",
+          "قهوة من فضلك.",
+          "عفواً."
+        ]
+      },
+      "synonyms": [
+        "gerne"
+      ],
+      "antonyms": [],
+      "conjugation": null,
+      "plural": null,
+      "context": "Politeness marker or response to thanks",
+      "frequency": "high",
+      "difficulty": 1
+    },
+    {
+      "german": "ja",
+      "english": "yes",
+      "arabic": "نعم",
+      "pronunciation": "yah",
+      "level": "A1",
+      "category": "responses",
+      "gender": null,
+      "type": "adverb",
+      "ipa": "/jaː/",
+      "examples": {
+        "german": [
+          "Ja, ich komme mit.",
+          "Ja, bitte.",
+          "Ja, das ist richtig."
+        ],
+        "english": [
+          "Yes, I'm coming with.",
+          "Yes, please.",
+          "Yes, that's right."
+        ],
+        "arabic": [
+          "نعم، سأأتي.",
+          "نعم، من فضلك.",
+          "نعم، هذا صحيح."
+        ]
+      },
+      "synonyms": [
+        "doch",
+        "jawohl"
+      ],
+      "antonyms": [
+        "nein"
+      ],
+      "conjugation": null,
+      "plural": null,
+      "context": "Affirmative response",
+      "frequency": "high",
+      "difficulty": 1
+    },
+    {
+      "german": "nein",
+      "english": "no",
+      "arabic": "لا",
+      "pronunciation": "nain",
+      "level": "A1",
+      "category": "responses",
+      "gender": null,
+      "type": "adverb",
+      "ipa": "/naɪ̯n/",
+      "examples": {
+        "german": [
+          "Nein, danke.",
+          "Nein, ich habe keine Zeit.",
+          "Nein, das ist falsch."
+        ],
+        "english": [
+          "No, thank you.",
+          "No, I don't have time.",
+          "No, that's wrong."
+        ],
+        "arabic": [
+          "لا، شكراً.",
+          "لا، ليس لدي وقت.",
+          "لا، هذا خطأ."
+        ]
+      },
+      "synonyms": [
+        "nicht"
+      ],
+      "antonyms": [
+        "ja"
+      ],
+      "conjugation": null,
+      "plural": null,
+      "context": "Negative response",
+      "frequency": "high",
+      "difficulty": 1
+    },
+    {
+      "german": "entschuldigen",
+      "english": "to apologize",
+      "arabic": "يعتذر",
+      "pronunciation": "ent-SHOOL-di-gen",
+      "level": "A2",
+      "category": "politeness",
+      "gender": null,
+      "type": "verb",
+      "ipa": "/ɛntˈʃʊldɪɡn̩/",
+      "examples": {
+        "german": [
+          "Ich entschuldige mich.",
+          "Können Sie mich entschuldigen?",
+          "Entschuldigen Sie die Störung."
+        ],
+        "english": [
+          "I apologize.",
+          "Can you excuse me?",
+          "Excuse the disturbance."
+        ],
+        "arabic": [
+          "أنا أعتذر.",
+          "هل يمكنك أن تعتذر عني؟",
+          "اعتذر عن الإزعاج."
+        ]
+      },
+      "synonyms": [
+        "sich entschuldigen",
+        "um Verzeihung bitten"
+      ],
+      "antonyms": [],
+      "conjugation": {
+        "ich": "entschuldige",
+        "du": "entschuldigst",
+        "er/sie/es": "entschuldigt",
+        "wir": "entschuldigen",
+        "ihr": "entschuldigt",
+        "sie/Sie": "entschuldigen"
+      },
+      "plural": null,
+      "context": "Expressing regret or asking for forgiveness",
+      "frequency": "medium",
+      "difficulty": 2
+    },
+    {
+      "german": "verstehen",
+      "english": "to understand",
+      "arabic": "يفهم",
+      "pronunciation": "fer-SHTAY-en",
+      "level": "A2",
+      "category": "verbs",
+      "gender": null,
+      "type": "verb",
+      "ipa": "/fɛɐ̯ˈʃteːən/",
+      "examples": {
+        "german": [
+          "Ich verstehe dich nicht.",
+          "Wir verstehen den Film.",
+          "Verstehst du mich?"
+        ],
+        "english": [
+          "I don't understand you.",
+          "We understand the movie.",
+          "Do you understand me?"
+        ],
+        "arabic": [
+          "أنا لا أفهمك.",
+          "نحن نفهم الفيلم.",
+          "هل تفهمني؟"
+        ]
+      },
+      "synonyms": [
+        "begreifen",
+        "kapiert"
+      ],
+      "antonyms": [
+        "missverstehen"
+      ],
+      "conjugation": {
+        "ich": "verstehe",
+        "du": "verstehst",
+        "er/sie/es": "versteht",
+        "wir": "verstehen",
+        "ihr": "versteht",
+        "sie/Sie": "verstehen"
+      },
+      "plural": null,
+      "context": "Comprehension of information or meaning",
+      "frequency": "high",
+      "difficulty": 2
+    },
+    {
+      "german": "erklären",
+      "english": "to explain",
+      "arabic": "يشرح",
+      "pronunciation": "er-KLAI-ren",
+      "level": "A2",
+      "category": "verbs",
+      "gender": null,
+      "type": "verb",
+      "ipa": "/ɛɐ̯ˈklɛːʁən/",
+      "examples": {
+        "german": [
+          "Können Sie das erklären?",
+          "Ich erkläre es dir.",
+          "Der Lehrer erklärt die Grammatik."
+        ],
+        "english": [
+          "Can you explain that?",
+          "I'll explain it to you.",
+          "The teacher explains the grammar."
+        ],
+        "arabic": [
+          "هل يمكنك أن تشرح ذلك؟",
+          "أنا سأشرح لك.",
+          "المعلم يشرح القواعد."
+        ]
+      },
+      "synonyms": [
+        "darlegen",
+        "aufklären"
+      ],
+      "antonyms": [
+        "verwirren"
+      ],
+      "conjugation": {
+        "ich": "erkläre",
+        "du": "erklärst",
+        "er/sie/es": "erklärt",
+        "wir": "erklären",
+        "ihr": "erklärt",
+        "sie/Sie": "erklären"
+      },
+      "plural": null,
+      "context": "Making something clear or understandable",
+      "frequency": "medium",
+      "difficulty": 2
+    },
+    {
+      "german": "wiederholen",
+      "english": "to repeat",
+      "arabic": "يعيد",
+      "pronunciation": "VEE-der-hoh-en",
+      "level": "A2",
+      "category": "verbs",
+      "gender": null,
+      "type": "verb",
+      "ipa": "/ˈviːdɐhoːlən/",
+      "examples": {
+        "german": [
+          "Können Sie das wiederholen?",
+          "Ich wiederhole die Frage.",
+          "Wir müssen das üben und wiederholen."
+        ],
+        "english": [
+          "Can you repeat that?",
+          "I repeat the question.",
+          "We have to practice and repeat."
+        ],
+        "arabic": [
+          "هل يمكنك أن تعيد ذلك؟",
+          "أنا أكرر السؤال.",
+          "يجب أن نتدرب ونعيد."
+        ]
+      },
+      "synonyms": [
+        "repetieren",
+        "nochmal sagen"
+      ],
+      "antonyms": [],
+      "conjugation": {
+        "ich": "wiederhole",
+        "du": "wiederholst",
+        "er/sie/es": "wiederholt",
+        "wir": "wiederholen",
+        "ihr": "wiederholt",
+        "sie/Sie": "wiederholen"
+      },
+      "plural": null,
+      "context": "Saying or doing something again",
+      "frequency": "medium",
+      "difficulty": 2
+    },
+    {
+      "german": "entscheiden",
+      "english": "to decide",
+      "arabic": "يقرر",
+      "pronunciation": "ent-SHY-den",
+      "level": "B1",
+      "category": "verbs",
+      "gender": null,
+      "type": "verb",
+      "ipa": "/ɛntˈʃaɪ̯dən/",
+      "examples": {
+        "german": [
+          "Ich muss mich entscheiden.",
+          "Wir entscheiden morgen.",
+          "Es ist schwer zu entscheiden."
+        ],
+        "english": [
+          "I have to decide.",
+          "We'll decide tomorrow.",
+          "It's hard to decide."
+        ],
+        "arabic": [
+          "يجب أن أقرر.",
+          "نحن سنقرر غداً.",
+          "من الصعب أن تقرر."
+        ]
+      },
+      "synonyms": [
+        "beschließen",
+        "festlegen"
+      ],
+      "antonyms": [
+        "zögern"
+      ],
+      "conjugation": {
+        "ich": "entscheide",
+        "du": "entscheidest",
+        "er/sie/es": "entscheidet",
+        "wir": "entscheiden",
+        "ihr": "entscheidet",
+        "sie/Sie": "entscheiden"
+      },
+      "plural": null,
+      "context": "Making a choice or determination",
+      "frequency": "medium",
+      "difficulty": 3
+    },
+    {
+      "german": "entwickeln",
+      "english": "to develop",
+      "arabic": "يطور",
+      "pronunciation": "ent-VIK-eln",
+      "level": "B1",
+      "category": "verbs",
+      "gender": null,
+      "type": "verb",
+      "ipa": "/ɛntˈvɪkl̩n/",
+      "examples": {
+        "german": [
+          "Wir entwickeln eine neue App.",
+          "Die Stadt entwickelt sich schnell.",
+          "Ich entwickle eine Idee."
+        ],
+        "english": [
+          "We're developing a new app.",
+          "The city is developing quickly.",
+          "I'm developing an idea."
+        ],
+        "arabic": [
+          "نحن نطور تطبيقاً جديداً.",
+          "المدينة تتطور بسرعة.",
+          "أنا أطور فكرة."
+        ]
+      },
+      "synonyms": [
+        "kreieren",
+        "gestalten"
+      ],
+      "antonyms": [
+        "vernachlässigen"
+      ],
+      "conjugation": {
+        "ich": "entwickle",
+        "du": "entwickelst",
+        "er/sie/es": "entwickelt",
+        "wir": "entwickeln",
+        "ihr": "entwickelt",
+        "sie/Sie": "entwickeln"
+      },
+      "plural": null,
+      "context": "Creating or improving something over time",
+      "frequency": "medium",
+      "difficulty": 3
+    },
+    {
+      "german": "erfolgreich",
+      "english": "successful",
+      "arabic": "ناجح",
+      "pronunciation": "er-FOLG-reich",
+      "level": "B1",
+      "category": "adjectives",
+      "gender": null,
+      "type": "adjective",
+      "ipa": "/ɛɐ̯ˈfɔlɡʁaɪ̯ç/",
+      "examples": {
+        "german": [
+          "Das Projekt war erfolgreich.",
+          "Sie ist eine erfolgreiche Geschäftsfrau.",
+          "Wir hatten einen erfolgreichen Tag."
+        ],
+        "english": [
+          "The project was successful.",
+          "She is a successful businesswoman.",
+          "We had a successful day."
+        ],
+        "arabic": [
+          "المشروع كان ناجحاً.",
+          "هي سيدة أعمال ناجحة.",
+          "كنا يوماً ناجحاً."
+        ]
+      },
+      "synonyms": [
+        "erfolgreich",
+        "siegreich"
+      ],
+      "antonyms": [
+        "erfolglos",
+        "gescheitert"
+      ],
+      "conjugation": {
+        "positive": "erfolgreich",
+        "comparative": "erfolgreicher",
+        "superlative": "am erfolgreichsten"
+      },
+      "plural": null,
+      "context": "Having achieved desired results or success",
+      "frequency": "medium",
+      "difficulty": 3
+    },
+    {
+      "german": "unbedingt",
+      "english": "absolutely",
+      "arabic": "بالتأكيد",
+      "pronunciation": "OON-beding-kht",
+      "level": "B2",
+      "category": "adverbs",
+      "gender": null,
+      "type": "adverb",
+      "ipa": "/ˈʊnbəˌdɪŋkt/",
+      "examples": {
+        "german": [
+          "Das musst du unbedingt sehen.",
+          "Unbedingt, ich komme mit.",
+          "Wir müssen unbedingt reden."
+        ],
+        "english": [
+          "You absolutely must see this.",
+          "Absolutely, I'm coming with.",
+          "We absolutely have to talk."
+        ],
+        "arabic": [
+          "يجب أن ترى هذا بالتأكيد.",
+          "بالتأكيد، سأأتي.",
+          "يجب أن نتحدث بالتأكيد."
+        ]
+      },
+      "synonyms": [
+        "auf jeden Fall",
+        "sicher"
+      ],
+      "antonyms": [
+        "vielleicht",
+        "möglicherweise"
+      ],
+      "conjugation": null,
+      "plural": null,
+      "context": "Emphasizing necessity or certainty",
+      "frequency": "medium",
+      "difficulty": 4
+    },
+    {
+      "german": "zusammenhängend",
+      "english": "coherent",
+      "arabic": "متماسك",
+      "pronunciation": "tsoo-zam-en-HENT",
+      "level": "B2",
+      "category": "adjectives",
+      "gender": null,
+      "type": "adjective",
+      "ipa": "/ˈtsuːzamənhɛnt/",
+      "examples": {
+        "german": [
+          "Seine Argumente waren zusammenhängend.",
+          "Eine zusammenhängende Geschichte.",
+          "Die Daten sind zusammenhängend."
+        ],
+        "english": [
+          "His arguments were coherent.",
+          "A coherent story.",
+          "The data is coherent."
+        ],
+        "arabic": [
+          "حججه كانت متماسكة.",
+          "قصة متماسكة.",
+          "البيانات متماسكة."
+        ]
+      },
+      "synonyms": [
+        "kohärent",
+        "logisch"
+      ],
+      "antonyms": [
+        "widersprüchlich",
+        "unzusammenhängend"
+      ],
+      "conjugation": {
+        "positive": "zusammenhängend",
+        "comparative": "zusammenhängender",
+        "superlative": "am zusammenhängendsten"
+      },
+      "plural": null,
+      "context": "Logically connected and consistent",
+      "frequency": "low",
+      "difficulty": 4
+    },
+    {
+      "german": "berücksichtigen",
+      "english": "to consider",
+      "arabic": "ينظر في",
+      "pronunciation": "ber-UEK-sikh-tigen",
+      "level": "B2",
+      "category": "verbs",
+      "gender": null,
+      "type": "verb",
+      "ipa": "/bəˈʁeːʁzɪçtɪɡn̩/",
+      "examples": {
+        "german": [
+          "Wir müssen alle Faktoren berücksichtigen.",
+          "Berücksichtigen Sie bitte meine Meinung.",
+          "Die Kosten werden berücksichtigt."
+        ],
+        "english": [
+          "We must consider all factors.",
+          "Please consider my opinion.",
+          "The costs will be considered."
+        ],
+        "arabic": [
+          "يجب أن ننظر في جميع العوامل.",
+          "من فضلك انظر في رأيي.",
+          "التكاليف ستنظر فيها."
+        ]
+      },
+      "synonyms": [
+        "bedenken",
+        "einbeziehen"
+      ],
+      "antonyms": [
+        "ignorieren",
+        "vernachlässigen"
+      ],
+      "conjugation": {
+        "ich": "berücksichtige",
+        "du": "berücksichtigst",
+        "er/sie/es": "berücksichtigt",
+        "wir": "berücksichtigen",
+        "ihr": "berücksichtigt",
+        "sie/Sie": "berücksichtigen"
+      },
+      "plural": null,
+      "context": "Taking something into account or consideration",
+      "frequency": "medium",
+      "difficulty": 4
+    },
+    {
+      "german": "hervorragend",
+      "english": "outstanding",
+      "arabic": "متميز",
+      "pronunciation": "her-for-RAH-gent",
+      "level": "C1",
+      "category": "adjectives",
+      "gender": null,
+      "type": "adjective",
+      "ipa": "/hɛɐ̯foːˈʁaːɡənt/",
+      "examples": {
+        "german": [
+          "Eine hervorragende Leistung.",
+          "Das Restaurant ist hervorragend.",
+          "Sie hat hervorragende Arbeit geleistet."
+        ],
+        "english": [
+          "An outstanding performance.",
+          "The restaurant is outstanding.",
+          "She did outstanding work."
+        ],
+        "arabic": [
+          "أداء متميز.",
+          "المطعم متميز.",
+          "هي قامت بعمل متميز."
+        ]
+      },
+      "synonyms": [
+        "hervorragend",
+        "ausgezeichnet"
+      ],
+      "antonyms": [
+        "schlecht",
+        "mangelhaft"
+      ],
+      "conjugation": {
+        "positive": "hervorragend",
+        "comparative": "hervorragender",
+        "superlative": "am hervorragendsten"
+      },
+      "plural": null,
+      "context": "Extremely good or excellent",
+      "frequency": "low",
+      "difficulty": 5
+    },
+    {
+      "german": "zweifellos",
+      "english": "doubtless",
+      "arabic": "بدون شك",
+      "pronunciation": "TSVY-fel-lohs",
+      "level": "C1",
+      "category": "adverbs",
+      "gender": null,
+      "type": "adverb",
+      "ipa": "/ˈtsvaɪ̯fəˌloːs/",
+      "examples": {
+        "german": [
+          "Zweifellos ist er der Beste.",
+          "Das ist zweifellos wahr.",
+          "Zweifellos werden wir gewinnen."
+        ],
+        "english": [
+          "Doubtless, he is the best.",
+          "That is doubtless true.",
+          "Doubtless, we will win."
+        ],
+        "arabic": [
+          "بدون شك هو الأفضل.",
+          "هذا صحيح بدون شك.",
+          "بدون شك سنفوز."
+        ]
+      },
+      "synonyms": [
+        "sicherlich",
+        "unbedingt"
+      ],
+      "antonyms": [
+        "zweifelhaft",
+        "unsicher"
+      ],
+      "conjugation": null,
+      "plural": null,
+      "context": "Expressing certainty without doubt",
+      "frequency": "low",
+      "difficulty": 5
+    }
+  ],
+  "categories": [
+    "greetings",
+    "politeness",
+    "responses",
+    "nouns",
+    "verbs",
+    "adjectives",
+    "adverbs",
+    "prepositions",
+    "conjunctions",
+    "interjections"
+  ],
+  "levels": [
+    "A1",
+    "A2",
+    "B1",
+    "B2",
+    "C1"
+  ],
+  "genders": [
+    "masculine",
+    "feminine",
+    "neutral",
+    null
+  ],
+  "types": [
+    "noun",
+    "verb",
+    "adjective",
+    "adverb",
+    "preposition",
+    "conjunction",
+    "interjection"
+  ]
+}

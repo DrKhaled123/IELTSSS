@@ -1,0 +1,137 @@
+[
+     {
+          "id": 1,
+          "title": "Technology and Modern Life",
+          "script": "In today's digital age, technology has become an integral part of our daily lives. smartphones, laptops, and tablets have revolutionized the way we communicate, work, and entertain ourselves. While these devices offer unprecedented convenience and connectivity, they also pose challenges such as digital addiction and privacy concerns. Striking a balance between leveraging technology's benefits and maintaining our well-being is crucial for modern society.",
+          "difficulty": "B2",
+          "duration": "45 seconds",
+          "vocabularyHighlights": [
+               {
+                    "word": "integral",
+                    "level": "B2",
+                    "meaning": "Essential or fundamental",
+                    "arabic": "جوهري، أساسي"
+               },
+               {
+                    "word": "revolutionized",
+                    "level": "C1",
+                    "meaning": "Changed completely and fundamentally",
+                    "arabic": "أحدث ثورة في"
+               },
+               {
+                    "word": "unprecedented",
+                    "level": "C1",
+                    "meaning": "Never done or known before",
+                    "arabic": "غير مسبوق"
+               },
+               {
+                    "word": "connectivity",
+                    "level": "B2",
+                    "meaning": "The ability to connect to other devices or networks",
+                    "arabic": "الاتصال، القدرة على الربط"
+               },
+               {
+                    "word": "addiction",
+                    "level": "B2",
+                    "meaning": "The condition of being dependent on something",
+                    "arabic": "إدمان"
+               },
+               {
+                    "word": "leveraging",
+                    "level": "C1",
+                    "meaning": "Using something to maximum advantage",
+                    "arabic": "الاستفادة من، الاستغلال الأمثل"
+               }
+          ]
+     },
+     {
+          "id": 2,
+          "title": "Environmental Conservation",
+          "script": "Climate change represents one of the most pressing challenges facing humanity today. Rising global temperatures, melting ice caps, and extreme weather events are clear indicators of environmental degradation. To mitigate these effects, individuals and governments must adopt sustainable practices such as reducing carbon emissions, promoting renewable energy, and protecting biodiversity. Every action, no matter how small, contributes to preserving our planet for future generations.",
+          "difficulty": "C1",
+          "duration": "50 seconds",
+          "vocabularyHighlights": [
+               {
+                    "word": "pressing",
+                    "level": "B2",
+                    "meaning": "Urgent, requiring immediate attention",
+                    "arabic": "ملح، عاجل"
+               },
+               {
+                    "word": "indicators",
+                    "level": "B2",
+                    "meaning": "Signs that show the state of something",
+                    "arabic": "مؤشرات، دلائل"
+               },
+               {
+                    "word": "degradation",
+                    "level": "C1",
+                    "meaning": "The process of something becoming worse",
+                    "arabic": "تدهور، تدني"
+               },
+               {
+                    "word": "mitigate",
+                    "level": "C1",
+                    "meaning": "Make less severe or serious",
+                    "arabic": "يخفف من، يقلل"
+               },
+               {
+                    "word": "sustainable",
+                    "level": "B2",
+                    "meaning": "Able to continue over time without harming the environment",
+                    "arabic": "مستدام"
+               },
+               {
+                    "word": "biodiversity",
+                    "level": "C1",
+                    "meaning": "The variety of plant and animal life",
+                    "arabic": "التنوع البيولوجي"
+               }
+          ]
+     },
+     {
+          "id": 3,
+          "title": "Education and Career Development",
+          "script": "Education plays a pivotal role in shaping individual careers and societal progress. Acquiring knowledge and skills through formal education and continuous learning enables people to adapt to evolving job markets. In the modern economy, employers increasingly value critical thinking, creativity, and problem-solving abilities alongside technical expertise. Therefore, investing in education is not merely about obtaining qualifications but developing a mindset for lifelong learning.",
+          "difficulty": "C1",
+          "duration": "48 seconds",
+          "vocabularyHighlights": [
+               {
+                    "word": "pivotal",
+                    "level": "C1",
+                    "meaning": "Of crucial importance",
+                    "arabic": "محوري، ذو أهمية حاسمة"
+               },
+               {
+                    "word": "acquiring",
+                    "level": "B2",
+                    "meaning": "Gaining or obtaining something",
+                    "arabic": "اكتساب، حيازة"
+               },
+               {
+                    "word": "evolving",
+                    "level": "B2",
+                    "meaning": "Developing or changing gradually",
+                    "arabic": "متطور، متغير"
+               },
+               {
+                    "word": "critical thinking",
+                    "level": "C1",
+                    "meaning": "The objective analysis and evaluation of issues",
+                    "arabic": "التفكير النقدي"
+               },
+               {
+                    "word": "expertise",
+                    "level": "C1",
+                    "meaning": "High level of knowledge or skill",
+                    "arabic": "خبرة، مهارة عالية"
+               },
+               {
+                    "word": "qualifications",
+                    "level": "B2",
+                    "meaning": "Official records of achievement",
+                    "arabic": "مؤهلات"
+               }
+          ]
+     }
+]

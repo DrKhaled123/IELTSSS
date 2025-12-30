@@ -1,0 +1,370 @@
+[
+  {
+    "id": 1,
+    "title": "The Impact of Artificial Intelligence on Modern Healthcare",
+    "titleArabic": "تأثير الذكاء الاصطناعي على الرعاية الصحية الحديثة",
+    "difficulty": "C1",
+    "story": "Artificial intelligence (AI) has revolutionized healthcare delivery in unprecedented ways. Machine learning algorithms now assist physicians in diagnosing diseases with remarkable accuracy, often detecting patterns invisible to the human eye. Medical imaging analysis, powered by AI, can identify tumors and anomalies at early stages, significantly improving patient outcomes. Furthermore, AI-driven predictive analytics help hospitals optimize resource allocation and anticipate patient needs.\n\nHowever, the integration of AI in healthcare raises important ethical considerations. Questions about data privacy, algorithmic bias, and the potential replacement of human medical professionals persist. Critics argue that over-reliance on technology might diminish the essential human element of patient care—the empathy and intuition that define compassionate medicine.\n\nDespite these concerns, the potential benefits of AI in healthcare appear substantial. From accelerating drug discovery to personalizing treatment plans, AI represents a transformative force in modern medicine. The challenge lies in harnessing its capabilities while preserving the fundamental values of medical practice.",
+    "storyArabic": "لقد أحدث الذكاء الاصطناعي ثورة في تقديم الرعاية الصحية بطرق غير مسبوقة. تساعد خوارزميات التعلم الآلي الآن الأطباء في تشخيص الأمراض بدقة ملحوظة، وغالبًا ما تكتشف أنماطًا غير مرئية للعين البشرية. يمكن لتحليل التصوير الطبي المدعوم بالذكاء الاصطناعي تحديد الأورام والشذوذات في مراحل مبكرة، مما يحسن بشكل كبير نتائج المرضى. علاوة على ذلك، تساعد التحليلات التنبؤية المدفوعة بالذكاء الاصطناعي المستشفيات على تحسين تخصيص الموارد وتوقع احتياجات المرضى.\n\nومع ذلك، فإن دمج الذكاء الاصطناعي في الرعاية الصحية يثير اعتبارات أخلاقية مهمة. تستمر الأسئلة حول خصوصية البيانات والتحيز الخوارزمي والاستبدال المحتمل للمهنيين الطبيين البشريين. يجادل النقاد بأن الاعتماد المفرط على التكنولوجيا قد يقلل من العنصر البشري الأساسي لرعاية المرضى - التعاطف والحدس الذي يعرف الطب الرحيم.\n\nعلى الرغم من هذه المخاوف، تبدو الفوائد المحتملة للذكاء الاصطناعي في الرعاية الصحية كبيرة. من تسريع اكتشاف الأدوية إلى تخصيص خطط العلاج، يمثل الذكاء الاصطناعي قوة تحويلية في الطب الحديث. يكمن التحدي في تسخير قدراته مع الحفاظ على القيم الأساسية للممارسة الطبية.",
+    "vocabulary": [
+      {
+        "word": "revolutionized",
+        "level": "C1",
+        "meaningEn": "Changed something completely and dramatically",
+        "meaningAr": "أحدث ثورة في",
+        "example": "The internet revolutionized how we communicate."
+      },
+      {
+        "word": "unprecedented",
+        "level": "C1",
+        "meaningEn": "Never done or experienced before",
+        "meaningAr": "غير مسبوق",
+        "example": "The pandemic brought unprecedented challenges."
+      },
+      {
+        "word": "algorithms",
+        "level": "C1",
+        "meaningEn": "Step-by-step procedures for calculations or problem-solving",
+        "meaningAr": "خوارزميات",
+        "example": "Search engines use complex algorithms."
+      },
+      {
+        "word": "physicians",
+        "level": "B2",
+        "meaningEn": "Medical doctors",
+        "meaningAr": "أطباء",
+        "example": "Physicians must complete extensive training."
+      },
+      {
+        "word": "diagnosing",
+        "level": "B2",
+        "meaningEn": "Identifying a disease or problem",
+        "meaningAr": "تشخيص",
+        "example": "Diagnosing rare diseases requires expertise."
+      },
+      {
+        "word": "remarkable",
+        "level": "B2",
+        "meaningEn": "Worthy of attention; extraordinary",
+        "meaningAr": "ملحوظ، رائع",
+        "example": "She made remarkable progress."
+      },
+      {
+        "word": "accuracy",
+        "level": "B2",
+        "meaningEn": "The quality of being correct or precise",
+        "meaningAr": "دقة",
+        "example": "Accuracy is essential in scientific research."
+      },
+      {
+        "word": "anomalies",
+        "level": "C1",
+        "meaningEn": "Things that deviate from what is standard or expected",
+        "meaningAr": "شذوذات، حالات شاذة",
+        "example": "The test revealed several anomalies."
+      },
+      {
+        "word": "outcomes",
+        "level": "B2",
+        "meaningEn": "Results or consequences",
+        "meaningAr": "نتائج",
+        "example": "The treatment led to positive outcomes."
+      },
+      {
+        "word": "predictive",
+        "level": "C1",
+        "meaningEn": "Relating to the prediction of future events",
+        "meaningAr": "تنبؤي",
+        "example": "Predictive models help forecast trends."
+      },
+      {
+        "word": "analytics",
+        "level": "C1",
+        "meaningEn": "The systematic analysis of data",
+        "meaningAr": "تحليلات",
+        "example": "Data analytics drives business decisions."
+      },
+      {
+        "word": "optimize",
+        "level": "C1",
+        "meaningEn": "Make the best or most effective use of",
+        "meaningAr": "يحسن، يُثلى",
+        "example": "Companies optimize their workflows."
+      },
+      {
+        "word": "allocation",
+        "level": "C1",
+        "meaningEn": "The distribution of resources",
+        "meaningAr": "تخصيص",
+        "example": "Budget allocation requires careful planning."
+      },
+      {
+        "word": "anticipate",
+        "level": "B2",
+        "meaningEn": "Expect or predict something",
+        "meaningAr": "يتوقع",
+        "example": "We anticipate high demand."
+      },
+      {
+        "word": "integration",
+        "level": "C1",
+        "meaningEn": "The process of combining things to work together",
+        "meaningAr": "تكامل، دمج",
+        "example": "Technology integration enhances learning."
+      },
+      {
+        "word": "ethical",
+        "level": "B2",
+        "meaningEn": "Relating to moral principles",
+        "meaningAr": "أخلاقي",
+        "example": "Ethical considerations guide research."
+      },
+      {
+        "word": "privacy",
+        "level": "B2",
+        "meaningEn": "The state of being free from public attention",
+        "meaningAr": "خصوصية",
+        "example": "Privacy protection is a fundamental right."
+      },
+      {
+        "word": "bias",
+        "level": "C1",
+        "meaningEn": "Prejudice or unfair preference",
+        "meaningAr": "تحيز",
+        "example": "The study aimed to eliminate bias."
+      },
+      {
+        "word": "persist",
+        "level": "C1",
+        "meaningEn": "Continue to exist despite difficulties",
+        "meaningAr": "يستمر، يثابر",
+        "example": "Challenges persist in the region."
+      },
+      {
+        "word": "reliance",
+        "level": "B2",
+        "meaningEn": "Dependence on something",
+        "meaningAr": "اعتماد",
+        "example": "Reliance on technology has increased."
+      },
+      {
+        "word": "diminish",
+        "level": "C1",
+        "meaningEn": "Make or become less",
+        "meaningAr": "يقلل، ينقص",
+        "example": "The pain will gradually diminish."
+      },
+      {
+        "word": "empathy",
+        "level": "B2",
+        "meaningEn": "The ability to understand others' feelings",
+        "meaningAr": "تعاطف",
+        "example": "Empathy is crucial in healthcare."
+      },
+      {
+        "word": "intuition",
+        "level": "C1",
+        "meaningEn": "The ability to understand immediately without reasoning",
+        "meaningAr": "حدس",
+        "example": "She trusted her intuition."
+      },
+      {
+        "word": "compassionate",
+        "level": "B2",
+        "meaningEn": "Showing sympathy and concern for others",
+        "meaningAr": "رحيم، عطوف",
+        "example": "Compassionate care improves patient satisfaction."
+      },
+      {
+        "word": "substantial",
+        "level": "B2",
+        "meaningEn": "Of considerable importance or size",
+        "meaningAr": "كبير، جوهري",
+        "example": "There was substantial evidence."
+      },
+      {
+        "word": "accelerating",
+        "level": "B2",
+        "meaningEn": "Increasing in speed or rate",
+        "meaningAr": "تسريع",
+        "example": "Technology is accelerating change."
+      },
+      {
+        "word": "discovery",
+        "level": "B2",
+        "meaningEn": "The act of finding something new",
+        "meaningAr": "اكتشاف",
+        "example": "Scientific discovery advances society."
+      },
+      {
+        "word": "personalizing",
+        "level": "C1",
+        "meaningEn": "Designing something for a specific person",
+        "meaningAr": "تخصيص",
+        "example": "Personalizing education improves outcomes."
+      },
+      {
+        "word": "transformative",
+        "level": "C1",
+        "meaningEn": "Causing a major change",
+        "meaningAr": "تحويلي",
+        "example": "Education is a transformative force."
+      },
+      {
+        "word": "harnessing",
+        "level": "C1",
+        "meaningEn": "Controlling and using something effectively",
+        "meaningAr": "تسخير، استغلال",
+        "example": "Harnessing solar energy reduces costs."
+      },
+      {
+        "word": "fundamental",
+        "level": "B2",
+        "meaningEn": "Forming a necessary base or core",
+        "meaningAr": "أساسي، جوهري",
+        "example": "Freedom is a fundamental human right."
+      }
+    ],
+    "questions": [
+      {
+        "question": "What is one way AI assists physicians according to the passage?",
+        "answer": "AI assists physicians by helping them diagnose diseases with remarkable accuracy, often detecting patterns that are invisible to the human eye.",
+        "explanation": "The passage explicitly states that machine learning algorithms assist physicians in diagnosing diseases with remarkable accuracy and can detect patterns invisible to humans."
+      },
+      {
+        "question": "What ethical concerns does the passage mention regarding AI in healthcare?",
+        "answer": "The passage mentions concerns about data privacy, algorithmic bias, and the potential replacement of human medical professionals.",
+        "explanation": "These three ethical considerations are listed as important questions that arise from integrating AI in healthcare."
+      },
+      {
+        "question": "According to the passage, what challenge exists in implementing AI in healthcare?",
+        "answer": "The challenge lies in harnessing AI's capabilities while preserving the fundamental values of medical practice, particularly the human element of empathy and intuition.",
+        "explanation": "The final paragraph identifies this balance as the central challenge, emphasizing the need to maintain compassionate care while adopting new technology."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "The Rise of E-Learning",
+    "titleArabic": "صعود التعلم الإلكتروني",
+    "difficulty": "B2",
+    "story": "E-learning has emerged as a powerful tool in modern education, transforming how students access knowledge. With the advent of high-speed internet and smart devices, the barriers to education are lowering. Students can now attend lectures from top universities without leaving their homes. This accessibility is particularly beneficial for those in remote areas or with physical disabilities.\n\nHowever, e-learning is not without its challenges. The lack of face-to-face interaction can lead to feelings of isolation and decreased motivation. Furthermore, the digital divide remains a significant issue; not all students have equal access to the necessary technology. Educators must also adapt their teaching methods to engage students in a virtual environment effectively.\n\nDespite these hurdles, the flexibility of e-learning offers undeniable advantages. It allows for self-paced learning, where students can review complex materials as often as needed. As technology continues to evolve, blended learning models that combine online and traditional methods are likely to become the standard.",
+    "storyArabic": "ظهر التعلم الإلكتروني كأداة قوية في التعليم الحديث، مما أدى إلى تحويل كيفية وصول الطلاب إلى المعرفة. مع ظهور الإنترنت عالي السرعة والأجهزة الذكية، تنخفض الحواجز أمام التعليم. يمكن للطلاب الآن حضور محاضرات من أفضل الجامعات دون مغادرة منازلهم. هذه الإمكانية تفتح آفاقاً جديدة خاصة لأولئك في المناطق النائية أو ذوي الإعاقات الجسدية.\n\nومع ذلك، لا يخلو التعلم الإلكتروني من التحديات. يمكن أن يؤدي نقص التفاعل المباشر وجهاً لوجه إلى الشعور بالعزلة وانخفاض الحافز. علاوة على ذلك، لا تزال الفجوة الرقمية تمثل مشكلة كبيرة؛ ليس لدى جميع الطلاب وصول متساوٍ إلى التكنولوجيا اللازمة. يجب على المعلمين أيضًا تكييف أساليب التدريس الخاصة بهم لإشراك الطلاب في بيئة افتراضية بفعالية.\n\nعلى الرغم من هذه العقبات، توفر مرونة التعلم الإلكتروني مزايا لا يمكن إنكارها. يسمح بالتعلم الذاتي، حيث يمكن للطلاب مراجعة المواد المعقدة كلما دعت الحاجة. مع استمرار تطور التكنولوجيا، من المرجح أن تصبح نماذج التعلم المدمج التي تجمع بين الأساليب عبر الإنترنت والتقليدية هي المعيار.",
+    "vocabulary": [
+      {
+        "word": "emerged",
+        "level": "B2",
+        "meaningEn": "Become apparent or prominent",
+        "meaningAr": "ظهر، برز",
+        "example": "New technologies have emerged recently."
+      },
+      {
+        "word": "transforming",
+        "level": "B2",
+        "meaningEn": "Making a thorough or dramatic change",
+        "meaningAr": "تحويل، تغيير",
+        "example": "The internet is transforming business."
+      },
+      {
+        "word": "accessibility",
+        "level": "C1",
+        "meaningEn": "The quality of being easily reached or entered",
+        "meaningAr": "إمكانية الوصول",
+        "example": "Web accessibility is crucial for everyone."
+      },
+      {
+        "word": "isolation",
+        "level": "B2",
+        "meaningEn": "The state of being alone or separated",
+        "meaningAr": "عزلة",
+        "example": "Social isolation can affect mental health."
+      },
+      {
+        "word": "flexibility",
+        "level": "B2",
+        "meaningEn": "The quality of bending easily without breaking",
+        "meaningAr": "مرونة",
+        "example": "Flexibility in scheduling helps employees."
+      }
+    ],
+    "questions": [
+      {
+        "question": "What is one major benefit of e-learning mentioned in the passage?",
+        "answer": "One major benefit is accessibility, allowing students to attend lectures from top universities without leaving their homes.",
+        "explanation": "The first paragraph highlights that barriers to education are lowering and students can access knowledge remotely."
+      },
+      {
+        "question": "What challenge does the passage associate with the lack of face-to-face interaction?",
+        "answer": "The lack of face-to-face interaction can lead to feelings of isolation and decreased motivation among students.",
+        "explanation": "The second paragraph explicitly states that isolation and lower motivation are potential negative outcomes of the lack of physical interaction."
+      },
+      {
+        "question": "What future trend does the passage predict for education?",
+        "answer": "The passage predicts that blended learning models, combining online and traditional methods, are likely to become the standard.",
+        "explanation": "The conclusion suggests that as technology evolves, a mix of both methods will likely become the norm."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Sustainable Urban Planning",
+    "titleArabic": "التخطيط الحضري المستدام",
+    "difficulty": "C1",
+    "story": "As the global population continues to urbanize, the concept of sustainable urban planning has become increasingly critical. Cities are major consumers of energy and significant contributors to greenhouse gas emissions. Sustainable planning aims to mitigate these impacts by designing cities that are environmentally friendly, economically viable, and socially equitable. Key strategies include improving public transportation, increasing green spaces, and promoting energy-efficient buildings.\n\nThe integration of green infrastructure is a cornerstone of this approach. Parks, green roofs, and urban forests not only beautify the city but also combat the urban heat island effect and improve air quality. Furthermore, prioritizing pedestrian and cycling networks encourages active transportation, reducing reliance on private vehicles and lowering carbon footprints.\n\nHowever, implementing these changes requires substantial investment and political will. Cities must balance the need for development with environmental preservation. Despite the costs, the long-term benefits of resilient, healthy, and sustainable cities far outweigh the initial expenditures.",
+    "storyArabic": "مع استمرار التوسع الحضري لسكان العالم، أصبح مفهوم التخطيط الحضري المستدام بالغ الأهمية بشكل متزايد. المدن هي مستهلك رئيسي للطاقة ومساهم كبير في انبعاثات غازات الاحتباس الحراري. يهدف التخطيط المستدام إلى التخفيف من هذه الآثار من خلال تصميم مدن صديقة للبيئة وقابلة للحياة اقتصاديًا وعادلة اجتماعيًا. تشمل الاستراتيجيات الرئيسية تحسين النقل العام، وزيادة المساحات الخضراء، وتعزيز المباني الموفرة للطاقة.\n\nيعد تكامل البنية التحتية الخضراء حجر الزاوية في هذا النهج. لا تقوم المتنزهات والأسطح الخضراء والغابات الحضرية بتجميل المدينة فحسب، بل تكافح أيضًا تأثير الجزر الحرارية الحضرية وتحسن جودة الهواء. علاوة على ذلك، فإن إعطاء الأولوية لشبكات المشاة وركوب الدراجات يشجع النقل النشط، مما يقلل الاعتماد على المركبات الخاصة ويخفض البصمة الكربونية.\n\nومع ذلك، يتطلب تنفيذ هذه التغييرات استثمارًا كبيرًا وإرادة سياسية. يجب أن توازن المدن بين الحاجة إلى التنمية والحفاظ على البيئة. على الرغم من التكاليف، فإن الفوائد طويلة الأجل للمدن المرنة والصحية والمستدامة تفوق بكثير النفقات الأولية.",
+    "vocabulary": [
+      {
+        "word": "urbanize",
+        "level": "C1",
+        "meaningEn": "Make or become urban in character",
+        "meaningAr": "تحضر (يصبح حضرياً)",
+        "example": "Rural areas continue to urbanize rapidly."
+      },
+      {
+        "word": "mitigate",
+        "level": "C1",
+        "meaningEn": "Make less severe, serious, or painful",
+        "meaningAr": "يخفف، يلطف",
+        "example": "We must act to mitigate climate change."
+      },
+      {
+        "word": "equitable",
+        "level": "C1",
+        "meaningEn": "Fair and impartial",
+        "meaningAr": "منصف، عادل",
+        "example": "We strive for an equitable society."
+      },
+      {
+        "word": "infrastructure",
+        "level": "B2",
+        "meaningEn": "Basic physical and organizational structures",
+        "meaningAr": "بنية تحتية",
+        "example": "Aging infrastructure needs repair."
+      },
+      {
+        "word": "resilient",
+        "level": "C1",
+        "meaningEn": "Able to withstand or recover quickly from difficult conditions",
+        "meaningAr": "مرن، قادر على الصمود",
+        "example": "Resilient cities can recover from disasters."
+      }
+    ],
+    "questions": [
+      {
+        "question": "What is the primary goal of sustainable urban planning?",
+        "answer": "The primary goal is to design cities that are environmentally friendly, economically viable, and socially equitable to mitigate the impacts of urbanization.",
+        "explanation": "The first paragraph states that sustainable planning aims to mitigate environmental impacts by creating cities with these three characteristics."
+      },
+      {
+        "question": "How does green infrastructure benefit a city?",
+        "answer": "Green infrastructure, such as parks and green roofs, beautifies the city, combats the urban heat island effect, and improves air quality.",
+        "explanation": "The second paragraph specifically lists these benefits of integrating green infrastructure."
+      },
+      {
+        "question": "What is a major challenge in implementing sustainable urban planning mentioned in the text?",
+        "answer": "A major challenge is the need for substantial investment and political will to balance development with environmental preservation.",
+        "explanation": "The final paragraph notes that implementing these changes requires significant investment and political commitment."
+      }
+    ]
+  }
+]
