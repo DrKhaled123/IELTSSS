@@ -1,72 +1,56 @@
 import { useState, useEffect, useCallback, useMemo } from 'react'
 import { usePDFProcessor } from './usePDFProcessor'
 
-// German vocabulary patterns and rules
-const GERMAN_WORD_PATTERNS = {
-  // Common German word patterns
-  nouns: /\b[A-ZÄÖÜ][a-zäöüß]+(?:s)?\b/g,
-  verbs: /\b[a-zäöüß]+(?:en|eln|ern|eln|ern|ieren|fizieren)\b/g,
-  adjectives: /\b[a-zäöüß]+(?:isch|lich|ig|bar|haft|sam|los|voll)\b/g,
-  adverbs: /\b[a-zäöüß]+(?:weise|lings|halber)\b/g,
-  prepositions: /\b(aus|bei|mit|nach|von|zu|an|auf|in|über|unter|vor|zwischen|durch|für|gegen|ohne|um|seit|während|trotz)\b/gi,
-  conjunctions: /\b(und|oder|aber|denn|weil|wenn|dass|obwohl|ob|sowohl|als|weder|entweder)\b/gi,
-  articles: /\b(der|die|das|ein|eine|einen|einem|eine|eines|dem|den|des)\b/gi
+// English word patterns and rules
+const ENGLISH_WORD_PATTERNS = {
+  nouns: /\b[a-zA-Z]+(?:tion|ment|ness|ity|ence|ance|age|ism|ist)\b/g,
+  verbs: /\b[a-zA-Z]+(?:ize|ise|ate|ify|en)\b/g,
+  adjectives: /\b[a-zA-Z]+(?:able|ible|al|ful|ic|ive|less|ous|y)\b/g,
+  adverbs: /\b[a-zA-Z]+(?:ly)\b/g,
+  prepositions: /\b(of|in|to|for|with|on|at|from|by|about|as|into|like|through|after|over|between|out|against|during|without|before|under|around|among)\b/gi,
+  conjunctions: /\b(and|that|but|or|as|if|when|because|while|where|after|so|though|since|until|whether|before|although|nor|like|once|unless|now|except)\b/gi,
+  articles: /\b(the|a|an)\b/gi
 }
 
-// Common German stop words to exclude
-const GERMAN_STOP_WORDS = new Set([
-  'der', 'die', 'das', 'ein', 'eine', 'einen', 'einem', 'eine', 'eines', 'dem', 'den', 'des',
-  'und', 'oder', 'aber', 'denn', 'weil', 'wenn', 'dass', 'obwohl', 'ob', 'sowohl', 'als', 'weder', 'entweder',
-  'ich', 'du', 'er', 'sie', 'es', 'wir', 'ihr', 'sie', 'Sie',
-  'mein', 'dein', 'sein', 'ihr', 'unser', 'euer',
-  'dieser', 'diese', 'dieses', 'jener', 'jene', 'jenes',
-  'ist', 'sind', 'war', 'waren', 'habe', 'hast', 'hat', 'haben', 'habt',
-  'kann', 'kannst', 'können', 'könnt', 'will', 'willst', 'wollen', 'wollt',
-  'soll', 'sollst', 'sollen', 'sollt', 'muss', 'musst', 'müssen', 'müsst',
-  'nicht', 'kein', 'keine', 'keinen', 'keinem', 'keines', 'nichts',
-  'auch', 'nur', 'schon', 'noch', 'wieder', 'wieder', 'mal', 'bloß',
-  'hier', 'dort', 'da', 'dorthin', 'her', 'hin',
-  'jetzt', 'dann', 'früher', 'später', 'heute', 'morgen', 'gestern',
-  'sehr', 'ganz', 'besonders', 'besonders', 'ziemlich', 'etwas', 'viele', 'wenige'
+// Common English stop words to exclude
+const ENGLISH_STOP_WORDS = new Set([
+  'the', 'be', 'to', 'of', 'and', 'a', 'in', 'that', 'have', 'i', 'it', 'for', 'not', 'on', 'with', 'he', 'as', 'you', 'do', 'at', 'this',
+  'but', 'his', 'by', 'from', 'they', 'we', 'say', 'her', 'she', 'or', 'an', 'will', 'my', 'one', 'all', 'would', 'there', 'their', 'what',
+  'so', 'up', 'out', 'if', 'about', 'who', 'get', 'which', 'go', 'me', 'is', 'are', 'was', 'were', 'had', 'has', 'can', 'could', 'should',
+  'would', 'may', 'might', 'must', 'shall'
 ])
 
-// CEFR level indicators based on word complexity
+// CEFR level indicators (Academic focused)
 const CEFR_INDICATORS = {
   A1: {
     patterns: [
-      /\b(hallo|danke|bitte|ja|nein|guten tag|auf wiedersehen|tschüss)\b/gi,
-      /\b(ich|du|er|sie|es|wir|ihr|sie|Sie)\b/gi,
-      /\b(sein|haben|gehen|kommen|sprechen|essen|trinken|wohnen|arbeiten|lernen)\b/gi
+      /\b(hello|book|school|student|teacher|house|car)\b/gi
     ],
-    maxWordLength: 8
+    maxWordLength: 5
   },
   A2: {
     patterns: [
-      /\b(entschuldigen|verstehen|erklären|wiederholen|versuchen|erinnern|bedeuten)\b/gi,
-      /\b(obwohl|weil|wenn|dass|ob|falls|sobald|solange)\b/gi
+      /\b(understand|describe|explain|repeat|language|sentence)\b/gi
     ],
-    maxWordLength: 12
+    maxWordLength: 7
   },
   B1: {
     patterns: [
-      /\b(entscheiden|entwickeln|erfolgreich|interessant|wichtig|möglich|notwendig)\b/gi,
-      /\b(beziehen|beziehen|bezieht|bezog|bezogen|beziehst|bezieht)\b/gi
+      /\b(environment|education|technology|communication|transport)\b/gi
     ],
-    maxWordLength: 15
+    maxWordLength: 9
   },
   B2: {
     patterns: [
-      /\b(unbedingt|zusammenhängend|berücksichtigen|unabhängig|tatsächlich)\b/gi,
-      /\b(herausfinden|mitteilen|nachweisen|stattfinden|stattfinden|stattfand)\b/gi
+      /\b(significant|consequence|implication|maintenance|regulation)\b/gi
     ],
-    maxWordLength: 18
+    maxWordLength: 11
   },
   C1: {
     patterns: [
-      /\b(hervorragend|zweifellos|außergewöhnlich|herausragend|beeindruckend)\b/gi,
-      /\b(berücksichtigen|berücksichtigt|berücksichtigte|berücksichtigten)\b/gi
+      /\b(comprehensive|implementation|infrastructure|methodology)\b/gi
     ],
-    maxWordLength: 25
+    maxWordLength: 13
   }
 }
 
@@ -77,7 +61,7 @@ export function usePDFVocabularyExtractor() {
   const [extractionError, setExtractionError] = useState(null)
   const [categorizedWords, setCategorizedWords] = useState({})
 
-  const { quickScan, processingState } = usePDFProcessor()
+  const { quickScan } = usePDFProcessor()
 
   // Extract vocabulary from PDF text
   const extractVocabularyFromText = useCallback(async (text, options = {}) => {
@@ -90,12 +74,11 @@ export function usePDFVocabularyExtractor() {
         includeStopWords = false,
         minFrequency = 1,
         maxWords = 500,
-        includeContext = true,
-        contextLength = 50
+        includeContext = true
       } = options
 
-      // Extract all German words
-      const allWords = text.match(/\b[A-ZÄÖÜ][a-zäöüß]+|[a-zäöüß]+\b/g) || []
+      // Extract all English words
+      const allWords = text.match(/\b[a-zA-Z]+(?:'[a-z]+)?\b/g) || []
 
       // Filter and process words
       const wordFrequency = {}
@@ -105,9 +88,12 @@ export function usePDFVocabularyExtractor() {
         const word = allWords[i].toLowerCase()
 
         // Skip stop words if not included
-        if (!includeStopWords && GERMAN_STOP_WORDS.has(word)) {
+        if (!includeStopWords && ENGLISH_STOP_WORDS.has(word)) {
           continue
         }
+
+        // Skip short words that might be noise
+        if (word.length < 3) continue
 
         // Count frequency
         wordFrequency[word] = (wordFrequency[word] || 0) + 1
@@ -118,17 +104,16 @@ export function usePDFVocabularyExtractor() {
             wordContexts[word] = []
           }
 
-          const contextStart = Math.max(0, i - 5)
-          const contextEnd = Math.min(allWords.length, i + 6)
-          const context = allWords.slice(contextStart, contextEnd).join(' ')
-
-          if (!wordContexts[word].includes(context)) {
+          if (wordContexts[word].length < 3) {
+            const contextStart = Math.max(0, i - 10)
+            const contextEnd = Math.min(allWords.length, i + 10)
+            const context = allWords.slice(contextStart, contextEnd).join(' ')
             wordContexts[word].push(context)
           }
         }
 
         // Update progress
-        if (i % 100 === 0) {
+        if (i % 500 === 0) {
           setExtractionProgress((i / allWords.length) * 50)
         }
       }
@@ -146,21 +131,20 @@ export function usePDFVocabularyExtractor() {
         const [word, frequency] = filteredWords[i]
 
         // Determine word type and category
-        const wordAnalysis = analyzeWord(word, text)
+        const wordAnalysis = analyzeWord(word)
 
         // Determine CEFR level
-        const cefrLevel = determineCEFRLevel(word, wordAnalysis)
+        const cefrLevel = determineCEFRLevel(word)
 
         // Extract examples from context
         const examples = includeContext ? extractExamples(word, wordContexts[word], 3) : []
 
         vocabulary.push({
-          german: word,
+          word: word,
           frequency,
           category: wordAnalysis.category,
           type: wordAnalysis.type,
           level: cefrLevel,
-          gender: wordAnalysis.gender,
           examples,
           context: wordContexts[word]?.[0] || '',
           difficulty: calculateDifficulty(word, cefrLevel, frequency)
@@ -187,98 +171,39 @@ export function usePDFVocabularyExtractor() {
   }, [])
 
   // Analyze a single word
-  const analyzeWord = useCallback((word, fullText) => {
+  const analyzeWord = useCallback((word) => {
     const analysis = {
-      category: 'unknown',
-      type: 'unknown',
-      gender: null
+      category: 'general',
+      type: 'unknown'
     }
 
-    // Check for noun (capitalized in German)
-    if (word.charAt(0).match(/[A-ZÄÖÜ]/)) {
-      analysis.category = 'nouns'
+    // Heuristic suffixes for types
+    if (word.endsWith('tion') || word.endsWith('ment') || word.endsWith('ness')) {
       analysis.type = 'noun'
-
-      // Determine gender based on articles in context
-      const contextRegex = new RegExp(`\\b(der|die|das|ein|eine)\\s+${word}\\b`, 'gi')
-      const matches = fullText.match(contextRegex)
-      if (matches) {
-        const articles = matches.map(m => m.toLowerCase().split(' ')[0])
-        if (articles.includes('der') || articles.includes('ein')) analysis.gender = 'masculine'
-        if (articles.includes('die') || articles.includes('eine')) analysis.gender = 'feminine'
-        if (articles.includes('das')) analysis.gender = 'neutral'
-      }
-    }
-
-    // Check for verbs
-    if (word.match(/(en|eln|ern|ieren|fizieren)$/i)) {
-      analysis.category = 'verbs'
+      analysis.category = 'academic'
+    } else if (word.endsWith('ize') || word.endsWith('ate') || word.endsWith('ify')) {
       analysis.type = 'verb'
-    }
-
-    // Check for adjectives
-    if (word.match(/(isch|lich|ig|bar|haft|sam|los|voll)$/i)) {
-      analysis.category = 'adjectives'
-      analysis.type = 'adjective'
-    }
-
-    // Check for adverbs
-    if (word.match(/(weise|lings|halber)$/i)) {
-      analysis.category = 'adverbs'
+      analysis.category = 'academic'
+    } else if (word.endsWith('ly')) {
       analysis.type = 'adverb'
-    }
-
-    // Check for prepositions
-    if (word.match(/^(aus|bei|mit|nach|von|zu|an|auf|in|über|unter|vor|zwischen|durch|für|gegen|ohne|um|seit|während|trotz)$/i)) {
-      analysis.category = 'prepositions'
-      analysis.type = 'preposition'
-    }
-
-    // Check for conjunctions
-    if (word.match(/^(und|oder|aber|denn|weil|wenn|dass|obwohl|ob|sowohl|als|weder|entweder)$/i)) {
-      analysis.category = 'conjunctions'
-      analysis.type = 'conjunction'
+    } else if (word.endsWith('al') || word.endsWith('ic') || word.endsWith('ive')) {
+      analysis.type = 'adjective'
     }
 
     return analysis
   }, [])
 
   // Determine CEFR level based on word characteristics
-  const determineCEFRLevel = useCallback((word, analysis) => {
+  const determineCEFRLevel = useCallback((word) => {
     const wordLength = word.length
 
-    // Check against CEFR patterns
-    for (const [level, indicators] of Object.entries(CEFR_INDICATORS)) {
-      for (const pattern of indicators.patterns) {
-        if (word.match(pattern)) {
-          return level
-        }
-      }
-
-      if (wordLength <= indicators.maxWordLength) {
-        // Additional heuristics based on word complexity
-        const hasUmlaut = /[äöü]/.test(word)
-        const hasSpecialChars = /[ß]/.test(word)
-        const hasComplexStructure = /[aeiou]{3,}|[bcdfghjklmnpqrstvwxyz]{4,}/.test(word)
-
-        if (level === 'A1' && !hasUmlaut && !hasSpecialChars && !hasComplexStructure) {
-          return level
-        }
-        if (level === 'A2' && (hasUmlaut || hasSpecialChars) && !hasComplexStructure) {
-          return level
-        }
-        if (level === 'B1' && hasComplexStructure) {
-          return level
-        }
-      }
-    }
-
-    // Default level based on word length and complexity
-    if (wordLength <= 6) return 'A1'
-    if (wordLength <= 10) return 'A2'
-    if (wordLength <= 14) return 'B1'
-    if (wordLength <= 18) return 'B2'
-    return 'C1'
+    // Simple length and complexity heuristic without full dictionary
+    if (wordLength <= 4) return 'A1'
+    if (wordLength <= 6) return 'A2'
+    if (wordLength <= 8) return 'B1'
+    if (wordLength <= 10) return 'B2'
+    if (wordLength <= 12) return 'C1'
+    return 'C2'
   }, [])
 
   // Extract examples from context
@@ -300,22 +225,11 @@ export function usePDFVocabularyExtractor() {
   // Calculate difficulty score
   const calculateDifficulty = useCallback((word, level, frequency) => {
     let difficulty = 1
-
-    // Base difficulty by CEFR level
-    const levelDifficulty = { A1: 1, A2: 2, B1: 3, B2: 4, C1: 5 }
+    const levelDifficulty = { A1: 1, A2: 2, B1: 3, B2: 4, C1: 5, C2: 5 }
     difficulty += levelDifficulty[level] - 1
 
-    // Adjust by word length
-    if (word.length > 15) difficulty += 1
-    if (word.length > 20) difficulty += 1
-
     // Adjust by frequency (inverse - rare words are harder)
-    if (frequency === 1) difficulty += 1
-    if (frequency >= 5) difficulty -= 0.5
-
-    // Adjust by complexity
-    if (/[äöüß]/.test(word)) difficulty += 0.5
-    if (word.includes('-')) difficulty += 0.5
+    if (frequency === 1) difficulty += 0.5
 
     return Math.max(1, Math.min(5, difficulty))
   }, [])
@@ -398,14 +312,13 @@ export function usePDFVocabularyExtractor() {
     if (format === 'json') {
       return JSON.stringify(data, null, 2)
     } else if (format === 'csv') {
-      const headers = ['German', 'Frequency', 'Category', 'Type', 'Level', 'Gender', 'Difficulty']
+      const headers = ['Word', 'Frequency', 'Category', 'Type', 'Level', 'Difficulty']
       const rows = extractedVocabulary.map(word => [
-        word.german,
+        word.word,
         word.frequency,
         word.category,
         word.type,
         word.level,
-        word.gender || '',
         word.difficulty
       ])
 
@@ -434,78 +347,6 @@ export function usePDFVocabularyExtractor() {
     exportVocabulary,
     clearExtractedVocabulary,
     analyzeWord,
-    determineCEFRLevel,
-    separateContentByLanguage
+    determineCEFRLevel
   }
-}
-
-// Helper to separate content by language
-function separateContentByLanguage(text) {
-  if (!text) return { germanBlocks: [], englishBlocks: [], mixedBlocks: [] }
-
-  const blocks = text.split(/\n\s*\n/) // Split by double newline (paragraphs)
-  const result = {
-    germanBlocks: [],
-    englishBlocks: [],
-    mixedBlocks: []
-  }
-
-  blocks.forEach(block => {
-    const trimmedBlock = block.trim()
-    if (!trimmedBlock) return
-
-    const germanScore = calculateGermanScore(trimmedBlock)
-    const englishScore = calculateEnglishScore(trimmedBlock)
-
-    if (germanScore > englishScore && germanScore > 0.3) {
-      result.germanBlocks.push(trimmedBlock)
-    } else if (englishScore > germanScore && englishScore > 0.3) {
-      result.englishBlocks.push(trimmedBlock)
-    } else {
-      result.mixedBlocks.push(trimmedBlock)
-    }
-  })
-
-  return result
-}
-
-function calculateGermanScore(text) {
-  let score = 0
-  const totalWords = text.split(/\s+/).length
-  if (totalWords === 0) return 0
-
-  // Check for Umlauts and Eszett (strong indicators)
-  const umlautCount = (text.match(/[äöüßÄÖÜ]/g) || []).length
-  score += (umlautCount / totalWords) * 3
-
-  // Check for German articles and common words
-  const germanCommonWords = /\b(der|die|das|und|ist|in|den|von|zu|mit|sind)\b/gi
-  const commonMatchCount = (text.match(germanCommonWords) || []).length
-  score += (commonMatchCount / totalWords) * 2
-
-  // Check for capitalization of nouns (heuristic: words starting with uppercase inside sentences)
-  // This is a bit rough but helps
-  const capitalizedInside = (text.match(/[.!?]\s+[A-Z]/g) || []).length // Sentence starts (ignore)
-  const allCapitalized = (text.match(/[A-Z][a-z]+/g) || []).length
-  // High ratio of capitalized words (nouns) is German-like
-  if (allCapitalized / totalWords > 0.25) score += 0.5
-
-  return Math.min(score, 1) // Cap at 1
-}
-
-function calculateEnglishScore(text) {
-  let score = 0
-  const totalWords = text.split(/\s+/).length
-  if (totalWords === 0) return 0
-
-  // Check for English articles and common words
-  const englishCommonWords = /\b(the|and|is|in|of|to|with|are|for|that|this)\b/gi
-  const commonMatchCount = (text.match(englishCommonWords) || []).length
-  score += (commonMatchCount / totalWords) * 2
-
-  // Penalty for Umlauts
-  const umlautCount = (text.match(/[äöüßÄÖÜ]/g) || []).length
-  if (umlautCount > 0) score -= 0.5
-
-  return Math.min(Math.max(score, 0), 1) // Cap between 0 and 1
 }

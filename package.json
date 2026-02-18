@@ -1,16 +1,20 @@
 {
-  "name": "german-learning-app",
+  "name": "ielts-preparation-app",
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DrKhaled123/IELTSSS.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "build:prod": "NODE_ENV=production vite build --mode production",
     "preview": "vite preview",
     "preview:prod": "NODE_ENV=production vite preview --mode production",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "lint:fix": "eslint . --ext js,jsx --fix",
+    "lint": "eslint src --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint . --fix",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest --coverage",
@@ -28,9 +32,11 @@
     "lucide-react": "^0.294.0",
     "lz-string": "^1.5.0",
     "pdfjs-dist": "^3.11.174",
+    "piper-wasm": "^0.1.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.21.0"
+    "react-router-dom": "^6.21.0",
+    "vosk-browser": "^0.0.8"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.9.1",
@@ -44,6 +50,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "jsdom": "^27.3.0",
+    "terser": "^5.44.1",
     "vite": "^5.4.11",
     "vitest": "^4.0.16"
   }

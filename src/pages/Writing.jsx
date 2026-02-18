@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { PenTool, FileText, Lightbulb, CheckCircle, AlertCircle } from 'lucide-react'
+import { IELTSTimerDisplay } from '../hooks/useIELTSTimer'
 import writingTasks from '../data/writing-tasks.json'
 import BilingualContainer from '../components/BilingualContainer'
 
@@ -10,8 +11,9 @@ export default function Writing() {
      const [showSample, setShowSample] = useState(false)
      const [analysis, setAnalysis] = useState(null)
 
-     const task1Items = writingTasks.filter(t => t.type === 'task1')
-     const task2Items = writingTasks.filter(t => t.type === 'task2')
+     const safeTasks = Array.isArray(writingTasks) ? writingTasks : []
+     const task1Items = safeTasks.filter(t => t.type === 'task1')
+     const task2Items = safeTasks.filter(t => t.type === 'task2')
 
      const analyzeEssay = () => {
           const wordCount = userEssay.trim().split(/\s+/).filter(w => w.length > 0).length
@@ -37,10 +39,15 @@ export default function Writing() {
      return (
           <div className="container animate-fadeIn" style={{ paddingTop: 'var(--space-2xl)', paddingBottom: 'var(--space-3xl)' }}>
                <header style={{ marginBottom: 'var(--space-2xl)' }}>
-                    <h1>Writing Practice</h1>
-                    <p style={{ fontSize: 'var(--font-lg)', color: 'var(--color-text-secondary)' }}>
-                         Practice IELTS writing tasks with sample answers and structure guidance
-                    </p>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 'var(--space-md)' }}>
+                         <div>
+                              <h1>Writing Practice</h1>
+                              <p style={{ fontSize: 'var(--font-lg)', color: 'var(--color-text-secondary)' }}>
+                                   Practice IELTS writing tasks with sample answers and structure guidance
+                              </p>
+                         </div>
+                         <IELTSTimerDisplay section="writing" size="medium" showControls={true} />
+                    </div>
                </header>
 
                {/* Task Type Tabs */}

@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useMemo } from 'react'
+import { useState, useEffect, useCallback, useMemo, useRef } from 'react'
 
 // Game types
 const GAME_TYPES = {
@@ -39,7 +39,7 @@ export function useVocabularyGames(vocabularyDatabase) {
     questions: [],
     answers: []
   })
-  
+
   const [gameHistory, setGameHistory] = useState([])
   const [achievements, setAchievements] = useState([])
 
@@ -47,12 +47,20 @@ export function useVocabularyGames(vocabularyDatabase) {
   useEffect(() => {
     const savedHistory = localStorage.getItem('vocabulary-game-history')
     if (savedHistory) {
-      setGameHistory(JSON.parse(savedHistory))
+      try {
+        setGameHistory(JSON.parse(savedHistory))
+      } catch (error) {
+        console.error('Failed to parse game history:', error)
+      }
     }
-    
+
     const savedAchievements = localStorage.getItem('vocabulary-game-achievements')
     if (savedAchievements) {
-      setAchievements(JSON.parse(savedAchievements))
+      try {
+        setAchievements(JSON.parse(savedAchievements))
+      } catch (error) {
+        console.error('Failed to parse achievements:', error)
+      }
     }
   }, [])
 
@@ -71,28 +79,28 @@ export function useVocabularyGames(vocabularyDatabase) {
     switch (type) {
       case GAME_TYPES.FLASHCARD:
         return generateFlashcardQuestions(filteredVocab, count)
-      
+
       case GAME_TYPES.QUIZ:
         return generateQuizQuestions(filteredVocab, count)
-      
+
       case GAME_TYPES.MATCHING:
         return generateMatchingQuestions(filteredVocab, count)
-      
+
       case GAME_TYPES.TYPING:
         return generateTypingQuestions(filteredVocab, count)
-      
+
       case GAME_TYPES.LISTENING:
         return generateListeningQuestions(filteredVocab, count)
-      
+
       case GAME_TYPES.SPEAKING:
         return generateSpeakingQuestions(filteredVocab, count)
-      
+
       case GAME_TYPES.WORD_BUILDING:
         return generateWordBuildingQuestions(filteredVocab, count)
-      
+
       case GAME_TYPES.CONTEXT:
         return generateContextQuestions(filteredVocab, count)
-      
+
       default:
         return []
     }
@@ -106,7 +114,7 @@ export function useVocabularyGames(vocabularyDatabase) {
       [GAME_DIFFICULTIES.HARD]: ['A2', 'B1'],
       [GAME_DIFFICULTIES.EXPERT]: ['B1', 'B2', 'C1']
     }
-    
+
     const allowedLevels = levelMap[difficulty] || ['A1']
     return vocabulary.filter(word => allowedLevels.includes(word.level))
   }, [])
@@ -114,12 +122,12 @@ export function useVocabularyGames(vocabularyDatabase) {
   // Generate flashcard questions
   const generateFlashcardQuestions = useCallback((vocabulary, count) => {
     const selectedWords = vocabulary.sort(() => Math.random() - 0.5).slice(0, count)
-    
+
     return selectedWords.map((word, index) => ({
       id: `flashcard_${index}`,
       type: GAME_TYPES.FLASHCARD,
-      question: word.german,
-      answer: word.english,
+      question: word.word,
+      answer: word.definition,
       arabicAnswer: word.arabic,
       pronunciation: word.pronunciation,
       word: word,
@@ -130,22 +138,22 @@ export function useVocabularyGames(vocabularyDatabase) {
   // Generate quiz questions
   const generateQuizQuestions = useCallback((vocabulary, count) => {
     const selectedWords = vocabulary.sort(() => Math.random() - 0.5).slice(0, count)
-    
+
     return selectedWords.map((word, index) => {
       // Generate wrong options
       const wrongOptions = vocabulary
-        .filter(w => w.german !== word.german)
+        .filter(w => w.word !== word.word)
         .sort(() => Math.random() - 0.5)
         .slice(0, 3)
-        .map(w => w.english)
-      
-      const options = [word.english, ...wrongOptions].sort(() => Math.random() - 0.5)
-      
+        .map(w => w.definition)
+
+      const options = [word.definition, ...wrongOptions].sort(() => Math.random() - 0.5)
+
       return {
         id: `quiz_${index}`,
         type: GAME_TYPES.QUIZ,
-        question: `What does "${word.german}" mean?`,
-        answer: word.english,
+        question: `What does "${word.word}" mean?`,
+        answer: word.definition,
         word: word,
         options
       }
@@ -155,20 +163,20 @@ export function useVocabularyGames(vocabularyDatabase) {
   // Generate matching questions
   const generateMatchingQuestions = useCallback((vocabulary, count) => {
     const selectedWords = vocabulary.sort(() => Math.random() - 0.5).slice(0, Math.min(count, 10))
-    
+
     return {
       id: `matching_${Date.now()}`,
       type: GAME_TYPES.MATCHING,
-      question: 'Match the German words with their English translations',
+      question: 'Match the words with their definitions',
       pairs: selectedWords.map(word => ({
-        german: word.german,
-        english: word.english,
-        id: word.german
+        term: word.word,
+        definition: word.definition,
+        id: word.word
       })),
       shuffledPairs: [...selectedWords.map(word => ({
-        german: word.german,
-        english: word.english,
-        id: word.german
+        term: word.word,
+        definition: word.definition,
+        id: word.word
       }))].sort(() => Math.random() - 0.5)
     }
   }, [])
@@ -176,12 +184,12 @@ export function useVocabularyGames(vocabularyDatabase) {
   // Generate typing questions
   const generateTypingQuestions = useCallback((vocabulary, count) => {
     const selectedWords = vocabulary.sort(() => Math.random() - 0.5).slice(0, count)
-    
+
     return selectedWords.map((word, index) => ({
       id: `typing_${index}`,
       type: GAME_TYPES.TYPING,
-      question: `Type the German word for: "${word.english}"`,
-      answer: word.german,
+      question: `Type the word for: "${word.definition}"`,
+      answer: word.word,
       hint: word.pronunciation,
       word: word,
       options: null
@@ -191,25 +199,25 @@ export function useVocabularyGames(vocabularyDatabase) {
   // Generate listening questions
   const generateListeningQuestions = useCallback((vocabulary, count) => {
     const selectedWords = vocabulary.sort(() => Math.random() - 0.5).slice(0, count)
-    
+
     return selectedWords.map((word, index) => {
       const wrongOptions = vocabulary
-        .filter(w => w.german !== word.german)
+        .filter(w => w.word !== word.word)
         .sort(() => Math.random() - 0.5)
         .slice(0, 3)
-        .map(w => w.german)
-      
-      const options = [word.german, ...wrongOptions].sort(() => Math.random() - 0.5)
-      
+        .map(w => w.word)
+
+      const options = [word.word, ...wrongOptions].sort(() => Math.random() - 0.5)
+
       return {
         id: `listening_${index}`,
         type: GAME_TYPES.LISTENING,
         question: 'Listen and select the correct word',
-        answer: word.german,
-        english: word.english,
+        answer: word.word,
+        definition: word.definition,
         word: word,
         options,
-        audioText: word.german
+        audioText: word.word
       }
     })
   }, [])
@@ -217,12 +225,12 @@ export function useVocabularyGames(vocabularyDatabase) {
   // Generate speaking questions
   const generateSpeakingQuestions = useCallback((vocabulary, count) => {
     const selectedWords = vocabulary.sort(() => Math.random() - 0.5).slice(0, count)
-    
+
     return selectedWords.map((word, index) => ({
       id: `speaking_${index}`,
       type: GAME_TYPES.SPEAKING,
-      question: `Pronounce: "${word.english}"`,
-      answer: word.german,
+      question: `Pronounce: "${word.word}"`,
+      answer: word.word,
       pronunciation: word.pronunciation,
       word: word,
       expectedIPA: word.ipa,
@@ -233,16 +241,16 @@ export function useVocabularyGames(vocabularyDatabase) {
   // Generate word building questions
   const generateWordBuildingQuestions = useCallback((vocabulary, count) => {
     const selectedWords = vocabulary.sort(() => Math.random() - 0.5).slice(0, count)
-    
+
     return selectedWords.map((word, index) => {
-      const scrambled = word.german.split('').sort(() => Math.random() - 0.5).join('')
-      
+      const scrambled = word.word.split('').sort(() => Math.random() - 0.5).join('')
+
       return {
         id: `word_building_${index}`,
         type: GAME_TYPES.WORD_BUILDING,
         question: `Unscramble the letters: ${scrambled}`,
-        hint: `English: ${word.english}`,
-        answer: word.german,
+        hint: `Definition: ${word.definition}`,
+        answer: word.word,
         word: word,
         scrambled,
         options: null
@@ -253,16 +261,17 @@ export function useVocabularyGames(vocabularyDatabase) {
   // Generate context questions
   const generateContextQuestions = useCallback((vocabulary, count) => {
     const selectedWords = vocabulary.sort(() => Math.random() - 0.5).slice(0, count)
-    
+
     return selectedWords.map((word, index) => {
-      const example = word.examples?.german?.[0] || `Ich lerne ${word.german}.`
-      const blankedExample = example.replace(word.german, '___')
-      
+      // Fallback to simple context if examples are missing
+      const example = word.examples?.[0] || `The word is ${word.word}.`
+      const blankedExample = example.replace(new RegExp(word.word, 'i'), '___')
+
       return {
         id: `context_${index}`,
         type: GAME_TYPES.CONTEXT,
         question: `Complete the sentence: ${blankedExample}`,
-        answer: word.german,
+        answer: word.word,
         word: word,
         context: example,
         options: null
@@ -273,7 +282,7 @@ export function useVocabularyGames(vocabularyDatabase) {
   // Start a new game
   const startGame = useCallback((type, difficulty = GAME_DIFFICULTIES.EASY, customQuestions = null) => {
     const questions = customQuestions || generateQuestions(type, difficulty)
-    
+
     setGameState({
       type,
       difficulty,
@@ -291,50 +300,50 @@ export function useVocabularyGames(vocabularyDatabase) {
       questions: Array.isArray(questions) ? questions : [questions],
       answers: []
     })
-    
+
     setCurrentGame(type)
   }, [generateQuestions])
 
   // Handle answer submission
   const submitAnswer = useCallback((answer, timeTaken = 0) => {
     if (!gameState.gameActive) return
-    
+
     const currentQuestionData = gameState.questions[gameState.currentQuestion]
     if (!currentQuestionData) return
-    
+
     let isCorrect = false
     let points = 0
-    
+
     // Check answer based on game type
     switch (gameState.type) {
       case GAME_TYPES.QUIZ:
       case GAME_TYPES.LISTENING:
         isCorrect = answer.toLowerCase() === currentQuestionData.answer.toLowerCase()
         break
-      
+
       case GAME_TYPES.TYPING:
       case GAME_TYPES.WORD_BUILDING:
       case GAME_TYPES.CONTEXT:
         isCorrect = answer.toLowerCase().trim() === currentQuestionData.answer.toLowerCase()
         break
-      
+
       case GAME_TYPES.FLASHCARD:
         isCorrect = answer === true // User knows the word
         break
-      
+
       case GAME_TYPES.SPEAKING:
         // For speaking, we'll use speech recognition to check accuracy
         isCorrect = answer.confidence >= 0.7
         break
-      
+
       case GAME_TYPES.MATCHING:
         isCorrect = checkMatchingAnswer(answer, currentQuestionData)
         break
-      
+
       default:
         isCorrect = false
     }
-    
+
     // Calculate points based on difficulty and time
     const basePoints = {
       [GAME_DIFFICULTIES.EASY]: 10,
@@ -342,19 +351,19 @@ export function useVocabularyGames(vocabularyDatabase) {
       [GAME_DIFFICULTIES.HARD]: 30,
       [GAME_DIFFICULTIES.EXPERT]: 50
     }
-    
+
     points = basePoints[gameState.difficulty] || 10
-    
+
     // Bonus points for speed
     if (timeTaken < 5) points += 5
     if (timeTaken < 3) points += 10
-    
+
     // Bonus points for streak
     if (isCorrect) {
       const newStreak = gameState.streak + 1
       if (newStreak >= 3) points += 10
       if (newStreak >= 5) points += 20
-      
+
       setGameState(prev => ({
         ...prev,
         score: prev.score + points,
@@ -369,7 +378,7 @@ export function useVocabularyGames(vocabularyDatabase) {
         streak: 0
       }))
     }
-    
+
     // Record answer
     const newAnswer = {
       questionId: currentQuestionData.id,
@@ -381,24 +390,24 @@ export function useVocabularyGames(vocabularyDatabase) {
       timeTaken,
       timestamp: Date.now()
     }
-    
+
     setGameState(prev => ({
       ...prev,
       answers: [...prev.answers, newAnswer],
       currentQuestion: prev.currentQuestion + 1,
       gameComplete: prev.currentQuestion + 1 >= prev.totalQuestions
     }))
-    
+
     return { isCorrect, points, newAnswer }
   }, [gameState])
 
   // Check matching game answer
   const checkMatchingAnswer = useCallback((answer, questionData) => {
     if (!answer || !questionData.pairs) return false
-    
+
     return questionData.pairs.every(pair => {
-      const userMatch = answer.find(match => 
-        match.german === pair.german && match.english === pair.english
+      const userMatch = answer.find(match =>
+        match.term === pair.term && match.definition === pair.definition
       )
       return userMatch !== undefined
     })
@@ -407,13 +416,13 @@ export function useVocabularyGames(vocabularyDatabase) {
   // End current game
   const endGame = useCallback(() => {
     if (!gameState.gameActive) return
-    
+
     const finalScore = gameState.score
     const highScore = Math.max(finalScore, getHighScore(gameState.type, gameState.difficulty))
-    
+
     // Update high score
     updateHighScore(gameState.type, gameState.difficulty, highScore)
-    
+
     // Save game to history
     const gameRecord = {
       id: `game_${Date.now()}`,
@@ -424,27 +433,27 @@ export function useVocabularyGames(vocabularyDatabase) {
       correctAnswers: gameState.correctAnswers,
       incorrectAnswers: gameState.incorrectAnswers,
       totalQuestions: gameState.totalQuestions,
-      accuracy: gameState.totalQuestions > 0 
-        ? Math.round((gameState.correctAnswers / gameState.totalQuestions) * 100) 
+      accuracy: gameState.totalQuestions > 0
+        ? Math.round((gameState.correctAnswers / gameState.totalQuestions) * 100)
         : 0,
       bestStreak: gameState.bestStreak,
       timeElapsed: gameState.timeElapsed,
       timestamp: new Date().toISOString(),
       answers: gameState.answers
     }
-    
+
     setGameHistory(prev => [gameRecord, ...prev].slice(0, 100)) // Keep last 100 games
-    
+
     // Check for achievements
     checkAchievements(gameRecord)
-    
+
     setGameState(prev => ({
       ...prev,
       gameActive: false,
       gameComplete: true,
       highScore
     }))
-    
+
     return gameRecord
   }, [gameState])
 
@@ -463,7 +472,7 @@ export function useVocabularyGames(vocabularyDatabase) {
   // Check for achievements
   const checkAchievements = useCallback((gameRecord) => {
     const newAchievements = []
-    
+
     // First game achievement
     if (gameHistory.length === 0) {
       newAchievements.push({
@@ -474,7 +483,7 @@ export function useVocabularyGames(vocabularyDatabase) {
         timestamp: new Date().toISOString()
       })
     }
-    
+
     // Perfect game achievement
     if (gameRecord.accuracy === 100 && gameRecord.totalQuestions >= 10) {
       newAchievements.push({
@@ -485,7 +494,7 @@ export function useVocabularyGames(vocabularyDatabase) {
         timestamp: new Date().toISOString()
       })
     }
-    
+
     // Speed demon achievement
     if (gameRecord.timeElapsed < 60 && gameRecord.totalQuestions >= 10 && gameRecord.accuracy >= 90) {
       newAchievements.push({
@@ -496,7 +505,7 @@ export function useVocabularyGames(vocabularyDatabase) {
         timestamp: new Date().toISOString()
       })
     }
-    
+
     // Streak master achievement
     if (gameRecord.bestStreak >= 10) {
       newAchievements.push({
@@ -507,7 +516,7 @@ export function useVocabularyGames(vocabularyDatabase) {
         timestamp: new Date().toISOString()
       })
     }
-    
+
     // Game master achievement
     const gameTypes = [...new Set(gameHistory.map(g => g.type))]
     if (gameTypes.length >= 5) {
@@ -519,7 +528,7 @@ export function useVocabularyGames(vocabularyDatabase) {
         timestamp: new Date().toISOString()
       })
     }
-    
+
     if (newAchievements.length > 0) {
       setAchievements(prev => [...prev, ...newAchievements])
       localStorage.setItem('vocabulary-game-achievements', JSON.stringify([...achievements, ...newAchievements]))
@@ -539,24 +548,24 @@ export function useVocabularyGames(vocabularyDatabase) {
       achievements: achievements.length,
       recentGames: gameHistory.slice(0, 5)
     }
-    
+
     if (gameHistory.length > 0) {
       stats.averageScore = Math.round(stats.totalScore / gameHistory.length)
       stats.bestScore = Math.max(...gameHistory.map(g => g.score))
       stats.averageAccuracy = Math.round(
         gameHistory.reduce((sum, game) => sum + game.accuracy, 0) / gameHistory.length
       )
-      
+
       // Find favorite game type
       const gameTypeCounts = gameHistory.reduce((acc, game) => {
         acc[game.type] = (acc[game.type] || 0) + 1
         return acc
       }, {})
-      
+
       stats.favoriteGameType = Object.entries(gameTypeCounts)
-        .sort(([,a], [,b]) => b - a)[0]?.[0] || null
+        .sort(([, a], [, b]) => b - a)[0]?.[0] || null
     }
-    
+
     return stats
   }, [gameHistory, achievements])
 
@@ -582,41 +591,35 @@ export function useVocabularyGames(vocabularyDatabase) {
     setCurrentGame(null)
   }, [])
 
-  // Update game timer
-  const updateTimer = useCallback(() => {
-    if (gameState.gameActive) {
-      setGameState(prev => ({
-        ...prev,
-        timeElapsed: prev.timeElapsed + 1
-      }))
-    }
-  }, [gameState.gameActive])
+  // Ref to track gameActive for timer without causing effect restarts
+  const gameActiveRef = useRef(gameState.gameActive)
+  gameActiveRef.current = gameState.gameActive
 
-  // Timer effect
+  // Update game timer - uses ref to avoid stale closure
   useEffect(() => {
-    const timer = setInterval(updateTimer, 1000)
+    const timer = setInterval(() => {
+      if (gameActiveRef.current) {
+        setGameState(prev => ({
+          ...prev,
+          timeElapsed: prev.timeElapsed + 1
+        }))
+      }
+    }, 1000)
     return () => clearInterval(timer)
-  }, [updateTimer])
+  }, []) // Empty deps - uses ref for current value
 
   return {
-    // Game state
     gameState,
     currentGame,
     gameHistory,
     achievements,
-    
-    // Game controls
     startGame,
     submitAnswer,
     endGame,
     resetGame,
-    
-    // Game utilities
     generateQuestions,
     getGameStatistics,
     getHighScore,
-    
-    // Constants
     GAME_TYPES,
     GAME_DIFFICULTIES
   }

@@ -1,4 +1,5 @@
 {
+     "root": true,
      "env": {
           "browser": true,
           "es2021": true
@@ -8,6 +9,10 @@
           "plugin:react/recommended",
           "plugin:react/jsx-runtime",
           "plugin:react-hooks/recommended"
+     ],
+     "ignorePatterns": [
+          "public/*",
+          "scripts/*"
      ],
      "parserOptions": {
           "ecmaVersion": "latest",
@@ -29,5 +34,36 @@
                }
           ],
           "react/prop-types": "off"
-     }
+     },
+     "overrides": [
+          {
+               "files": ["public/sw.js", "public/sw-prod.js"],
+               "env": { "serviceworker": true },
+               "globals": {
+                    "self": "readonly",
+                    "caches": "readonly",
+                    "clients": "readonly",
+                    "fetch": "readonly"
+               }
+          },
+          {
+               "files": ["scripts/**/*.mjs", "scripts/**/*.cjs"],
+               "env": { "node": true },
+               "parserOptions": { "sourceType": "module" },
+               "globals": {
+                    "fetch": "readonly",
+                    "__dirname": "readonly",
+                    "setTimeout": "readonly",
+                    "console": "readonly",
+                    "process": "readonly"
+               }
+          },
+          {
+               "files": ["src/**/*.js", "src/**/*.jsx"],
+               "globals": {
+                    "AbortController": "readonly",
+                    "File": "readonly"
+               }
+          }
+     ]
 }

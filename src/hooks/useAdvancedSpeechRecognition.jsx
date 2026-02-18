@@ -15,6 +15,7 @@ export function useAdvancedSpeechRecognition(options = {}) {
     const analyserRef = useRef(null)
     const microphoneRef = useRef(null)
     const animationFrameRef = useRef(null)
+    const streamRef = useRef(null) // Track the media stream for cleanup
 
     // Initialize speech recognition with enhanced features
     useEffect(() => {
@@ -28,11 +29,11 @@ export function useAdvancedSpeechRecognition(options = {}) {
                 const recognition = new SpeechRecognition()
                 recognitionRef.current = recognition
                 
-                // Configure recognition for German
+                // Configure recognition for IELTS English
                 recognition.continuous = options.continuous || false
                 recognition.interimResults = options.interimResults !== false
                 recognition.maxAlternatives = options.maxAlternatives || 3
-                recognition.lang = options.lang || 'de-DE'
+                recognition.lang = options.lang || 'en-GB'
                 
                 // Set up audio context for analysis
                 audioContextRef.current = new AudioContext()
@@ -109,6 +110,7 @@ export function useAdvancedSpeechRecognition(options = {}) {
                 if (options.monitorAudioLevel) {
                     navigator.mediaDevices.getUserMedia({ audio: true })
                         .then(stream => {
+                            streamRef.current = stream // Store stream for cleanup
                             microphoneRef.current = audioContextRef.current.createMediaStreamSource(stream)
                             microphoneRef.current.connect(analyserRef.current)
                             
@@ -142,7 +144,7 @@ export function useAdvancedSpeechRecognition(options = {}) {
                 }
             }
         }
-    }, [options.continuous, options.interimResults, options.maxAlternatives, options.lang, options.onStart, options.onResult, options.onError, options.onEnd, options.monitorAudioLevel, options.trackWordTiming])
+    }, []) // Empty deps - options are accessed via ref in callbacks
 
     // Calculate pitch from audio data (simplified)
     const calculatePitch = (dataArray) => {
@@ -290,6 +292,11 @@ export function useAdvancedSpeechRecognition(options = {}) {
             
             if (microphoneRef.current) {
                 microphoneRef.current.disconnect()
+            }
+            
+            // Stop all tracks in the media stream to release microphone
+            if (streamRef.current) {
+                streamRef.current.getTracks().forEach(track => track.stop())
             }
             
             if (animationFrameRef.current) {

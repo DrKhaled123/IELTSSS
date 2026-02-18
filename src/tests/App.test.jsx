@@ -1,7 +1,15 @@
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen } from '@testing-library/react'
-import { BrowserRouter } from 'react-router-dom'
+import { MemoryRouter } from 'react-router-dom'
 import App from '../App'
+
+vi.mock('../pages/Reading', () => ({
+     default: () => <div>Interactive Reading Module</div>
+}))
+
+vi.mock('../pages/Vocabulary', () => ({
+     default: () => <div>Advanced Vocabulary System</div>
+}))
 
 // Mocking modules that might cause issues in test environment
 vi.mock('../hooks/useSpeechSynthesis', () => ({
@@ -33,9 +41,9 @@ describe('App Smoke Tests', () => {
      it('renders without crashing', () => {
           render(
                <SharedDataProvider>
-                    <BrowserRouter>
+                    <MemoryRouter initialEntries={['/vocabulary']}>
                          <App />
-                    </BrowserRouter>
+                    </MemoryRouter>
                </SharedDataProvider>
           )
           // Check if navigation link or branding remains

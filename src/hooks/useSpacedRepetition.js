@@ -13,7 +13,11 @@ export function useSpacedRepetition() {
     useEffect(() => {
         const savedCards = localStorage.getItem('vocabulary-spaced-repetition')
         if (savedCards) {
-            setCards(JSON.parse(savedCards))
+            try {
+                setCards(JSON.parse(savedCards))
+            } catch (error) {
+                console.error('Failed to parse spaced repetition cards:', error)
+            }
         }
     }, [])
 

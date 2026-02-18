@@ -18,8 +18,18 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: false,
-    minify: 'esbuild',
-    target: 'es2018', // Modern browsers for better performance
+    minify: 'terser',
+    target: 'es2018',
+    terserOptions: {
+      compress: {
+        drop_console: true,
+        drop_debugger: true,
+        pure_funcs: ['console.log', 'console.info', 'console.debug'],
+      },
+      format: {
+        comments: false,
+      },
+    },
     rollupOptions: {
       output: {
         manualChunks: (id) => {
@@ -35,24 +45,29 @@ export default defineConfig({
           if (id.includes('pdfjs-dist')) {
             return 'pdf-processor'
           }
+          // Data files - separate chunk
+          if (id.includes('/src/data/')) {
+            return 'data'
+          }
+          // Hooks - utilities chunk
+          if (id.includes('/src/hooks/')) {
+            return 'hooks'
+          }
           // Database and utilities
           if (id.includes('dexie') || id.includes('fuse.js') || id.includes('lz-string')) {
             return 'utils'
           }
-          // Everything else
-          return 'vendor'
         },
-        chunkFileNames: (chunkInfo) => {
-          const facadeModuleId = chunkInfo.facadeModuleId ? chunkInfo.facadeModuleId.split('/').pop() : 'chunk'
-          return `assets/[name]-[hash].js`
-        },
+        chunkFileNames: 'assets/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash].[ext]',
       },
     },
-    chunkSizeWarningLimit: 500, // Smaller chunks for better caching
+    chunkSizeWarningLimit: 400,
   },
   server: {
-    port: 5173,
-    open: true,
+    port: 5174,
+    strictPort: true,
+    open: false,
     // Enable HMR optimizations
     hmr: {
       overlay: true

@@ -25,47 +25,52 @@ body {
 
 /* ==================== CSS Custom Properties (Design Tokens) ==================== */
 :root {
-  /* Color Palette - Vibrant & Modern */
-  --color-primary: hsl(250, 84%, 54%);
-  --color-primary-light: hsl(250, 84%, 64%);
-  --color-primary-dark: hsl(250, 84%, 44%);
+  /* Color Palette - MAXIMUM Saturation & Contrast */
+  --color-primary: hsl(250, 98%, 62%);
+  --color-primary-light: hsl(250, 98%, 72%);
+  --color-primary-dark: hsl(250, 98%, 52%);
   
-  --color-secondary: hsl(180, 77%, 47%);
-  --color-secondary-light: hsl(180, 77%, 57%);
+  --color-secondary: hsl(180, 90%, 55%);
+  --color-secondary-light: hsl(180, 90%, 65%);
   
-  --color-accent: hsl(330, 85%, 56%);
-  --color-accent-light: hsl(330, 85%, 66%);
+  --color-accent: hsl(330, 98%, 65%);
+  --color-accent-light: hsl(330, 98%, 75%);
   
-  --color-success: hsl(142, 71%, 45%);
-  --color-warning: hsl(45, 93%, 47%);
-  --color-error: hsl(4, 90%, 58%);
-  --color-info: hsl(199, 89%, 48%);
+  --color-success: hsl(142, 85%, 50%);
+  --color-warning: hsl(45, 100%, 55%);
+  --color-error: hsl(4, 98%, 65%);
+  --color-info: hsl(199, 98%, 55%);
   
-  /* Gradients */
-  --gradient-primary: linear-gradient(135deg, hsl(250, 84%, 54%) 0%, hsl(280, 84%, 54%) 100%);
-  --gradient-secondary: linear-gradient(135deg, hsl(180, 77%, 47%) 0%, hsl(200, 77%, 57%) 100%);
-  --gradient-accent: linear-gradient(135deg, hsl(330, 85%, 56%) 0%, hsl(350, 85%, 56%) 100%);
-  --gradient-dark: linear-gradient(135deg, hsl(240, 21%, 15%) 0%, hsl(240, 21%, 20%) 100%);
+  /* Enhanced Gradients - More Vibrant */
+  --gradient-primary: linear-gradient(135deg, hsl(250, 98%, 62%) 0%, hsl(280, 98%, 62%) 100%);
+  --gradient-secondary: linear-gradient(135deg, hsl(180, 90%, 55%) 0%, hsl(200, 90%, 65%) 100%);
+  --gradient-accent: linear-gradient(135deg, hsl(330, 98%, 65%) 0%, hsl(350, 98%, 65%) 100%);
+  --gradient-dark: linear-gradient(135deg, hsl(240, 25%, 15%) 0%, hsl(240, 25%, 25%) 100%);
   
-  /* Dark Mode Colors */
-  --color-bg: hsl(240, 21%, 15%);
-  --color-bg-elevated: hsl(240, 21%, 18%);
-  --color-bg-overlay: hsla(240, 21%, 12%, 0.95);
+  /* Dark Mode Colors - Enhanced Contrast */
+  --color-bg: hsl(240, 25%, 10%);
+  --color-bg-elevated: hsl(240, 25%, 14%);
+  --color-bg-secondary: hsl(240, 25%, 18%);
   
-  --color-surface: hsl(240, 16%, 22%);
-  --color-surface-hover: hsl(240, 16%, 26%);
+  --color-surface: hsl(240, 20%, 16%);
+  --color-surface-hover: hsl(240, 20%, 22%);
   
-  --color-text: hsl(0, 0%, 95%);
-  --color-text-secondary: hsl(0, 0%, 75%);
-  --color-text-tertiary: hsl(0, 0%, 60%);
+  --color-text: hsl(0, 0%, 100%);
+  --color-text-secondary: hsl(0, 0%, 88%);
+  --color-text-tertiary: hsl(0, 0%, 72%);
   
-  --color-border: hsla(240, 16%, 35%, 0.3);
-  --color-border-hover: hsla(240, 16%, 45%, 0.5);
+  --color-border: hsla(240, 20%, 45%, 0.5);
+  --color-border-hover: hsla(240, 20%, 60%, 0.7);
   
-  /* Glassmorphism */
-  --glass-bg: hsla(240, 21%, 22%, 0.7);
-  --glass-border: hsla(0, 0%, 100%, 0.1);
-  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  /* Enhanced RGB values for rgba usage */
+  --color-success-rgb: 52, 211, 153;
+  --color-warning-rgb: 251, 191, 36;
+  --color-error-rgb: 239, 68, 68;
+  
+  /* Glassmorphism - Enhanced */
+  --glass-bg: hsla(240, 25%, 18%, 0.85);
+  --glass-border: hsla(0, 0%, 100%, 0.15);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45);
   
   /* Spacing Scale */
   --space-xs: 0.25rem;
@@ -80,6 +85,7 @@ body {
   --font-xs: 0.75rem;
   --font-sm: 0.875rem;
   --font-base: 1rem;
+  --font-md: 1rem;
   --font-lg: 1.125rem;
   --font-xl: 1.25rem;
   --font-2xl: 1.5rem;
@@ -102,12 +108,12 @@ body {
   --radius-2xl: 1.5rem;
   --radius-full: 9999px;
   
-  /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  /* Enhanced Shadows */
+  --shadow-sm: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px -2px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 10px 20px -5px rgba(0, 0, 0, 0.2);
+  --shadow-xl: 0 20px 30px -8px rgba(0, 0, 0, 0.25);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
   
   /* Transitions */
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -178,24 +184,45 @@ a:hover {
 
 .glass {
   background: var(--glass-bg);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--glass-border);
   box-shadow: var(--glass-shadow);
 }
 
+/* Enhanced stable card - removed hover transform */
 .card {
   background: var(--color-surface);
   border-radius: var(--radius-xl);
   padding: var(--space-xl);
-  border: 1px solid var(--color-border);
-  transition: all var(--transition-base);
+  border: 1.5px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+  position: relative;
+  will-change: border-color, box-shadow;
 }
 
 .card:hover {
   border-color: var(--color-border-hover);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-xl);
+  box-shadow: var(--shadow-lg);
+  /* Removed transform for stability */
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-text);
+  border: 1.5px solid var(--color-border);
+}
+
+.btn-outline:hover {
+  background: var(--color-surface);
+  border-color: var(--color-primary);
+  color: var(--color-primary-light);
+}
+
+.btn-sm {
+  padding: var(--space-xs) var(--space-md);
+  font-size: var(--font-sm);
 }
 
 .btn {

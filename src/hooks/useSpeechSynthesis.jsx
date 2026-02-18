@@ -9,7 +9,7 @@ export function useSpeechSynthesis() {
      const timeoutRef = useRef(null)
 
      useEffect(() => {
-          if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+          if (typeof window !== 'undefined' && 'speechSynthesis' in window && typeof window.SpeechSynthesisUtterance !== 'undefined') {
                setSupported(true)
 
                const loadVoices = () => {
@@ -26,7 +26,7 @@ export function useSpeechSynthesis() {
      }, [])
 
      const speak = useCallback((text, options = {}) => {
-          if (!supported) return
+          if (!supported || typeof window === 'undefined' || typeof window.SpeechSynthesisUtterance === 'undefined') return
 
           // Clear any existing timeouts
           if (timeoutRef.current) {
@@ -35,22 +35,30 @@ export function useSpeechSynthesis() {
 
           window.speechSynthesis.cancel()
 
-          const utterance = new SpeechSynthesisUtterance(text)
+          const utterance = new window.SpeechSynthesisUtterance(text)
           utteranceRef.current = utterance
 
-          // Set voice based on language preference
           if (options.voice) {
                utterance.voice = options.voice
           } else if (options.lang) {
-               // Auto-select voice based on language
-               const voice = voices.find(v => v.lang.startsWith(options.lang)) || voices[0]
+               let voice = null
+               if (options.lang.startsWith('en')) {
+                    voice =
+                         voices.find(v => v.lang === 'en-GB') ||
+                         voices.find(v => v.lang === 'en_US' || v.lang === 'en-US') ||
+                         voices.find(v => v.lang.startsWith('en') && !/en-?IN/i.test(v.lang)) ||
+                         voices.find(v => v.lang.startsWith('en')) ||
+                         voices[0]
+               } else {
+                    voice = voices.find(v => v.lang.startsWith(options.lang)) || voices[0]
+               }
                utterance.voice = voice
           }
 
-          utterance.rate = options.rate || 1
+          utterance.rate = options.rate || 1.15
           utterance.pitch = options.pitch || 1
           utterance.volume = options.volume || 1
-          utterance.lang = options.lang || 'en-US'
+          utterance.lang = options.lang || 'en-GB'
 
           utterance.onstart = () => {
                setSpeaking(true)
@@ -92,25 +100,24 @@ export function useSpeechSynthesis() {
           setSpeaking(true)
 
           let wordIndex = 0
-          const baseDelay = options.baseDelay || 100
+          const baseDelay = options.baseDelay || 50
           const rate = options.rate || 1
 
           const speakNextWord = () => {
                if (wordIndex < words.length && !window.speechSynthesis.paused) {
                     setCurrentWordIndex(wordIndex)
-                    
+
                     // Update current word position callback
                     if (options.onWordChange) {
                          options.onWordChange(wordIndex, words[wordIndex])
                     }
 
-                    // Calculate delay based on word length and reading speed
-                    const wordDelay = Math.max(baseDelay, words[wordIndex].length * 50) / rate
+                    const wordDelay = Math.max(baseDelay, words[wordIndex].length * 35) / rate
 
                     speak(words[wordIndex], {
                          voice: options.voice,
                          rate: rate,
-                         lang: options.lang || 'en-US',
+                         lang: options.lang || 'en-GB',
                          onEnd: () => {
                               wordIndex++
                               timeoutRef.current = setTimeout(speakNextWord, wordDelay)
@@ -140,7 +147,7 @@ export function useSpeechSynthesis() {
           setSpeaking(true)
 
           let sentenceIndex = 0
-          const baseDelay = options.baseDelay || 200
+          const baseDelay = options.baseDelay || 120
           const rate = options.rate || 1
 
           const speakNextSentence = () => {
@@ -153,7 +160,7 @@ export function useSpeechSynthesis() {
                     speak(sentences[sentenceIndex], {
                          voice: options.voice,
                          rate: rate,
-                         lang: options.lang || 'en-US',
+                         lang: options.lang || 'en-GB',
                          onEnd: () => {
                               sentenceIndex++
                               timeoutRef.current = setTimeout(speakNextSentence, baseDelay / rate)
@@ -192,10 +199,7 @@ export function useSpeechSynthesis() {
           }
      }, [supported])
 
-     // Get German voice
-     const getGermanVoice = useCallback(() => {
-          return voices.find(v => v.lang.startsWith('de')) || voices[0]
-     }, [voices])
+
 
      // Get Arabic voice
      const getArabicVoice = useCallback(() => {
@@ -204,7 +208,13 @@ export function useSpeechSynthesis() {
 
      // Get English voice
      const getEnglishVoice = useCallback(() => {
-          return voices.find(v => v.lang.startsWith('en')) || voices[0]
+          return (
+               voices.find(v => v.lang === 'en-GB') ||
+               voices.find(v => v.lang === 'en_US' || v.lang === 'en-US') ||
+               voices.find(v => v.lang.startsWith('en') && !/en-?IN/i.test(v.lang)) ||
+               voices.find(v => v.lang.startsWith('en')) ||
+               voices[0]
+          )
      }, [voices])
 
      return {
@@ -218,7 +228,7 @@ export function useSpeechSynthesis() {
           cancel,
           pause,
           resume,
-          getGermanVoice,
+
           getArabicVoice,
           getEnglishVoice,
      }

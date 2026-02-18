@@ -14,7 +14,7 @@ export function usePDFProcessor() {
 
     // Initialize IndexedDB for PDF storage
     const db = useMemo(() => {
-        const request = indexedDB.open('GermanPDFDB', 1)
+        const request = indexedDB.open('IELTSPDFDB', 1)
         return new Promise((resolve, reject) => {
             request.onsuccess = (event) => {
                 const db = event.target.result
@@ -44,16 +44,16 @@ export function usePDFProcessor() {
                 disableStream: true // Performance optimization
             })
             const pdf = await loadingTask.promise
-            
+
             let fullText = ''
             const pages = []
-            
+
             // Process pages in chunks to prevent UI blocking
             const CHUNK_SIZE = 5 // Process 5 pages at a time
-            
+
             for (let i = 1; i <= pdf.numPages; i += CHUNK_SIZE) {
                 const pagePromises = []
-                
+
                 for (let j = 0; j < CHUNK_SIZE && (i + j) <= pdf.numPages; j++) {
                     const pageNum = i + j
                     pagePromises.push(
@@ -65,13 +65,13 @@ export function usePDFProcessor() {
                         )
                     )
                 }
-                
+
                 const pageResults = await Promise.all(pagePromises)
-                
+
                 pageResults.forEach((textContent, index) => {
                     const pageNum = i + index
                     const pageText = textContent.items.map(item => item.str).join(' ')
-                    
+
                     fullText += pageText + '\n'
                     pages.push({
                         pageNumber: pageNum,
@@ -79,7 +79,7 @@ export function usePDFProcessor() {
                         wordCount: pageText.split(/\s+/).length
                     })
                 })
-                
+
                 // Allow UI to breathe between chunks
                 if (i + CHUNK_SIZE <= pdf.numPages) {
                     await new Promise(resolve => setTimeout(resolve, 10))
@@ -107,7 +107,7 @@ export function usePDFProcessor() {
     // Quick scan for ultra-compact first reply
     const quickScan = useCallback(async (pdfId) => {
         setProcessingState({ isLoading: true, progress: 0, error: null })
-        
+
         try {
             // Check if PDF is already processed and cached
             const cachedResult = await getCachedPDF(pdfId)
@@ -116,26 +116,26 @@ export function usePDFProcessor() {
                 return cachedResult.quickScan
             }
 
-            // Load PDF from German folder (simulate - in real app, this would be file input)
+            // Load PDF from folder (simulate - in real app, this would be file input)
             const pdfFile = await loadPDFFile(pdfId)
             const pdfContent = await extractTextFromPDF(pdfFile)
-            
+
             // Process first few pages for quick scan
             const firstPages = pdfContent.pages.slice(0, QUICK_SCAN_PAGES)
             const firstPagesText = firstPages.map(page => page.text).join(' ')
-            
+
             // Generate summary
             const summary = generateSummary(firstPagesText)
-            
+
             // Extract keywords
             const keywords = extractKeywords(firstPagesText)
-            
+
             // Assess difficulty
             const difficulty = assessDifficulty(firstPagesText)
-            
+
             // Estimate reading time
             const estimatedReadTime = estimateReadingTime(pdfContent.wordCount)
-            
+
             // Recommend level
             const recommendedLevel = recommendLevel(difficulty)
 
@@ -151,7 +151,7 @@ export function usePDFProcessor() {
 
             // Cache the full PDF content
             await cachePDFContent(pdfId, pdfContent)
-            
+
             // Cache quick scan result
             await cacheQuickScanResult(pdfId, quickScanResult)
 
@@ -180,21 +180,21 @@ export function usePDFProcessor() {
 
             const results = []
             const queryWords = query.toLowerCase().split(/\s+/)
-            
+
             // Search through pages - optimized with batching
             const BATCH_SIZE = 10 // Process 10 pages at a time
-            
+
             for (let i = 0; i < pdfContent.pages.length; i += BATCH_SIZE) {
                 const batch = pdfContent.pages.slice(i, i + BATCH_SIZE)
-                
+
                 batch.forEach((page, batchIndex) => {
                     const pageIndex = i + batchIndex
                     const pageText = page.text.toLowerCase()
-                    
+
                     // Find matches
                     let matchCount = 0
                     let excerpt = ''
-                    
+
                     for (const word of queryWords) {
                         const regex = new RegExp(word, 'gi')
                         const matches = pageText.match(regex)
@@ -252,9 +252,9 @@ export function usePDFProcessor() {
             const chunk = chunks[i]
             const result = await processChunk(chunk)
             results.push(result)
-            
+
             onProgress((i + 1) / chunks.length * 100)
-            
+
             // Allow UI to breathe
             await new Promise(resolve => setTimeout(resolve, 50))
         }
@@ -266,8 +266,8 @@ export function usePDFProcessor() {
     const generateSummary = (text) => {
         const sentences = text.split(/[.!?]+/).filter(s => s.trim().length > 0)
         const firstSentence = sentences[0] || ''
-        
-        return firstSentence.length > 150 
+
+        return firstSentence.length > 150
             ? firstSentence.substring(0, 147) + '...'
             : firstSentence
     }
@@ -275,19 +275,19 @@ export function usePDFProcessor() {
     const extractKeywords = (text) => {
         // Simple keyword extraction - in real app, this would be more sophisticated
         const commonWords = new Set(['der', 'die', 'das', 'und', 'in', 'ist', 'mit', 'für', 'auf', 'von', 'zu', 'den', 'dem', 'des', 'im'])
-        
+
         const words = text.toLowerCase()
             .replace(/[^\w\s]/g, '')
             .split(/\s+/)
             .filter(word => word.length > 2 && !commonWords.has(word))
-        
+
         const wordFreq = {}
         words.forEach(word => {
             wordFreq[word] = (wordFreq[word] || 0) + 1
         })
 
         return Object.entries(wordFreq)
-            .sort(([,a], [,b]) => b - a)
+            .sort(([, a], [, b]) => b - a)
             .map(([word]) => word)
     }
 
@@ -296,16 +296,16 @@ export function usePDFProcessor() {
         const sentences = text.split(/[.!?]+/)
         const avgSentenceLength = sentences.reduce((sum, s) => sum + s.split(/\s+/).length, 0) / sentences.length
         const complexWords = text.match(/\b\w{10,}\b/g) || []
-        
+
         let difficulty = 1
         if (avgSentenceLength > 15) difficulty += 0.5
         if (complexWords.length > sentences.length * 0.3) difficulty += 0.5
-        
+
         return Math.min(difficulty, 5)
     }
 
     const estimateReadingTime = (wordCount) => {
-        const averageWPM = 150 // Words per minute for German learners
+        const averageWPM = 200 // Words per minute for IELTS learners
         const minutes = wordCount / averageWPM
         return minutes < 1 ? '< 1 min' : `${Math.ceil(minutes)} min`
     }
@@ -331,7 +331,7 @@ export function usePDFProcessor() {
     const splitPDFIntoChunks = (pdfFile) => {
         const chunks = []
         const chunkSize = CHUNK_SIZE
-        
+
         // For simulation, create chunks based on size
         for (let i = 0; i < pdfFile.size; i += chunkSize) {
             chunks.push({
@@ -340,7 +340,7 @@ export function usePDFProcessor() {
                 index: i / chunkSize
             })
         }
-        
+
         return chunks
     }
 
@@ -363,7 +363,7 @@ export function usePDFProcessor() {
     // IndexedDB helpers - optimized with error handling and caching
     const cachePDFContent = async (id, content) => {
         if (!db) return Promise.reject(new Error('Database not initialized'))
-        
+
         return new Promise((resolve, reject) => {
             try {
                 const transaction = db.transaction(['pdfContents'], 'readwrite')
@@ -384,7 +384,7 @@ export function usePDFProcessor() {
 
     const getCachedPDF = async (id) => {
         if (!db) return Promise.resolve(null)
-        
+
         return new Promise((resolve, reject) => {
             try {
                 const transaction = db.transaction(['pdfContents'], 'readonly')
@@ -408,7 +408,7 @@ export function usePDFProcessor() {
 
     const cacheQuickScanResult = async (id, result) => {
         if (!db) return Promise.reject(new Error('Database not initialized'))
-        
+
         return new Promise((resolve, reject) => {
             try {
                 const transaction = db.transaction(['pdfContents'], 'readwrite')
@@ -449,7 +449,9 @@ export function usePDFProcessor() {
             throw new Error(`PDF with id ${pdfId} not found`)
         }
 
-        return new File(['Mock PDF content'], pdfInfo.name, {
+        const FileCtor = typeof window !== 'undefined' && window.File ? window.File : null
+        if (!FileCtor) throw new Error('File API not supported')
+        return new FileCtor(['Mock PDF content'], pdfInfo.name, {
             type: 'application/pdf',
             lastModified: Date.now()
         })

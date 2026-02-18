@@ -57,7 +57,11 @@ export function useVocabularySearch(vocabularyDatabase, userProgress = {}) {
   useEffect(() => {
     const savedHistory = localStorage.getItem('vocabulary-search-history')
     if (savedHistory) {
-      setSearchHistory(JSON.parse(savedHistory))
+      try {
+        setSearchHistory(JSON.parse(savedHistory))
+      } catch (error) {
+        console.error('Failed to parse search history:', error)
+      }
     }
   }, [])
 
@@ -71,7 +75,7 @@ export function useVocabularySearch(vocabularyDatabase, userProgress = {}) {
   // Advanced search with multiple criteria
   const searchVocabulary = useCallback((term, customFilters = {}, customSort = {}) => {
     setIsSearching(true)
-    
+
     try {
       const {
         term: searchQuery = searchTerm,
@@ -95,6 +99,7 @@ export function useVocabularySearch(vocabularyDatabase, userProgress = {}) {
       results = applySorting(results, searchSort, searchOrder, searchQuery, userProgress)
 
       setSearchResults(results)
+      setSearchTerm(searchQuery)
 
       // Add to search history
       if (searchQuery && searchQuery.trim() && !searchHistory.includes(searchQuery.trim())) {
@@ -126,30 +131,38 @@ export function useVocabularySearch(vocabularyDatabase, userProgress = {}) {
         const searchLower = searchTerm.toLowerCase()
         const searchExact = options[SEARCH_OPTIONS.EXACT_MATCH] ? searchTerm : searchLower
 
-        // Search in German word
+        // Search in Word
         if (options[SEARCH_OPTIONS.CASE_SENSITIVE]) {
-          if (word.german.includes(searchExact)) {
+          if (word.word.includes(searchExact)) {
             relevanceScore += 10
-            matches.push({ field: 'german', text: word.german })
+            matches.push({ field: 'word', text: word.word })
           }
         } else {
-          if (word.german.toLowerCase().includes(searchLower)) {
+          if (word.word.toLowerCase().includes(searchLower)) {
             relevanceScore += 10
-            matches.push({ field: 'german', text: word.german })
+            matches.push({ field: 'word', text: word.word })
           }
         }
 
-        // Search in English translation
-        if (word.english.toLowerCase().includes(searchLower)) {
+        // Search in Definition
+        if (word.definition.toLowerCase().includes(searchLower)) {
           relevanceScore += 8
-          matches.push({ field: 'english', text: word.english })
+          matches.push({ field: 'definition', text: word.definition })
         }
 
-        // Search in Arabic translation
-        if (word.arabic.includes(searchTerm)) {
-          relevanceScore += 8
-          matches.push({ field: 'arabic', text: word.arabic })
-        }
+        const translationFields = [
+          { key: 'arabic', score: 8 },
+          { key: 'hindi', score: 7 },
+          { key: 'chinese', score: 7 },
+          { key: 'urdu', score: 7 }
+        ]
+        translationFields.forEach(({ key, score }) => {
+          const value = word?.[key]
+          if (typeof value === 'string' && value.includes(searchTerm)) {
+            relevanceScore += score
+            matches.push({ field: key, text: value })
+          }
+        })
 
         // Search in pronunciation
         if (options[SEARCH_OPTIONS.INCLUDE_PRONUNCIATION] && word.pronunciation) {
@@ -161,13 +174,11 @@ export function useVocabularySearch(vocabularyDatabase, userProgress = {}) {
 
         // Search in examples
         if (options[SEARCH_OPTIONS.INCLUDE_EXAMPLES] && word.examples) {
-          Object.values(word.examples).forEach(examples => {
-            examples.forEach(example => {
-              if (example.toLowerCase().includes(searchLower)) {
-                relevanceScore += 3
-                matches.push({ field: 'examples', text: example })
-              }
-            })
+          word.examples.forEach(example => {
+            if (example.toLowerCase().includes(searchLower)) {
+              relevanceScore += 3
+              matches.push({ field: 'examples', text: example })
+            }
           })
         }
 
@@ -181,10 +192,10 @@ export function useVocabularySearch(vocabularyDatabase, userProgress = {}) {
 
         // Fuzzy search (simple implementation)
         if (options[SEARCH_OPTIONS.FUZZY_SEARCH]) {
-          const fuzzyScore = calculateFuzzyScore(word.german.toLowerCase(), searchLower)
+          const fuzzyScore = calculateFuzzyScore(word.word.toLowerCase(), searchLower)
           if (fuzzyScore > 0.7) {
             relevanceScore += fuzzyScore * 5
-            matches.push({ field: 'german', text: word.german, fuzzy: true })
+            matches.push({ field: 'word', text: word.word, fuzzy: true })
           }
         }
       })
@@ -220,20 +231,9 @@ export function useVocabularySearch(vocabularyDatabase, userProgress = {}) {
         if (!activeFilters.type.includes(word.type)) return false
       }
 
-      // Gender filter
-      if (activeFilters.gender && activeFilters.gender.length > 0) {
-        if (!word.gender || !activeFilters.gender.includes(word.gender)) return false
-      }
-
       // Difficulty filter
       if (activeFilters.difficulty && activeFilters.difficulty.length > 0) {
         if (!activeFilters.difficulty.includes(word.difficulty?.toString())) return false
-      }
-
-      // Frequency filter
-      if (activeFilters.frequency && activeFilters.frequency.length > 0) {
-        const wordFreq = word.frequency || 'unknown'
-        if (!activeFilters.frequency.includes(wordFreq)) return false
       }
 
       return true
@@ -247,7 +247,7 @@ export function useVocabularySearch(vocabularyDatabase, userProgress = {}) {
 
       switch (sortType) {
         case SORT_OPTIONS.ALPHABETICAL:
-          comparison = a.german.localeCompare(b.german, 'de')
+          comparison = a.word.localeCompare(b.word, 'en')
           break
 
         case SORT_OPTIONS.RELEVANCE:
@@ -259,27 +259,24 @@ export function useVocabularySearch(vocabularyDatabase, userProgress = {}) {
           break
 
         case SORT_OPTIONS.FREQUENCY:
-          const freqOrder = { high: 3, medium: 2, low: 1, unknown: 0 }
-          comparison = (freqOrder[b.frequency] || 0) - (freqOrder[a.frequency] || 0)
+          comparison = 0 // Removed frequency sort logic for simplicity unless frequency field exists
           break
 
-        case SORT_OPTIONS.LEVEL:
+        case SORT_OPTIONS.LEVEL: {
           const levelOrder = { A1: 1, A2: 2, B1: 3, B2: 4, C1: 5 }
           comparison = (levelOrder[a.level] || 0) - (levelOrder[b.level] || 0)
           break
+        }
 
-        case SORT_OPTIONS.RECENTLY_ADDED:
-          comparison = 0 // Would need timestamp data
-          break
-
-        case SORT_OPTIONS.MASTERY_LEVEL:
-          const aMastery = progress[a.german]?.mastery || 0
-          const bMastery = progress[b.german]?.mastery || 0
+        case SORT_OPTIONS.MASTERY_LEVEL: {
+          const aMastery = progress[a.word]?.mastery || 0
+          const bMastery = progress[b.word]?.mastery || 0
           comparison = aMastery - bMastery
           break
+        }
 
         default:
-          comparison = a.german.localeCompare(b.german, 'de')
+          comparison = a.word.localeCompare(b.word, 'en')
       }
 
       return order === 'desc' ? -comparison : comparison
@@ -321,29 +318,29 @@ export function useVocabularySearch(vocabularyDatabase, userProgress = {}) {
     searchTerms.forEach(term => {
       const searchLower = term.toLowerCase()
 
-      // Highlight German
-      if (word.german.toLowerCase().includes(searchLower)) {
-        highlights.german = word.german.replace(
+      // Highlight Word
+      if (word.word.toLowerCase().includes(searchLower)) {
+        highlights.word = word.word.replace(
           new RegExp(`(${term})`, 'gi'),
           '<mark>$1</mark>'
         )
       }
 
-      // Highlight English
-      if (word.english.toLowerCase().includes(searchLower)) {
-        highlights.english = word.english.replace(
+      // Highlight Definition
+      if (word.definition.toLowerCase().includes(searchLower)) {
+        highlights.definition = word.definition.replace(
           new RegExp(`(${term})`, 'gi'),
           '<mark>$1</mark>'
         )
       }
 
-      // Highlight Arabic
-      if (word.arabic.includes(term)) {
-        highlights.arabic = word.arabic.replace(
-          new RegExp(`(${term})`, 'g'),
-          '<mark>$1</mark>'
-        )
-      }
+      const highlightFields = ['arabic', 'hindi', 'chinese', 'urdu']
+      highlightFields.forEach((key) => {
+        const value = word?.[key]
+        if (typeof value === 'string' && value.includes(term)) {
+          highlights[key] = value.replace(new RegExp(`(${term})`, 'g'), '<mark>$1</mark>')
+        }
+      })
     })
 
     return highlights
@@ -354,11 +351,9 @@ export function useVocabularySearch(vocabularyDatabase, userProgress = {}) {
     const levels = [...new Set(vocabularyDatabase.map(w => w.level))].sort()
     const categories = [...new Set(vocabularyDatabase.map(w => w.category))].sort()
     const types = [...new Set(vocabularyDatabase.map(w => w.type))].sort()
-    const genders = [...new Set(vocabularyDatabase.map(w => w.gender).filter(Boolean))].sort()
     const difficulties = [...new Set(vocabularyDatabase.map(w => w.difficulty).filter(Boolean))].sort()
-    const frequencies = [...new Set(vocabularyDatabase.map(w => w.frequency).filter(Boolean))].sort()
 
-    return { levels, categories, types, genders, difficulties, frequencies }
+    return { levels, categories, types, difficulties }
   }, [vocabularyDatabase])
 
   // Clear all filters
@@ -387,16 +382,16 @@ export function useVocabularySearch(vocabularyDatabase, userProgress = {}) {
     const suggestions = []
 
     vocabularyDatabase.forEach(word => {
-      if (word.german.toLowerCase().startsWith(queryLower)) {
+      if (word.word.toLowerCase().startsWith(queryLower)) {
         suggestions.push({
-          text: word.german,
-          type: 'german',
+          text: word.word,
+          type: 'word',
           word: word
         })
-      } else if (word.english.toLowerCase().startsWith(queryLower)) {
+      } else if (word.definition.toLowerCase().startsWith(queryLower)) {
         suggestions.push({
-          text: word.english,
-          type: 'english',
+          text: word.definition,
+          type: 'definition',
           word: word
         })
       }
@@ -423,11 +418,14 @@ export function useVocabularySearch(vocabularyDatabase, userProgress = {}) {
     if (format === 'json') {
       return JSON.stringify(data, null, 2)
     } else if (format === 'csv') {
-      const headers = ['German', 'English', 'Arabic', 'Level', 'Category', 'Type', 'Relevance']
+      const headers = ['Word', 'Definition', 'Arabic', 'Hindi', 'Chinese', 'Urdu', 'Level', 'Category', 'Type', 'Relevance']
       const rows = searchResults.map(word => [
-        word.german,
-        word.english,
-        word.arabic,
+        word.word,
+        word.definition,
+        word.arabic || '',
+        word.hindi || '',
+        word.chinese || '',
+        word.urdu || '',
         word.level,
         word.category,
         word.type,
@@ -450,23 +448,23 @@ export function useVocabularySearch(vocabularyDatabase, userProgress = {}) {
 
     terms.forEach((term, index) => {
       const operator = operators[index - 1]?.toUpperCase().trim()
-      
+
       if (operator === 'NOT') {
-        results = results.filter(word => 
-          !word.german.toLowerCase().includes(term.toLowerCase()) &&
-          !word.english.toLowerCase().includes(term.toLowerCase())
+        results = results.filter(word =>
+          !word.word.toLowerCase().includes(term.toLowerCase()) &&
+          !word.definition.toLowerCase().includes(term.toLowerCase())
         )
       } else if (operator === 'AND') {
         results = results.filter(word =>
-          word.german.toLowerCase().includes(term.toLowerCase()) ||
-          word.english.toLowerCase().includes(term.toLowerCase())
+          word.word.toLowerCase().includes(term.toLowerCase()) ||
+          word.definition.toLowerCase().includes(term.toLowerCase())
         )
       } else if (operator === 'OR' || index === 0) {
         const tempResults = vocabularyDatabase.filter(word =>
-          word.german.toLowerCase().includes(term.toLowerCase()) ||
-          word.english.toLowerCase().includes(term.toLowerCase())
+          word.word.toLowerCase().includes(term.toLowerCase()) ||
+          word.definition.toLowerCase().includes(term.toLowerCase())
         )
-        
+
         if (index === 0) {
           results = tempResults
         } else {
@@ -480,7 +478,6 @@ export function useVocabularySearch(vocabularyDatabase, userProgress = {}) {
   }, [vocabularyDatabase])
 
   return {
-    // Search state
     searchTerm,
     searchResults,
     isSearching,
@@ -489,29 +486,17 @@ export function useVocabularySearch(vocabularyDatabase, userProgress = {}) {
     sortBy,
     sortOrder,
     searchOptions,
-
-    // Search methods
     searchVocabulary,
     advancedSearch,
     getSearchSuggestions,
-
-    // Filter methods
     setFilters,
     clearFilters,
     getFilterOptions,
-
-    // Sort methods
     setSortBy,
     setSortOrder,
-
-    // Options methods
     setSearchOptions,
-
-    // Utility methods
     clearSearch,
     exportResults,
-
-    // Constants
     SEARCH_OPTIONS,
     FILTER_CATEGORIES,
     SORT_OPTIONS

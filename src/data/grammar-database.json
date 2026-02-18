@@ -1,2162 +1,1258 @@
 {
   "grammarRules": [
     {
-      "id": "definite_articles",
-      "title": "Definite Articles",
+      "id": "simple_present_a1",
+      "title": "Simple Present Tense",
       "level": "A1",
-      "category": "articles",
-      "explanation": "German has three definite articles: der (masculine), die (feminine), das (neuter). The choice depends on the gender and case of the noun. Memorizing the gender of each noun is essential for correct German grammar.",
-      "germanExplanation": "Das Deutsche hat drei bestimmte Artikel: der (männlich), die (weiblich), das (sächlich). Die Wahl hängt vom Genus und Kasus des Substantivs ab. Das Einprägen des Genus jedes Substantivs ist für die korrekte deutsche Grammatik unerlässlich.",
+      "category": "Tenses",
+      "explanation": "The Simple Present is used for habits, facts, and general truths. Form: Subject + base verb (add -s/-es for he/she/it).",
       "examples": [
         {
-          "german": "der Mann",
-          "english": "the man",
-          "translation": "الرجل",
-          "pronunciation": "deʁ man"
+          "english": "I work every day.",
+          "translation": "أعمل كل يوم."
         },
         {
-          "german": "die Frau",
-          "english": "the woman",
-          "translation": "المرأة",
-          "pronunciation": "diː fʁaʊ"
+          "english": "She likes coffee.",
+          "translation": "هي تحب القهوة."
         },
         {
-          "german": "das Kind",
-          "english": "the child",
-          "translation": "الطفل",
-          "pronunciation": "das kɪnt"
-        },
-        {
-          "german": "der Tisch",
-          "english": "the table",
-          "translation": "الطاولة",
-          "pronunciation": "deʁ tɪʃ"
-        },
-        {
-          "german": "die Tür",
-          "english": "the door",
-          "translation": "الباب",
-          "pronunciation": "diː tyːʁ"
+          "english": "The sun rises in the east.",
+          "translation": "تشرق الشمس من الشرق."
         }
       ],
       "tables": [
         {
-          "title": "Definite Articles - Nominative Case",
+          "title": "Conjugation",
           "headers": [
-            "Gender",
-            "Article",
-            "Example"
-          ],
-          "rows": [
-            [
-              "Masculine",
-              "der",
-              "der Mann (the man)"
-            ],
-            [
-              "Feminine",
-              "die",
-              "die Frau (the woman)"
-            ],
-            [
-              "Neuter",
-              "das",
-              "das Kind (the child)"
-            ],
-            [
-              "Plural",
-              "die",
-              "die Kinder (the children)"
-            ]
-          ]
-        }
-      ],
-      "exercises": [
-        {
-          "id": "ex1",
-          "type": "multiple_choice",
-          "question": "Which article is used for 'Mann' (man)?",
-          "options": [
-            "der",
-            "die",
-            "das"
-          ],
-          "correct": "der",
-          "hint": "Mann is masculine",
-          "explanation": "Mann is a masculine noun, so it uses the definite article 'der'."
-        },
-        {
-          "id": "ex2",
-          "type": "fill_blank",
-          "question": "Complete: '___ Frau kommt aus der Schweiz.' (The woman comes from Switzerland.)",
-          "correct": "die",
-          "hint": "Frau is feminine",
-          "explanation": "Frau is a feminine noun, so it uses the definite article 'die'."
-        },
-        {
-          "id": "ex3",
-          "type": "translation",
-          "question": "Translate 'the book' to German:",
-          "correct": "das Buch",
-          "hint": "Buch is neuter",
-          "explanation": "Buch is a neuter noun, so it uses the definite article 'das'."
-        }
-      ]
-    },
-    {
-      "id": "indefinite_articles",
-      "title": "Indefinite Articles",
-      "level": "A1",
-      "category": "articles",
-      "explanation": "German indefinite articles correspond to 'a/an' in English. They are: ein (masculine), eine (feminine), ein (neuter). Note that masculine and neuter use the same form 'ein'.",
-      "examples": [
-        {
-          "german": "ein Mann",
-          "english": "a man",
-          "translation": "رجل",
-          "pronunciation": "aɪn man"
-        },
-        {
-          "german": "eine Frau",
-          "english": "a woman",
-          "translation": "امرأة",
-          "pronunciation": "aɪnə fʁaʊ"
-        },
-        {
-          "german": "ein Kind",
-          "english": "a child",
-          "translation": "طفل",
-          "pronunciation": "aɪn kɪnt"
-        }
-      ],
-      "tables": [
-        {
-          "title": "Indefinite Articles - Nominative Case",
-          "headers": [
-            "Gender",
-            "Article",
-            "Example"
-          ],
-          "rows": [
-            [
-              "Masculine",
-              "ein",
-              "ein Mann (a man)"
-            ],
-            [
-              "Feminine",
-              "eine",
-              "eine Frau (a woman)"
-            ],
-            [
-              "Neuter",
-              "ein",
-              "ein Kind (a child)"
-            ],
-            [
-              "Plural",
-              "keine",
-              "keine Kinder (no children)"
-            ]
-          ]
-        }
-      ],
-      "exercises": [
-        {
-          "id": "ex1",
-          "type": "multiple_choice",
-          "question": "Which indefinite article is used for 'Frau' (woman)?",
-          "options": [
-            "ein",
-            "eine",
-            "einen"
-          ],
-          "correct": "eine",
-          "hint": "Frau is feminine",
-          "explanation": "Frau is a feminine noun, so it uses the indefinite article 'eine'."
-        },
-        {
-          "id": "ex2",
-          "type": "fill_blank",
-          "question": "Complete: 'Ich habe ___ Buch.' (I have a book.)",
-          "correct": "ein",
-          "hint": "Buch is neuter",
-          "explanation": "Buch is a neuter noun, so it uses the indefinite article 'ein'."
-        }
-      ]
-    },
-    {
-      "id": "present_tense_regular",
-      "title": "Present Tense - Regular Verbs",
-      "level": "A1",
-      "category": "verbs",
-      "explanation": "Regular German verbs follow a predictable pattern in the present tense. Remove the -en ending and add the appropriate personal ending for each pronoun.",
-      "examples": [
-        {
-          "german": "ich lerne",
-          "english": "I learn",
-          "translation": "أتعلم",
-          "pronunciation": "ɪç ˈlɛʁnə"
-        },
-        {
-          "german": "du lernst",
-          "english": "you learn",
-          "translation": "تتعلم",
-          "pronunciation": "duː ˈlɛʁnst"
-        },
-        {
-          "german": "er/sie/es lernt",
-          "english": "he/she/it learns",
-          "translation": "يتعلم",
-          "pronunciation": "eːɐ̯/ziː/ɛs ˈlɛʁnt"
-        },
-        {
-          "german": "wir lernen",
-          "english": "we learn",
-          "translation": "نتعلم",
-          "pronunciation": "viːɐ̯ ˈlɛʁnən"
-        },
-        {
-          "german": "ihr lernt",
-          "english": "you (plural) learn",
-          "translation": "تتعلمون",
-          "pronunciation": "iːɐ̯ ˈlɛʁnt"
-        },
-        {
-          "german": "sie/Sie lernen",
-          "english": "they/you (formal) learn",
-          "translation": "يتعلمون/تتعلمون",
-          "pronunciation": "ziː/ziː ˈlɛʁnən"
-        }
-      ],
-      "tables": [
-        {
-          "title": "Regular Verb Conjugation - lernen (to learn)",
-          "headers": [
-            "Pronoun",
-            "Ending",
-            "Example"
-          ],
-          "rows": [
-            [
-              "ich",
-              "-e",
-              "ich lerne"
-            ],
-            [
-              "du",
-              "-st",
-              "du lernst"
-            ],
-            [
-              "er/sie/es",
-              "-t",
-              "er lernt"
-            ],
-            [
-              "wir",
-              "-en",
-              "wir lernen"
-            ],
-            [
-              "ihr",
-              "-t",
-              "ihr lernt"
-            ],
-            [
-              "sie/Sie",
-              "-en",
-              "sie lernen"
-            ]
-          ]
-        }
-      ],
-      "exercises": [
-        {
-          "id": "ex1",
-          "type": "conjugation",
-          "question": "Conjugate 'spielen' (to play) for 'du':",
-          "correct": "du spielst",
-          "hint": "Regular verb: stem + st",
-          "explanation": "Remove -en from spielen to get spiel-, then add -st for du."
-        },
-        {
-          "id": "ex2",
-          "type": "fill_blank",
-          "question": "Complete: 'Wir ___ Deutsch.' (We speak German.)",
-          "correct": "sprechen",
-          "hint": "wir uses the -en ending",
-          "explanation": "For wir, use the infinitive form with -en ending."
-        },
-        {
-          "id": "ex3",
-          "type": "sentence_building",
-          "question": "Create a sentence using 'arbeiten' (to work) in present tense:",
-          "correct": "Ich arbeite heute.",
-          "hint": "Subject + verb + object",
-          "explanation": "A basic German sentence follows Subject-Verb-Object order."
-        }
-      ]
-    },
-    {
-      "id": "present_tense_irregular",
-      "title": "Present Tense - Irregular Verbs",
-      "level": "A1",
-      "category": "verbs",
-      "explanation": "Some common German verbs are irregular in the present tense. They often have vowel changes in the 2nd and 3rd person singular (du and er/sie/es).",
-      "examples": [
-        {
-          "german": "ich sehe",
-          "english": "I see",
-          "translation": "أرى",
-          "pronunciation": "ɪç ˈzeːə"
-        },
-        {
-          "german": "du siehst",
-          "english": "you see",
-          "translation": "ترى",
-          "pronunciation": "duː ˈziːst"
-        },
-        {
-          "german": "er sieht",
-          "english": "he sees",
-          "translation": "يرى",
-          "pronunciation": "eːɐ̯ ˈziːt"
-        },
-        {
-          "german": "ich spreche",
-          "english": "I speak",
-          "translation": "أتحدث",
-          "pronunciation": "ɪç ˈʃprɛxə"
-        },
-        {
-          "german": "du sprichst",
-          "english": "you speak",
-          "translation": "تتحدث",
-          "pronunciation": "duː ˈʃprɪçst"
-        },
-        {
-          "german": "er spricht",
-          "english": "he speaks",
-          "translation": "يتحدث",
-          "pronunciation": "eːɐ̯ ˈʃprɪçt"
-        }
-      ],
-      "tables": [
-        {
-          "title": "Common Irregular Verbs",
-          "headers": [
-            "Infinitive",
-            "ich",
-            "du",
-            "er/sie/es",
-            "wir",
-            "ihr",
-            "sie/Sie"
-          ],
-          "rows": [
-            [
-              "sehen (to see)",
-              "sehe",
-              "siehst",
-              "sieht",
-              "sehen",
-              "seht",
-              "sehen"
-            ],
-            [
-              "sprechen (to speak)",
-              "spreche",
-              "sprichst",
-              "spricht",
-              "sprechen",
-              "sprecht",
-              "sprechen"
-            ],
-            [
-              "lesen (to read)",
-              "lese",
-              "liest",
-              "liest",
-              "lesen",
-              "lest",
-              "lesen"
-            ],
-            [
-              "gehen (to go)",
-              "gehe",
-              "gehst",
-              "geht",
-              "gehen",
-              "geht",
-              "gehen"
-            ]
-          ]
-        }
-      ],
-      "exercises": [
-        {
-          "id": "ex1",
-          "type": "conjugation",
-          "question": "Conjugate 'lesen' (to read) for 'er':",
-          "correct": "er liest",
-          "hint": "Vowel change: e → ie",
-          "explanation": "Lesen has a vowel change from e to ie in the 3rd person singular."
-        },
-        {
-          "id": "ex2",
-          "type": "fill_blank",
-          "question": "Complete: 'Ich ___ ein Buch.' (I read a book.)",
-          "correct": "lese",
-          "hint": "ich form of lesen",
-          "explanation": "For ich, lesen becomes lese without vowel change."
-        }
-      ]
-    },
-    {
-      "id": "noun_plurals",
-      "title": "Noun Plurals",
-      "level": "A1",
-      "category": "nouns",
-      "explanation": "German nouns have several plural formation patterns. There are no universal rules, but common patterns include adding -e, -er, -en, or -s, sometimes with umlaut changes.",
-      "examples": [
-        {
-          "german": "der Tisch → die Tische",
-          "english": "the table → the tables",
-          "translation": "الطاولة → الطاولات"
-        },
-        {
-          "german": "das Buch → die Bücher",
-          "english": "the book → the books",
-          "translation": "الكتاب → الكتب"
-        },
-        {
-          "german": "die Frau → die Frauen",
-          "english": "the woman → the women",
-          "translation": "المرأة → النساء"
-        },
-        {
-          "german": "das Kind → die Kinder",
-          "english": "the child → the children",
-          "translation": "الطفل → الأطفال"
-        }
-      ],
-      "tables": [
-        {
-          "title": "Common Plural Patterns",
-          "headers": [
-            "Pattern",
-            "Example",
-            "Notes"
-          ],
-          "rows": [
-            [
-              "-e",
-              "der Tisch → die Tische",
-              "Most masculine nouns"
-            ],
-            [
-              "-er",
-              "das Kind → die Kinder",
-              "Often with umlaut, mostly neuter"
-            ],
-            [
-              "-en/-n",
-              "die Frau → die Frauen",
-              "Most feminine nouns"
-            ],
-            [
-              "-s",
-              "das Auto → die Autos",
-              "Foreign words, ending in consonant"
-            ]
-          ]
-        }
-      ],
-      "exercises": [
-        {
-          "id": "ex1",
-          "type": "plural_formation",
-          "question": "What is the plural of 'der Stuhl' (chair)?",
-          "correct": "die Stühle",
-          "hint": "Umlaut change: u → ü + -e",
-          "explanation": "Stuhl follows the -e pattern with umlaut change."
-        },
-        {
-          "id": "ex2",
-          "type": "fill_blank",
-          "question": "Complete: 'Das Auto → ___ Autos' (The car → the cars)",
-          "correct": "die",
-          "hint": "All plurals use 'die'",
-          "explanation": "All plural nouns in German use the definite article 'die'."
-        }
-      ]
-    },
-    {
-      "id": "possessive_articles",
-      "title": "Possessive Articles",
-      "level": "A2",
-      "category": "articles",
-      "explanation": "Possessive articles indicate ownership or relationship. They change based on the gender of the possessed noun and the person who possesses it.",
-      "examples": [
-        {
-          "german": "mein Buch",
-          "english": "my book",
-          "translation": "كتابي",
-          "pronunciation": "maɪn buːx"
-        },
-        {
-          "german": "deine Frau",
-          "english": "your (informal) woman",
-          "translation": "امرأتك",
-          "pronunciation": "daɪnə fʁaʊ"
-        },
-        {
-          "german": "sein Kind",
-          "english": "his/its child",
-          "translation": "طفله",
-          "pronunciation": "zaɪn kɪnt"
-        },
-        {
-          "german": "ihr Haus",
-          "english": "her/their house",
-          "translation": "بيتها/بيتهم",
-          "pronunciation": "iːɐ̯ haʊs"
-        }
-      ],
-      "tables": [
-        {
-          "title": "Possessive Articles - Nominative Case",
-          "headers": [
-            "Person",
-            "Masculine",
-            "Feminine",
-            "Neuter",
-            "Plural"
-          ],
-          "rows": [
-            [
-              "my (ich)",
-              "mein",
-              "meine",
-              "mein",
-              "meine"
-            ],
-            [
-              "your (du)",
-              "dein",
-              "deine",
-              "dein",
-              "deine"
-            ],
-            [
-              "his (er)",
-              "sein",
-              "seine",
-              "sein",
-              "seine"
-            ],
-            [
-              "her (sie)",
-              "ihr",
-              "ihre",
-              "ihr",
-              "ihre"
-            ],
-            [
-              "our (wir)",
-              "unser",
-              "unsere",
-              "unser",
-              "unsere"
-            ],
-            [
-              "your (ihr)",
-              "euer",
-              "eure",
-              "euer",
-              "eure"
-            ],
-            [
-              "their (sie)",
-              "ihr",
-              "ihre",
-              "ihr",
-              "ihre"
-            ],
-            [
-              "your (Sie)",
-              "Ihr",
-              "Ihre",
-              "Ihr",
-              "Ihre"
-            ]
-          ]
-        }
-      ],
-      "exercises": [
-        {
-          "id": "ex1",
-          "type": "multiple_choice",
-          "question": "Which possessive article is correct: '___ Hund' (my dog)?",
-          "options": [
-            "mein",
-            "meine",
-            "meinen"
-          ],
-          "correct": "mein",
-          "hint": "Hund is masculine",
-          "explanation": "Hund is masculine, so it uses 'mein' in the nominative case."
-        },
-        {
-          "id": "ex2",
-          "type": "fill_blank",
-          "question": "Complete: 'Das ist ___ Katze.' (This is your cat.)",
-          "correct": "deine",
-          "hint": "Katze is feminine",
-          "explanation": "Katze is feminine, so it uses 'deine' for informal 'your'."
-        }
-      ]
-    },
-    {
-      "id": "accusative_case",
-      "title": "Accusative Case",
-      "level": "A2",
-      "category": "cases",
-      "explanation": "The accusative case is used for direct objects (the receiver of the action). Only masculine articles change in the accusative case.",
-      "examples": [
-        {
-          "german": "Ich sehe den Mann.",
-          "english": "I see the man.",
-          "translation": "أرى الرجل."
-        },
-        {
-          "german": "Ich kaufe die Tasche.",
-          "english": "I buy the bag.",
-          "translation": "أشتري الحقيبة."
-        },
-        {
-          "german": "Ich lese das Buch.",
-          "english": "I read the book.",
-          "translation": "أقرأ الكتاب."
-        }
-      ],
-      "tables": [
-        {
-          "title": "Definite Articles - Accusative Case",
-          "headers": [
-            "Gender",
-            "Nominative",
-            "Accusative"
-          ],
-          "rows": [
-            [
-              "Masculine",
-              "der",
-              "den"
-            ],
-            [
-              "Feminine",
-              "die",
-              "die"
-            ],
-            [
-              "Neuter",
-              "das",
-              "das"
-            ],
-            [
-              "Plural",
-              "die",
-              "die"
-            ]
-          ]
-        }
-      ],
-      "exercises": [
-        {
-          "id": "ex1",
-          "type": "multiple_choice",
-          "question": "Complete: 'Ich habe ___ Apfel.' (I have the apple.)",
-          "options": [
-            "der",
-            "den",
-            "das"
-          ],
-          "correct": "den",
-          "hint": "Apfel is masculine and it's a direct object",
-          "explanation": "Apfel is masculine and is the direct object, so it uses 'den' in the accusative case."
-        },
-        {
-          "id": "ex2",
-          "type": "sentence_building",
-          "question": "Create a sentence with 'kaufen' (to buy) and 'Stuhl' (chair):",
-          "correct": "Ich kaufe den Stuhl.",
-          "hint": "Subject + verb + accusative object",
-          "explanation": "Stuhl is masculine and is the direct object, so it uses 'den'."
-        }
-      ]
-    },
-    {
-      "id": "separable_verbs",
-      "title": "Separable Verbs",
-      "level": "A2",
-      "category": "verbs",
-      "explanation": "Separable verbs have prefixes that detach from the main verb and move to the end of the sentence in the present tense. Common prefixes include an-, auf-, aus-, ein-, mit-, nach-, vor-, zu-.",
-      "examples": [
-        {
-          "german": "Ich stehe früh auf.",
-          "english": "I get up early.",
-          "translation": "أستيقظ مبكرًا."
-        },
-        {
-          "german": "Er kommt heute an.",
-          "english": "He arrives today.",
-          "translation": "يصل اليوم."
-        },
-        {
-          "german": "Wir gehen morgen aus.",
-          "english": "We go out tomorrow.",
-          "translation": "نخرج غدًا."
-        },
-        {
-          "german": "Sie ruf mich an.",
-          "english": "She calls me.",
-          "translation": "هي تتصل بي."
-        }
-      ],
-      "tables": [
-        {
-          "title": "Common Separable Prefixes",
-          "headers": [
-            "Prefix",
-            "Meaning",
-            "Example"
-          ],
-          "rows": [
-            [
-              "auf-",
-              "up, open",
-              "aufstehen (to get up)"
-            ],
-            [
-              "aus-",
-              "out, from",
-              "ausgehen (to go out)"
-            ],
-            [
-              "ein-",
-              "in, into",
-              "einkaufen (to shop)"
-            ],
-            [
-              "mit-",
-              "with",
-              "mitkommen (to come along)"
-            ],
-            [
-              "an-",
-              "at, on",
-              "anrufen (to call)"
-            ]
-          ]
-        }
-      ],
-      "exercises": [
-        {
-          "id": "ex1",
-          "type": "sentence_building",
-          "question": "Create a sentence with 'anrufen' (to call):",
-          "correct": "Ich rufe dich an.",
-          "hint": "Prefix goes to the end",
-          "explanation": "In anrufen, the prefix an- separates and goes to the end."
-        },
-        {
-          "id": "ex2",
-          "type": "fill_blank",
-          "question": "Complete: 'Wir ___ heute ein.' (We shop today.)",
-          "correct": "kaufen",
-          "hint": "einkaufen = to shop",
-          "explanation": "The main verb kaufen stays in position 2, ein- goes to the end."
-        }
-      ]
-    },
-    {
-      "id": "modal_verbs",
-      "title": "Modal Verbs",
-      "level": "A2",
-      "category": "verbs",
-      "explanation": "Modal verbs express ability, permission, obligation, or desire. The main modal verbs are: können (can), wollen (want), müssen (must), dürfen (may), sollen (should), mögen (like). They are conjugated irregularly and are followed by an infinitive at the end of the clause.",
-      "examples": [
-        {
-          "german": "Ich kann Deutsch sprechen.",
-          "english": "I can speak German.",
-          "translation": "يمكنني التحدث بالألمانية."
-        },
-        {
-          "german": "Er will nach Berlin fahren.",
-          "english": "He wants to go to Berlin.",
-          "translation": "يريد الذهاب إلى برلين."
-        },
-        {
-          "german": "Wir müssen lernen.",
-          "english": "We must learn.",
-          "translation": "يجب أن نتعلم."
-        },
-        {
-          "german": "Du darfst hier parken.",
-          "english": "You may park here.",
-          "translation": "يسمح لك بالوقوف هنا."
-        }
-      ],
-      "tables": [
-        {
-          "title": "Modal Verb Conjugation",
-          "headers": [
+            "Subject",
             "Verb",
-            "ich",
-            "du",
-            "er/sie/es",
-            "wir",
-            "ihr",
-            "sie/Sie"
+            "Example"
           ],
           "rows": [
             [
-              "können (can)",
-              "kann",
-              "kannst",
-              "kann",
-              "können",
-              "könnt",
-              "können"
+              "I/You/We/They",
+              "work",
+              "I work"
             ],
             [
-              "wollen (want)",
-              "will",
-              "willst",
-              "will",
-              "wollen",
-              "wollt",
-              "wollen"
-            ],
-            [
-              "müssen (must)",
-              "muss",
-              "musst",
-              "muss",
-              "müssen",
-              "müsst",
-              "müssen"
-            ],
-            [
-              "dürfen (may)",
-              "darf",
-              "darfst",
-              "darf",
-              "dürfen",
-              "dürft",
-              "dürfen"
-            ],
-            [
-              "sollen (should)",
-              "soll",
-              "sollst",
-              "soll",
-              "sollen",
-              "sollt",
-              "sollen"
-            ],
-            [
-              "mögen (like)",
-              "mag",
-              "magst",
-              "mag",
-              "mögen",
-              "mögt",
-              "mögen"
+              "He/She/It",
+              "works",
+              "She works"
             ]
           ]
         }
       ],
       "exercises": [
         {
-          "id": "ex1",
-          "type": "conjugation",
-          "question": "Conjugate 'können' for 'du':",
-          "correct": "du kannst",
-          "hint": "Irregular conjugation",
-          "explanation": "Können has an irregular conjugation: du kannst."
+          "id": "sp_a1_1",
+          "type": "multiple_choice",
+          "question": "She ___ to school every day.",
+          "options": [
+            "go",
+            "goes",
+            "going",
+            "gone"
+          ],
+          "correct": "goes",
+          "explanation": "With third person singular (he/she/it), we add -s or -es to the base verb."
         },
         {
-          "id": "ex2",
-          "type": "sentence_building",
-          "question": "Create a sentence with 'wollen' and 'spielen':",
-          "correct": "Ich will spielen.",
-          "hint": "Modal verb + infinitive at end",
-          "explanation": "Modal verbs are followed by an infinitive at the end of the clause."
+          "id": "sp_a1_2",
+          "type": "multiple_choice",
+          "question": "They ___ English at home.",
+          "options": [
+            "speaks",
+            "speak",
+            "speaking",
+            "spoke"
+          ],
+          "correct": "speak",
+          "explanation": "With plural subjects (they), we use the base form of the verb without -s."
+        },
+        {
+          "id": "sp_a1_3",
+          "type": "multiple_choice",
+          "question": "Water ___ at 100 degrees Celsius.",
+          "options": [
+            "boil",
+            "boils",
+            "boiling",
+            "boiled"
+          ],
+          "correct": "boils",
+          "explanation": "For general truths and facts, we use simple present. 'Water' is singular, so we add -s."
         }
       ]
     },
     {
-      "id": "perfect_tense",
-      "title": "Perfect Tense (Perfekt)",
-      "level": "A2",
-      "category": "verbs",
-      "explanation": "The perfect tense is used for completed actions in the past. It's formed with an auxiliary verb (haben or sein) in the present tense plus the past participle. Most verbs use haben, but verbs of motion, state change, or certain special verbs use sein.",
+      "id": "present_continuous_a1",
+      "title": "Present Continuous Tense",
+      "level": "A1",
+      "category": "Tenses",
+      "explanation": "Used for actions happening now or around now. Form: am/is/are + verb-ing.",
       "examples": [
         {
-          "german": "Ich habe gegessen.",
-          "english": "I have eaten.",
-          "translation": "لقد أكلت."
+          "english": "I am studying now.",
+          "translation": "أنا أدرس الآن."
         },
         {
-          "german": "Er ist nach Hause gegangen.",
-          "english": "He has gone home.",
-          "translation": "لقد ذهب إلى المنزل."
-        },
-        {
-          "german": "Wir haben Deutsch gelernt.",
-          "english": "We have learned German.",
-          "translation": "لقد تعلمنا الألمانية."
-        },
-        {
-          "german": "Sie ist krank gewesen.",
-          "english": "She has been sick.",
-          "translation": "لقد كانت مريضة."
+          "english": "They are playing football.",
+          "translation": "هم يلعبون كرة القدم."
         }
       ],
       "tables": [
         {
-          "title": "Past Participle Formation",
+          "title": "Structure",
           "headers": [
-            "Verb Type",
-            "Rule",
-            "Example"
+            "Subject",
+            "Be verb",
+            "Verb-ing"
+          ],
+          "rows": [
+            [
+              "I",
+              "am",
+              "working"
+            ],
+            [
+              "He/She/It",
+              "is",
+              "working"
+            ],
+            [
+              "You/We/They",
+              "are",
+              "working"
+            ]
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "pc_a1_1",
+          "type": "multiple_choice",
+          "question": "Look! The children ___ in the park.",
+          "options": [
+            "play",
+            "plays",
+            "are playing",
+            "is playing"
+          ],
+          "correct": "are playing",
+          "explanation": "Use present continuous for actions happening right now. 'Children' is plural, so we use 'are'."
+        },
+        {
+          "id": "pc_a1_2",
+          "type": "multiple_choice",
+          "question": "She ___ her homework at the moment.",
+          "options": [
+            "do",
+            "does",
+            "is doing",
+            "are doing"
+          ],
+          "correct": "is doing",
+          "explanation": "'At the moment' indicates present continuous. 'She' requires 'is'."
+        }
+      ]
+    },
+    {
+      "id": "articles_a1",
+      "title": "Articles: A, An, The",
+      "level": "A1",
+      "category": "Articles",
+      "explanation": "Use 'a' before consonant sounds, 'an' before vowel sounds, and 'the' for specific things.",
+      "examples": [
+        {
+          "english": "I have a car.",
+          "translation": "لدي سيارة."
+        },
+        {
+          "english": "She is an engineer.",
+          "translation": "هي مهندسة."
+        },
+        {
+          "english": "The sun is bright.",
+          "translation": "الشمس مشرقة."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "art_a1_1",
+          "type": "multiple_choice",
+          "question": "I need ___ umbrella.",
+          "options": [
+            "a",
+            "an",
+            "the",
+            "no article"
+          ],
+          "correct": "an",
+          "explanation": "Use 'an' before words starting with vowel sounds. 'Umbrella' starts with 'u' (vowel sound)."
+        },
+        {
+          "id": "art_a1_2",
+          "type": "multiple_choice",
+          "question": "___ book on the table is mine.",
+          "options": [
+            "A",
+            "An",
+            "The",
+            "No article"
+          ],
+          "correct": "The",
+          "explanation": "Use 'the' when referring to a specific item that both speaker and listener know about."
+        }
+      ]
+    },
+    {
+      "id": "simple_past_a2",
+      "title": "Simple Past Tense",
+      "level": "A2",
+      "category": "Tenses",
+      "explanation": "Used for completed actions in the past. Regular verbs add -ed; irregular verbs have special forms.",
+      "examples": [
+        {
+          "english": "I visited Paris last year.",
+          "translation": "زرت باريس العام الماضي."
+        },
+        {
+          "english": "She went to the market yesterday.",
+          "translation": "ذهبت إلى السوق أمس."
+        }
+      ],
+      "tables": [
+        {
+          "title": "Regular vs Irregular",
+          "headers": [
+            "Type",
+            "Base",
+            "Past"
           ],
           "rows": [
             [
               "Regular",
-              "ge- + stem + -t",
-              "machen → gemacht"
+              "walk",
+              "walked"
+            ],
+            [
+              "Regular",
+              "study",
+              "studied"
             ],
             [
               "Irregular",
-              "ge- + stem + -en",
-              "gehen → gegangen"
+              "go",
+              "went"
             ],
             [
-              "Separable",
-              "ge- + prefix + stem + -t/en",
-              "anrufen → angerufen"
-            ],
-            [
-              "Inseparable",
-              "prefix + stem + -t/en",
-              "verstehen → verstanden"
-            ],
-            [
-              "Ending in -ieren",
-              "No ge-",
-              "studieren → studiert"
+              "Irregular",
+              "eat",
+              "ate"
             ]
           ]
         }
       ],
       "exercises": [
         {
-          "id": "ex1",
+          "id": "sp_a2_1",
           "type": "multiple_choice",
-          "question": "Which auxiliary verb is correct: 'Ich ___ gegessen.'?",
+          "question": "I ___ to the cinema last night.",
           "options": [
-            "habe",
-            "bin",
-            "ist"
+            "go",
+            "goes",
+            "went",
+            "going"
           ],
-          "correct": "habe",
-          "hint": "essen uses haben",
-          "explanation": "Essen is a regular verb that uses haben as the auxiliary."
+          "correct": "went",
+          "explanation": "'Last night' indicates past time. 'Go' is irregular, past form is 'went'."
         },
         {
-          "id": "ex2",
-          "type": "fill_blank",
-          "question": "Complete: 'Er ___ nach Berlin gefahren.' (He has gone to Berlin.)",
-          "correct": "ist",
-          "hint": "fahren is a verb of motion",
-          "explanation": "Fahren is a verb of motion, so it uses sein as the auxiliary."
+          "id": "sp_a2_2",
+          "type": "multiple_choice",
+          "question": "They ___ their homework yesterday.",
+          "options": [
+            "finish",
+            "finished",
+            "finishing",
+            "finishes"
+          ],
+          "correct": "finished",
+          "explanation": "'Finish' is a regular verb. Add -ed for past tense."
+        },
+        {
+          "id": "sp_a2_3",
+          "type": "multiple_choice",
+          "question": "She ___ a delicious cake for the party.",
+          "options": [
+            "make",
+            "makes",
+            "made",
+            "making"
+          ],
+          "correct": "made",
+          "explanation": "'Make' is irregular. The past form is 'made'."
         }
       ]
     },
     {
-      "id": "dative_case",
-      "title": "Dative Case",
+      "id": "comparatives_a2",
+      "title": "Comparative and Superlative Adjectives",
+      "level": "A2",
+      "category": "Adjectives",
+      "explanation": "Comparatives compare two things (add -er or use 'more'). Superlatives show the extreme (add -est or use 'most').",
+      "examples": [
+        {
+          "english": "This book is more interesting than that one.",
+          "translation": "هذا الكتاب أكثر إثارة من ذاك."
+        },
+        {
+          "english": "She is the tallest girl in the class.",
+          "translation": "هي أطول فتاة في الصف."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "comp_a2_1",
+          "type": "multiple_choice",
+          "question": "This exercise is ___ than the previous one.",
+          "options": [
+            "easy",
+            "easier",
+            "easiest",
+            "more easy"
+          ],
+          "correct": "easier",
+          "explanation": "For short adjectives (1-2 syllables), add -er for comparative. 'Easy' becomes 'easier'."
+        },
+        {
+          "id": "comp_a2_2",
+          "type": "multiple_choice",
+          "question": "Mount Everest is the ___ mountain in the world.",
+          "options": [
+            "high",
+            "higher",
+            "highest",
+            "most high"
+          ],
+          "correct": "highest",
+          "explanation": "For superlatives with short adjectives, add -est. Use 'the' before superlatives."
+        },
+        {
+          "id": "comp_a2_3",
+          "type": "multiple_choice",
+          "question": "This problem is ___ difficult than I thought.",
+          "options": [
+            "more",
+            "most",
+            "much",
+            "many"
+          ],
+          "correct": "more",
+          "explanation": "For longer adjectives (3+ syllables), use 'more' for comparative."
+        }
+      ]
+    },
+    {
+      "id": "present_perfect_b1",
+      "title": "Present Perfect Tense",
       "level": "B1",
-      "category": "cases",
-      "explanation": "The dative case is used for indirect objects (the recipient of something). It's also used with certain prepositions and verbs. All articles change in the dative case.",
+      "category": "Tenses",
+      "explanation": "Connects past and present. Form: have/has + past participle. Used for experiences, recent actions, and actions with present results.",
       "examples": [
         {
-          "german": "Ich gebe dem Mann das Buch.",
-          "english": "I give the man the book.",
-          "translation": "أعطي الرجل الكتاب."
+          "english": "I have lived here for ten years.",
+          "translation": "لقد عشت هنا لمدة عشر سنوات."
         },
         {
-          "german": "Sie hilft der Frau.",
-          "english": "She helps the woman.",
-          "translation": "هي تساعد المرأة."
+          "english": "She has just finished her homework.",
+          "translation": "لقد أنهت واجباتها للتو."
         },
         {
-          "german": "Wir sprechen mit dem Kind.",
-          "english": "We speak with the child.",
-          "translation": "نتحدث مع الطفل."
+          "english": "Have you ever been to London?",
+          "translation": "هل سبق لك أن ذهبت إلى لندن؟"
         }
       ],
       "tables": [
         {
-          "title": "Definite Articles - Dative Case",
+          "title": "Structure",
           "headers": [
-            "Gender",
-            "Nominative",
-            "Dative"
+            "Subject",
+            "Auxiliary",
+            "Past Participle"
           ],
           "rows": [
             [
-              "Masculine",
-              "der",
-              "dem"
+              "I/You/We/They",
+              "have",
+              "eaten"
             ],
             [
-              "Feminine",
-              "die",
-              "der"
-            ],
-            [
-              "Neuter",
-              "das",
-              "dem"
-            ],
-            [
-              "Plural",
-              "die",
-              "den"
-            ]
-          ]
-        },
-        {
-          "title": "Common Dative Prepositions",
-          "headers": [
-            "Preposition",
-            "Meaning",
-            "Example"
-          ],
-          "rows": [
-            [
-              "mit",
-              "with",
-              "mit dem Freund (with the friend)"
-            ],
-            [
-              "zu",
-              "to",
-              "zur Schule (to school)"
-            ],
-            [
-              "von",
-              "from",
-              "von der Arbeit (from work)"
-            ],
-            [
-              "bei",
-              "at, near",
-              "bei der Familie (at the family's)"
-            ],
-            [
-              "nach",
-              "after, to",
-              "nach dem Essen (after eating)"
+              "He/She/It",
+              "has",
+              "eaten"
             ]
           ]
         }
       ],
       "exercises": [
         {
-          "id": "ex1",
+          "id": "pp_b1_1",
           "type": "multiple_choice",
-          "question": "Complete: 'Ich helfe ___ Frau.' (I help the woman.)",
+          "question": "She ___ to Paris three times.",
           "options": [
-            "die",
-            "der",
-            "dem",
-            "den"
+            "go",
+            "went",
+            "has gone",
+            "have gone"
           ],
-          "correct": "der",
-          "hint": "Frau is feminine and it's an indirect object",
-          "explanation": "Frau is feminine and is the indirect object, so it uses 'der' in the dative case."
+          "correct": "has gone",
+          "explanation": "Use present perfect for life experiences. 'She' requires 'has'."
         },
         {
-          "id": "ex2",
-          "type": "fill_blank",
-          "question": "Complete: 'Wir sprechen ___ Lehrer.' (We speak with the teacher.)",
-          "correct": "mit dem",
-          "hint": "mit is a dative preposition",
-          "explanation": "Mit is a dative preposition, and Lehrer is masculine, so it becomes 'mit dem'."
+          "id": "pp_b1_2",
+          "type": "multiple_choice",
+          "question": "They ___ their project yet.",
+          "options": [
+            "didn't finish",
+            "haven't finished",
+            "hasn't finished",
+            "don't finish"
+          ],
+          "correct": "haven't finished",
+          "explanation": "'Yet' is used with present perfect in negative sentences. 'They' requires 'haven't'."
+        },
+        {
+          "id": "pp_b1_3",
+          "type": "multiple_choice",
+          "question": "I ___ just ___ my keys!",
+          "options": [
+            "have / found",
+            "has / found",
+            "had / found",
+            "am / finding"
+          ],
+          "correct": "have / found",
+          "explanation": "'Just' indicates recent completion, use present perfect. 'I' requires 'have'."
         }
       ]
     },
     {
-      "id": "genitive_case",
-      "title": "Genitive Case",
+      "id": "modal_verbs_b1",
+      "title": "Modal Verbs: Can, Could, Should, Must",
       "level": "B1",
-      "category": "cases",
-      "explanation": "The genitive case shows possession or relationship. It's less commonly used in spoken German but important for formal writing and understanding written texts.",
+      "category": "Modals",
+      "explanation": "Modal verbs express ability, possibility, permission, obligation, and advice. They are followed by the base form of the verb.",
       "examples": [
         {
-          "german": "Das ist das Auto des Mannes.",
-          "english": "That is the man's car.",
-          "translation": "هذه سيارة الرجل."
+          "english": "You should study harder.",
+          "translation": "يجب أن تدرس بجد أكثر."
         },
         {
-          "german": "Die Tasche der Frau ist neu.",
-          "english": "The woman's bag is new.",
-          "translation": "حقيبة المرأة جديدة."
+          "english": "She can speak three languages.",
+          "translation": "تستطيع التحدث بثلاث لغات."
         },
         {
-          "german": "Das Spielzeug des Kindes ist bunt.",
-          "english": "The child's toy is colorful.",
-          "translation": "لعبة الطفل ملونة."
-        }
-      ],
-      "tables": [
-        {
-          "title": "Definite Articles - Genitive Case",
-          "headers": [
-            "Gender",
-            "Nominative",
-            "Genitive"
-          ],
-          "rows": [
-            [
-              "Masculine",
-              "der",
-              "des"
-            ],
-            [
-              "Feminine",
-              "die",
-              "der"
-            ],
-            [
-              "Neuter",
-              "das",
-              "des"
-            ],
-            [
-              "Plural",
-              "die",
-              "der"
-            ]
-          ]
-        },
-        {
-          "title": "Genitive Endings for Nouns",
-          "headers": [
-            "Gender",
-            "Rule",
-            "Example"
-          ],
-          "rows": [
-            [
-              "Masculine/Neuter",
-              "-es or -s",
-              "des Mannes, des Kindes"
-            ],
-            [
-              "Feminine",
-              "no ending",
-              "der Frau"
-            ],
-            [
-              "Plural",
-              "no ending",
-              "der Kinder"
-            ]
-          ]
+          "english": "We must finish this today.",
+          "translation": "يجب أن ننهي هذا اليوم."
         }
       ],
       "exercises": [
         {
-          "id": "ex1",
+          "id": "mod_b1_1",
           "type": "multiple_choice",
-          "question": "Complete: 'Das Haus ___ Nachbarn ist groß.' (The neighbor's house is big.)",
+          "question": "You ___ wear a seatbelt in the car. It's the law.",
           "options": [
-            "des",
-            "der",
-            "dem",
-            "den"
+            "can",
+            "could",
+            "should",
+            "must"
           ],
-          "correct": "des",
-          "hint": "Nachbar is masculine",
-          "explanation": "Nachbar is masculine and shows possession, so it uses 'des' in the genitive case."
+          "correct": "must",
+          "explanation": "'Must' expresses strong obligation or legal requirement."
         },
         {
-          "id": "ex2",
-          "type": "sentence_building",
-          "question": "Create a sentence showing possession with 'Buch' and 'Student':",
-          "correct": "Das ist das Buch des Studenten.",
-          "hint": "Use genitive case",
-          "explanation": "Student is masculine, so it becomes 'des Studenten' in the genitive case."
+          "id": "mod_b1_2",
+          "type": "multiple_choice",
+          "question": "___ you help me with this problem?",
+          "options": [
+            "Can",
+            "Must",
+            "Should",
+            "May"
+          ],
+          "correct": "Can",
+          "explanation": "'Can' is used to ask for help or make requests."
+        },
+        {
+          "id": "mod_b1_3",
+          "type": "multiple_choice",
+          "question": "You ___ see a doctor if you feel sick.",
+          "options": [
+            "can",
+            "must",
+            "should",
+            "could"
+          ],
+          "correct": "should",
+          "explanation": "'Should' is used for advice and recommendations."
         }
       ]
     },
     {
-      "id": "adjective_declension",
-      "title": "Adjective Declension",
-      "level": "B1",
-      "category": "adjectives",
-      "explanation": "Adjectives in German change their endings based on the gender, case, and article of the noun they describe. There are three types of declension: strong, weak, and mixed.",
-      "examples": [
-        {
-          "german": "der gute Mann",
-          "english": "the good man",
-          "translation": "الرجل الجيد"
-        },
-        {
-          "german": "eine schöne Frau",
-          "english": "a beautiful woman",
-          "translation": "امرأة جميلة"
-        },
-        {
-          "german": "das kleine Kind",
-          "english": "the small child",
-          "translation": "الطفل الصغير"
-        }
-      ],
-      "tables": [
-        {
-          "title": "Weak Adjective Declension (with definite article)",
-          "headers": [
-            "Case",
-            "Masculine",
-            "Feminine",
-            "Neuter",
-            "Plural"
-          ],
-          "rows": [
-            [
-              "Nominative",
-              "gute",
-              "gute",
-              "gute",
-              "guten"
-            ],
-            [
-              "Accusative",
-              "guten",
-              "gute",
-              "gute",
-              "guten"
-            ],
-            [
-              "Dative",
-              "guten",
-              "guten",
-              "guten",
-              "guten"
-            ],
-            [
-              "Genitive",
-              "guten",
-              "guten",
-              "guten",
-              "guten"
-            ]
-          ]
-        },
-        {
-          "title": "Strong Adjective Declension (no article)",
-          "headers": [
-            "Case",
-            "Masculine",
-            "Feminine",
-            "Neuter",
-            "Plural"
-          ],
-          "rows": [
-            [
-              "Nominative",
-              "guter",
-              "gute",
-              "gutes",
-              "gute"
-            ],
-            [
-              "Accusative",
-              "guten",
-              "gute",
-              "gutes",
-              "gute"
-            ],
-            [
-              "Dative",
-              "gutem",
-              "guter",
-              "gutem",
-              "guten"
-            ],
-            [
-              "Genitive",
-              "guten",
-              "guter",
-              "guten",
-              "guter"
-            ]
-          ]
-        }
-      ],
-      "exercises": [
-        {
-          "id": "ex1",
-          "type": "multiple_choice",
-          "question": "Complete: 'der ___ Mann' (the good man)",
-          "options": [
-            "gute",
-            "guter",
-            "guten",
-            "gutes"
-          ],
-          "correct": "gute",
-          "hint": "Weak declension with definite article",
-          "explanation": "With the definite article 'der', the adjective takes the weak ending '-e'."
-        },
-        {
-          "id": "ex2",
-          "type": "fill_blank",
-          "question": "Complete: '___ Wein' (good wine - no article)",
-          "correct": "guter",
-          "hint": "Strong declension, masculine",
-          "explanation": "Without an article, the adjective takes the strong ending '-er' for masculine nominative."
-        }
-      ]
-    },
-    {
-      "id": "comparative_superlative",
-      "title": "Comparative and Superlative",
-      "level": "B1",
-      "category": "adjectives",
-      "explanation": "German adjectives form comparatives and superlatives to compare things. Comparative adds -er, superlative adds -st(e). Some adjectives have irregular forms.",
-      "examples": [
-        {
-          "german": "groß → größer → am größten",
-          "english": "big → bigger → biggest",
-          "translation": "كبير → أكبر → الأكبر"
-        },
-        {
-          "german": "gut → besser → am besten",
-          "english": "good → better → best",
-          "translation": "جيد → أفضل → الأفضل"
-        },
-        {
-          "german": "hoch → höher → am höchsten",
-          "english": "high → higher → highest",
-          "translation": "عالي → أعلى → الأعلى"
-        }
-      ],
-      "tables": [
-        {
-          "title": "Regular Comparison",
-          "headers": [
-            "Positive",
-            "Comparative",
-            "Superlative"
-          ],
-          "rows": [
-            [
-              "schnell (fast)",
-              "schneller",
-              "am schnellsten"
-            ],
-            [
-              "klein (small)",
-              "kleiner",
-              "am kleinsten"
-            ],
-            [
-              "alt (old)",
-              "älter",
-              "am ältesten"
-            ]
-          ]
-        },
-        {
-          "title": "Irregular Comparisons",
-          "headers": [
-            "Positive",
-            "Comparative",
-            "Superlative"
-          ],
-          "rows": [
-            [
-              "gut (good)",
-              "besser",
-              "am besten"
-            ],
-            [
-              "hoch (high)",
-              "höher",
-              "am höchsten"
-            ],
-            [
-              "nah (near)",
-              "näher",
-              "nächsten"
-            ],
-            [
-              "viel (much)",
-              "mehr",
-              "am meisten"
-            ]
-          ]
-        }
-      ],
-      "exercises": [
-        {
-          "id": "ex1",
-          "type": "multiple_choice",
-          "question": "What is the comparative of 'alt' (old)?",
-          "options": [
-            "alter",
-            "älter",
-            "ältesten"
-          ],
-          "correct": "älter",
-          "hint": "Vowel change: a → ä",
-          "explanation": "Alt has a vowel change from a to ä in the comparative, adding -er."
-        },
-        {
-          "id": "ex2",
-          "type": "fill_blank",
-          "question": "Complete: 'Das ist ___ Haus.' (This is the highest house.)",
-          "correct": "das höchste",
-          "hint": "Superlative of hoch",
-          "explanation": "Hoch becomes höchste in the superlative with definite article."
-        }
-      ]
-    },
-    {
-      "id": "subordinate_clauses",
-      "title": "Subordinate Clauses",
-      "level": "B1",
-      "category": "syntax",
-      "explanation": "Subordinate clauses add complexity to German sentences. They are introduced by conjunctions like weil (because), dass (that), wenn (when), ob (whether). The verb moves to the end of subordinate clauses.",
-      "examples": [
-        {
-          "german": "Ich lerne Deutsch, weil ich in Deutschland leben möchte.",
-          "english": "I am learning German because I want to live in Germany.",
-          "translation": "أتعلم الألمانية لأنني أريد العيش في ألمانيا."
-        },
-        {
-          "german": "Er sagt, dass er müde ist.",
-          "english": "He says that he is tired.",
-          "translation": "هو يقول إنه متعب."
-        },
-        {
-          "german": "Wenn es regnet, bleibe ich zu Hause.",
-          "english": "When it rains, I stay at home.",
-          "translation": "عندما تمطر، أبقى في المنزل."
-        }
-      ],
-      "tables": [
-        {
-          "title": "Common Subordinate Conjunctions",
-          "headers": [
-            "Conjunction",
-            "Meaning",
-            "Example"
-          ],
-          "rows": [
-            [
-              "weil",
-              "because",
-              "Ich komme, weil ich Zeit habe."
-            ],
-            [
-              "dass",
-              "that",
-              "Ich denke, dass es richtig ist."
-            ],
-            [
-              "wenn",
-              "when, if",
-              "Wenn du kommst, bin ich da."
-            ],
-            [
-              "ob",
-              "whether",
-              "Ich weiß nicht, ob er kommt."
-            ],
-            [
-              "obwohl",
-              "although",
-              "Obwohl es kalt ist, gehe ich raus."
-            ]
-          ]
-        }
-      ],
-      "exercises": [
-        {
-          "id": "ex1",
-          "type": "multiple_choice",
-          "question": "Choose the correct conjunction: 'Ich bleibe zu Hause, ___ ich müde bin.'",
-          "options": [
-            "weil",
-            "dass",
-            "wenn",
-            "ob"
-          ],
-          "correct": "weil",
-          "hint": "weil = because (reason)",
-          "explanation": "Weil introduces a reason clause, so it's the correct choice here."
-        },
-        {
-          "id": "ex2",
-          "type": "sentence_building",
-          "question": "Create a sentence with 'dass' (that):",
-          "correct": "Ich weiß, dass du kommst.",
-          "hint": "Verb goes to end of subordinate clause",
-          "explanation": "In subordinate clauses with dass, the conjugated verb moves to the end."
-        }
-      ]
-    },
-    {
-      "id": "relative_clauses",
-      "title": "Relative Clauses",
-      "level": "B2",
-      "category": "syntax",
-      "explanation": "Relative clauses provide additional information about nouns. They are introduced by relative pronouns (der, die, das, die, deren, dessen) which change based on gender, case, and function in the clause. The verb moves to the end of relative clauses.",
-      "examples": [
-        {
-          "german": "Der Mann, der dort steht, ist mein Lehrer.",
-          "english": "The man who is standing there is my teacher.",
-          "translation": "الرجل الذي يقف هناك هو معلمي."
-        },
-        {
-          "german": "Das Buch, das ich lese, ist interessant.",
-          "english": "The book that I am reading is interesting.",
-          "translation": "الكتاب الذي أقرأه مثير للاهتمام."
-        },
-        {
-          "german": "Die Frau, deren Auto blau ist, kommt aus Berlin.",
-          "english": "The woman whose car is blue comes from Berlin.",
-          "translation": "المرأة التي سيارتها زرقاء قادمة من برلين."
-        }
-      ],
-      "tables": [
-        {
-          "title": "Relative Pronouns",
-          "headers": [
-            "Gender",
-            "Nominative",
-            "Accusative",
-            "Dative",
-            "Genitive"
-          ],
-          "rows": [
-            [
-              "Masculine",
-              "der",
-              "den",
-              "dem",
-              "dessen"
-            ],
-            [
-              "Feminine",
-              "die",
-              "die",
-              "der",
-              "deren"
-            ],
-            [
-              "Neuter",
-              "das",
-              "das",
-              "dem",
-              "dessen"
-            ],
-            [
-              "Plural",
-              "die",
-              "die",
-              "denen",
-              "deren"
-            ]
-          ]
-        }
-      ],
-      "exercises": [
-        {
-          "id": "ex1",
-          "type": "multiple_choice",
-          "question": "Complete: 'Das Kind, ___ spielt, ist meine Tochter.' (The child who plays is my daughter.)",
-          "options": [
-            "das",
-            "der",
-            "die",
-            "dem"
-          ],
-          "correct": "das",
-          "hint": "Kind is neuter and subject of the clause",
-          "explanation": "Kind is neuter and is the subject in the relative clause, so it uses 'das'."
-        },
-        {
-          "id": "ex2",
-          "type": "sentence_building",
-          "question": "Create a sentence with a relative clause about 'Frau' and 'arbeitet':",
-          "correct": "Die Frau, die dort arbeitet, ist meine Chefin.",
-          "hint": "Relative pronoun + verb at end",
-          "explanation": "Frau is feminine, so it uses 'die' as the relative pronoun, and the verb goes to the end."
-        }
-      ]
-    },
-    {
-      "id": "passive_voice",
+      "id": "passive_voice_b2",
       "title": "Passive Voice",
       "level": "B2",
-      "category": "verbs",
-      "explanation": "The passive voice emphasizes the action rather than the agent. It's formed with werden + past participle (present passive) or wurde + past participle (past passive). The agent can be mentioned with 'von' or 'durch'.",
+      "category": "Voice",
+      "explanation": "Passive voice emphasizes the action or receiver rather than the doer. Form: be + past participle. The doer can be mentioned with 'by'.",
       "examples": [
         {
-          "german": "Das Haus wird gebaut.",
-          "english": "The house is being built.",
-          "translation": "المنزل يتم بناؤه."
+          "english": "The letter was written by Sarah.",
+          "translation": "كتبت الرسالة بواسطة سارة."
         },
         {
-          "german": "Das Buch wurde gelesen.",
-          "english": "The book was read.",
-          "translation": "الكتاب تمت قراءته."
+          "english": "The bridge is being repaired.",
+          "translation": "يتم إصلاح الجسر."
         },
         {
-          "german": "Die Tür wird von mir geöffnet.",
-          "english": "The door is opened by me.",
-          "translation": "الباب يتم فتحه من قبلي."
+          "english": "The project will be completed next month.",
+          "translation": "سيتم إكمال المشروع الشهر القادم."
         }
       ],
       "tables": [
         {
-          "title": "Passive Voice Formation",
+          "title": "Transformation",
           "headers": [
             "Tense",
-            "Formation",
-            "Example"
+            "Active",
+            "Passive"
           ],
           "rows": [
             [
-              "Present",
-              "wird + past participle",
-              "wird gemacht"
+              "Present Simple",
+              "I write a letter",
+              "A letter is written"
             ],
             [
-              "Past",
-              "wurde + past participle",
-              "wurde gemacht"
+              "Past Simple",
+              "I wrote a letter",
+              "A letter was written"
             ],
             [
-              "Present Perfect",
-              "ist + past participle + worden",
-              "ist gemacht worden"
-            ],
-            [
-              "Future",
-              "wird + past participle + werden",
-              "wird gemacht werden"
+              "Future Simple",
+              "I will write a letter",
+              "A letter will be written"
             ]
           ]
         }
       ],
       "exercises": [
         {
-          "id": "ex1",
+          "id": "pv_b2_1",
           "type": "multiple_choice",
-          "question": "Complete: 'Der Brief ___ geschrieben.' (The letter is written.)",
+          "question": "The homework ___ by the students yesterday.",
           "options": [
-            "wird",
-            "wurde",
-            "ist",
-            "hat"
+            "did",
+            "was done",
+            "is done",
+            "has done"
           ],
-          "correct": "wird",
-          "hint": "Present passive",
-          "explanation": "For present passive, use wird + past participle."
+          "correct": "was done",
+          "explanation": "Past simple passive: was/were + past participle. 'Homework' is singular, so 'was done'."
         },
         {
-          "id": "ex2",
-          "type": "sentence_building",
-          "question": "Create a passive sentence with 'machen' (to do):",
-          "correct": "Die Hausaufgabe wird gemacht.",
-          "hint": "wird + past participle",
-          "explanation": "Passive voice uses werden + past participle (gemacht)."
+          "id": "pv_b2_2",
+          "type": "multiple_choice",
+          "question": "English ___ in many countries around the world.",
+          "options": [
+            "speaks",
+            "is spoken",
+            "was spoken",
+            "speaking"
+          ],
+          "correct": "is spoken",
+          "explanation": "Present simple passive for general facts: is/are + past participle."
+        },
+        {
+          "id": "pv_b2_3",
+          "type": "multiple_choice",
+          "question": "The new hospital ___ next year.",
+          "options": [
+            "will build",
+            "will be built",
+            "is building",
+            "builds"
+          ],
+          "correct": "will be built",
+          "explanation": "Future passive: will be + past participle."
         }
       ]
     },
     {
-      "id": "subjunctive_i",
-      "title": "Subjunctive I (Konjunktiv I)",
+      "id": "conditionals_b2",
+      "title": "Conditional Sentences (Types 1, 2, 3)",
       "level": "B2",
-      "category": "verbs",
-      "explanation": "Subjunctive I is used for indirect speech, reporting what someone else said without confirming it. It's formed from the infinitive stem + subjunctive endings. It's mainly used in formal writing and news reporting.",
+      "category": "Conditionals",
+      "explanation": "Type 1: Real future possibility (if + present, will + base). Type 2: Unreal present (if + past, would + base). Type 3: Unreal past (if + past perfect, would have + past participle).",
       "examples": [
         {
-          "german": "Er sagt, er sei müde.",
-          "english": "He says he is tired.",
-          "translation": "هو يقول إنه متعب."
+          "english": "If it rains, I will stay home. (Type 1)",
+          "translation": "إذا أمطرت، سأبقى في المنزل."
         },
         {
-          "german": "Sie meint, sie komme morgen.",
-          "english": "She thinks she will come tomorrow.",
-          "translation": "هي تعتقد أنها ستأتي غدًا."
+          "english": "If I won the lottery, I would buy a house. (Type 2)",
+          "translation": "لو ربحت اليانصيب، لاشتريت منزلاً."
         },
         {
-          "german": "Der Bericht besagt, das Unternehmen wachse.",
-          "english": "The report states that the company is growing.",
-          "translation": "التقرير يوضح أن الشركة تنمو."
-        }
-      ],
-      "tables": [
-        {
-          "title": "Subjunctive I Formation",
-          "headers": [
-            "Verb",
-            "ich",
-            "du",
-            "er/sie/es",
-            "wir",
-            "ihr",
-            "sie/Sie"
-          ],
-          "rows": [
-            [
-              "sein (to be)",
-              "sei",
-              "seiest",
-              "sei",
-              "seien",
-              "seiet",
-              "seien"
-            ],
-            [
-              "haben (to have)",
-              "habe",
-              "habest",
-              "habe",
-              "haben",
-              "habet",
-              "haben"
-            ],
-            [
-              "gehen (to go)",
-              "gehe",
-              "gehest",
-              "gehe",
-              "gehen",
-              "gehet",
-              "gehen"
-            ],
-            [
-              "kommen (to come)",
-              "komme",
-              "kom(m)est",
-              "komme",
-              "kommen",
-              "kom(m)et",
-              "kommen"
-            ]
-          ]
+          "english": "If I had studied harder, I would have passed. (Type 3)",
+          "translation": "لو كنت درست بجد أكثر، لكنت نجحت."
         }
       ],
       "exercises": [
         {
-          "id": "ex1",
+          "id": "cond_b2_1",
           "type": "multiple_choice",
-          "question": "Complete: 'Er sagt, er ___ krank.' (He says he is sick.)",
+          "question": "If I ___ you, I would apologize.",
           "options": [
-            "sei",
-            "ist",
-            "wäre",
-            "war"
+            "am",
+            "was",
+            "were",
+            "will be"
           ],
-          "correct": "sei",
-          "hint": "Subjunctive I of sein",
-          "explanation": "For indirect speech, use the subjunctive I form 'sei' instead of 'ist'."
+          "correct": "were",
+          "explanation": "Type 2 conditional uses 'were' for all subjects in formal English."
         },
         {
-          "id": "ex2",
-          "type": "fill_blank",
-          "question": "Complete: 'Sie meint, sie ___ das Buch.' (She thinks she has the book.)",
-          "correct": "habe",
-          "hint": "Subjunctive I of haben",
-          "explanation": "For indirect speech, use the subjunctive I form 'habe' instead of 'hat'."
+          "id": "cond_b2_2",
+          "type": "multiple_choice",
+          "question": "If she studies hard, she ___ the exam.",
+          "options": [
+            "pass",
+            "will pass",
+            "would pass",
+            "passed"
+          ],
+          "correct": "will pass",
+          "explanation": "Type 1 conditional: if + present simple, will + base verb."
+        },
+        {
+          "id": "cond_b2_3",
+          "type": "multiple_choice",
+          "question": "If they ___ earlier, they wouldn't have missed the train.",
+          "options": [
+            "left",
+            "leave",
+            "had left",
+            "would leave"
+          ],
+          "correct": "had left",
+          "explanation": "Type 3 conditional uses past perfect in the if-clause."
         }
       ]
     },
     {
-      "id": "subjunctive_ii",
-      "title": "Subjunctive II (Konjunktiv II)",
-      "level": "C1",
-      "category": "verbs",
-      "explanation": "Subjunctive II is used for unreal situations, wishes, polite requests, and conditional sentences. It's formed from the simple past stem + subjunctive endings, often with umlaut changes. For irregular verbs, würde + infinitive is commonly used.",
+      "id": "reported_speech_b2",
+      "title": "Reported Speech",
+      "level": "B2",
+      "category": "Speech",
+      "explanation": "Reported speech (indirect speech) reports what someone said without using their exact words. Tenses usually shift back, and pronouns/time expressions change.",
       "examples": [
         {
-          "german": "Wenn ich Geld hätte, würde ich ein Haus kaufen.",
-          "english": "If I had money, I would buy a house.",
-          "translation": "لو كان لدي مال، لاشتريت منزلاً."
+          "english": "Direct: 'I am tired,' she said. → Reported: She said she was tired.",
+          "translation": "قالت إنها متعبة."
         },
         {
-          "german": "Ich wünschte, ich wäre reich.",
-          "english": "I wish I were rich.",
-          "translation": "أتمنى لو كنت ثريًا."
-        },
-        {
-          "german": "Könntest du mir helfen?",
-          "english": "Could you help me?",
-          "translation": "هل يمكنك مساعدتي؟"
-        }
-      ],
-      "tables": [
-        {
-          "title": "Subjunctive II Formation",
-          "headers": [
-            "Verb",
-            "ich",
-            "du",
-            "er/sie/es",
-            "wir",
-            "ihr",
-            "sie/Sie"
-          ],
-          "rows": [
-            [
-              "sein (to be)",
-              "wäre",
-              "wär(e)st",
-              "wäre",
-              "wären",
-              "wär(e)t",
-              "wären"
-            ],
-            [
-              "haben (to have)",
-              "hätte",
-              "hätt(e)st",
-              "hätte",
-              "hätten",
-              "hätt(e)t",
-              "hätten"
-            ],
-            [
-              "gehen (to go)",
-              "ginge",
-              "ging(e)st",
-              "ginge",
-              "gingen",
-              "ging(e)t",
-              "gingen"
-            ],
-            [
-              "können (can)",
-              "könnte",
-              "könntest",
-              "könnte",
-              "könnten",
-              "könntet",
-              "könnten"
-            ]
-          ]
+          "english": "Direct: 'I will call you,' he said. → Reported: He said he would call me.",
+          "translation": "قال إنه سيتصل بي."
         }
       ],
       "exercises": [
         {
-          "id": "ex1",
+          "id": "rs_b2_1",
           "type": "multiple_choice",
-          "question": "Complete: 'Wenn ich du ___, würde ich lernen.' (If I were you, I would study.)",
+          "question": "She said, 'I am reading a book.' → She said she ___ a book.",
           "options": [
-            "wäre",
-            "war",
-            "bin",
-            "sei"
+            "is reading",
+            "was reading",
+            "reads",
+            "read"
           ],
-          "correct": "wäre",
-          "hint": "Subjunctive II of sein",
-          "explanation": "For unreal conditional sentences, use the subjunctive II form 'wäre'."
+          "correct": "was reading",
+          "explanation": "Present continuous becomes past continuous in reported speech."
         },
         {
-          "id": "ex2",
-          "type": "sentence_building",
-          "question": "Create a wish sentence with 'wünschte' and 'könnte':",
-          "correct": "Ich wünschte, ich könnte fliegen.",
-          "hint": "Subjunctive II for wishes",
-          "explanation": "Wishes use subjunctive II: ich wünschte + subjunctive II clause."
+          "id": "rs_b2_2",
+          "type": "multiple_choice",
+          "question": "He said, 'I have finished my work.' → He said he ___ his work.",
+          "options": [
+            "has finished",
+            "had finished",
+            "finished",
+            "finishes"
+          ],
+          "correct": "had finished",
+          "explanation": "Present perfect becomes past perfect in reported speech."
         }
       ]
     },
     {
-      "id": "conditional_sentences",
-      "title": "Conditional Sentences",
+      "id": "relative_clauses_c1",
+      "title": "Relative Clauses: Defining and Non-defining",
       "level": "C1",
-      "category": "syntax",
-      "explanation": "Conditional sentences express conditions and their consequences. German uses wenn (if) for the condition clause and subjunctive II for unreal conditions. There are real conditions (indicative) and unreal conditions (subjunctive II).",
+      "category": "Clauses",
+      "explanation": "Defining clauses give essential information (no commas). Non-defining clauses add extra information (use commas). Relative pronouns: who, which, that, whose, where, when.",
       "examples": [
         {
-          "german": "Wenn es regnet, bleibe ich zu Hause.",
-          "english": "If it rains, I stay at home.",
-          "translation": "إذا أمطرت، أبقى في المنزل."
+          "english": "The man who lives next door is a doctor. (defining)",
+          "translation": "الرجل الذي يعيش في الجوار طبيب."
         },
         {
-          "german": "Wenn ich Geld hätte, würde ich reisen.",
-          "english": "If I had money, I would travel.",
-          "translation": "لو كان لدي مال، لسافرت."
-        },
-        {
-          "german": "Hätte ich mehr Zeit, würde ich Deutsch lernen.",
-          "english": "If I had more time, I would learn German.",
-          "translation": "لو كان لدي وقت أكثر، لتعلمت الألمانية."
-        }
-      ],
-      "tables": [
-        {
-          "title": "Conditional Sentence Types",
-          "headers": [
-            "Type",
-            "Condition Clause",
-            "Main Clause",
-            "Example"
-          ],
-          "rows": [
-            [
-              "Real",
-              "Wenn + present",
-              "present/future",
-              "Wenn es kalt ist, trage ich einen Mantel."
-            ],
-            [
-              "Unreal Present",
-              "Wenn + subjunctive II",
-              "würde + infinitive",
-              "Wenn ich Geld hätte, würde ich ein Auto kaufen."
-            ],
-            [
-              "Unreal Past",
-              "Wenn + past perfect",
-              "hätte/wäre + past participle",
-              "Wenn ich gewusst hätte, wäre ich gekommen."
-            ]
-          ]
+          "english": "My brother, who lives in London, is visiting. (non-defining)",
+          "translation": "أخي، الذي يعيش في لندن، يزورنا."
         }
       ],
       "exercises": [
         {
-          "id": "ex1",
+          "id": "rc_c1_1",
           "type": "multiple_choice",
-          "question": "Complete: '___ ich Zeit hätte, würde ich dich besuchen.' (___ I had time, I would visit you.)",
+          "question": "The book ___ I bought yesterday is very interesting.",
           "options": [
-            "Wenn",
-            "Als",
-            "Während",
-            "Obwohl"
+            "who",
+            "which",
+            "whose",
+            "where"
           ],
-          "correct": "Wenn",
-          "hint": "Conditional conjunction",
-          "explanation": "Wenn introduces conditional clauses, both real and unreal."
+          "correct": "which",
+          "explanation": "Use 'which' or 'that' for things. 'Which' is preferred in formal writing."
         },
         {
-          "id": "ex2",
-          "type": "sentence_building",
-          "question": "Create an unreal conditional sentence about having a car:",
-          "correct": "Wenn ich ein Auto hätte, würde ich zur Arbeit fahren.",
-          "hint": "Wenn + subjunctive II, würde + infinitive",
-          "explanation": "Unreal conditions use subjunctive II in the condition and würde + infinitive in the main clause."
+          "id": "rc_c1_2",
+          "type": "multiple_choice",
+          "question": "The woman ___ car was stolen called the police.",
+          "options": [
+            "who",
+            "which",
+            "whose",
+            "that"
+          ],
+          "correct": "whose",
+          "explanation": "'Whose' shows possession (her car)."
+        },
+        {
+          "id": "rc_c1_3",
+          "type": "multiple_choice",
+          "question": "This is the hotel ___ we stayed last summer.",
+          "options": [
+            "which",
+            "where",
+            "when",
+            "that"
+          ],
+          "correct": "where",
+          "explanation": "'Where' is used for places. It replaces 'in which' or 'at which'."
         }
       ]
     },
     {
-      "id": "prepositions_cases",
-      "title": "Prepositions and Cases",
+      "id": "subjunctive_c1",
+      "title": "Subjunctive Mood",
       "level": "C1",
-      "category": "prepositions",
-      "explanation": "German prepositions govern specific cases. Some always take one case (accusative, dative, or genitive), while two-way prepositions can take either accusative or dative depending on context (motion vs. location).",
+      "category": "Advanced",
+      "explanation": "The subjunctive expresses wishes, suggestions, demands, or hypothetical situations. Common in formal English after verbs like suggest, recommend, insist, demand.",
       "examples": [
         {
-          "german": "Ich gehe in die Schule.",
-          "english": "I go to the school.",
-          "translation": "أذهب إلى المدرسة."
+          "english": "I suggest that he study harder.",
+          "translation": "أقترح أن يدرس بجد أكثر."
         },
         {
-          "german": "Ich bin in der Schule.",
-          "english": "I am at the school.",
-          "translation": "أنا في المدرسة."
-        },
-        {
-          "german": "Das Buch liegt auf dem Tisch.",
-          "english": "The book is on the table.",
-          "translation": "الكتاب على الطاولة."
-        },
-        {
-          "german": "Ich lege das Buch auf den Tisch.",
-          "english": "I put the book on the table.",
-          "translation": "أضع الكتاب على الطاولة."
+          "english": "It is essential that she be present.",
+          "translation": "من الضروري أن تكون حاضرة."
         }
+      ],
+      "exercises": [
+        {
+          "id": "subj_c1_1",
+          "type": "multiple_choice",
+          "question": "The doctor recommended that she ___ more rest.",
+          "options": [
+            "gets",
+            "get",
+            "got",
+            "getting"
+          ],
+          "correct": "get",
+          "explanation": "After 'recommend', use base form (subjunctive) without 's' even for third person."
+        },
+        {
+          "id": "subj_c1_2",
+          "type": "multiple_choice",
+          "question": "It is important that he ___ on time.",
+          "options": [
+            "is",
+            "be",
+            "was",
+            "being"
+          ],
+          "correct": "be",
+          "explanation": "After expressions like 'it is important that', use the base form 'be'."
+        }
+      ]
+    },
+    {
+      "id": "inversion_c1",
+      "title": "Inversion for Emphasis",
+      "level": "C1",
+      "category": "Advanced",
+      "explanation": "Inversion (reversing subject and verb order) is used for emphasis, especially after negative adverbs and in formal writing.",
+      "examples": [
+        {
+          "english": "Never have I seen such a beautiful sunset.",
+          "translation": "لم أر قط غروباً جميلاً كهذا."
+        },
+        {
+          "english": "Only then did I realize my mistake.",
+          "translation": "فقط حينها أدركت خطئي."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "inv_c1_1",
+          "type": "multiple_choice",
+          "question": "Rarely ___ such dedication in a student.",
+          "options": [
+            "I have seen",
+            "have I seen",
+            "I see",
+            "do I see"
+          ],
+          "correct": "have I seen",
+          "explanation": "After negative adverbs like 'rarely', invert the subject and auxiliary verb."
+        },
+        {
+          "id": "inv_c1_2",
+          "type": "multiple_choice",
+          "question": "Not only ___ the exam, but he also got the highest score.",
+          "options": [
+            "he passed",
+            "did he pass",
+            "he did pass",
+            "passed he"
+          ],
+          "correct": "did he pass",
+          "explanation": "After 'not only', use inversion: auxiliary + subject + main verb."
+        }
+      ]
+    },
+    {
+      "id": "past_simple_a2",
+      "title": "Past Simple Tense",
+      "level": "A2",
+      "category": "Tenses",
+      "explanation": "The Past Simple describes completed actions in the past. Regular verbs add -ed. Irregular verbs change form (go → went).",
+      "examples": [
+        { "english": "I visited my friend yesterday.", "translation": "زرت صديقي أمس." },
+        { "english": "They went to the market last week.", "translation": "ذهبوا إلى السوق الأسبوع الماضي." }
       ],
       "tables": [
         {
-          "title": "Accusative Prepositions",
-          "headers": [
-            "Preposition",
-            "Meaning",
-            "Example"
-          ],
+          "title": "Common time expressions",
+          "headers": ["Expression", "Example"],
           "rows": [
-            [
-              "durch",
-              "through",
-              "durch den Park"
-            ],
-            [
-              "für",
-              "for",
-              "für dich"
-            ],
-            [
-              "gegen",
-              "against",
-              "gegen die Wand"
-            ],
-            [
-              "ohne",
-              "without",
-              "ohne dich"
-            ],
-            [
-              "um",
-              "around",
-              "um den Tisch"
-            ]
-          ]
-        },
-        {
-          "title": "Dative Prepositions",
-          "headers": [
-            "Preposition",
-            "Meaning",
-            "Example"
-          ],
-          "rows": [
-            [
-              "aus",
-              "from, out of",
-              "aus dem Haus"
-            ],
-            [
-              "bei",
-              "at, near",
-              "bei der Arbeit"
-            ],
-            [
-              "mit",
-              "with",
-              "mit dem Freund"
-            ],
-            [
-              "nach",
-              "after, to",
-              "nach Berlin"
-            ],
-            [
-              "seit",
-              "since",
-              "seit Montag"
-            ],
-            [
-              "von",
-              "from",
-              "von der Schule"
-            ],
-            [
-              "zu",
-              "to",
-              "zur Schule"
-            ]
-          ]
-        },
-        {
-          "title": "Two-Way Prepositions",
-          "headers": [
-            "Preposition",
-            "Accusative (motion)",
-            "Dative (location)"
-          ],
-          "rows": [
-            [
-              "an",
-              "an die Wand (to the wall)",
-              "an der Wand (on the wall)"
-            ],
-            [
-              "auf",
-              "auf den Tisch (onto the table)",
-              "auf dem Tisch (on the table)"
-            ],
-            [
-              "in",
-              "in die Stadt (into the city)",
-              "in der Stadt (in the city)"
-            ],
-            [
-              "neben",
-              "neben den Stuhl (next to the chair)",
-              "neben dem Stuhl (next to the chair)"
-            ],
-            [
-              "über",
-              "über die Brücke (over the bridge)",
-              "über der Brücke (above the bridge)"
-            ],
-            [
-              "unter",
-              "unter den Tisch (under the table)",
-              "unter dem Tisch (under the table)"
-            ],
-            [
-              "vor",
-              "vor das Haus (in front of the house)",
-              "vor dem Haus (in front of the house)"
-            ],
-            [
-              "zwischen",
-              "zwischen die Stühle (between the chairs)",
-              "zwischen den Stühlen (between the chairs)"
-            ]
+            ["yesterday", "I called you yesterday."],
+            ["last week", "We met last week."],
+            ["two days ago", "He arrived two days ago."]
           ]
         }
       ],
       "exercises": [
         {
-          "id": "ex1",
+          "id": "ps_a2_1",
           "type": "multiple_choice",
-          "question": "Complete: 'Ich gehe ___ Kino.' (I go to the cinema.)",
-          "options": [
-            "ins",
-            "im",
-            "das",
-            "dem"
-          ],
-          "correct": "ins",
-          "hint": "Motion = accusative, in + das = ins",
-          "explanation": "With motion to a place, use accusative case: in + das becomes ins."
+          "question": "She ___ a cake yesterday.",
+          "options": ["bake", "baked", "bakes", "baking"],
+          "correct": "baked",
+          "explanation": "Past simple of a regular verb: bake → baked."
         },
         {
-          "id": "ex2",
-          "type": "fill_blank",
-          "question": "Complete: 'Das Bild hängt ___ Wand.' (The picture hangs on the wall.)",
-          "correct": "an der",
-          "hint": "Location = dative",
-          "explanation": "With location (no motion), use dative case: an + der becomes an der."
+          "id": "ps_a2_2",
+          "type": "multiple_choice",
+          "question": "We ___ to the cinema last night.",
+          "options": ["go", "went", "gone", "going"],
+          "correct": "went",
+          "explanation": "Past simple of the irregular verb go is went."
+        },
+        {
+          "id": "ps_a2_3",
+          "type": "multiple_choice",
+          "question": "They ___ not ___ the email.",
+          "options": ["did / received", "do / receive", "did / receive", "does / receive"],
+          "correct": "did / receive",
+          "explanation": "Negative past simple uses did not + base verb."
+        }
+      ]
+    },
+    {
+      "id": "articles_a2",
+      "title": "Articles: a/an, the, and zero article",
+      "level": "A2",
+      "category": "Articles",
+      "explanation": "Use a/an for non-specific singular countable nouns, the for specific nouns, and no article for general plural/uncountable nouns.",
+      "examples": [
+        { "english": "I saw a dog. The dog was friendly.", "translation": "رأيت كلبًا. كان الكلب ودودًا." },
+        { "english": "Water is essential for life.", "translation": "الماء ضروري للحياة." }
+      ],
+      "exercises": [
+        {
+          "id": "art_a2_1",
+          "type": "multiple_choice",
+          "question": "She bought ___ umbrella because it was raining.",
+          "options": ["a", "an", "the", "—"],
+          "correct": "an",
+          "explanation": "Umbrella starts with a vowel sound, so use an."
+        },
+        {
+          "id": "art_a2_2",
+          "type": "multiple_choice",
+          "question": "___ sun rises in the east.",
+          "options": ["A", "An", "The", "—"],
+          "correct": "The",
+          "explanation": "The sun is unique, so we use the."
+        },
+        {
+          "id": "art_a2_3",
+          "type": "multiple_choice",
+          "question": "I like ___ music.",
+          "options": ["a", "an", "the", "—"],
+          "correct": "—",
+          "explanation": "Music is uncountable and used in a general sense, so no article is used."
+        }
+      ]
+    },
+    {
+      "id": "prepositions_time_place_a2",
+      "title": "Prepositions of Time and Place (in/on/at)",
+      "level": "A2",
+      "category": "Prepositions",
+      "explanation": "Use in for months/years/long periods and inside places, on for days/dates and surfaces, and at for exact times and specific points.",
+      "examples": [
+        { "english": "The meeting is at 3 p.m. on Monday in June.", "translation": "الاجتماع الساعة 3 مساءً يوم الاثنين في يونيو." },
+        { "english": "She is at the bus stop.", "translation": "هي عند محطة الحافلات." }
+      ],
+      "tables": [
+        {
+          "title": "Quick guide",
+          "headers": ["Preposition", "Time", "Place"],
+          "rows": [
+            ["at", "at 7:00", "at the door"],
+            ["on", "on Friday", "on the table"],
+            ["in", "in 2026 / in March", "in the room"]
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "prep_a2_1",
+          "type": "multiple_choice",
+          "question": "My birthday is ___ April.",
+          "options": ["at", "on", "in", "by"],
+          "correct": "in",
+          "explanation": "Use in with months."
+        },
+        {
+          "id": "prep_a2_2",
+          "type": "multiple_choice",
+          "question": "The train leaves ___ 6:15.",
+          "options": ["at", "on", "in", "to"],
+          "correct": "at",
+          "explanation": "Use at with exact times."
+        },
+        {
+          "id": "prep_a2_3",
+          "type": "multiple_choice",
+          "question": "We have classes ___ Monday.",
+          "options": ["at", "on", "in", "for"],
+          "correct": "on",
+          "explanation": "Use on with days."
+        }
+      ]
+    },
+    {
+      "id": "present_perfect_b1_experience",
+      "title": "Present Perfect (for experience and unfinished time)",
+      "level": "B1",
+      "category": "Tenses",
+      "explanation": "Use the present perfect (have/has + past participle) for life experience (ever/never) and for time periods that continue until now (today/this week).",
+      "examples": [
+        { "english": "I have never tried sushi.", "translation": "لم أجرب السوشي من قبل." },
+        { "english": "She has lived here for five years.", "translation": "عاشت هنا لمدة خمس سنوات." }
+      ],
+      "exercises": [
+        {
+          "id": "pp_b1_1",
+          "type": "multiple_choice",
+          "question": "We ___ this movie before.",
+          "options": ["see", "saw", "have seen", "were seeing"],
+          "correct": "have seen",
+          "explanation": "Use present perfect with before to show experience."
+        },
+        {
+          "id": "pp_b1_2",
+          "type": "multiple_choice",
+          "question": "He ___ in Cairo since 2020.",
+          "options": ["lives", "lived", "has lived", "is living"],
+          "correct": "has lived",
+          "explanation": "Since + point in time suggests an action that started in the past and continues to now."
+        },
+        {
+          "id": "pp_b1_3",
+          "type": "multiple_choice",
+          "question": "Have you ever ___ to Japan?",
+          "options": ["go", "went", "gone", "been"],
+          "correct": "been",
+          "explanation": "Use been to talk about experience of visiting a place."
+        }
+      ]
+    },
+    {
+      "id": "modal_verbs_b1_extended",
+      "title": "Modal Verbs (can/could/must/should/might)",
+      "level": "B1",
+      "category": "Modals",
+      "explanation": "Modal verbs express ability, permission, obligation, advice, and possibility. They are followed by the base form of the verb.",
+      "examples": [
+        { "english": "You should drink more water.", "translation": "ينبغي أن تشرب ماءً أكثر." },
+        { "english": "It might rain later.", "translation": "قد تمطر لاحقًا." }
+      ],
+      "exercises": [
+        {
+          "id": "mod_b1_1",
+          "type": "multiple_choice",
+          "question": "You ___ wear a seatbelt. It's the law.",
+          "options": ["might", "should", "must", "could"],
+          "correct": "must",
+          "explanation": "Must expresses strong obligation."
+        },
+        {
+          "id": "mod_b1_2",
+          "type": "multiple_choice",
+          "question": "I ___ swim when I was five.",
+          "options": ["can", "could", "must", "might"],
+          "correct": "could",
+          "explanation": "Could expresses past ability."
+        },
+        {
+          "id": "mod_b1_3",
+          "type": "multiple_choice",
+          "question": "You ___ try restarting the app if it freezes.",
+          "options": ["should", "must", "can", "might"],
+          "correct": "should",
+          "explanation": "Should is used for advice."
+        }
+      ]
+    },
+    {
+      "id": "countable_uncountable_a2",
+      "title": "Countable and Uncountable Nouns",
+      "level": "A2",
+      "category": "Nouns",
+      "explanation": "Countable nouns can be counted and have singular/plural forms. Uncountable nouns cannot be counted directly and do not have a plural form. Use quantifiers like some, much, many, a little, a few appropriately.",
+      "examples": [
+        { "english": "I have two apples.", "translation": "لدي تفاحتان." },
+        { "english": "We need some information.", "translation": "نحتاج بعض المعلومات." }
+      ],
+      "tables": [
+        {
+          "title": "Common uncountable nouns",
+          "headers": ["Noun", "Example"],
+          "rows": [
+            ["information", "I need more information."],
+            ["advice", "He gave me good advice."],
+            ["water", "Water is essential."]
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "cu_a2_1",
+          "type": "multiple_choice",
+          "question": "We don't have ___ milk left.",
+          "options": ["many", "much", "few", "several"],
+          "correct": "much",
+          "explanation": "Use much with uncountable nouns."
+        },
+        {
+          "id": "cu_a2_2",
+          "type": "multiple_choice",
+          "question": "There are ___ chairs in the room.",
+          "options": ["much", "a little", "many", "some"],
+          "correct": "many",
+          "explanation": "Use many with countable plural nouns."
+        }
+      ]
+    },
+    {
+      "id": "gerunds_infinitives_b1",
+      "title": "Gerunds and Infinitives",
+      "level": "B1",
+      "category": "Verbs",
+      "explanation": "A gerund is the -ing form used as a noun. Infinitive is to + base form. Some verbs take gerunds (enjoy, avoid), some take infinitives (plan, decide), and some take either with a change in meaning.",
+      "examples": [
+        { "english": "I enjoy reading.", "translation": "أستمتع بالقراءة." },
+        { "english": "She decided to study abroad.", "translation": "قررت الدراسة في الخارج." }
+      ],
+      "tables": [
+        {
+          "title": "Common patterns",
+          "headers": ["Verb", "Pattern", "Example"],
+          "rows": [
+            ["enjoy", "gerund", "He enjoys swimming."],
+            ["want", "infinitive", "I want to leave."],
+            ["remember", "gerund/infinitive", "I remember meeting her. / Remember to call me."]
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "gi_b1_1",
+          "type": "multiple_choice",
+          "question": "She suggested ___ earlier.",
+          "options": ["to arrive", "arriving", "arrive", "to arriving"],
+          "correct": "arriving",
+          "explanation": "Suggest is followed by a gerund."
+        },
+        {
+          "id": "gi_b1_2",
+          "type": "multiple_choice",
+          "question": "He promised ___ me tomorrow.",
+          "options": ["calling", "to call", "call", "to calling"],
+          "correct": "to call",
+          "explanation": "Promise is followed by an infinitive."
+        }
+      ]
+    },
+    {
+      "id": "phrasal_verbs_b1",
+      "title": "Phrasal Verbs",
+      "level": "B1",
+      "category": "Vocabulary",
+      "explanation": "Phrasal verbs are verb + particle combinations with specific meanings. They can be separable or inseparable.",
+      "examples": [
+        { "english": "She looked up the word.", "translation": "بحثت عن الكلمة." },
+        { "english": "He ran into an old friend.", "translation": "صادف صديقًا قديمًا." }
+      ],
+      "tables": [
+        {
+          "title": "Separable vs Inseparable",
+          "headers": ["Type", "Example"],
+          "rows": [
+            ["separable", "Turn off the lights / Turn the lights off"],
+            ["inseparable", "Look after the baby"]
+          ]
+        }
+      ],
+      "exercises": [
+        {
+          "id": "pvb_b1_1",
+          "type": "multiple_choice",
+          "question": "Please ___ your shoes.",
+          "options": ["put on", "put up", "put over", "put in"],
+          "correct": "put on",
+          "explanation": "Put on means wear."
+        },
+        {
+          "id": "pvb_b1_2",
+          "type": "multiple_choice",
+          "question": "We need to ___ the meeting.",
+          "options": ["call off", "call out", "call over", "call in"],
+          "correct": "call off",
+          "explanation": "Call off means cancel."
+        }
+      ]
+    },
+    {
+      "id": "mixed_conditionals_b2",
+      "title": "Mixed Conditionals",
+      "level": "B2",
+      "category": "Conditionals",
+      "explanation": "Mixed conditionals link different times. Past condition with present result: If + past perfect, would + base (now). Present condition with past result: If + past simple, would have + past participle.",
+      "examples": [
+        { "english": "If I had studied, I would be happier now.", "translation": "لو كنت درست، لكنت أكثر سعادة الآن." },
+        { "english": "If she were more careful, she would have avoided the mistake.", "translation": "لو كانت أكثر حذرًا، لكانت تجنبت الخطأ." }
+      ],
+      "exercises": [
+        {
+          "id": "mc_b2_1",
+          "type": "multiple_choice",
+          "question": "If he ___ earlier, he wouldn't have missed the flight.",
+          "options": ["leaves", "left", "had left", "was leaving"],
+          "correct": "had left",
+          "explanation": "Past condition with past result."
+        },
+        {
+          "id": "mc_b2_2",
+          "type": "multiple_choice",
+          "question": "If they were taller, they ___ the match yesterday.",
+          "options": ["would win", "would have won", "won", "have won"],
+          "correct": "would have won",
+          "explanation": "Present condition with past result."
+        }
+      ]
+    },
+    {
+      "id": "cleft_sentences_c1",
+      "title": "Cleft Sentences",
+      "level": "C1",
+      "category": "Clauses",
+      "explanation": "Cleft sentences split a sentence to emphasize a part using structures like It is/was..., What..., The thing/s that....",
+      "examples": [
+        { "english": "It was John who broke the vase.", "translation": "كان جون هو الذي كسر المزهرية." },
+        { "english": "What I need is a short break.", "translation": "ما أحتاجه هو استراحة قصيرة." }
+      ],
+      "exercises": [
+        {
+          "id": "cs_c1_1",
+          "type": "multiple_choice",
+          "question": "___ I like most is the atmosphere.",
+          "options": ["It was", "What", "That", "Where"],
+          "correct": "What",
+          "explanation": "Use What for clefting the subject complement."
+        },
+        {
+          "id": "cs_c1_2",
+          "type": "multiple_choice",
+          "question": "It was ___ that surprised everyone.",
+          "options": ["her", "she", "hers", "she is"],
+          "correct": "her",
+          "explanation": "Use object pronoun after It was."
+        }
+      ]
+    },
+    {
+      "id": "collocations_c1",
+      "title": "Collocations",
+      "level": "C1",
+      "category": "Vocabulary",
+      "explanation": "Collocations are natural word combinations like make a decision, heavy rain, strong coffee. Learning collocations improves fluency.",
+      "examples": [
+        { "english": "She made a decision quickly.", "translation": "اتخذت قرارًا بسرعة." },
+        { "english": "It was heavy rain last night.", "translation": "كان هناك مطر غزير الليلة الماضية." }
+      ],
+      "exercises": [
+        {
+          "id": "col_c1_1",
+          "type": "multiple_choice",
+          "question": "Choose the best collocation: ___ coffee.",
+          "options": ["strong", "powerful", "hard", "heavy"],
+          "correct": "strong",
+          "explanation": "Strong coffee is the natural collocation."
+        },
+        {
+          "id": "col_c1_2",
+          "type": "multiple_choice",
+          "question": "We need to ___ a decision.",
+          "options": ["do", "make", "take", "get"],
+          "correct": "make",
+          "explanation": "Make a decision is the natural collocation."
         }
       ]
     }

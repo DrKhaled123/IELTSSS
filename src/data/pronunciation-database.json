@@ -2,1891 +2,529 @@
   "alphabet": [
     {
       "letter": "A",
-      "german": "A",
-      "pronunciation": "ah",
-      "tip": "Open mouth, say 'ah' like in 'father'",
-      "ipa": "/aː/",
-      "mouthPosition": "Open mouth, tongue low, lips unrounded",
-      "example": "Apfel [ˈapfəl], Wasser [ˈvasɐ]",
-      "commonWords": ["Apfel", "Wasser", "Mann", "Tag", "Jahr"]
-    },
-    {
-      "letter": "Ä",
-      "german": "Ä",
-      "pronunciation": "eh",
-      "tip": "Say 'eh' like in 'bed', but with slightly more tension",
-      "ipa": "/ɛː/",
-      "mouthPosition": "Slightly open mouth, tongue mid, lips unrounded",
-      "example": "Mädchen [ˈmɛːtçən], Hände [ˈhɛndə]",
-      "commonWords": ["Mädchen", "Hände", "Bär", "Käse", "spät"]
+      "pronunciation": "ay",
+      "word": "Apple",
+      "tip": "Open mouth wide, rounded lips."
     },
     {
       "letter": "B",
-      "german": "B",
-      "pronunciation": "bay",
-      "tip": "Lips together, say 'bay' - similar to English B",
-      "ipa": "/beː/",
-      "mouthPosition": "Lips pressed together, then released",
-      "example": "Buch [buːx], Ball [bal]",
-      "commonWords": ["Buch", "Ball", "Brot", "Berg", "Blume"]
+      "pronunciation": "bee",
+      "word": "Ball",
+      "tip": "Press lips together firmly."
     },
     {
       "letter": "C",
-      "german": "C",
-      "pronunciation": "tsay",
-      "tip": "Sharp 'ts' sound, not like English 'see'",
-      "ipa": "/tseː/",
-      "mouthPosition": "Tongue behind teeth, sharp release",
-      "example": "Computer [kəmˈpuːtɐ], Café [kaˈfeː]",
-      "commonWords": ["Computer", "Café", "Celsius", "Chor", "Clown"]
+      "pronunciation": "see",
+      "word": "Cat",
+      "tip": "Tongue touches roof of mouth."
     },
     {
       "letter": "D",
-      "german": "D",
-      "pronunciation": "day",
-      "tip": "Tongue behind teeth, similar to English D",
-      "ipa": "/deː/",
-      "mouthPosition": "Tongue tip touching alveolar ridge",
-      "example": "Dorf [dɔʁf], Dienstag [ˈdiːnstˌaːk]",
-      "commonWords": ["Dorf", "Dienstag", "Dank", "Donner", "Ding"]
+      "pronunciation": "dee",
+      "word": "Dog",
+      "tip": "Tongue behind upper teeth."
     },
     {
       "letter": "E",
-      "german": "E",
-      "pronunciation": "ay",
-      "tip": "Smile, say 'ay' like in 'say'",
-      "ipa": "/eː/",
-      "mouthPosition": "Tense smile, tongue forward, lips spread",
-      "example": "Esel [ˈeːzəl], Meer [meːɐ̯]",
-      "commonWords": ["Esel", "Meer", "Egg", "essen", "Eltern"]
+      "pronunciation": "ee",
+      "word": "Elephant",
+      "tip": "Smile wide with teeth together."
     },
     {
       "letter": "F",
-      "german": "F",
       "pronunciation": "eff",
-      "tip": "Teeth on lip, similar to English F",
-      "ipa": "/ɛf/",
-      "mouthPosition": "Bottom lip touching upper teeth",
-      "example": "Fisch [fɪʃ], Frau [fʁaʊ̯]",
-      "commonWords": ["Fisch", "Frau", "Fenster", "Finger", "Freund"]
+      "word": "Fish",
+      "tip": "Upper teeth on lower lip."
     },
     {
       "letter": "G",
-      "german": "G",
-      "pronunciation": "gay",
-      "tip": "Back of throat, softer than English G",
-      "ipa": "/geː/",
-      "mouthPosition": "Back of tongue touching soft palate",
-      "example": "Garten [ˈɡaʁtn̩], gut [ɡuːt]",
-      "commonWords": ["Garten", "gut", "Glas", "gehen", "groß"]
+      "pronunciation": "jee",
+      "word": "Go",
+      "tip": "Back of tongue touches soft palate."
     },
     {
       "letter": "H",
-      "german": "H",
-      "pronunciation": "hah",
-      "tip": "Gentle breath, like English H",
-      "ipa": "/haː/",
-      "mouthPosition": "Open mouth, breath from throat",
-      "example": "Haus [haʊ̯s], Hand [hant]",
-      "commonWords": ["Haus", "Hand", "Herz", "heute", "haben"]
+      "pronunciation": "aych",
+      "word": "House",
+      "tip": "Breathe out gently."
     },
     {
       "letter": "I",
-      "german": "I",
-      "pronunciation": "ee",
-      "tip": "Tense smile, like 'ee' in 'see'",
-      "ipa": "/iː/",
-      "mouthPosition": "Tense smile, tongue high and forward",
-      "example": "Insel [ˈɪnzəl], Liebe [ˈliːbə]",
-      "commonWords": ["Insel", "Liebe", "ich", "ist", "Kind"]
+      "pronunciation": "eye",
+      "word": "Ice",
+      "tip": "Mouth opens from narrow to wide."
     },
     {
       "letter": "J",
-      "german": "J",
-      "pronunciation": "yot",
-      "tip": "Y sound + 'ot', like English 'yacht'",
-      "ipa": "/jɔt/",
-      "mouthPosition": "Tongue high, lips rounded for 'y' sound",
-      "example": "Ja [jaː], Jahr [jaːɐ̯]",
-      "commonWords": ["Ja", "Jahr", "jung", "jetzt", "jeder"]
+      "pronunciation": "jay",
+      "word": "Jump",
+      "tip": "Tongue pushes against roof."
     },
     {
       "letter": "K",
-      "german": "K",
-      "pronunciation": "kah",
-      "tip": "Guttural sound, similar to English K",
-      "ipa": "/kaː/",
-      "mouthPosition": "Back of tongue touching soft palate",
-      "example": "Kind [kɪnt], Kopf [kɔpf]",
-      "commonWords": ["Kind", "Kopf", "Kaffee", "kommen", "Kalt"]
+      "pronunciation": "kay",
+      "word": "Kite",
+      "tip": "Similar to C, more forceful."
     },
     {
       "letter": "L",
-      "german": "L",
-      "pronunciation": "el",
-      "tip": "Tongue tip, like English L",
-      "ipa": "/ɛl/",
-      "mouthPosition": "Tongue tip touching alveolar ridge",
-      "example": "Licht [lɪç], Land [lant]",
-      "commonWords": ["Licht", "Land", "Leben", "lernen", "Liebe"]
+      "pronunciation": "ell",
+      "word": "Lion",
+      "tip": "Tongue touches alveolar ridge."
     },
     {
       "letter": "M",
-      "german": "M",
-      "pronunciation": "em",
-      "tip": "Closed lips, humming sound",
-      "ipa": "/ɛm/",
-      "mouthPosition": "Lips closed, nasal sound",
-      "example": "Mutter [ˈmʊtɐ], Mond [mɔnt]",
-      "commonWords": ["Mutter", "Mond", "Mann", "machen", "mehr"]
+      "pronunciation": "emm",
+      "word": "Mouse",
+      "tip": "Lips closed, sound through nose."
     },
     {
       "letter": "N",
-      "german": "N",
-      "pronunciation": "en",
-      "tip": "Tongue forward, like English N",
-      "ipa": "/ɛn/",
-      "mouthPosition": "Tongue tip touching alveolar ridge, nasal",
-      "example": "Nacht [naχt], Name [ˈnaːmə]",
-      "commonWords": ["Nacht", "Name", "neu", "nicht", "noch"]
+      "pronunciation": "enn",
+      "word": "Nest",
+      "tip": "Tongue behind teeth, nasal sound."
     },
     {
       "letter": "O",
-      "german": "O",
       "pronunciation": "oh",
-      "tip": "Rounded lips, like 'oh' in 'go'",
-      "ipa": "/oː/",
-      "mouthPosition": "Rounded lips, tongue mid-back",
-      "example": "Ofen [ˈoːfən], Boot [boːt]",
-      "commonWords": ["Ofen", "Boot", "Ohr", "oben", "oder"]
-    },
-    {
-      "letter": "Ö",
-      "german": "Ö",
-      "pronunciation": "ur",
-      "tip": "Say 'ee' with rounded lips, like French 'eu'",
-      "ipa": "/œː/",
-      "mouthPosition": "Tongue position for 'ee', lips rounded",
-      "example": "Öl [œːl], schön [ʃøːn]",
-      "commonWords": ["Öl", "schön", "Österreich", "öffnen", "hören"]
+      "word": "Orange",
+      "tip": "Round your lips into O shape."
     },
     {
       "letter": "P",
-      "german": "P",
-      "pronunciation": "pay",
-      "tip": "Explode 'p' sound, like English P",
-      "ipa": "/peː/",
-      "mouthPosition": "Lips pressed together, then released",
-      "example": "Pferd [pfɛʁt], Papier [paˈpiːɐ̯]",
-      "commonWords": ["Pferd", "Papier", "Park", "Person", "Problem"]
+      "pronunciation": "pee",
+      "word": "Pen",
+      "tip": "Build pressure, release with puff."
     },
     {
       "letter": "Q",
-      "german": "Q",
-      "pronunciation": "koo",
-      "tip": "K + 'oo' sound, always followed by 'u'",
-      "ipa": "/kuː/",
-      "mouthPosition": "Back of tongue, rounded lips",
-      "example": "Qualität [kvaliˈtɛːt], Quelle [ˈvɛlə]",
-      "commonWords": ["Qualität", "Quelle", "Quadrat", "Quatsch", "quer"]
+      "pronunciation": "kyoo",
+      "word": "Queen",
+      "tip": "Start with K sound, add W."
     },
     {
       "letter": "R",
-      "german": "R",
-      "pronunciation": "air",
-      "tip": "Rolled R or uvular R (back of throat)",
-      "ipa": "/ʁɐ̯/",
-      "mouthPosition": "Uvular fricative or alveolar trill",
-      "example": "Rot [ʁoːt], reisen [ˈʁaɪ̯zən]",
-      "commonWords": ["Rot", "reisen", "richtig", "Regen", "Rose"]
+      "pronunciation": "ar",
+      "word": "Run",
+      "tip": "Curl tongue slightly back."
     },
     {
       "letter": "S",
-      "german": "S",
       "pronunciation": "ess",
-      "tip": "Snake sound, like English S",
-      "ipa": "/ɛs/",
-      "mouthPosition": "Tongue near teeth, air stream",
-      "example": "Sonne [ˈzɔnə], Wasser [ˈvasɐ]",
-      "commonWords": ["Sonne", "Wasser", "sagen", "sehen", "so"]
-    },
-    {
-      "letter": "ß",
-      "german": "ß",
-      "pronunciation": "ess-tset",
-      "tip": "Sharp S sound, like double 'ss'",
-      "ipa": "/ɛs/",
-      "mouthPosition": "Tongue near teeth, sharp sibilant",
-      "example": "Straße [ˈʃtʁaːsə], heißen [ˈhaɪ̯sən]",
-      "commonWords": ["Straße", "heißen", "Fuß", "süß", "groß"]
+      "word": "Sun",
+      "tip": "Teeth together, air hisses through."
     },
     {
       "letter": "T",
-      "german": "T",
-      "pronunciation": "tay",
-      "tip": "Tongue behind teeth, like English T",
-      "ipa": "/teː/",
-      "mouthPosition": "Tongue tip touching alveolar ridge",
-      "example": "Tisch [tɪʃ], Tee [teː]",
-      "commonWords": ["Tisch", "Tee", "Tag", "tun", "gut"]
+      "pronunciation": "tee",
+      "word": "Table",
+      "tip": "Tongue taps alveolar ridge."
     },
     {
       "letter": "U",
-      "german": "U",
-      "pronunciation": "oo",
-      "tip": "Pursed lips, like 'oo' in 'moon'",
-      "ipa": "/uː/",
-      "mouthPosition": "Rounded lips, tongue high and back",
-      "example": "Uhr [uːɐ̯], Mutter [ˈmʊtɐ]",
-      "commonWords": ["Uhr", "Mutter", "unser", "und", "unter"]
-    },
-    {
-      "letter": "Ü",
-      "german": "Ü",
       "pronunciation": "yoo",
-      "tip": "Say 'ee' with rounded lips, like French 'u'",
-      "ipa": "/yː/",
-      "mouthPosition": "Tongue position for 'ee', lips rounded",
-      "example": "über [ˈyːbɐ], müde [ˈmyːdə]",
-      "commonWords": ["über", "müde", "Tür", "gut", "drücken"]
+      "word": "Umbrella",
+      "tip": "Lips relaxed, jaw slightly open."
     },
     {
       "letter": "V",
-      "german": "V",
-      "pronunciation": "fow",
-      "tip": "Often pronounced like 'f', not English 'v'",
-      "ipa": "/foʊ/",
-      "mouthPosition": "Bottom lip touching upper teeth",
-      "example": "Vater [ˈfaːtɐ], vier [fiːɐ̯]",
-      "commonWords": ["Vater", "vier", "verlieren", "vergessen", "viel"]
+      "pronunciation": "vee",
+      "word": "Van",
+      "tip": "Upper teeth touch lower lip, vibrate."
     },
     {
       "letter": "W",
-      "german": "W",
-      "pronunciation": "vay",
-      "tip": "Like English 'v', not 'w'",
-      "ipa": "/veː/",
-      "mouthPosition": "Bottom lip touching upper teeth",
-      "example": "Wasser [ˈvasɐ], Wein [vaɪ̯n]",
-      "commonWords": ["Wasser", "Wein", "wer", "wenn", "wissen"]
+      "pronunciation": "double-yoo",
+      "word": "Water",
+      "tip": "Round lips, then open quickly."
     },
     {
       "letter": "X",
-      "german": "X",
-      "pronunciation": "iks",
-      "tip": "K + S sound, like English 'x'",
-      "ipa": "/ɪks/",
-      "mouthPosition": "Back of tongue then teeth position",
-      "example": "Xylophon [ˈksylofoːn], Marx [maʁks]",
-      "commonWords": ["Xylophon", "Marx", "Axe", "Box", "Text"]
+      "pronunciation": "ecks",
+      "word": "Box",
+      "tip": "Combination of K + S sounds."
     },
     {
       "letter": "Y",
-      "german": "Y",
-      "pronunciation": "uep-silohn",
-      "tip": "U + I + lip rounding, like Greek 'upsilon'",
-      "ipa": "/ʏpsɪlon/",
-      "mouthPosition": "Tongue high, lips rounded",
-      "example": "Typ [tyːp], System [ˈzʏsteːm]",
-      "commonWords": ["Typ", "System", "rhythmus", "hymne", "ägypten"]
+      "pronunciation": "why",
+      "word": "Yellow",
+      "tip": "Tongue pressed against palate."
     },
     {
       "letter": "Z",
-      "german": "Z",
-      "pronunciation": "tset",
-      "tip": "Sharp 'ts' sound, like in 'cats'",
-      "ipa": "/tsɛt/",
-      "mouthPosition": "Tongue behind teeth, sharp release",
-      "example": "Zeit [tsaɪ̯t), zero [ˈtseːʁo]",
-      "commonWords": ["Zeit", "zero", "zwei", "zu", "zusammen"]
+      "pronunciation": "zee/zed",
+      "word": "Zoo",
+      "tip": "Like S but with voice vibration."
     }
   ],
   "pronunciationTips": [
     {
       "id": 1,
-      "category": "vowels",
-      "title": "German Vowel Length Rules",
-      "tip": "Long vowels occur when followed by a single consonant, doubled vowel, or h. Short vowels occur before double consonants or consonant clusters.",
-      "example": "Stadt [ʃtat] (short) vs Städt[e] [ʃtɛtə] (long), Boot [boːt] (long) vs Bett [bɛt] (short)",
-      "difficulty": "A2",
-      "practice": ["Stadt", "Stätte", "Boot", "Bett", "Vater", "Mutter"]
+      "title": "The 'Th' Sound (Voiced)",
+      "category": "consonants",
+      "tip": "Place your tongue lightly between your teeth and vibrate your vocal cords for 'this', 'that', 'the'.",
+      "example": "This, That, The, Mother",
+      "difficulty": "medium"
     },
     {
       "id": 2,
-      "category": "vowels",
-      "title": "Umlaut Pronunciation Guide",
-      "tip": "Umlauts (ä, ö, ü) require lip rounding. Start with 'o' sound, then round lips while saying the vowel. Practice: say 'o' then round lips for 'ö'.",
-      "example": "Mutter [ˈmʊtɐ] → schön [ʃøːn], können [ˈkœnən]",
-      "difficulty": "A1",
-      "practice": ["schön", "hören", "Mutter", "können", "über", "müde"]
+      "title": "The 'Th' Sound (Voiceless)",
+      "category": "consonants",
+      "tip": "Place tongue between teeth and blow air without voice for 'think', 'thank', 'thought'.",
+      "example": "Think, Thank, Thought, Teeth",
+      "difficulty": "medium"
     },
     {
       "id": 3,
+      "title": "The Short 'i' vs Long 'ee'",
       "category": "vowels",
-      "title": "A vs Ä Distinction",
-      "tip": "A is open and back [a], while Ä is more front and slightly higher [ɛ]. Practice the difference between 'Mann' and 'Männer'.",
-      "example": "Mann [man] vs Männer [ˈmɛnɐ], was [vas] vs wäschen [ˈvɛʃən]",
-      "difficulty": "A1",
-      "practice": ["Mann", "Männer", "was", "wäschen", "Bank", "Bänke"]
+      "tip": "Short 'i' (bit) - mouth more open. Long 'ee' (beat) - mouth closed, lips spread wide.",
+      "example": "Ship vs Sheep, Sit vs Seat",
+      "difficulty": "easy"
     },
     {
       "id": 4,
-      "category": "vowels",
-      "title": "O vs Ö Distinction",
-      "tip": "O is back and rounded [o], while Ö is front and rounded [œ]. Practice saying 'o' then move tongue forward while keeping lips rounded.",
-      "example": "Sohn [zoːn] vs Söhne [ˈzøːnə], ohne [ˈoːnə] vs öffnen [ˈœfnən]",
-      "difficulty": "A2",
-      "practice": ["Sohn", "Söhne", "ohne", "öffnen", "Korn", "Körner"]
+      "title": "The 'R' Sound",
+      "category": "consonants",
+      "tip": "Curl your tongue slightly backward without touching the roof. English R is softer than many languages.",
+      "example": "Red, Read, Right, Really",
+      "difficulty": "hard"
     },
     {
       "id": 5,
-      "category": "vowels",
-      "title": "U vs Ü Distinction",
-      "tip": "U is back and rounded [u], while Ü is front and rounded [y]. Say 'ee' then round lips for 'ü'.",
-      "example": "du [duː] vs über [ˈyːbɐ], Mut [muːt] vs müde [ˈmyːdə]",
-      "difficulty": "A2",
-      "practice": ["du", "über", "Mut", "müde", "Kuh", "Kühnheit"]
+      "title": "The 'L' Sound",
+      "category": "consonants",
+      "tip": "Touch the tip of your tongue to the ridge behind your upper teeth. Keep it there throughout.",
+      "example": "Like, Light, Love, Long",
+      "difficulty": "medium"
     },
     {
       "id": 6,
-      "category": "vowels",
-      "title": "IE vs I Distinction",
-      "tip": "IE is a long [iː] sound like 'ee' in 'see', while I is short [ɪ] like 'i' in 'bit'.",
-      "example": "Liebe [ˈliːbə] (long) vs Lied [liːt] (long), ich [ɪç] (short)",
-      "difficulty": "A1",
-      "practice": ["Liebe", "Lied", "ich", "wir", "Bier", "bitten"]
+      "title": "Word Stress - Two Syllables",
+      "category": "word_stress",
+      "tip": "In English, usually stress the first syllable in nouns and the second in verbs.",
+      "example": "CONduct (noun) vs conDUCT (verb)",
+      "difficulty": "hard"
     },
     {
       "id": 7,
-      "category": "vowels",
-      "title": "EU vs EI Diphthongs",
-      "tip": "EU is [ɔʏ̯] like 'oy' in 'boy', while EI is [aɪ̯] like 'eye' in 'English'.",
-      "example": "heute [ˈhɔʏ̯tə] vs mein [maɪ̯n], neu [nɔʏ̯] vs ein [aɪ̯n]",
-      "difficulty": "A1",
-      "practice": ["heute", "mein", "neu", "ein", "deutsch", "weit"]
+      "title": "Silent Letters",
+      "category": "consonants",
+      "tip": "Many English words have silent letters: knife (k), psychology (p), island (s), debt (b).",
+      "example": "Knife, Knight, Thumb, Wednesday",
+      "difficulty": "easy"
     },
     {
       "id": 8,
-      "category": "vowels",
-      "title": "AU Diphthong",
-      "tip": "AU is [aʊ̯] like 'ow' in 'cow'. It's a smooth glide from 'a' to 'u'.",
-      "example": "Haus [haʊ̯s], auch [aʊ̯x], laut [laʊ̯t]",
-      "difficulty": "A1",
-      "practice": ["Haus", "auch", "laut", "kaufen", "braun", "auf"]
+      "title": "Rising vs Falling Intonation",
+      "category": "intonation",
+      "tip": "Yes/No questions rise ↗ at the end. Statements fall ↘ at the end.",
+      "example": "Are you ready?↗ vs I am ready.↘",
+      "difficulty": "medium"
     },
     {
       "id": 9,
-      "category": "vowels",
-      "title": "E in Unstressed Syllables",
-      "tip": "Final 'e' is usually [ə] (schwa), like 'a' in 'about'. This is very common in German.",
-      "example": "Tage [ˈtaːɡə], Liebe [ˈliːbə], Katze [ˈkat͡sə]",
-      "difficulty": "A1",
-      "practice": ["Tage", "Liebe", "Katze", "Mutter", "Name", "gute"]
+      "title": "Connected Speech - Linking",
+      "category": "connected_speech",
+      "tip": "Connect words ending in consonants to words starting with vowels: 'an apple' sounds like 'anapple'.",
+      "example": "Pick it up → Pickit up",
+      "difficulty": "hard"
     },
     {
       "id": 10,
+      "title": "The Schwa /ə/ Sound",
       "category": "vowels",
-      "title": "ER at End of Words",
-      "tip": "Final 'er' is pronounced [ɐ̯], a very short 'a'-like sound. It's not pronounced like English 'er'.",
-      "example": "Vater [ˈfaːtɐ̯], Wasser [ˈvasɐ̯], besser [ˈbɛsɐ̯]",
-      "difficulty": "A1",
-      "practice": ["Vater", "Wasser", "besser", "Lehrer", "schwierig", "Bruder"]
-    },
-    {
-      "id": 11,
-      "category": "consonants",
-      "title": "German R Variations",
-      "tip": "German has multiple R sounds: uvular R (back of throat) is standard in northern Germany, while alveolar R (tongue tip) is common in southern Germany.",
-      "example": "Rot [ʁoːt] (uvular) vs Rot [ʀoːt] (alveolar)",
-      "difficulty": "A2",
-      "practice": ["Rot", "reisen", "richtig", "Regen", "Rose", "singen"]
-    },
-    {
-      "id": 12,
-      "category": "consonants",
-      "title": "CH After Front Vowels",
-      "tip": "After i, e, ä, ö, ü, and consonants, CH is [ç] - a soft 'hissing' sound like 'h' in 'hue'.",
-      "example": "ich [ɪç], nicht [nɪçt], mich [mɪç], leicht [laɪ̯çt]",
-      "difficulty": "A1",
-      "practice": ["ich", "nicht", "mich", "leicht", "echt", "Küche"]
-    },
-    {
-      "id": 13,
-      "category": "consonants",
-      "title": "CH After Back Vowels",
-      "tip": "After a, o, u, and au, CH is [x] - a throaty 'kha' sound like Scottish 'loch'.",
-      "example": "Buch [buːx], machen [ˈmaxən], auch [aʊ̯x]",
-      "difficulty": "A1",
-      "practice": ["Buch", "machen", "auch", "Kuchen", "noch", "doch"]
-    },
-    {
-      "id": 14,
-      "category": "consonants",
-      "title": "CH at Beginning of Words",
-      "tip": "At word beginnings, CH is usually [k] in loanwords, but [ç] in native words.",
-      "example": "Chemie [ˈçeːmiə] (native) vs Charakter [kaˈʁaktɐ] (loanword)",
-      "difficulty": "B1",
-      "practice": ["Chemie", "Charakter", "Chor", "Christ", "Chinesisch", "Check"]
-    },
-    {
-      "id": 15,
-      "category": "consonants",
-      "title": "CK Pronunciation",
-      "tip": "CK is always a sharp [k] sound, never [kʰ]. It's the same as K but indicates the preceding vowel is short.",
-      "example": "Buch [buːx] vs Buche [ˈbuːχə], Rock [ʁɔk], Stück [ʃtʏk]",
-      "difficulty": "A1",
-      "practice": ["Rock", "Stück", "Zucker", "drücken", "schicken", "Glück"]
-    },
-    {
-      "id": 16,
-      "category": "consonants",
-      "title": "Z vs S Distinction",
-      "tip": "Z is always [ts] like 'ts' in 'cats', while S can be [z] or [s] depending on position.",
-      "example": "Zeit [tsaɪ̯t] vs sein [zaɪ̯n], Sonne [ˈzɔnə] vs Wasser [ˈvasɐ]",
-      "difficulty": "A1",
-      "practice": ["Zeit", "sein", "Sonne", "Wasser", "zwei", "so"]
-    },
-    {
-      "id": 17,
-      "category": "consonants",
-      "title": "S vs ß vs SS",
-      "tip": "S is [z] between vowels, [s] elsewhere. ß and SS are always [s]. ß is used after long vowels, SS after short vowels.",
-      "example": "Haus [haʊ̯s] vs reisen [ˈʁaɪ̯zən], Straße [ˈʃtʁaːsə] vs hassen [ˈhasən]",
-      "difficulty": "A2",
-      "practice": ["Haus", "reisen", "Straße", "hassen", "Messer", "müssen"]
-    },
-    {
-      "id": 18,
-      "category": "consonants",
-      "title": "G at End of Words",
-      "tip": "Final G is often pronounced [k] in northern Germany or [ç] in southern Germany.",
-      "example": "Tag [taːk] (north) vs Tag [taːç] (south), Weg [veːk] vs Weg [veːç]",
-      "difficulty": "A2",
-      "practice": ["Tag", "Weg", "mag", "sag", "Krieg", "Zweig"]
-    },
-    {
-      "id": 19,
-      "category": "consonants",
-      "title": "D at End of Words",
-      "tip": "Final D is often pronounced [t] - a sharp 't' sound, not the soft English 'd'.",
-      "example": "Leid [laɪ̯t], Bad [baːt], Hund [hʊnt]",
-      "difficulty": "A1",
-      "practice": ["Leid", "Bad", "Hund", "Kind", "Mund", "find"]
-    },
-    {
-      "id": 20,
-      "category": "consonants",
-      "title": "B at End of Words",
-      "tip": "Final B is often pronounced [p] - a sharp 'p' sound, not the soft English 'b'.",
-      "example": "Dieb [diːp], gab [kaːp], lieb [liːp]",
-      "difficulty": "A1",
-      "practice": ["Dieb", "gab", "lieb", "glaub", "schreib", "auf"]
-    },
-    {
-      "id": 21,
-      "category": "consonants",
-      "title": "V Pronunciation",
-      "tip": "V is usually [f] in German words, but [v] in loanwords. Context matters.",
-      "example": "Vater [ˈfaːtɐ] (native) vs Vase [ˈvaːzə] (loanword)",
-      "difficulty": "A2",
-      "practice": ["Vater", "Vase", "vier", "verlieren", "von", "viele"]
-    },
-    {
-      "id": 22,
-      "category": "consonants",
-      "title": "W Pronunciation",
-      "tip": "W is always [v] in German, never [w] like in English. Bottom lip touches upper teeth.",
-      "example": "Wasser [ˈvasɐ], Wein [vaɪ̯n], werden [ˈveːʁdən]",
-      "difficulty": "A1",
-      "practice": ["Wasser", "Wein", "werden", "was", "wie", "wann"]
-    },
-    {
-      "id": 23,
-      "category": "consonants",
-      "title": "PF Pronunciation",
-      "tip": "PF is pronounced as two separate sounds: [p] followed by [f]. Both sounds should be clearly articulated.",
-      "example": "Pferd [pfɛʁt], Apfel [ˈapfəl], Kopf [kɔpf]",
-      "difficulty": "A1",
-      "practice": ["Pferd", "Apfel", "Kopf", "Pfeffer", "Topf", "scharf"]
-    },
-    {
-      "id": 24,
-      "category": "consonants",
-      "title": "TSCH Pronunciation",
-      "tip": "TSCH is [tʃ] like 'ch' in 'church'. It's a single sound, not separate T and SCH.",
-      "example": "deutsch [dɔʏ̯tʃ], Matsch [matʃ], klatschen [ˈklatʃən]",
-      "difficulty": "A1",
-      "practice": ["deutsch", "Matsch", "klatschen", "latschen", "ratschen", "watschen"]
-    },
-    {
-      "id": 25,
-      "category": "consonants",
-      "title": "SP and ST at Beginning",
-      "tip": "At word beginnings, SP is [ʃp] and ST is [ʃt]. The S is pronounced like English 'sh'.",
-      "example": "sprechen [ˈʃpʁɛçən], stehen [ˈʃteːən], Spiel [ʃpiːl]",
-      "difficulty": "A1",
-      "practice": ["sprechen", "stehen", "Spiel", "Stadt", "spät", "studieren"]
-    },
-    {
-      "id": 26,
-      "category": "consonants",
-      "title": "NG Pronunciation",
-      "tip": "NG is always [ŋ] like 'ng' in 'sing', never [ŋg] like in 'finger'. The G is silent.",
-      "example": "singen [ˈzɪŋən], lang [laŋ], bringing [ˈbʁɪŋən]",
-      "difficulty": "A1",
-      "practice": ["singen", "lang", "bringen", "jung", "stark", "Gang"]
-    },
-    {
-      "id": 27,
-      "category": "consonants",
-      "title": "NK Pronunciation",
-      "tip": "NK is [ŋk] - pronounce the NG sound first, then the K sound clearly.",
-      "example": "denken [ˈdɛŋkən], danken [ˈdaŋkən],inken [ˈzɪŋkən]",
-      "difficulty": "A1",
-      "practice": ["denken", "danken", "trinken", "schinken", "spanken", "ranken"]
-    },
-    {
-      "id": 28,
-      "category": "consonants",
-      "title": "GN Pronunciation",
-      "tip": "GN is usually [gn] with both sounds pronounced, unlike French where N is silent.",
-      "example": "Wagner [ˈvaɡnɐ], Segen [ˈzeːɡən], Magen [ˈmaːɡən]",
-      "difficulty": "B1",
-      "practice": ["Wagner", "Segen", "Magen", "Regen", "Wagen", "Kragen"]
-    },
-    {
-      "id": 29,
-      "category": "consonants",
-      "title": "KN Pronunciation",
-      "tip": "KN is always [kn] with both K and N pronounced, unlike English where K is silent.",
-      "example": "Knie [kniː], Kneipe [ˈknaɪ̯pə], kennen [ˈkɛnən]",
-      "difficulty": "A1",
-      "practice": ["Knie", "Kneipe", "kennen", "Knoten", "knapp", "kneifen"]
-    },
-    {
-      "id": 30,
-      "category": "consonants",
-      "title": "RS Pronunciation",
-      "tip": "RS is usually [ʁs] or [ʀs] - the R is followed by S. The R sound varies by region.",
-      "example": "erst [eːɐ̯st], Pferd [pfɛʁt], Wurst [vʊɐ̯st]",
-      "difficulty": "A2",
-      "practice": ["erst", "Pferd", "Wurst", "Hirse", "kürzen", "schwärzen"]
-    },
-    {
-      "id": 31,
-      "category": "consonants",
-      "title": "TS Pronunciation",
-      "tip": "TS is [ts] like 'ts' in 'cats'. It's the same sound as Z.",
-      "example": "nichts [nɪçts], abends [ˈaːbənts], rechts [ʁɛçts]",
-      "difficulty": "A2",
-      "practice": ["nichts", "abends", "rechts", "Klots", "Gluts", "Satz"]
-    },
-    {
-      "id": 32,
-      "category": "consonants",
-      "title": "DS Pronunciation",
-      "tip": "DS is usually [ts] like 'ts' in 'cats', especially at the end of words.",
-      "example": "abends [ˈaːbənts], Lands [lants],unds [ʊnts]",
-      "difficulty": "A2",
-      "practice": ["abends", "Lands", "unds", "Hunds", "finds", "kunds"]
-    },
-    {
-      "id": 33,
-      "category": "consonants",
-      "title": "TZ Pronunciation",
-      "tip": "TZ is always [ts] like 'ts' in 'cats'. It's the same sound as Z.",
-      "example": "setzen [ˈzɛtsən], Platz [plats], Satz [zats]",
-      "difficulty": "A1",
-      "practice": ["setzen", "Platz", "Satz", "Herz", "jetzt", "ganz"]
-    },
-    {
-      "id": 34,
-      "category": "consonants",
-      "title": "TH Pronunciation",
-      "tip": "In German, TH is always [t], never [θ] like in English. The H is silent.",
-      "example": "Theater [ˈteːaːtɐ], Thema [ˈteːma], Mathematik [matemaˈtiːk]",
-      "difficulty": "A1",
-      "practice": ["Theater", "Thema", "Mathematik", "These", "Thron", "Thür"]
-    },
-    {
-      "id": 35,
-      "category": "consonants",
-      "title": "TION Pronunciation",
-      "tip": "TION is usually [tsi̯oːn] in loanwords, not [ʃən] like in English.",
-      "example": "Nation [natsi̯oːn], Station [ʃtatsi̯oːn], Aktion [aktsi̯oːn]",
-      "difficulty": "B1",
-      "practice": ["Nation", "Station", "Aktion", "Lektion", "Produktion", "Funktion"]
-    },
-    {
-      "id": 36,
-      "category": "word_stress",
-      "title": "German Word Stress Rules",
-      "tip": "German stress is usually on the first syllable: 'BÜcher' (books), not 'büCHER' (baker). Compound words follow this pattern.",
-      "example": "BÜcher [ˈbyːçɐ] vs Bücher [ˈbʏxɐ], HAUStür [ˈhaʊ̯sˌtyːɐ̯]",
-      "difficulty": "A1",
-      "practice": ["Bücher", "Lehrer", "Wasser", "Haus", "Auto", "kommen"]
-    },
-    {
-      "id": 37,
-      "category": "word_stress",
-      "title": "Prefix Stress Patterns",
-      "tip": "Prefixes like 'ge-', 'be-', 'er-', 'ver-', 'ent-', 'zer-' are unstressed. The main stress falls on the root syllable.",
-      "example": "GEsundheit [ɡəˈzʊntˌhaɪ̯t], BEkommen [bəˈkɔmən], VERstehen [fɛɐ̯ˈʃteːən]",
-      "difficulty": "A2",
-      "practice": ["Gesundheit", "bekommen", "verstehen", "entdecken", "zerbrechen", "erklären"]
-    },
-    {
-      "id": 38,
-      "category": "word_stress",
-      "title": "Loanword Stress Patterns",
-      "tip": "Loanwords often keep their original stress pattern, which may be on different syllables than German words.",
-      "example": "Student [ʃtuˈdɛnt], Professor [pʁofeˈsoːɐ̯], Hotel [hoˈtɛl]",
-      "difficulty": "B1",
-      "practice": ["Student", "Professor", "Hotel", "Restaurant", "Musik", "Kaffee"]
-    },
-    {
-      "id": 39,
-      "category": "word_stress",
-      "title": "Compound Word Stress",
-      "tip": "In compound words, the primary stress is usually on the first element, secondary stress on the second.",
-      "example": "HAUStür [ˈhaʊ̯sˌtyːɐ̯], BILDung [ˈbɪldʊŋ], FRAUen [ˈfʁaʊ̯ən]",
-      "difficulty": "A2",
-      "practice": ["Haustür", "Bildung", "Frauen", "Schulkind", "Arbeitszeit", "Bundesrepublik"]
-    },
-    {
-      "id": 40,
-      "category": "word_stress",
-      "title": "Verb Prefix Stress",
-      "tip": "Separable prefixes are stressed when they stand alone, but unstressed when attached to the verb.",
-      "example": "AUFstehen [ˈaʊ̯fˌʃteːən] vs aufGEstehen [aʊ̯fɡəˈʃteːən]",
-      "difficulty": "B1",
-      "practice": ["aufstehen", "aufgestanden", "anrufen", "angerufen", "einkaufen", "eingekauft"]
-    },
-    {
-      "id": 41,
-      "category": "intonation",
-      "title": "Question Intonation Patterns",
-      "tip": "Yes/no questions rise in pitch at the end, statements fall. W-questions (wer, was, wo) start with W sound and have rising intonation.",
-      "example": "Kommst du? [ˈkɔmst duː] (rising) vs Du kommst. [duː kɔmst] (falling)",
-      "difficulty": "A1",
-      "practice": ["Kommst du?", "Woher kommst du?", "Wie geht es?", "Was machst du?"]
-    },
-    {
-      "id": 42,
-      "category": "intonation",
-      "title": "Statement Intonation",
-      "tip": "Statements typically have falling intonation at the end, indicating completion and certainty.",
-      "example": "Ich komme aus Deutschland. [ɪç ˈkɔmə aʊ̯s ˈdɔʏ̯tʃlant] (falling)",
-      "difficulty": "A1",
-      "practice": ["Ich komme aus Deutschland.", "Das ist schön.", "Ich spreche Deutsch.", "Er geht nach Hause."]
-    },
-    {
-      "id": 43,
-      "category": "intonation",
-      "title": "Exclamation Intonation",
-      "tip": "Exclamations have higher pitch and often rise sharply at the beginning, then fall.",
-      "example": "Wie schön! [viː ʃøːn!] (high rise then fall)",
-      "difficulty": "A1",
-      "practice": ["Wie schön!", "Das ist fantastisch!", "Wunderbar!", "Sehr gut!"]
-    },
-    {
-      "id": 44,
-      "category": "intonation",
-      "title": "List Intonation",
-      "tip": "When listing items, intonation rises on each item except the last, which falls to indicate completion.",
-      "example": "Äpfel, Birnen, und Trauben [ɛpfəl, bɪʁnən, ʊnt tʁaʊ̯bən]",
-      "difficulty": "A2",
-      "practice": ["Äpfel, Birnen, und Trauben", "Brot, Käse, und Wurst", "Montag, Dienstag, und Mittwoch"]
-    },
-    {
-      "id": 45,
-      "category": "intonation",
-      "title": "Conditional Sentences",
-      "tip": "Conditional sentences often have rising intonation on the 'if' clause and falling on the main clause.",
-      "example": "Wenn ich Zeit hätte, würde ich kommen. [vɛn ɪç tsaɪ̯t hɛtə, vʊɐ̯tə ɪç ˈkɔmən]",
-      "difficulty": "B1",
-      "practice": ["Wenn ich Zeit hätte, würde ich kommen.", "Wenn das Wetter gut ist, gehen wir spazieren."]
-    },
-    {
-      "id": 46,
-      "category": "connected_speech",
-      "title": "Word Linking in German",
-      "tip": "Link words together smoothly. Final consonants often link to next word: 'ich arbeite' sounds like 'ich-arbeite'.",
-      "example": "ich arbeite [ɪç ˈaɐ̯baɪ̯tə] (connected)",
-      "difficulty": "A2",
-      "practice": ["ich arbeite", "wir gehen", "es ist", "ich habe", "du bist"]
-    },
-    {
-      "id": 47,
-      "category": "connected_speech",
-      "title": "Consonant Assimilation",
-      "tip": "Consonants can change to match neighboring sounds. 'an+dem' becomes 'am' [am], 'in+dem' becomes 'im' [ɪm].",
-      "example": "an dem → am [am], in dem → im [ɪm], bei dem → beim [baɪ̯m]",
-      "difficulty": "A2",
-      "practice": ["am", "im", "beim", "zum", "vom", "ans"]
-    },
-    {
-      "id": 48,
-      "category": "connected_speech",
-      "title": "Vowel Reduction",
-      "tip": "Unstressed vowels often reduce to schwa [ə]. This makes speech more fluid and natural.",
-      "example": "gekauft → [ɡəkɔft], gemacht → [ɡəmaxt]",
-      "difficulty": "B1",
-      "practice": ["gekauft", "gemacht", "gesagt", "gesehen", "gehört", "gelesen"]
-    },
-    {
-      "id": 49,
-      "category": "connected_speech",
-      "title": "Elision in Speech",
-      "tip": "Small words can lose sounds in fast speech: 'ich habe' → [ɪç aːbə], 'es ist' → [əs ɪst].",
-      "example": "ich habe → [ɪç aːbə], das ist → [das ɪst]",
-      "difficulty": "B2",
-      "practice": ["ich habe", "das ist", "wir haben", "es gibt", "sie ist"]
-    },
-    {
-      "id": 50,
-      "category": "connected_speech",
-      "title": "Glottal Stop",
-      "tip": "German often uses a glottal stop [ʔ] before words starting with vowels. This creates clear word boundaries.",
-      "example": "ich [ʔɪç], ach [ʔax], ein [ʔaɪ̯n]",
-      "difficulty": "B1",
-      "practice": ["ich", "ach", "ein", "aus", "an", "oben"]
-    },
-    {
-      "id": 51,
-      "category": "rhythm",
-      "title": "German Speech Rhythm",
-      "tip": "German is stress-timed. Stressed syllables occur at regular intervals. Practice counting syllables: 'Lie-be' (2 syllables).",
-      "example": "Liebe [ˈliːbə] (regular rhythm)",
-      "difficulty": "A2",
-      "practice": ["Liebe", "Wasser", "kommen", "gehen", "sprechen", "lernen"]
-    },
-    {
-      "id": 52,
-      "category": "rhythm",
-      "title": "Syllable Timing",
-      "tip": "Each stressed syllable gets roughly equal time, while unstressed syllables are compressed.",
-      "example": "UNIversität [ʊnivɛʁziˈtaːt] vs univerSITÄT [ʊnivɛʁziˈtaːt]",
-      "difficulty": "B1",
-      "practice": ["Universität", "Bibliothek", "Restaurant", "Krankenhaus", "Bahnhof", "Supermarkt"]
-    },
-    {
-      "id": 53,
-      "category": "rhythm",
-      "title": "Sentence Rhythm",
-      "tip": "Maintain regular rhythm across sentences. Each stressed syllable should be roughly equally spaced in time.",
-      "example": "ICH komME MORgen [ɪç ˈkɔmə ˈmɔʁɡən]",
-      "difficulty": "B1",
-      "practice": ["Ich komme morgen.", "Wir gehen heute.", "Sie spricht Deutsch.", "Er arbeitet hier."]
-    },
-    {
-      "id": 54,
-      "category": "rhythm",
-      "title": "Poetic Rhythm",
-      "tip": "German poetry often uses strict metrical patterns. Understanding these helps with natural speech rhythm.",
-      "example": "Ich weiß nicht, was soll es bedeuten [ɪç vaɪ̯s nɪçt, vas zɔl ɛs bəˈdaɪ̯tən]",
-      "difficulty": "C1",
-      "practice": ["Ich weiß nicht, was soll es bedeuten", "Du bist wie eine Blume", "Über allen Gipfeln"]
-    },
-    {
-      "id": 55,
-      "category": "regional_variations",
-      "title": "Northern vs Southern German",
-      "tip": "Northern German uses uvular R [ʁ], while southern German often uses alveolar R [ʀ]. Final G is [k] in north, [ç] in south.",
-      "example": "Tag [taːk] (north) vs Tag [taːç] (south)",
-      "difficulty": "B1",
-      "practice": ["Tag", "Weg", "mag", "sag", "Krieg", "Zweig"]
-    },
-    {
-      "id": 56,
-      "category": "regional_variations",
-      "title": "Austrian German Features",
-      "tip": "Austrian German has distinct features: 'ei' often becomes [ɛɪ̯], final consonants are often softened.",
-      "example": "mein [mɛɪ̯] (Austrian) vs [maɪ̯] (standard)",
-      "difficulty": "B2",
-      "practice": ["mein", "dein", "weit", "kein", "heiß", "Wein"]
-    },
-    {
-      "id": 57,
-      "category": "regional_variations",
-      "title": "Swiss German Features",
-      "tip": "Swiss German doesn't use the 'ß' character, replaces it with 'ss'. Some vowel sounds differ.",
-      "example": "Straße (German) vs Strasse (Swiss)",
-      "difficulty": "B2",
-      "practice": ["Straße", "groß", "müssen", "heißen", "Fuß", "schließen"]
-    },
-    {
-      "id": 58,
-      "category": "regional_variations",
-      "title": "Bavarian German Features",
-      "tip": "Bavarian German has unique vowel qualities and often softens consonants. 'p' becomes [b], 't' becomes [d].",
-      "example": "Pferd [pfɛʁt] → [fɛɐ̯d] (Bavarian)",
-      "difficulty": "B2",
-      "practice": ["Pferd", "Wasser", "Kind", "gut", "machen", "sprechen"]
-    },
-    {
-      "id": 59,
-      "category": "common_mistakes",
-      "title": "English R vs German R",
-      "tip": "English R is retroflex with tongue curled back. German R is uvular (back of throat) or alveolar (tongue tip).",
-      "example": "red [ɹɛd] (English) vs rot [ʁoːt] (German)",
-      "difficulty": "A1",
-      "practice": ["rot", "reisen", "richtig", "Regen", "Rose", "singen"]
-    },
-    {
-      "id": 60,
-      "category": "common_mistakes",
-      "title": "English W vs German W",
-      "tip": "English W is [w] with rounded lips. German W is [v] with bottom lip touching upper teeth.",
-      "example": "water [ˈwɔːtəɹ] (English) vs Wasser [ˈvasɐ] (German)",
-      "difficulty": "A1",
-      "practice": ["Wasser", "Wein", "wer", "wenn", "wissen", "wollen"]
-    },
-    {
-      "id": 61,
-      "category": "common_mistakes",
-      "title": "English TH vs German TH",
-      "tip": "English TH is [θ] or [ð]. German TH is always [t]. The H is silent in German.",
-      "example": "the [ðə] (English) vs Theater [ˈteːaːtɐ] (German)",
-      "difficulty": "A1",
-      "practice": ["Theater", "Thema", "Mathematik", "These", "Thron", "Thür"]
-    },
-    {
-      "id": 62,
-      "category": "common_mistakes",
-      "title": "Vowel Length Confusion",
-      "tip": "English speakers often confuse long and short German vowels. Remember: long vowels before single consonants, short before double.",
-      "example": "Boot [boːt] (long) vs Bett [bɛt] (short)",
-      "difficulty": "A2",
-      "practice": ["Boot", "Bett", "Vater", "Mutter", "Tag", "Mann"]
-    },
-    {
-      "id": 63,
-      "category": "common_mistakes",
-      "title": "Umlaut Pronunciation",
-      "tip": "English speakers often pronounce umlauts incorrectly. Practice lip rounding for ä, ö, ü.",
-      "example": "schön [ʃøːn] (German) vs [ʃoːn] (incorrect)",
-      "difficulty": "A1",
-      "practice": ["schön", "hören", "Mutter", "können", "über", "müde"]
-    },
-    {
-      "id": 64,
-      "category": "common_mistakes",
-      "title": "CH Sound Confusion",
-      "tip": "English speakers often pronounce CH as [k] or [ʃ]. Remember: [ç] after front vowels, [x] after back vowels.",
-      "example": "ich [ɪç] (correct) vs [ik] or [ɪʃ] (incorrect)",
-      "difficulty": "A1",
-      "practice": ["ich", "nicht", "mich", "Buch", "machen", "auch"]
-    },
-    {
-      "id": 65,
-      "category": "common_mistakes",
-      "title": "Final Consonant Devoicing",
-      "tip": "German devoices final consonants: b→p, d→t, g→k. English often keeps them voiced.",
-      "example": "Tag [taːk] (German) vs [taːɡ] (English-style)",
-      "difficulty": "A1",
-      "practice": ["Tag", "Weg", "mag", "sag", "Krieg", "Zweig"]
-    },
-    {
-      "id": 66,
-      "category": "common_mistakes",
-      "title": "Stress Pattern Errors",
-      "tip": "English speakers often stress wrong syllables in German words. Remember: German usually stresses first syllable.",
-      "example": "BÜcher [ˈbyːçɐ] (correct) vs büCHER [ˈbʏxɐ] (incorrect)",
-      "difficulty": "A1",
-      "practice": ["Bücher", "Lehrer", "Wasser", "kommen", "gehen", "sprechen"]
-    },
-    {
-      "id": 67,
-      "category": "common_mistakes",
-      "title": "Z Pronunciation",
-      "tip": "English speakers often pronounce Z as [z] like in English. German Z is always [ts].",
-      "example": "Zeit [tsaɪ̯t] (German) vs [zaɪ̯t] (English-style)",
-      "difficulty": "A1",
-      "practice": ["Zeit", "zwei", "zu", "zusammen", "zerstören", "Zimmer"]
-    },
-    {
-      "id": 68,
-      "category": "common_mistakes",
-      "title": "S Pronunciation",
-      "tip": "English speakers often pronounce S as [s] everywhere. German S is [z] between vowels, [s] elsewhere.",
-      "example": "reisen [ˈʁaɪ̯zən] (correct) vs [ˈʁaɪ̯sən] (incorrect)",
-      "difficulty": "A1",
-      "practice": ["reisen", "Rose", "Haus", "Wasser", "sagen", "sehen"]
-    },
-    {
-      "id": 69,
-      "category": "minimal_pairs",
-      "title": "A vs Ä Minimal Pairs",
-      "tip": "Practice distinguishing between [a] and [ɛ] sounds in similar words.",
-      "example": "Mann [man] vs Männer [ˈmɛnɐ], was [vas] vs wäschen [ˈvɛʃən]",
-      "difficulty": "A1",
-      "practice": ["Mann", "Männer", "was", "wäschen", "Bank", "Bänke", "satt", "sätt"]
-    },
-    {
-      "id": 70,
-      "category": "minimal_pairs",
-      "title": "O vs Ö Minimal Pairs",
-      "tip": "Practice distinguishing between [o] and [œ] sounds in similar words.",
-      "example": "Sohn [zoːn] vs Söhne [ˈzøːnə], ohne [ˈoːnə] vs öffnen [ˈœfnən]",
-      "difficulty": "A2",
-      "practice": ["Sohn", "Söhne", "ohne", "öffnen", "Korn", "Körner", "hoch", "höh"]
-    },
-    {
-      "id": 71,
-      "category": "minimal_pairs",
-      "title": "U vs Ü Minimal Pairs",
-      "tip": "Practice distinguishing between [u] and [y] sounds in similar words.",
-      "example": "du [duː] vs über [ˈyːbɐ], Mut [muːt] vs müde [ˈmyːdə]",
-      "difficulty": "A2",
-      "practice": ["du", "über", "Mut", "müde", "Kuh", "Kühnheit", "gut", "gültig"]
-    },
-    {
-      "id": 72,
-      "category": "minimal_pairs",
-      "title": "Short vs Long Vowels",
-      "tip": "Practice distinguishing between short and long vowel sounds.",
-      "example": "Stadt [ʃtat] vs Stätte [ˈʃtɛtə], Boot [boːt] vs Bottich [ˈbɔtɪç]",
-      "difficulty": "A1",
-      "practice": ["Stadt", "Stätte", "Boot", "Bottich", "Vater", "Mutter", "Tag", "Mann"]
-    },
-    {
-      "id": 73,
-      "category": "minimal_pairs",
-      "title": "IE vs I Minimal Pairs",
-      "tip": "Practice distinguishing between long [iː] and short [ɪ] sounds.",
-      "example": "Lied [liːt] vs List [lɪst], Biene [ˈbiːnə] vs binne [ˈbɪnə]",
-      "difficulty": "A1",
-      "practice": ["Lied", "List", "Biene", "binne", "wir", "wird", "bieten", "bitten"]
-    },
-    {
-      "id": 74,
-      "category": "minimal_pairs",
-      "title": "EI vs IE Minimal Pairs",
-      "tip": "Practice distinguishing between [aɪ̯] and [iː] sounds.",
-      "example": "mein [maɪ̯n] vs mein [miːn] (nonexistent), Wein [vaɪ̯n] vs Wien [viːn]",
-      "difficulty": "A1",
-      "practice": ["Wein", "Wien", "mein", "meinen", "dein", "deinen", "kein", "keinen"]
-    },
-    {
-      "id": 75,
-      "category": "minimal_pairs",
-      "title": "EU vs AU Minimal Pairs",
-      "tip": "Practice distinguishing between [ɔʏ̯] and [aʊ̯] sounds.",
-      "example": "heute [ˈhɔʏ̯tə] vs Haut [haʊ̯t], neu [nɔʏ̯] vs nauf [naʊ̯f]",
-      "difficulty": "A2",
-      "practice": ["heute", "Haut", "neu", "nauf", "deutsch", "taub", "läuft", "kaufen"]
-    },
-    {
-      "id": 76,
-      "category": "minimal_pairs",
-      "title": "CH Variations",
-      "tip": "Practice distinguishing between [ç] and [x] sounds.",
-      "example": "ich [ɪç] vs Buch [buːx], nicht [nɪçt] vs Loch [lɔx]",
-      "difficulty": "A1",
-      "practice": ["ich", "Buch", "nicht", "Loch", "mich", "machen", "leicht", "Kuchen"]
-    },
-    {
-      "id": 77,
-      "category": "minimal_pairs",
-      "title": "S vs Z Minimal Pairs",
-      "tip": "Practice distinguishing between [s/z] and [ts] sounds.",
-      "example": "sein [zaɪ̯n] vs Zeit [tsaɪ̯t], reisen [ˈʁaɪ̯zən] vs reißen [ˈʁaɪ̯sən]",
-      "difficulty": "A1",
-      "practice": ["sein", "Zeit", "reisen", "reißen", "Sohn", "Sohn", "Satz", "satt"]
-    },
-    {
-      "id": 78,
-      "category": "minimal_pairs",
-      "title": "P vs B Minimal Pairs",
-      "tip": "Practice distinguishing between [p] and [b] sounds.",
-      "example": "Park [paʁk] vs Bark [baʁk], Post [pɔst] vs Most [moːst]",
-      "difficulty": "A1",
-      "practice": ["Park", "Bark", "Post", "Most", "Pfund", "Bund", "passen", "bassen"]
-    },
-    {
-      "id": 79,
-      "category": "minimal_pairs",
-      "title": "T vs D Minimal Pairs",
-      "tip": "Practice distinguishing between [t] and [d] sounds.",
-      "example": "Tag [taːk] vs Damm [dam], Teil [taɪ̯l] vs Deich [daɪ̯ç]",
-      "difficulty": "A1",
-      "practice": ["Tag", "Damm", "Teil", "Deich", "Tanz", "Glanz", "Tor", "Dorf"]
-    },
-    {
-      "id": 80,
-      "category": "minimal_pairs",
-      "title": "K vs G Minimal Pairs",
-      "tip": "Practice distinguishing between [k] and [g] sounds.",
-      "example": "Korn [kɔʁn] vs Gorn [ɡɔʁn], Kunst [kʊnst] vs Gunst [ɡʊnst]",
-      "difficulty": "A1",
-      "practice": ["Korn", "Gorn", "Kunst", "Gunst", "Kind", "Gind", "kalt", "galt"]
-    },
-    {
-      "id": 81,
-      "category": "minimal_pairs",
-      "title": "F vs V Minimal Pairs",
-      "tip": "Practice distinguishing between [f] and [v] sounds.",
-      "example": "vier [fiːɐ̯] vs für [fyːɐ̯], fast [fast] vs vast [vast]",
-      "difficulty": "A2",
-      "practice": ["vier", "für", "fast", "vast", "Fisch", "wichtig", "finden", "winden"]
-    },
-    {
-      "id": 82,
-      "category": "minimal_pairs",
-      "title": "W vs B Minimal Pairs",
-      "tip": "Practice distinguishing between [v] and [b] sounds.",
-      "example": "Wein [vaɪ̯n] vs Bein [baɪ̯n], was [vas] vs Bass [bas]",
-      "difficulty": "A1",
-      "practice": ["Wein", "Bein", "was", "Bass", "Wort", "Bord", "wollen", "bollen"]
-    },
-    {
-      "id": 83,
-      "category": "tongue_twisters",
-      "title": "Classic German Tongue Twisters",
-      "tip": "Practice these tongue twisters to improve your pronunciation fluency and accuracy.",
-      "example": "Fischers Fritze fischt frische Fische [ˈfɪʃɐs ˈfʁɪt͡sə fɪʃt fʁɪʃə ˈfɪʃə]",
-      "difficulty": "B1",
-      "practice": ["Fischers Fritze fischt frische Fische", "Brautkleid bleibt Brautkleid", "Blaukraut bleibt Blaukraut"]
-    },
-    {
-      "id": 84,
-      "category": "tongue_twisters",
-      "title": "CH Sound Tongue Twisters",
-      "tip": "Focus on the different CH sounds in these tongue twisters.",
-      "example": "Ich möchte, daß du mir auch etwas schenkst [ɪç ˈmœçtə, das duː miːɐ̯ aʊ̯x ɛtvas ʃɛŋkst]",
-      "difficulty": "B2",
-      "practice": ["Ich möchte, daß du mir auch etwas schenkst", "In Ulm und um Ulm"]
-    },
-    {
-      "id": 85,
-      "category": "tongue_twisters",
-      "title": "R Sound Tongue Twisters",
-      "tip": "Practice the German R sounds with these challenging phrases.",
-      "example": "Der Rabe rüttelte die rote Rübe [deːɐ̯ ˈʁaːbə ˈʁʏtəltə diː ˈʁoːtə ˈʁyːbə]",
-      "difficulty": "B2",
-      "practice": ["Der Rabe rüttelte die rote Rübe", "Roland rollt die Rollen", "Rudi rührt den Rhabarber"]
-    },
-    {
-      "id": 86,
-      "category": "tongue_twisters",
-      "title": "Umlaut Tongue Twisters",
-      "tip": "Master the umlaut sounds with these challenging phrases.",
-      "example": "Übler Übeltäter übt übermütig [ˈyːblɐ ˈyːbɛlˌtɛːtɐ ʔyːpt ˈyːbɐ̯ˈmyːtɪç]",
-      "difficulty": "B2",
-      "practice": ["Übler Übeltäter übt übermütig", "Öl und Öl fließen über", "Äpfel, Äpfel, ich ess' Äpfel"]
-    },
-    {
-      "id": 87,
-      "category": "tongue_twisters",
-      "title": "Consonant Cluster Tongue Twisters",
-      "tip": "Challenge yourself with difficult consonant combinations.",
-      "example": "Strohstroh schwimmt im Strohstroh [ʃtʁoːʃtʁoː ʃvɪmt ɪm ʃtʁoːʃtʁoː]",
-      "difficulty": "C1",
-      "practice": ["Strohstroh schwimmt im Strohstroh", "Pfeffer, Pfeffer, Pfeffer", "Schnecken schnecken Schnecken"]
-    },
-    {
-      "id": 88,
-      "category": "advanced",
-      "title": "Palatalization",
-      "tip": "Some consonants become palatalized before front vowels. This creates smoother transitions.",
-      "example": "Mädchen [ˈmɛːtçən] (palatalized t), echt [ɛçt] (palatalized ch)",
-      "difficulty": "B2",
-      "practice": ["Mädchen", "echt", "recht", "flechten", "nächten", "Lichter"]
-    },
-    {
-      "id": 89,
-      "category": "advanced",
-      "title": "Assimilation Processes",
-      "tip": "Sounds can change to become more similar to neighboring sounds. This makes speech more fluid.",
-      "example": "haben Sie → [haːbən ziː] → [haːbm̩ ziː]",
-      "difficulty": "C1",
-      "practice": ["haben Sie", "gibt es", "sind Sie", "kannst du", "willst du", "hast du"]
-    },
-    {
-      "id": 90,
-      "category": "advanced",
-      "title": "Dissimilation",
-      "tip": "Sometimes sounds become less similar to avoid difficult combinations.",
-      "example": "Fünf [fʏnf] (original *fünpf would be difficult)",
-      "difficulty": "C1",
-      "practice": ["Fünf", "sieben", "zwölf", "dreizehn", "vierzehn", "fünfzehn"]
-    },
-    {
-      "id": 91,
-      "category": "advanced",
-      "title": "Epenthesis",
-      "tip": "Extra sounds can be inserted to make pronunciation easier.",
-      "example": "Hunger [ˈhʊŋɐ] (epenthetic ə), Engel [ˈɛŋl̩] (epenthetic l)",
-      "difficulty": "C1",
-      "practice": ["Hunger", "Engel", "singst", "jungst", "längst", "längst"]
-    },
-    {
-      "id": 92,
-      "category": "advanced",
-      "title": "Vowel Harmony",
-      "tip": "Vowels in compounds can influence each other's pronunciation.",
-      "example": "Krankenhaus [ˈkʁaŋkənˌhaʊ̯s] (vowel harmony between syllables)",
-      "difficulty": "C1",
-      "practice": ["Krankenhaus", "Bundesrepublik", "Bundeskanzler", "Gemeinschaft", "Gesellschaft"]
-    },
-    {
-      "id": 93,
-      "category": "advanced",
-      "title": "Prosodic Features",
-      "tip": "German has characteristic prosodic patterns including pitch contours, rhythm, and stress timing.",
-      "example": "Ich glaube, daß er kommt [ɪç ɡlaʊ̯bə, das eːɐ̯ kɔmt] (characteristic contour)",
-      "difficulty": "C1",
-      "practice": ["Ich glaube, daß er kommt", "Wenn ich Zeit hätte", "Das ist sehr interessant", "Ich möchte gern"]
-    },
-    {
-      "id": 94,
-      "category": "advanced",
-      "title": "Morphophonemic Alternations",
-      "tip": "Sounds can change based on morphological processes like plural formation or verb conjugation.",
-      "example": "Haus [haʊ̯s] vs Häuser [ˈhɔʏ̯zɐ], Buch [buːx] vs Bücher [ˈbyːçɐ]",
-      "difficulty": "C1",
-      "practice": ["Haus", "Häuser", "Buch", "Bücher", "Stadt", "Städte", "Hand", "Hände"]
-    },
-    {
-      "id": 95,
-      "category": "advanced",
-      "title": "Syllable Structure",
-      "tip": "German prefers CV (consonant-vowel) syllables but allows complex consonant clusters.",
-      "example": "Streichholzschächtelchen [ˈʃtʁaɪ̯çhɔlt͡sʃɛçtəlçən] (complex clusters)",
-      "difficulty": "C1",
-      "practice": ["Streichholzschächtelchen", "Geschwindigkeit", "unverständlich", "Verständlichkeit", "Mittelmäßigkeit"]
-    },
-    {
-      "id": 96,
-      "category": "advanced",
-      "title": "Juncture Phenomena",
-      "tip": "Word boundaries can be marked or blurred depending on speaking style and context.",
-      "example": "ein Eis [aɪ̯n aɪ̯s] vs eineis [aɪ̯naɪ̯s] (blurred boundary)",
-      "difficulty": "C1",
-      "practice": ["ein Eis", "eineis", "das Auto", "dasauto", "in Ordnung", "inordnung"]
-    },
-    {
-      "id": 97,
-      "category": "advanced",
-      "title": "Coarticulation Effects",
-      "tip": "Sounds influence each other's pronunciation in rapid speech, creating natural flow.",
-      "example": "guten Morgen [ˈɡuːtən ˈmɔʁɡən] → [ˈɡuːtn̩ ˈmɔʁɡn̩]",
-      "difficulty": "C1",
-      "practice": ["guten Morgen", "guten Tag", "guten Abend", "schönen Tag", "gute Nacht"]
-    },
-    {
-      "id": 98,
-      "category": "advanced",
-      "title": "Intonational Phrasing",
-      "tip": "German organizes speech into intonational phrases with characteristic pitch patterns.",
-      "example": "Ich komme morgen, // wenn das Wetter gut ist [ɪç ˈkɔmə ˈmɔʁɡən, // vɛn das ˈvɛtɐ̯ ɡuːt ɪst]",
-      "difficulty": "C1",
-      "practice": ["Ich komme morgen, wenn das Wetter gut ist", "Wir gehen heute, weil wir Zeit haben", "Er spricht Deutsch, weil er in Deutschland lebt"]
-    },
-    {
-      "id": 99,
-      "category": "advanced",
-      "title": "Discourse Intonation",
-      "tip": "Different types of discourse (narrative, explanatory, argumentative) have characteristic intonation patterns.",
-      "example": "Es war einmal... [ɛs vaːɐ̯ ˈaɪ̯nmaɪ̯l...] (narrative opening)",
-      "difficulty": "C1",
-      "practice": ["Es war einmal...", "Zuerst müssen wir...", "Das Problem ist...", "Die Lösung besteht darin..."]
-    },
-    {
-      "id": 100,
-      "category": "advanced",
-      "title": "Emotional Prosody",
-      "tip": "Different emotions are expressed through specific prosodic patterns in German.",
-      "example": "Das ist wunderbar! [das ɪst ˈvʊndɐbaːɐ̯!] (excitement)",
-      "difficulty": "C1",
-      "practice": ["Das ist wunderbar!", "Das ist schrecklich!", "Das ist interessant!", "Das ist komisch!"]
-    },
-    {
-      "id": 101,
-      "category": "advanced",
-      "title": "Regional Prosody",
-      "tip": "Different German-speaking regions have characteristic prosodic patterns.",
-      "example": "Bavarian: more melodic, Northern: more monotone",
-      "difficulty": "C1",
-      "practice": ["Servus!", "Grüß Gott!", "Moin!", "Hallo!", "Guten Tag!"]
-    },
-    {
-      "id": 102,
-      "category": "advanced",
-      "title": "Formal vs Informal Speech",
-      "tip": "Formal speech tends to be more careful with pronunciation, informal speech more relaxed.",
-      "example": "Guten Tag [ˈɡuːtən ˈtaːk] (formal) vs Hallo [ˈhalo] (informal)",
-      "difficulty": "B2",
-      "practice": ["Guten Tag", "Hallo", "Auf Wiedersehen", "Tschüss", "Entschuldigung", "Sorry"]
-    },
-    {
-      "id": 103,
-      "category": "advanced",
-      "title": "Reading Aloud Techniques",
-      "tip": "Reading aloud requires specific techniques for natural German pronunciation and prosody.",
-      "example": "Mark stress patterns, practice intonation, use appropriate pauses",
-      "difficulty": "B2",
-      "practice": ["Lesen Sie diesen Satz laut vor", "Sprechen Sie deutlich und langsam", "Achten Sie auf die Betonung"]
-    },
-    {
-      "id": 104,
-      "category": "advanced",
-      "title": "Public Speaking German",
-      "tip": "Public speaking in German requires mastery of pronunciation, stress, and intonation.",
-      "example": "Sehr geehrte Damen und Herren [zeːɐ̯ ɡeːˈʁeːtə ˈdaːmən ʊnt ˈhɛʁən]",
-      "difficulty": "C1",
-      "practice": ["Sehr geehrte Damen und Herren", "Ich begrüße Sie herzlich", "Vielen Dank für Ihre Aufmerksamkeit"]
-    },
-    {
-      "id": 105,
-      "category": "advanced",
-      "title": "Telephone German",
-      "tip": "Telephone speech requires clear pronunciation and specific phrases.",
-      "example": "Hier spricht [Name] [hiːɐ̯ ʃpʁɪçt...], Am Apparat [am ˈaparat]",
-      "difficulty": "B2",
-      "practice": ["Hier spricht...", "Am Apparat", "Kann ich Ihnen helfen?", "Einen Moment bitte", "Auf Wiederhören"]
-    },
-    {
-      "id": 106,
-      "category": "advanced",
-      "title": "Academic German Pronunciation",
-      "tip": "Academic German has specific pronunciation norms and specialized vocabulary.",
-      "example": "Hypothese [hypoˈteːzə], These [ˈteːzə], These [ˈteːzə]",
-      "difficulty": "C1",
-      "practice": ["Hypothese", "These", "Synthese", "Analyse", "Kategorie", "Methodik"]
-    },
-    {
-      "id": 107,
-      "category": "advanced",
-      "title": "Technical German Pronunciation",
-      "tip": "Technical fields have specific pronunciation norms for specialized terminology.",
-      "example": "Technik [ˈtɛçnɪk], Maschine [maˈʃiːnə], Computer [kəmˈpuːtɐ]",
-      "difficulty": "B2",
-      "practice": ["Technik", "Maschine", "Computer", "Software", "Hardware", "Internet"]
-    },
-    {
-      "id": 108,
-      "category": "advanced",
-      "title": "Medical German Pronunciation",
-      "tip": "Medical terminology in German follows specific pronunciation patterns.",
-      "example": "Patient [paˈt͡sɛnt], Symptom [zʏmˈtoːm], Diagnose [diaɡˈnoːzə]",
-      "difficulty": "C1",
-      "practice": ["Patient", "Symptom", "Diagnose", "Therapie", "Medikament", "Krankheit"]
-    },
-    {
-      "id": 109,
-      "category": "advanced",
-      "title": "Legal German Pronunciation",
-      "tip": "Legal German has specific pronunciation norms for legal terminology.",
-      "example": "Gesetz [ɡəˈzɛts], Recht [ʁɛçt], Gericht [ɡəˈʁɪçt]",
-      "difficulty": "C1",
-      "practice": ["Gesetz", "Recht", "Gericht", "Vertrag", "Anwalt", "Richter"]
-    },
-    {
-      "id": 110,
-      "category": "advanced",
-      "title": "Business German Pronunciation",
-      "tip": "Business German requires clear pronunciation and specific vocabulary.",
-      "example": "Geschäft [ɡəˈʃɛft], Unternehmen [ʔʊntɐˈneːmən], Management [ˈmænɪdʒmənt]",
-      "difficulty": "B2",
-      "practice": ["Geschäft", "Unternehmen", "Management", "Marketing", "Vertrieb", "Kunde"]
-    },
-    {
-      "id": 111,
-      "category": "advanced",
-      "title": "Pronunciation Self-Assessment",
-      "tip": "Regular self-assessment helps identify areas for improvement in German pronunciation.",
-      "example": "Record yourself, compare with native speakers, identify specific problem areas",
-      "difficulty": "B1",
-      "practice": ["Record yourself reading German texts", "Compare with native speaker recordings", "Identify specific sounds to improve", "Practice problem sounds regularly"]
+      "tip": "The most common sound in English. It's a weak, lazy vowel sound. Relax your mouth completely.",
+      "example": "About, Common, Problem, Support",
+      "difficulty": "easy"
     }
   ],
   "minimalPairs": [
     {
-      "pair": ["Mann", "Männer"],
-      "ipa": ["/man/", "/ˈmɛnɐ/"],
-      "category": "vowels",
-      "difficulty": "A1",
-      "tip": "Distinguish between short [a] and long [ɛ] sounds"
+      "pair": [
+        "Ship",
+        "Sheep"
+      ],
+      "difficulty": "easy",
+      "focus": "Short /ɪ/ vs Long /iː/"
     },
     {
-      "pair": ["Sohn", "Söhne"],
-      "ipa": ["/zoːn/", "/ˈzøːnə/"],
-      "category": "vowels",
-      "difficulty": "A2",
-      "tip": "Distinguish between back [o] and front [œ] rounded vowels"
+      "pair": [
+        "Bit",
+        "Beat"
+      ],
+      "difficulty": "easy",
+      "focus": "Short /ɪ/ vs Long /iː/"
     },
     {
-      "pair": ["du", "über"],
-      "ipa": ["/duː/", "/ˈyːbɐ/"],
-      "category": "vowels",
-      "difficulty": "A2",
-      "tip": "Distinguish between back [u] and front [y] rounded vowels"
+      "pair": [
+        "Sit",
+        "Seat"
+      ],
+      "difficulty": "easy",
+      "focus": "Short /ɪ/ vs Long /iː/"
     },
     {
-      "pair": ["Stadt", "Stätte"],
-      "ipa": ["/ʃtat/", "/ˈʃtɛtə/"],
-      "category": "vowels",
-      "difficulty": "A1",
-      "tip": "Distinguish between short and long vowels"
+      "pair": [
+        "Pen",
+        "Pan"
+      ],
+      "difficulty": "easy",
+      "focus": "/e/ vs /æ/"
     },
     {
-      "pair": ["Lied", "List"],
-      "ipa": ["/liːt/", "/lɪst/"],
-      "category": "vowels",
-      "difficulty": "A1",
-      "tip": "Distinguish between long [iː] and short [ɪ] sounds"
+      "pair": [
+        "Bed",
+        "Bad"
+      ],
+      "difficulty": "easy",
+      "focus": "/e/ vs /æ/"
     },
     {
-      "pair": ["Wein", "Wien"],
-      "ipa": ["/vaɪ̯n/", "/viːn/"],
-      "category": "vowels",
-      "difficulty": "A1",
-      "tip": "Distinguish between [aɪ̯] and [iː] sounds"
+      "pair": [
+        "Think",
+        "Sink"
+      ],
+      "difficulty": "medium",
+      "focus": "/θ/ vs /s/"
     },
     {
-      "pair": ["heute", "Haut"],
-      "ipa": ["/ˈhɔʏ̯tə/", "/haʊ̯t/"],
-      "category": "vowels",
-      "difficulty": "A2",
-      "tip": "Distinguish between [ɔʏ̯] and [aʊ̯] diphthongs"
+      "pair": [
+        "Three",
+        "Tree"
+      ],
+      "difficulty": "medium",
+      "focus": "/θ/ vs /t/"
     },
     {
-      "pair": ["ich", "Buch"],
-      "ipa": ["/ɪç/", "/buːx/"],
-      "category": "consonants",
-      "difficulty": "A1",
-      "tip": "Distinguish between [ç] and [x] CH sounds"
+      "pair": [
+        "They",
+        "Day"
+      ],
+      "difficulty": "medium",
+      "focus": "/ð/ vs /d/"
     },
     {
-      "pair": ["sein", "Zeit"],
-      "ipa": ["/zaɪ̯n/", "/tsaɪ̯t/"],
-      "category": "consonants",
-      "difficulty": "A1",
-      "tip": "Distinguish between [z] and [ts] sounds"
+      "pair": [
+        "Vest",
+        "Best"
+      ],
+      "difficulty": "medium",
+      "focus": "/v/ vs /b/"
     },
     {
-      "pair": ["Park", "Bark"],
-      "ipa": ["/paʁk/", "/baʁk/"],
-      "category": "consonants",
-      "difficulty": "A1",
-      "tip": "Distinguish between [p] and [b] sounds"
+      "pair": [
+        "Very",
+        "Berry"
+      ],
+      "difficulty": "medium",
+      "focus": "/v/ vs /b/"
     },
     {
-      "pair": ["Tag", "Damm"],
-      "ipa": ["/taːk/", "/dam/"],
-      "category": "consonants",
-      "difficulty": "A1",
-      "tip": "Distinguish between [t] and [d] sounds"
+      "pair": [
+        "Light",
+        "Right"
+      ],
+      "difficulty": "hard",
+      "focus": "/l/ vs /r/"
     },
     {
-      "pair": ["Korn", "Gorn"],
-      "ipa": ["/kɔʁn/", "/ɡɔʁn/"],
-      "category": "consonants",
-      "difficulty": "A1",
-      "tip": "Distinguish between [k] and [g] sounds"
+      "pair": [
+        "Lock",
+        "Rock"
+      ],
+      "difficulty": "hard",
+      "focus": "/l/ vs /r/"
     },
     {
-      "pair": ["vier", "für"],
-      "ipa": ["/fiːɐ̯/", "/fyːɐ̯/"],
-      "category": "consonants",
-      "difficulty": "A2",
-      "tip": "Distinguish between [f] and [v] sounds"
-    },
-    {
-      "pair": ["Wein", "Bein"],
-      "ipa": ["/vaɪ̯n/", "/baɪ̯n/"],
-      "category": "consonants",
-      "difficulty": "A1",
-      "tip": "Distinguish between [v] and [b] sounds"
+      "pair": [
+        "Alive",
+        "Arrive"
+      ],
+      "difficulty": "hard",
+      "focus": "/l/ vs /r/"
     }
   ],
   "tongueTwisters": [
     {
-      "text": "Fischers Fritze fischt frische Fische",
-      "ipa": "/ˈfɪʃɐs ˈfʁɪt͡sə fɪʃt fʁɪʃə ˈfɪʃə/",
-      "difficulty": "B1",
-      "focus": "f, s, sch sounds",
-      "translation": "Fischer's Fritze catches fresh fish"
+      "text": "She sells seashells by the seashore.",
+      "difficulty": "medium",
+      "focus": "/s/ and /ʃ/ sounds"
     },
     {
-      "text": "Brautkleid bleibt Brautkleid",
-      "ipa": "/ˈbʁaʊ̯tklaɪ̯t blaɪ̯bt ˈbʁaʊ̯tklaɪ̯t/",
-      "difficulty": "A2",
-      "focus": "br, bl consonant clusters",
-      "translation": "Wedding dress stays wedding dress"
+      "text": "Peter Piper picked a peck of pickled peppers.",
+      "difficulty": "medium",
+      "focus": "/p/ sound"
     },
     {
-      "text": "Blaukraut bleibt Blaukraut",
-      "ipa": "/ˈblaʊ̯kʁaʊ̯t blaɪ̯bt ˈblaʊ̯kʁaʊ̯t/",
-      "difficulty": "A2",
-      "focus": "bl, br consonant clusters",
-      "translation": "Blue cabbage stays blue cabbage"
+      "text": "How much wood would a woodchuck chuck if a woodchuck could chuck wood?",
+      "difficulty": "hard",
+      "focus": "/w/ and /tʃ/ sounds"
     },
     {
-      "text": "Ich möchte, daß du mir auch etwas schenkst",
-      "ipa": "/ɪç ˈmœçtə, das duː miːɐ̯ aʊ̯x ɛtvas ʃɛŋkst/",
-      "difficulty": "B2",
-      "focus": "ch sounds",
-      "translation": "I want you to give me something too"
+      "text": "Red lorry, yellow lorry.",
+      "difficulty": "hard",
+      "focus": "/r/ and /l/ sounds"
     },
     {
-      "text": "In Ulm und um Ulm",
-      "ipa": "/ɪn ʊlm ʊnt ʊm ʊlm/",
-      "difficulty": "B1",
-      "focus": "umlaut sounds",
-      "translation": "In Ulm and around Ulm"
+      "text": "I thought a thought, but the thought I thought wasn't the thought I thought I thought.",
+      "difficulty": "hard",
+      "focus": "/θ/ sound"
     },
     {
-      "text": "Der Rabe rüttelte die rote Rübe",
-      "ipa": "/deːɐ̯ ˈʁaːbə ˈʁʏtəltə diː ˈʁoːtə ˈʁyːbə/",
-      "difficulty": "B2",
-      "focus": "r sounds",
-      "translation": "The raven shook the red beet"
+      "text": "Unique New York, unique New York.",
+      "difficulty": "medium",
+      "focus": "Word stress and /juː/"
     },
     {
-      "text": "Roland rollt die Rollen",
-      "ipa": "/ˈʁoːlant ˈʁɔlt diː ˈʁɔlən/",
-      "difficulty": "B2",
-      "focus": "r sounds",
-      "translation": "Roland rolls the rolls"
+      "text": "Thirty-three thieves thought that they thrilled the throne throughout Thursday.",
+      "difficulty": "hard",
+      "focus": "/θ/ sound"
     },
     {
-      "text": "Rudi rührt den Rhabarber",
-      "ipa": "/ˈʁuːdi ˈʁyːɐ̯t deːn ˈʁaːbaʁbɐ/",
-      "difficulty": "B2",
-      "focus": "r sounds",
-      "translation": "Rudi stirs the rhubarb"
-    },
-    {
-      "text": "Übler Übeltäter übt übermütig",
-      "ipa": "/ˈyːblɐ ˈyːbɛlˌtɛːtɐ ʔyːpt ˈyːbɐ̯ˈmyːtɪç/",
-      "difficulty": "B2",
-      "focus": "ümlaut sounds",
-      "translation": "Wicked evildoer practices overconfidence"
-    },
-    {
-      "text": "Öl und Öl fließen über",
-      "ipa": "/øːl ʊnt øːl ˈfliːsən ˈyːbɐ/",
-      "difficulty": "B2",
-      "focus": "ömlaut sounds",
-      "translation": "Oil and oil flow over"
-    },
-    {
-      "text": "Äpfel, Äpfel, ich ess' Äpfel",
-      "ipa": "/ˈɛpfəl, ˈɛpfəl, ɪç ɛs ˈɛpfəl/",
-      "difficulty": "B1",
-      "focus": "ämlaut sounds",
-      "translation": "Apples, apples, I eat apples"
-    },
-    {
-      "text": "Strohstroh schwimmt im Strohstroh",
-      "ipa": "/ˈʃtʁoːʃtʁoː ʃvɪmt ɪm ˈʃtʁoːʃtʁoː/",
-      "difficulty": "C1",
-      "focus": "consonant clusters",
-      "translation": "Straw straw swims in straw straw"
-    },
-    {
-      "text": "Pfeffer, Pfeffer, Pfeffer",
-      "ipa": "/ˈpfɛfɐ, ˈpfɛfɐ, ˈpfɛfɐ/",
-      "difficulty": "B1",
-      "focus": "pf sound",
-      "translation": "Pepper, pepper, pepper"
-    },
-    {
-      "text": "Schnecken schnecken Schnecken",
-      "ipa": "/ˈʃnɛkən ˈʃnɛkən ˈʃnɛkən/",
-      "difficulty": "B1",
-      "focus": "sch sound",
-      "translation": "Snails cut snails"
-    },
-    {
-      "text": "Zehn Ziegen ziehen zehn Zentner Zwiebeln",
-      "ipa": "/tseːn ˈtsiːɡən ˈtsiːɡən tseːn ˈt͡sɛntnɐ ˈtsviːbəln/",
-      "difficulty": "C1",
-      "focus": "z sound",
-      "translation": "Ten goats pull ten hundredweights of onions"
+      "text": "Betty Botter bought some butter, but she said the butter's bitter.",
+      "difficulty": "medium",
+      "focus": "/b/ and /t/ sounds"
     }
   ],
   "phoneticAlphabet": [
     {
-      "symbol": "/a/",
-      "name": "Open front unrounded vowel",
-      "description": "Like 'a' in 'father'",
-      "example": "Mann [man]",
-      "category": "vowel"
+      "symbol": "ə",
+      "name": "Schwa",
+      "example": "About, Common",
+      "tip": "The most common sound. Relax your mouth completely."
     },
     {
-      "symbol": "/aː/",
-      "name": "Long open front unrounded vowel",
-      "description": "Long version of /a/",
-      "example": "Vater [ˈfaːtɐ]",
-      "category": "vowel"
+      "symbol": "ɪ",
+      "name": "Short I",
+      "example": "Bit, Ship",
+      "tip": "Mouth slightly open, tongue high."
     },
     {
-      "symbol": "/ɛ/",
-      "name": "Open-mid front unrounded vowel",
-      "description": "Like 'e' in 'bed'",
-      "example": "Bett [bɛt]",
-      "category": "vowel"
+      "symbol": "iː",
+      "name": "Long E",
+      "example": "Beat, Sheep",
+      "tip": "Smile wide, teeth almost touching."
     },
     {
-      "symbol": "/ɛː/",
-      "name": "Long open-mid front unrounded vowel",
-      "description": "Long version of /ɛ/",
-      "example": "Mädchen [ˈmɛːtçən]",
-      "category": "vowel"
+      "symbol": "æ",
+      "name": "Short A",
+      "example": "Cat, Bad",
+      "tip": "Open mouth wide, tongue low."
     },
     {
-      "symbol": "/e/",
-      "name": "Close-mid front unrounded vowel",
-      "description": "Like 'e' in 'say'",
-      "example": "lesen [ˈleːzən]",
-      "category": "vowel"
+      "symbol": "ɑː",
+      "name": "Long A",
+      "example": "Father, Car",
+      "tip": "Open mouth very wide, relaxed jaw."
     },
     {
-      "symbol": "/eː/",
-      "name": "Long close-mid front unrounded vowel",
-      "description": "Long version of /e/",
-      "example": "Meer [meːɐ̯]",
-      "category": "vowel"
+      "symbol": "ɒ",
+      "name": "Short O",
+      "example": "Hot, Dog",
+      "tip": "Round lips, jaw dropped."
     },
     {
-      "symbol": "/i/",
-      "name": "Close front unrounded vowel",
-      "description": "Like 'i' in 'bit'",
-      "example": "bitten [ˈbɪtən]",
-      "category": "vowel"
+      "symbol": "ɔː",
+      "name": "Long O",
+      "example": "Thought, Door",
+      "tip": "Round lips more, longer sound."
     },
     {
-      "symbol": "/iː/",
-      "name": "Long close front unrounded vowel",
-      "description": "Like 'ee' in 'see'",
-      "example": "Liebe [ˈliːbə]",
-      "category": "vowel"
+      "symbol": "ʊ",
+      "name": "Short U",
+      "example": "Book, Could",
+      "tip": "Lips slightly rounded, relaxed."
     },
     {
-      "symbol": "/o/",
-      "name": "Close-mid back rounded vowel",
-      "description": "Like 'o' in 'go'",
-      "example": "Korn [kɔʁn]",
-      "category": "vowel"
+      "symbol": "uː",
+      "name": "Long U",
+      "example": "Food, Blue",
+      "tip": "Round lips tightly, push forward."
     },
     {
-      "symbol": "/oː/",
-      "name": "Long close-mid back rounded vowel",
-      "description": "Long version of /o/",
-      "example": "Boot [boːt]",
-      "category": "vowel"
+      "symbol": "ʌ",
+      "name": "Short U (Cut)",
+      "example": "Cup, Bus",
+      "tip": "Mouth opens, neutral position."
     },
     {
-      "symbol": "/ɔ/",
-      "name": "Open-mid back rounded vowel",
-      "description": "Like 'o' in 'thought'",
-      "example": "Stock [ʃtɔk]",
-      "category": "vowel"
+      "symbol": "ɜː",
+      "name": "ER Sound",
+      "example": "Bird, Her",
+      "tip": "Curl tongue slightly, no lip rounding."
     },
     {
-      "symbol": "/ɔː/",
-      "name": "Long open-mid back rounded vowel",
-      "description": "Long version of /ɔ/",
-      "example": "Ofen [ˈoːfən]",
-      "category": "vowel"
+      "symbol": "eɪ",
+      "name": "Long A (Day)",
+      "example": "Day, Make",
+      "tip": "Start with /e/ glide to /ɪ/."
     },
     {
-      "symbol": "/u/",
-      "name": "Close back rounded vowel",
-      "description": "Like 'u' in 'put'",
-      "example": "Mutter [ˈmʊtɐ]",
-      "category": "vowel"
+      "symbol": "aɪ",
+      "name": "Long I",
+      "example": "My, High",
+      "tip": "Start with /a/ glide to /ɪ/."
     },
     {
-      "symbol": "/uː/",
-      "name": "Long close back rounded vowel",
-      "description": "Like 'oo' in 'moon'",
-      "example": "Uhr [uːɐ̯]",
-      "category": "vowel"
+      "symbol": "ɔɪ",
+      "name": "OI Sound",
+      "example": "Boy, Coin",
+      "tip": "Start with /ɔ/ glide to /ɪ/."
     },
     {
-      "symbol": "/ʊ/",
-      "name": "Near-close near-back rounded vowel",
-      "description": "Like 'u' in 'put'",
-      "example": "Mund [mʊnt]",
-      "category": "vowel"
+      "symbol": "aʊ",
+      "name": "OW Sound",
+      "example": "Now, Out",
+      "tip": "Start with /a/ glide to /ʊ/."
     },
     {
-      "symbol": "/y/",
-      "name": "Close front rounded vowel",
-      "description": "Like 'u' in French 'tu'",
-      "example": "müde [ˈmyːdə]",
-      "category": "vowel"
+      "symbol": "əʊ",
+      "name": "Long O (Go)",
+      "example": "Go, No",
+      "tip": "Start with schwa, glide to /ʊ/."
     },
     {
-      "symbol": "/yː/",
-      "name": "Long close front rounded vowel",
-      "description": "Long version of /y/",
-      "example": "über [ˈyːbɐ]",
-      "category": "vowel"
+      "symbol": "θ",
+      "name": "Voiceless TH",
+      "example": "Think, Both",
+      "tip": "Tongue between teeth, blow air."
     },
     {
-      "symbol": "/ʏ/",
-      "name": "Near-close near-front rounded vowel",
-      "description": "Short version of /y/",
-      "example": "küssen [ˈkʏsən]",
-      "category": "vowel"
+      "symbol": "ð",
+      "name": "Voiced TH",
+      "example": "This, Mother",
+      "tip": "Tongue between teeth, add voice."
     },
     {
-      "symbol": "/ø/",
-      "name": "Close-mid front rounded vowel",
-      "description": "Like 'eu' in French 'peur'",
-      "example": "schön [ʃøːn]",
-      "category": "vowel"
+      "symbol": "ʃ",
+      "name": "SH Sound",
+      "example": "Ship, Fish",
+      "tip": "Lips rounded forward, air through teeth."
     },
     {
-      "symbol": "/øː/",
-      "name": "Long close-mid front rounded vowel",
-      "description": "Long version of /ø/",
-      "example": "hören [ˈhøːʁən]",
-      "category": "vowel"
+      "symbol": "ʒ",
+      "name": "ZH Sound",
+      "example": "Measure, Vision",
+      "tip": "Like /ʃ/ but with vibration."
     },
     {
-      "symbol": "/œ/",
-      "name": "Open-mid front rounded vowel",
-      "description": "Like 'e' in 'bed' with rounded lips",
-      "example": "öffnen [ˈœfnən]",
-      "category": "vowel"
+      "symbol": "tʃ",
+      "name": "CH Sound",
+      "example": "Church, Watch",
+      "tip": "Combine /t/ + /ʃ/ quickly."
     },
     {
-      "symbol": "/œː/",
-      "name": "Long open-mid front rounded vowel",
-      "description": "Long version of /œ/",
-      "example": "Söhne [ˈzøːnə]",
-      "category": "vowel"
+      "symbol": "dʒ",
+      "name": "J Sound",
+      "example": "Judge, Age",
+      "tip": "Combine /d/ + /ʒ/ quickly."
     },
     {
-      "symbol": "/ə/",
-      "name": "Mid central vowel (schwa)",
-      "description": "Like 'a' in 'about'",
-      "example": "Tage [ˈtaːɡə]",
-      "category": "vowel"
-    },
-    {
-      "symbol": "/ɐ̯/",
-      "name": "Near-open central vowel",
-      "description": "Like 'a' in 'sofa'",
-      "example": "Vater [ˈfaːtɐ̯]",
-      "category": "vowel"
-    },
-    {
-      "symbol": "/aɪ̯/",
-      "name": "Diphthong a + i",
-      "description": "Like 'i' in 'ice'",
-      "example": "mein [maɪ̯n]",
-      "category": "diphthong"
-    },
-    {
-      "symbol": "/aʊ̯/",
-      "name": "Diphthong a + u",
-      "description": "Like 'ow' in 'cow'",
-      "example": "Haus [haʊ̯s]",
-      "category": "diphthong"
-    },
-    {
-      "symbol": "/ɔʏ̯/",
-      "name": "Diphthong o + y",
-      "description": "Like 'oy' in 'boy'",
-      "example": "heute [ˈhɔʏ̯tə]",
-      "category": "diphthong"
-    },
-    {
-      "symbol": "/p/",
-      "name": "Voiceless bilabial plosive",
-      "description": "Like 'p' in 'spin'",
-      "example": "Park [paʁk]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/b/",
-      "name": "Voiced bilabial plosive",
-      "description": "Like 'b' in 'bit'",
-      "example": "Berg [bɛʁk]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/t/",
-      "name": "Voiceless alveolar plosive",
-      "description": "Like 't' in 'tin'",
-      "example": "Tag [taːk]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/d/",
-      "name": "Voiced alveolar plosive",
-      "description": "Like 'd' in 'din'",
-      "example": "Ding [dɪŋ]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/k/",
-      "name": "Voiceless velar plosive",
-      "description": "Like 'k' in 'kin'",
-      "example": "Kind [kɪnt]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/g/",
-      "name": "Voiced velar plosive",
-      "description": "Like 'g' in 'go'",
-      "example": "Garten [ˈɡaʁtn̩]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/f/",
-      "name": "Voiceless labiodental fricative",
-      "description": "Like 'f' in 'fan'",
-      "example": "Fisch [fɪʃ]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/v/",
-      "name": "Voiced labiodental fricative",
-      "description": "Like 'v' in 'vine'",
-      "example": "vier [fiːɐ̯]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/s/",
-      "name": "Voiceless alveolar fricative",
-      "description": "Like 's' in 'sit'",
-      "example": "Haus [haʊ̯s]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/z/",
-      "name": "Voiced alveolar fricative",
-      "description": "Like 'z' in 'zoo'",
-      "example": "Sonne [ˈzɔnə]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/ʃ/",
-      "name": "Voiceless postalveolar fricative",
-      "description": "Like 'sh' in 'ship'",
-      "example": "schön [ʃøːn]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/ʒ/",
-      "name": "Voiced postalveolar fricative",
-      "description": "Like 's' in 'measure'",
-      "example": "Journal [ʒuʁˈnaːl]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/ç/",
-      "name": "Voiceless palatal fricative",
-      "description": "Like 'h' in 'hue'",
-      "example": "ich [ɪç]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/x/",
-      "name": "Voiceless velar fricative",
-      "description": "Like 'ch' in Scottish 'loch'",
-      "example": "Buch [buːx]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/h/",
-      "name": "Voiceless glottal fricative",
-      "description": "Like 'h' in 'hat'",
-      "example": "Haus [haʊ̯s]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/m/",
-      "name": "Bilabial nasal",
-      "description": "Like 'm' in 'man'",
-      "example": "Mutter [ˈmʊtɐ]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/n/",
-      "name": "Alveolar nasal",
-      "description": "Like 'n' in 'net'",
-      "example": "Nacht [naχt]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/ŋ/",
-      "name": "Velar nasal",
-      "description": "Like 'ng' in 'sing'",
-      "example": "singen [ˈzɪŋən]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/l/",
-      "name": "Alveolar lateral approximant",
-      "description": "Like 'l' in 'lip'",
-      "example": "Licht [lɪçt]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/r/",
-      "name": "Alveolar trill",
-      "description": "Rolled 'r' like in Spanish 'perro'",
-      "example": "rot [ʀoːt]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/ʁ/",
-      "name": "Uvular fricative",
-      "description": "French/German 'r' sound",
-      "example": "Rot [ʁoːt]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/j/",
-      "name": "Palatal approximant",
-      "description": "Like 'y' in 'yes'",
-      "example": "ja [jaː]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/w/",
-      "name": "Labial-velar approximant",
-      "description": "Like 'w' in 'wet'",
-      "example": "was [vas]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/p͡f/",
-      "name": "Voiceless labiodental affricate",
-      "description": "Like 'pf' in 'pferd'",
-      "example": "Pferd [pfɛʁt]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/t͡s/",
-      "name": "Voiceless alveolar affricate",
-      "description": "Like 'ts' in 'cats'",
-      "example": "Zeit [t͡saɪ̯t]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/t͡ʃ/",
-      "name": "Voiceless postalveolar affricate",
-      "description": "Like 'ch' in 'church'",
-      "example": "deutsch [dɔʏ̯t͡ʃ]",
-      "category": "consonant"
-    },
-    {
-      "symbol": "/d͡ʒ/",
-      "name": "Voiced postalveolar affricate",
-      "description": "Like 'j' in 'judge'",
-      "example": "Dschungel [ˈd͡ʒʊŋəl]",
-      "category": "consonant"
+      "symbol": "ŋ",
+      "name": "NG Sound",
+      "example": "Ring, Long",
+      "tip": "Back of tongue touches soft palate."
     }
   ]
 }

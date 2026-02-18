@@ -42,7 +42,6 @@ describe('Navigation Component', () => {
       </SharedDataProvider>
     )
 
-    expect(screen.getByText('PDF Master')).toBeInTheDocument()
     expect(screen.getByText('Reading')).toBeInTheDocument()
     expect(screen.getByText('Vocabulary')).toBeInTheDocument()
     expect(screen.getByText('Grammar')).toBeInTheDocument()

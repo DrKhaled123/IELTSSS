@@ -62,16 +62,16 @@ export default function VocabularyCalendar({ progress = [] }) {
 
      return (
           <div className="card animate-fadeIn">
-               <h3 style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-sm)' }}>
+               <h3 style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                     <BookOpen size={24} />
                     Learning Calendar
                </h3>
 
-               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', margin: 'var(--space-md) 0' }}>
+               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', margin: '16px 0' }}>
                     <button className="btn btn-secondary" onClick={prevMonth}>
                          <ChevronLeft size={20} />
                     </button>
-                    <div style={{ fontWeight: 'bold', fontSize: 'var(--font-lg)' }}>
+                    <div style={{ fontWeight: 'bold', fontSize: '18px' }}>
                          {currentDate.toLocaleString('default', { month: 'long', year: 'numeric' })}
                     </div>
                     <button className="btn btn-secondary" onClick={nextMonth}>
@@ -82,12 +82,12 @@ export default function VocabularyCalendar({ progress = [] }) {
                <div style={{
                     display: 'grid',
                     gridTemplateColumns: 'repeat(7, 1fr)',
-                    gap: 'var(--space-xs)',
+                    gap: '4px',
                     textAlign: 'center',
-                    marginBottom: 'var(--space-md)'
+                    marginBottom: '16px'
                }}>
                     {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(day => (
-                         <div key={day} style={{ color: 'var(--color-text-tertiary)', fontSize: 'var(--font-sm)', padding: 'var(--space-xs)' }}>
+                         <div key={day} style={{ color: '#9ca3af', fontSize: '12px', padding: '4px' }}>
                               {day}
                          </div>
                     ))}
@@ -97,20 +97,20 @@ export default function VocabularyCalendar({ progress = [] }) {
                               key={key}
                               onClick={() => day && setSelectedDate(date)}
                               style={{
-                                   padding: 'var(--space-sm)',
-                                   borderRadius: 'var(--radius-md)',
+                                   padding: '8px',
+                                   borderRadius: '8px',
                                    cursor: day ? 'pointer' : 'default',
                                    background: day && selectedDate.toDateString() === date?.toDateString()
-                                        ? 'var(--color-primary)'
+                                        ? '#2563eb'
                                         : hasActivity
-                                             ? 'var(--color-surface-hover)'
+                                             ? '#f3f4f6'
                                              : 'transparent',
                                    color: day && selectedDate.toDateString() === date?.toDateString()
                                         ? 'white'
                                         : 'inherit',
                                    opacity: day ? 1 : 0,
                                    position: 'relative',
-                                   border: day && hasActivity ? '1px solid var(--color-border)' : 'none'
+                                   border: day && hasActivity ? '1px solid #e5e7eb' : 'none'
                               }}
                          >
                               {day}
@@ -122,7 +122,7 @@ export default function VocabularyCalendar({ progress = [] }) {
                                         width: '6px',
                                         height: '6px',
                                         borderRadius: '50%',
-                                        background: selectedDate.toDateString() === date?.toDateString() ? 'white' : 'var(--color-success)'
+                                        background: selectedDate.toDateString() === date?.toDateString() ? 'white' : '#10b981'
                                    }} />
                               )}
                          </div>
@@ -131,31 +131,31 @@ export default function VocabularyCalendar({ progress = [] }) {
 
                {/* Selected Date Details */}
                <div className="animate-fadeIn" style={{
-                    borderTop: '1px solid var(--color-border)',
-                    paddingTop: 'var(--space-md)',
-                    marginTop: 'var(--space-md)'
+                    borderTop: '1px solid #e5e7eb',
+                    paddingTop: '16px',
+                    marginTop: '16px'
                }}>
-                    <h4 style={{ marginBottom: 'var(--space-sm)' }}>
+                    <h4 style={{ marginBottom: '8px' }}>
                          Activity for {selectedDate.toLocaleDateString()}
                     </h4>
 
                     {selectedDateActivity.length > 0 ? (
-                         <div style={{ display: 'grid', gap: 'var(--space-sm)' }}>
+                         <div style={{ display: 'grid', gap: '8px' }}>
                               {selectedDateActivity.map((activity, idx) => (
                                    <div key={idx} style={{
                                         display: 'flex',
                                         alignItems: 'center',
-                                        gap: 'var(--space-sm)',
-                                        padding: 'var(--space-sm)',
-                                        background: 'var(--color-bg-elevated)',
-                                        borderRadius: 'var(--radius-md)'
+                                        gap: '8px',
+                                        padding: '8px',
+                                        background: '#f9fafb',
+                                        borderRadius: '8px'
                                    }}>
-                                        <Star size={16} color="var(--color-warning)" fill="var(--color-warning)" />
+                                        <Star size={16} color="#f59e0b" fill="#f59e0b" />
                                         <div>
                                              <span style={{ fontWeight: 'bold' }}>
                                                   {activity.data?.word || activity.data?.german || 'Activity'}
                                              </span>
-                                             <span style={{ color: 'var(--color-text-tertiary)', fontSize: 'var(--font-xs)', marginLeft: 'var(--space-sm)' }}>
+                                             <span style={{ color: '#9ca3af', fontSize: '10px', marginLeft: '8px' }}>
                                                   {activity.action.replace('_', ' ')}
                                              </span>
                                         </div>
@@ -163,7 +163,7 @@ export default function VocabularyCalendar({ progress = [] }) {
                               ))}
                          </div>
                     ) : (
-                         <p style={{ color: 'var(--color-text-tertiary)', fontStyle: 'italic' }}>
+                         <p style={{ color: '#9ca3af', fontStyle: 'italic' }}>
                               No activity recorded for this day.
                          </p>
                     )}

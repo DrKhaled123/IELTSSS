@@ -185,9 +185,9 @@ export function SharedDataProvider({ children }) {
                 console.error('Failed to load shared data:', error);
             }
         }
-        // Background cleanup tasks (skip in tests to prevent hangs)
         let cleanupInterval;
-        if (typeof process !== 'undefined' && process.env.NODE_ENV !== 'test') {
+        const isTest = (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.MODE === 'test')
+        if (!isTest) {
             cleanupInterval = setInterval(cleanupOldData, 24 * 60 * 60 * 1000); // Daily cleanup
         }
         return () => {

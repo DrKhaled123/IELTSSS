@@ -51,67 +51,67 @@ class ErrorBoundary extends Component {
                     alignItems: 'center',
                     justifyContent: 'center',
                     minHeight: '400px',
-                    padding: 'var(--space-xl)',
+                    padding: '32px',
                     textAlign: 'center'
                 }}>
                     <div style={{
                         maxWidth: '500px',
-                        background: 'var(--color-surface)',
-                        border: '1px solid var(--color-error)',
-                        borderRadius: 'var(--radius-lg)',
-                        padding: 'var(--space-xl)',
-                        boxShadow: 'var(--shadow-md)'
+                        background: '#ffffff',
+                        border: '1px solid #ef4444',
+                        borderRadius: '12px',
+                        padding: '32px',
+                        boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)'
                     }}>
                         <AlertTriangle 
                             size={48} 
                             style={{ 
-                                color: 'var(--color-error)',
-                                marginBottom: 'var(--space-lg)'
+                                color: '#ef4444',
+                                marginBottom: '24px'
                             }} 
                         />
                         
                         <h2 style={{ 
-                            color: 'var(--color-text)',
-                            marginBottom: 'var(--space-md)',
-                            fontSize: 'var(--font-xl)'
+                            color: '#1f2937',
+                            marginBottom: '16px',
+                            fontSize: '24px'
                         }}>
                             Something went wrong
                         </h2>
                         
                         <p style={{ 
-                            color: 'var(--color-text-secondary)',
-                            marginBottom: 'var(--space-lg)',
+                            color: '#6b7280',
+                            marginBottom: '24px',
                             lineHeight: 1.6
                         }}>
                             {this.state.error?.message || 'An unexpected error occurred while loading this component.'}
                         </p>
 
-                        {process.env.NODE_ENV === 'development' && this.state.errorInfo && (
+                        {(typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.MODE === 'development') && this.state.errorInfo && (
                             <details style={{
                                 textAlign: 'left',
-                                marginBottom: 'var(--space-lg)',
-                                background: 'var(--color-bg-elevated)',
-                                border: '1px solid var(--color-border)',
-                                borderRadius: 'var(--radius-md)',
-                                padding: 'var(--space-md)'
+                                marginBottom: '24px',
+                                background: '#f9fafb',
+                                border: '1px solid #e5e7eb',
+                                borderRadius: '8px',
+                                padding: '16px'
                             }}>
                                 <summary style={{
                                     cursor: 'pointer',
-                                    fontWeight: 'var(--font-medium)',
-                                    marginBottom: 'var(--space-sm)',
-                                    color: 'var(--color-text)'
+                                    fontWeight: '500',
+                                    marginBottom: '8px',
+                                    color: '#1f2937'
                                 }}>
                                     Error Details (Development Only)
                                 </summary>
                                 <pre style={{
-                                    fontSize: 'var(--font-sm)',
-                                    color: 'var(--color-text-secondary)',
+                                    fontSize: '12px',
+                                    color: '#6b7280',
                                     overflow: 'auto',
                                     maxHeight: '200px',
-                                    background: 'var(--color-bg)',
-                                    padding: 'var(--space-sm)',
-                                    borderRadius: 'var(--radius-sm)',
-                                    border: '1px solid var(--color-border)'
+                                    background: '#ffffff',
+                                    padding: '8px',
+                                    borderRadius: '4px',
+                                    border: '1px solid #e5e7eb'
                                 }}>
                                     {this.state.error && this.state.error.toString()}
                                     {'\n\n'}
@@ -120,28 +120,28 @@ class ErrorBoundary extends Component {
                             </details>
                         )}
 
-                        <div style={{ display: 'flex', gap: 'var(--space-md)' }}>
+                        <div style={{ display: 'flex', gap: '16px' }}>
                             <button
                                 onClick={this.handleReset}
                                 style={{
                                     display: 'flex',
                                     alignItems: 'center',
-                                    gap: 'var(--space-sm)',
-                                    padding: 'var(--space-sm) var(--space-lg)',
-                                    background: 'var(--color-primary)',
+                                    gap: '8px',
+                                    padding: '8px 16px',
+                                    background: '#2563eb',
                                     color: 'white',
                                     border: 'none',
-                                    borderRadius: 'var(--radius-md)',
+                                    borderRadius: '8px',
                                     cursor: 'pointer',
-                                    fontSize: 'var(--font-medium)',
-                                    fontWeight: 'var(--font-medium)',
-                                    transition: 'all var(--transition-fast)'
+                                    fontSize: '16px',
+                                    fontWeight: '500',
+                                    transition: 'all 0.2s ease-in-out'
                                 }}
                                 onMouseEnter={(e) => {
-                                    e.target.style.background = 'var(--color-primary-hover)'
+                                    e.target.style.background = '#1d4ed8'
                                 }}
                                 onMouseLeave={(e) => {
-                                    e.target.style.background = 'var(--color-primary)'
+                                    e.target.style.background = '#2563eb'
                                 }}
                             >
                                 <RefreshCw size={16} />
@@ -153,24 +153,24 @@ class ErrorBoundary extends Component {
                                 style={{
                                     display: 'flex',
                                     alignItems: 'center',
-                                    gap: 'var(--space-sm)',
-                                    padding: 'var(--space-sm) var(--space-lg)',
-                                    background: 'var(--color-surface)',
-                                    color: 'var(--color-text)',
-                                    border: '1px solid var(--color-border)',
-                                    borderRadius: 'var(--radius-md)',
+                                    gap: '8px',
+                                    padding: '8px 16px',
+                                    background: '#ffffff',
+                                    color: '#1f2937',
+                                    border: '1px solid #e5e7eb',
+                                    borderRadius: '8px',
                                     cursor: 'pointer',
-                                    fontSize: 'var(--font-medium)',
-                                    fontWeight: 'var(--font-medium)',
-                                    transition: 'all var(--transition-fast)'
+                                    fontSize: '16px',
+                                    fontWeight: '500',
+                                    transition: 'all 0.2s ease-in-out'
                                 }}
                                 onMouseEnter={(e) => {
-                                    e.target.style.background = 'var(--color-surface-hover)'
-                                    e.target.style.borderColor = 'var(--color-primary)'
+                                    e.target.style.background = '#f3f4f6'
+                                    e.target.style.borderColor = '#2563eb'
                                 }}
                                 onMouseLeave={(e) => {
-                                    e.target.style.background = 'var(--color-surface)'
-                                    e.target.style.borderColor = 'var(--color-border)'
+                                    e.target.style.background = '#ffffff'
+                                    e.target.style.borderColor = '#e5e7eb'
                                 }}
                             >
                                 Go Back

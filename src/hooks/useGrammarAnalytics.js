@@ -96,18 +96,54 @@ export function useGrammarAnalytics() {
     setError(null)
 
     try {
+      const normalizedHistory = (Array.isArray(exerciseHistory) ? exerciseHistory : []).flatMap((ex) => {
+        if (Array.isArray(ex?.answers) && ex.answers.length > 0) {
+          const baseTimestamp = ex.timestamp
+            ? Number(ex.timestamp)
+            : (ex.completedAt ? Date.parse(ex.completedAt) : Date.now())
+          return ex.answers.map((a, idx) => {
+            const isCorrect = Boolean(a?.isCorrect)
+            return {
+              topicId: ex.ruleId || ex.topicId || 'unknown',
+              timeSpent: Number(a?.timeSpent || 0),
+              timestamp: baseTimestamp + idx,
+              isCorrect,
+              correctAnswers: isCorrect ? 1 : 0,
+              totalQuestions: 1
+            }
+          })
+        }
+        const isCorrect = Boolean(ex?.isCorrect)
+        const timestamp = ex?.timestamp ? Number(ex.timestamp) : (ex?.completedAt ? Date.parse(ex.completedAt) : Date.now())
+        const timeSpent = Number(ex?.timeSpent || ex?.totalTime || 0)
+        const correctAnswers = typeof ex?.correctAnswers === 'number'
+          ? ex.correctAnswers
+          : (typeof ex?.correctCount === 'number' ? ex.correctCount : (isCorrect ? 1 : 0))
+        const totalQuestions = typeof ex?.totalQuestions === 'number'
+          ? ex.totalQuestions
+          : (typeof ex?.questionCount === 'number' ? ex.questionCount : 1)
+        return [{
+          topicId: ex.ruleId || ex.topicId || 'unknown',
+          timeSpent,
+          timestamp,
+          isCorrect,
+          correctAnswers,
+          totalQuestions
+        }]
+      })
+
       // Overall statistics
-      const totalExercises = exerciseHistory.length
-      const correctAnswers = exerciseHistory.filter(ex => ex.isCorrect).length
+      const totalExercises = normalizedHistory.length
+      const correctAnswers = normalizedHistory.filter(ex => ex.isCorrect).length
       const overallAccuracy = totalExercises > 0 ? (correctAnswers / totalExercises) * 100 : 0
-      const totalTime = exerciseHistory.reduce((sum, ex) => sum + ex.timeSpent, 0)
+      const totalTime = normalizedHistory.reduce((sum, ex) => sum + ex.timeSpent, 0)
       const averageTime = totalExercises > 0 ? totalTime / totalExercises : 0
 
       // Performance by topic
       const topicStats = {}
       Object.keys(topicProgress).forEach(topicId => {
         const topic = topicProgress[topicId]
-        const topicExercises = exerciseHistory.filter(ex => ex.topicId === topicId)
+        const topicExercises = normalizedHistory.filter(ex => ex.topicId === topicId)
         
         topicStats[topicId] = {
           totalAttempts: topic.attempts || topicExercises.length,
@@ -119,6 +155,30 @@ export function useGrammarAnalytics() {
           masteryLevel: calculateMasteryLevel(topic.accuracy || 0, topic.attempts || 0)
         }
       })
+      if (Object.keys(topicStats).length === 0) {
+        const ids = [...new Set(normalizedHistory.map((ex) => ex.topicId).filter(Boolean))]
+        ids.forEach((topicId) => {
+          const topicExercises = normalizedHistory.filter((ex) => ex.topicId === topicId)
+          const accuracy = topicExercises.length > 0
+            ? (topicExercises.filter((ex) => ex.isCorrect).length / topicExercises.length) * 100
+            : 0
+          const averageTime = topicExercises.length > 0
+            ? topicExercises.reduce((sum, ex) => sum + ex.timeSpent, 0) / topicExercises.length
+            : 0
+          const lastAttempt = topicExercises.length > 0
+            ? Math.max(...topicExercises.map((ex) => ex.timestamp || 0))
+            : undefined
+          topicStats[topicId] = {
+            totalAttempts: topicExercises.length,
+            correctAnswers: topicExercises.filter((ex) => ex.isCorrect).length,
+            accuracy,
+            averageTime,
+            difficulty: 'A1',
+            lastAttempt,
+            masteryLevel: calculateMasteryLevel(accuracy, topicExercises.length)
+          }
+        })
+      }
 
       // Identify weak and strong areas
       const weakAreas = Object.entries(topicStats)
@@ -143,11 +203,11 @@ export function useGrammarAnalytics() {
       const learningPath = generateLearningPath(topicStats, weakAreas)
 
       // Check achievements
-      const newAchievements = checkAchievements(userData, exerciseHistory, topicStats)
+      const newAchievements = checkAchievements(userData, normalizedHistory, topicStats)
 
       // Calculate weekly and monthly progress
-      const weeklyProgress = calculateProgressPeriod(exerciseHistory, 7)
-      const monthlyProgress = calculateProgressPeriod(exerciseHistory, 30)
+      const weeklyProgress = calculateProgressPeriod(normalizedHistory, 7)
+      const monthlyProgress = calculateProgressPeriod(normalizedHistory, 30)
 
       const analytics = {
         overallStats: {
@@ -157,8 +217,8 @@ export function useGrammarAnalytics() {
           totalTime,
           averageTime: Math.round(averageTime),
           currentLevel: calculateCurrentLevel(topicStats),
-          studyStreak: calculateStudyStreak(exerciseHistory),
-          totalStudyTime: calculateTotalStudyTime(exerciseHistory)
+          studyStreak: calculateStudyStreak(normalizedHistory),
+          totalStudyTime: calculateTotalStudyTime(normalizedHistory)
         },
         topicPerformance: topicStats,
         weakAreas,
@@ -325,7 +385,7 @@ export function useGrammarAnalytics() {
           unlocked = exerciseHistory.length >= achievement.condition.value
           break
 
-        case 'accuracy_streak':
+        case 'accuracy_streak': {
           const recentExercises = exerciseHistory.slice(-achievement.condition.value.streak)
           const allAccurate = recentExercises.every(ex => {
             const accuracy = (ex.correctAnswers / ex.totalQuestions) * 100
@@ -333,21 +393,24 @@ export function useGrammarAnalytics() {
           })
           unlocked = allAccurate && recentExercises.length === achievement.condition.value.streak
           break
+        }
 
-        case 'speed':
+        case 'speed': {
           const userAvgTime = exerciseHistory.reduce((sum, ex) => sum + ex.timeSpent, 0) / exerciseHistory.length
-          const expectedTime = 60 // Average expected time
+          const expectedTime = 60
           unlocked = userAvgTime <= (expectedTime * achievement.condition.value)
           break
+        }
 
-        case 'level_mastery':
+        case 'level_mastery': {
           const levelTopics = Object.entries(topicStats).filter(([_, stats]) => 
             stats.difficulty === achievement.condition.value && stats.masteryLevel === 'mastered'
           )
-          unlocked = levelTopics.length >= 5 // Master at least 5 topics at this level
+          unlocked = levelTopics.length >= 5
           break
+        }
 
-        case 'consistency':
+        case 'consistency': {
           const last30Days = exerciseHistory.filter(ex => 
             ex.timestamp > Date.now() - (30 * 24 * 60 * 60 * 1000)
           )
@@ -364,8 +427,9 @@ export function useGrammarAnalytics() {
           
           unlocked = consistentDays >= achievement.condition.value.days
           break
+        }
 
-        case 'case_mastery':
+        case 'case_mastery': {
           const masteredCases = achievement.condition.value.filter(caseName => {
             const caseTopics = Object.entries(topicStats).filter(([_, stats]) => 
               stats.masteryLevel === 'mastered' && 
@@ -375,6 +439,7 @@ export function useGrammarAnalytics() {
           })
           unlocked = masteredCases.length === achievement.condition.value.length
           break
+        }
       }
 
       if (unlocked) {

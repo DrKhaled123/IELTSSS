@@ -1,44 +1,59 @@
 import { useState, useEffect } from 'react'
-import { Play, Pause, RotateCcw, Volume2, Settings, Mic, MicOff, Sparkles, AlertCircle } from 'lucide-react'
+import { Play, Pause, RotateCcw, Volume2, Settings, Mic, MicOff, Sparkles, AlertCircle, Loader } from 'lucide-react'
 import { useSpeechSynthesis } from '../hooks/useSpeechSynthesis'
-import { useSpeechRecognition } from '../hooks/useSpeechRecognition'
+import { useVoskRecognition } from '../hooks/useVoskRecognition'
 import BilingualContainer from '../components/BilingualContainer'
 import speakingTips from '../data/speaking-tips.json'
 
 export default function Speaking() {
      const [text, setText] = useState('')
      const [selectedVoice, setSelectedVoice] = useState(null)
-     const [rate, setRate] = useState(1)
+     const [rate, setRate] = useState(1.15)
      const [currentSentence, setCurrentSentence] = useState(-1)
      const [showSettings, setShowSettings] = useState(false)
      const [userTranscript, setUserTranscript] = useState('')
      const [comparisonResult, setComparisonResult] = useState(null)
      const [tips, setTips] = useState([])
 
-     const { supported: ttsSupported, voices, speaking, speak, cancel } = useSpeechSynthesis()
-     const { supported: sttSupported, isListening, transcript, startListening, stopListening, resetTranscript } = useSpeechRecognition()
+     const { supported: ttsSupported, voices, speaking, speak, cancel, getEnglishVoice } = useSpeechSynthesis()
+     const { 
+          isReady: voskReady,
+          isListening, 
+          transcript, 
+          startListening, 
+          stopListening, 
+          resetTranscript,
+          status: voskStatus,
+          error: voskError,
+          reloadModel
+     } = useVoskRecognition()
 
      // Select default English voice
      useEffect(() => {
           if (voices.length > 0 && !selectedVoice) {
-               const englishVoice = voices.find(v => v.lang.startsWith('en-')) || voices[0]
+               const englishVoice = getEnglishVoice() || voices.find(v => v.lang.startsWith('en-GB')) || voices[0]
                setSelectedVoice(englishVoice)
           }
-     }, [voices, selectedVoice])
+     }, [voices, selectedVoice, getEnglishVoice])
 
      // Update user transcript when speech recognition completes
      useEffect(() => {
-          if (transcript && !isListening) {
+          if (transcript) {
                setUserTranscript(transcript)
-               if (text) {
-                    analyzePronunciation(text, transcript)
-               }
           }
-     }, [transcript, isListening, text])
+     }, [transcript])
 
      const sentences = text.split(/[.!?]+/).filter(s => s.trim().length > 0)
 
+     useEffect(() => {
+          if (speaking) {
+               cancel()
+          }
+          setCurrentSentence(-1)
+     }, [text, speaking, cancel])
+
      const handlePlay = () => {
+          if (!text.trim()) return
           if (speaking) {
                cancel()
           } else {
@@ -54,26 +69,31 @@ export default function Speaking() {
 
           const sentence = sentences[sentenceIndex].trim()
           setCurrentSentence(sentenceIndex)
+          const voiceToUse = selectedVoice || getEnglishVoice() || voices.find(v => v.lang.startsWith('en-GB')) || voices[0]
 
           speak(sentence, {
-               voice: selectedVoice,
+               voice: voiceToUse,
                rate: rate,
                onEnd: () => {
                     setTimeout(() => {
                          readText(sentenceIndex + 1)
-                    }, 300)
+                    }, 100)
                },
           })
      }
 
-     const handleRecord = () => {
+     const handleRecord = async () => {
           if (isListening) {
                stopListening()
+               // Analyze after stopping
+               if (text && userTranscript) {
+                    analyzePronunciation(text, userTranscript)
+               }
           } else {
                resetTranscript()
                setUserTranscript('')
                setComparisonResult(null)
-               startListening()
+               await startListening()
           }
      }
 
@@ -98,7 +118,9 @@ export default function Speaking() {
                }
           }
 
-          const accuracy = (comparison.filter(c => c.status === 'correct').length / original.length) * 100
+          const accuracy = original.length
+               ? (comparison.filter(c => c.status === 'correct').length / original.length) * 100
+               : 0
           setComparisonResult({ comparison, accuracy })
 
           // Generate tips based on errors
@@ -167,6 +189,9 @@ export default function Speaking() {
                          </div>
 
                          <textarea
+                              id="speaking-practice-text"
+                              name="speakingPracticeText"
+                              aria-label="Speaking practice text"
                               className="input textarea"
                               placeholder="Paste or type any text here to practice pronunciation..."
                               value={text}
@@ -286,26 +311,37 @@ export default function Speaking() {
                               Pronunciation Checker
                          </h3>
 
-                         {!sttSupported && (
-                              <div style={{ padding: 'var(--space-md)', background: 'hsla(45, 93%, 47%, 0.1)', borderRadius: 'var(--radius-md)', marginTop: 'var(--space-md)' }}>
-                                   <p style={{ color: 'var(--color-warning)', margin: 0 }}>
-                                        Speech recognition not supported in your browser. Try Chrome or Edge.
+                         {/* Status Messages */}
+                         {!voskReady && !voskError && (
+                              <div style={{ padding: 'var(--space-md)', background: 'var(--color-bg-elevated)', borderRadius: 'var(--radius-md)', marginTop: 'var(--space-md)', display: 'flex', alignItems: 'center', gap: 'var(--space-sm)' }}>
+                                   <Loader className="animate-spin" size={20} />
+                                   <p style={{ margin: 0 }}>Loading speech recognition model (Vosk)...</p>
+                              </div>
+                         )}
+
+                         {voskError && (
+                              <div style={{ padding: 'var(--space-md)', background: 'hsla(4, 90%, 58%, 0.1)', borderRadius: 'var(--radius-md)', marginTop: 'var(--space-md)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 'var(--space-md)' }}>
+                                   <p style={{ color: 'var(--color-error)', margin: 0 }}>
+                                        {voskError}
                                    </p>
+                                   <button className="btn btn-secondary" onClick={reloadModel}>
+                                        Try Again
+                                   </button>
                               </div>
                          )}
 
                          <p style={{ marginTop: 'var(--space-md)' }}>
-                              Read the text above aloud, and we'll compare your pronunciation with the original.
+                              Read the text above aloud, and we'll compare your pronunciation with the original using advanced AI speech recognition.
                          </p>
 
                          <button
                               className={`btn ${isListening ? 'btn-accent' : 'btn-primary'}`}
                               onClick={handleRecord}
-                              disabled={!text || !sttSupported}
+                              disabled={!text || !voskReady}
                               style={{ marginTop: 'var(--space-lg)', width: '100%', padding: 'var(--space-md)' }}
                          >
                               {isListening ? <MicOff size={24} /> : <Mic size={24} />}
-                              {isListening ? 'Stop Recording' : 'Start Recording'}
+                              {isListening ? 'Stop Recording & Analyze' : 'Start Recording'}
                          </button>
 
                          {userTranscript && (
@@ -361,65 +397,38 @@ export default function Speaking() {
 
                     {/* Speaking Tips */}
                     {tips.length > 0 && (
-                         <BilingualContainer
-                              title="Speaking Enhancement Tips"
-                              germanContent={
-                                   <div style={{ display: 'grid', gap: 'var(--space-md)' }}>
-                                        {tips.map((tip, idx) => (
-                                             <div
-                                                  key={`de-${tip.id}`}
-                                                  className="animate-fadeIn"
-                                                  style={{
-                                                       padding: 'var(--space-md)',
-                                                       background: 'rgba(255,255,255,0.5)',
-                                                       borderRadius: 'var(--radius-md)',
-                                                       border: '1px solid var(--color-border)',
-                                                  }}
-                                             >
-                                                  <div style={{ fontSize: 'var(--font-xs)', textTransform: 'uppercase', color: 'var(--color-primary)', fontWeight: 'bold', marginBottom: 'var(--space-xs)' }}>
-                                                       {tip.category}
-                                                  </div>
-                                                  <p style={{ margin: 0, marginBottom: 'var(--space-sm)', fontWeight: 'var(--font-medium)' }}>
-                                                       {tip.germanTip || "Tipp nicht verfügbar."}
-                                                  </p>
-                                                  {tip.germanExample && (
-                                                       <p style={{ margin: 0, padding: 'var(--space-sm)', background: 'rgba(0,0,0,0.03)', borderRadius: 'var(--radius-sm)', fontSize: 'var(--font-sm)', fontStyle: 'italic', color: 'var(--color-text-secondary)' }}>
-                                                            Beispiel: {tip.germanExample}
-                                                       </p>
-                                                  )}
+                         <div className="card">
+                              <h3 style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-sm)', color: 'var(--color-secondary)' }}>
+                                   <Sparkles size={24} />
+                                   Speaking Enhancement Tips
+                              </h3>
+                              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: 'var(--space-md)', marginTop: 'var(--space-lg)' }}>
+                                   {tips.map((tip, idx) => (
+                                        <div
+                                             key={`en-${tip.id}`}
+                                             className="animate-fadeIn"
+                                             style={{
+                                                  padding: 'var(--space-md)',
+                                                  background: 'var(--color-bg-elevated)',
+                                                  borderRadius: 'var(--radius-md)',
+                                                  border: '1.5px solid var(--color-border)',
+                                             }}
+                                        >
+                                             <div style={{ fontSize: 'var(--font-xs)', textTransform: 'uppercase', color: 'var(--color-secondary)', fontWeight: 'bold', marginBottom: 'var(--space-xs)' }}>
+                                                  {tip.category}
                                              </div>
-                                        ))}
-                                   </div>
-                              }
-                              englishContent={
-                                   <div style={{ display: 'grid', gap: 'var(--space-md)' }}>
-                                        {tips.map((tip, idx) => (
-                                             <div
-                                                  key={`en-${tip.id}`}
-                                                  className="animate-fadeIn"
-                                                  style={{
-                                                       padding: 'var(--space-md)',
-                                                       background: 'rgba(255,255,255,0.5)',
-                                                       borderRadius: 'var(--radius-md)',
-                                                       border: '1px solid var(--color-border)',
-                                                  }}
-                                             >
-                                                  <div style={{ fontSize: 'var(--font-xs)', textTransform: 'uppercase', color: 'var(--color-secondary)', fontWeight: 'bold', marginBottom: 'var(--space-xs)' }}>
-                                                       {tip.category}
-                                                  </div>
-                                                  <p style={{ margin: 0, marginBottom: 'var(--space-sm)', fontWeight: 'var(--font-medium)' }}>
-                                                       {tip.tip}
+                                             <p style={{ margin: 0, marginBottom: 'var(--space-sm)', fontWeight: 'var(--font-medium)' }}>
+                                                  {tip.tip}
+                                             </p>
+                                             {tip.example && (
+                                                  <p style={{ margin: 0, padding: 'var(--space-sm)', background: 'rgba(0,0,0,0.03)', borderRadius: 'var(--radius-sm)', fontSize: 'var(--font-sm)', fontStyle: 'italic', color: 'var(--color-text-secondary)' }}>
+                                                       Example: {tip.example}
                                                   </p>
-                                                  {tip.example && (
-                                                       <p style={{ margin: 0, padding: 'var(--space-sm)', background: 'rgba(0,0,0,0.03)', borderRadius: 'var(--radius-sm)', fontSize: 'var(--font-sm)', fontStyle: 'italic', color: 'var(--color-text-secondary)' }}>
-                                                            Example: {tip.example}
-                                                       </p>
-                                                  )}
-                                             </div>
-                                        ))}
-                                   </div>
-                              }
-                         />
+                                             )}
+                                        </div>
+                                   ))}
+                              </div>
+                         </div>
                     )}
                </div>
           </div>

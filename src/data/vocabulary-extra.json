@@ -1,0 +1,684 @@
+{
+  "vocabulary": [
+    {
+      "word": "Itinerary",
+      "definition": "A planned route or schedule for a journey.",
+      "examples": [
+        "Please check the itinerary before you travel."
+      ],
+      "arabic": "خط سير الرحلة",
+      "hindi": "यात्रा कार्यक्रम",
+      "chinese": "行程",
+      "urdu": "سفر کا پروگرام",
+      "pronunciation": "eye-TIN-uh-rer-ee",
+      "level": "B1",
+      "category": "travel",
+      "type": "noun",
+      "difficulty": 2,
+      "frequency": "medium"
+    },
+    {
+      "word": "Accommodation",
+      "definition": "A place where someone can stay, such as a hotel or apartment.",
+      "examples": [
+        "We booked accommodation near the city center."
+      ],
+      "arabic": "إقامة",
+      "hindi": "आवास",
+      "chinese": "住宿",
+      "urdu": "رہائش",
+      "pronunciation": "uh-kom-uh-DAY-shun",
+      "level": "B1",
+      "category": "travel",
+      "type": "noun",
+      "difficulty": 2,
+      "frequency": "high"
+    },
+    {
+      "word": "Reservation",
+      "definition": "An arrangement to secure a seat, room, or service in advance.",
+      "examples": [
+        "I made a reservation for two at 7 p.m."
+      ],
+      "arabic": "حجز",
+      "hindi": "आरक्षण",
+      "chinese": "预订",
+      "urdu": "بکنگ",
+      "pronunciation": "rez-er-VAY-shun",
+      "level": "B1",
+      "category": "travel",
+      "type": "noun",
+      "difficulty": 2,
+      "frequency": "high"
+    },
+    {
+      "word": "Passport",
+      "definition": "An official document that identifies a person and allows international travel.",
+      "examples": [
+        "Keep your passport in a safe place."
+      ],
+      "arabic": "جواز سفر",
+      "hindi": "पासपोर्ट",
+      "chinese": "护照",
+      "urdu": "پاسپورٹ",
+      "pronunciation": "PASS-port",
+      "level": "A2",
+      "category": "travel",
+      "type": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "word": "Visa",
+      "definition": "An official permit allowing a person to enter or stay in a country.",
+      "examples": [
+        "He applied for a student visa."
+      ],
+      "arabic": "تأشيرة",
+      "hindi": "वीज़ा",
+      "chinese": "签证",
+      "urdu": "ویزا",
+      "pronunciation": "VEE-zuh",
+      "level": "A2",
+      "category": "travel",
+      "type": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "word": "Sightseeing",
+      "definition": "Visiting places of interest as a tourist.",
+      "examples": [
+        "We went sightseeing in the old town."
+      ],
+      "arabic": "مشاهدة المعالم",
+      "hindi": "दर्शनीय स्थल घूमना",
+      "chinese": "观光",
+      "urdu": "سیر و سیاحت",
+      "pronunciation": "SIGHT-see-ing",
+      "level": "A2",
+      "category": "travel",
+      "type": "noun",
+      "difficulty": 1,
+      "frequency": "medium"
+    },
+    {
+      "word": "Baggage",
+      "definition": "Suitcases and bags carried by a traveler.",
+      "examples": [
+        "Your baggage will be checked at the counter."
+      ],
+      "arabic": "أمتعة",
+      "hindi": "सामान",
+      "chinese": "行李",
+      "urdu": "سامان",
+      "pronunciation": "BAG-ij",
+      "level": "A2",
+      "category": "travel",
+      "type": "noun",
+      "difficulty": 1,
+      "frequency": "medium"
+    },
+    {
+      "word": "Departure",
+      "definition": "The action of leaving, especially to start a journey.",
+      "examples": [
+        "The departure time is 9:30 a.m."
+      ],
+      "arabic": "مغادرة",
+      "hindi": "प्रस्थान",
+      "chinese": "出发",
+      "urdu": "روانگی",
+      "pronunciation": "di-PAR-cher",
+      "level": "B1",
+      "category": "travel",
+      "type": "noun",
+      "difficulty": 2,
+      "frequency": "medium"
+    },
+    {
+      "word": "Arrival",
+      "definition": "The act of reaching a place at the end of a journey.",
+      "examples": [
+        "On arrival, please proceed to baggage claim."
+      ],
+      "arabic": "وصول",
+      "hindi": "आगमन",
+      "chinese": "到达",
+      "urdu": "آمد",
+      "pronunciation": "uh-RY-vul",
+      "level": "B1",
+      "category": "travel",
+      "type": "noun",
+      "difficulty": 2,
+      "frequency": "medium"
+    },
+    {
+      "word": "Delay",
+      "definition": "A situation in which something happens later than planned.",
+      "examples": [
+        "The flight was delayed due to bad weather."
+      ],
+      "arabic": "تأخير",
+      "hindi": "देरी",
+      "chinese": "延误",
+      "urdu": "تاخیر",
+      "pronunciation": "di-LAY",
+      "level": "A2",
+      "category": "travel",
+      "type": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "word": "Boarding pass",
+      "definition": "A ticket that allows a passenger to board a plane or train.",
+      "examples": [
+        "Show your boarding pass at the gate."
+      ],
+      "arabic": "بطاقة صعود الطائرة",
+      "hindi": "बोर्डिंग पास",
+      "chinese": "登机牌",
+      "urdu": "بورڈنگ پاس",
+      "pronunciation": "BOR-ding pass",
+      "level": "A2",
+      "category": "travel",
+      "type": "noun",
+      "difficulty": 1,
+      "frequency": "medium"
+    },
+    {
+      "word": "Check-in",
+      "definition": "The process of reporting your arrival at a hotel or airport and getting access.",
+      "examples": [
+        "Online check-in opens 24 hours before the flight."
+      ],
+      "arabic": "تسجيل الوصول",
+      "hindi": "चेक-इन",
+      "chinese": "办理登机/入住",
+      "urdu": "چیک اِن",
+      "pronunciation": "CHECK-in",
+      "level": "A2",
+      "category": "travel",
+      "type": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "word": "Landmark",
+      "definition": "A famous building or place that is easy to recognize.",
+      "examples": [
+        "The bridge is a major landmark in the city."
+      ],
+      "arabic": "معلم بارز",
+      "hindi": "प्रसिद्ध स्थल",
+      "chinese": "地标",
+      "urdu": "نمایاں مقام",
+      "pronunciation": "LAND-mark",
+      "level": "B1",
+      "category": "travel",
+      "type": "noun",
+      "difficulty": 2,
+      "frequency": "medium"
+    },
+    {
+      "word": "Budget",
+      "definition": "The amount of money available for spending.",
+      "examples": [
+        "We planned a travel budget for the whole trip."
+      ],
+      "arabic": "ميزانية",
+      "hindi": "बजट",
+      "chinese": "预算",
+      "urdu": "بجٹ",
+      "pronunciation": "BUJ-it",
+      "level": "A2",
+      "category": "travel",
+      "type": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "word": "Currency exchange",
+      "definition": "The act of changing money from one currency to another.",
+      "examples": [
+        "You can do currency exchange at the airport."
+      ],
+      "arabic": "صرف العملات",
+      "hindi": "मुद्रा विनिमय",
+      "chinese": "货币兑换",
+      "urdu": "کرنسی تبدیل کرنا",
+      "pronunciation": "KUR-en-see eks-CHAYNJ",
+      "level": "B1",
+      "category": "travel",
+      "type": "noun",
+      "difficulty": 2,
+      "frequency": "medium"
+    },
+    {
+      "word": "Public transport",
+      "definition": "Buses, trains, and other services available for everyone to use.",
+      "examples": [
+        "Public transport is cheaper than taxis."
+      ],
+      "arabic": "وسائل النقل العام",
+      "hindi": "सार्वजनिक परिवहन",
+      "chinese": "公共交通",
+      "urdu": "عوامی نقل و حمل",
+      "pronunciation": "PUB-lik TRAN-sport",
+      "level": "A2",
+      "category": "travel",
+      "type": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "word": "Route",
+      "definition": "A way or course taken to get from one place to another.",
+      "examples": [
+        "This route avoids heavy traffic."
+      ],
+      "arabic": "مسار",
+      "hindi": "मार्ग",
+      "chinese": "路线",
+      "urdu": "راستہ",
+      "pronunciation": "ROOT",
+      "level": "B1",
+      "category": "travel",
+      "type": "noun",
+      "difficulty": 2,
+      "frequency": "high"
+    },
+    {
+      "word": "Destination",
+      "definition": "The place where someone is going or where something is being sent.",
+      "examples": [
+        "Paris is a popular tourist destination."
+      ],
+      "arabic": "وجهة",
+      "hindi": "गंतव्य",
+      "chinese": "目的地",
+      "urdu": "مقصد",
+      "pronunciation": "des-tuh-NAY-shun",
+      "level": "B1",
+      "category": "travel",
+      "type": "noun",
+      "difficulty": 2,
+      "frequency": "high"
+    },
+    {
+      "word": "Guided tour",
+      "definition": "A trip led by a guide who provides information about places visited.",
+      "examples": [
+        "We joined a guided tour of the museum."
+      ],
+      "arabic": "جولة مع مرشد",
+      "hindi": "निर्देशित यात्रा",
+      "chinese": "导览游",
+      "urdu": "رہنمائی شدہ دورہ",
+      "pronunciation": "GUY-ded toor",
+      "level": "B1",
+      "category": "travel",
+      "type": "noun",
+      "difficulty": 2,
+      "frequency": "medium"
+    },
+    {
+      "word": "Jet lag",
+      "definition": "Tiredness and discomfort after a long flight across time zones.",
+      "examples": [
+        "Jet lag can affect your sleep for a few days."
+      ],
+      "arabic": "اضطراب فرق التوقيت",
+      "hindi": "जेट लैग",
+      "chinese": "时差反应",
+      "urdu": "جیٹ لیگ",
+      "pronunciation": "JET lag",
+      "level": "B2",
+      "category": "travel",
+      "type": "noun",
+      "difficulty": 2,
+      "frequency": "medium"
+    },
+    {
+      "word": "Algorithm",
+      "definition": "A set of rules or steps used to solve a problem or perform a task.",
+      "examples": [
+        "Search engines use algorithms to rank results."
+      ],
+      "arabic": "خوارزمية",
+      "hindi": "एल्गोरिद्म",
+      "chinese": "算法",
+      "urdu": "الگورتھم",
+      "pronunciation": "AL-guh-rith-um",
+      "level": "B2",
+      "category": "technology",
+      "type": "noun",
+      "difficulty": 3,
+      "frequency": "high"
+    },
+    {
+      "word": "Artificial intelligence",
+      "definition": "The ability of machines to perform tasks that normally require human intelligence.",
+      "examples": [
+        "Artificial intelligence is used in voice assistants."
+      ],
+      "arabic": "الذكاء الاصطناعي",
+      "hindi": "कृत्रिम बुद्धिमत्ता",
+      "chinese": "人工智能",
+      "urdu": "مصنوعی ذہانت",
+      "pronunciation": "ar-tuh-FISH-uhl in-TEL-uh-jens",
+      "level": "B2",
+      "category": "technology",
+      "type": "noun",
+      "difficulty": 3,
+      "frequency": "high"
+    },
+    {
+      "word": "Cybersecurity",
+      "definition": "Protection of computer systems and data from digital attacks.",
+      "examples": [
+        "Cybersecurity training helps reduce risk."
+      ],
+      "arabic": "الأمن السيبراني",
+      "hindi": "साइबर सुरक्षा",
+      "chinese": "网络安全",
+      "urdu": "سائبر سکیورٹی",
+      "pronunciation": "SY-ber-si-KYUR-uh-tee",
+      "level": "B2",
+      "category": "technology",
+      "type": "noun",
+      "difficulty": 3,
+      "frequency": "high"
+    },
+    {
+      "word": "Data privacy",
+      "definition": "The right to control how personal information is collected and used.",
+      "examples": [
+        "Strong data privacy policies protect users."
+      ],
+      "arabic": "خصوصية البيانات",
+      "hindi": "डेटा गोपनीयता",
+      "chinese": "数据隐私",
+      "urdu": "ڈیٹا کی رازداری",
+      "pronunciation": "DAY-tuh PRY-vuh-see",
+      "level": "B2",
+      "category": "technology",
+      "type": "noun",
+      "difficulty": 3,
+      "frequency": "high"
+    },
+    {
+      "word": "Cloud computing",
+      "definition": "Using remote servers on the internet to store, manage, and process data.",
+      "examples": [
+        "Cloud computing allows access from anywhere."
+      ],
+      "arabic": "الحوسبة السحابية",
+      "hindi": "क्लाउड कंप्यूटिंग",
+      "chinese": "云计算",
+      "urdu": "کلاؤڈ کمپیوٹنگ",
+      "pronunciation": "KLOWD kum-PYOO-ting",
+      "level": "B2",
+      "category": "technology",
+      "type": "noun",
+      "difficulty": 3,
+      "frequency": "high"
+    },
+    {
+      "word": "Bandwidth",
+      "definition": "The amount of data that can be sent over a connection in a given time.",
+      "examples": [
+        "Video calls require enough bandwidth."
+      ],
+      "arabic": "عرض النطاق",
+      "hindi": "बैंडविड्थ",
+      "chinese": "带宽",
+      "urdu": "بینڈوڈتھ",
+      "pronunciation": "BAND-width",
+      "level": "B2",
+      "category": "technology",
+      "type": "noun",
+      "difficulty": 3,
+      "frequency": "medium"
+    },
+    {
+      "word": "Device",
+      "definition": "A piece of equipment designed for a particular purpose, especially electronic.",
+      "examples": [
+        "This device connects to Wi‑Fi."
+      ],
+      "arabic": "جهاز",
+      "hindi": "उपकरण",
+      "chinese": "设备",
+      "urdu": "آلہ",
+      "pronunciation": "di-VICE",
+      "level": "A2",
+      "category": "technology",
+      "type": "noun",
+      "difficulty": 1,
+      "frequency": "high"
+    },
+    {
+      "word": "Application",
+      "definition": "A program designed to perform a specific task, especially on a phone or computer.",
+      "examples": [
+        "I installed a language learning application."
+      ],
+      "arabic": "تطبيق",
+      "hindi": "अनुप्रयोग",
+      "chinese": "应用程序",
+      "urdu": "ایپلی کیشن",
+      "pronunciation": "ap-li-KAY-shun",
+      "level": "B1",
+      "category": "technology",
+      "type": "noun",
+      "difficulty": 2,
+      "frequency": "high"
+    },
+    {
+      "word": "Software update",
+      "definition": "A new version of software that improves features or fixes problems.",
+      "examples": [
+        "Install the latest software update for security."
+      ],
+      "arabic": "تحديث برمجي",
+      "hindi": "सॉफ़्टवेयर अपडेट",
+      "chinese": "软件更新",
+      "urdu": "سافٹ ویئر اپڈیٹ",
+      "pronunciation": "SOFT-wair UP-dayt",
+      "level": "B1",
+      "category": "technology",
+      "type": "noun",
+      "difficulty": 2,
+      "frequency": "high"
+    },
+    {
+      "word": "Bug",
+      "definition": "An error or flaw that causes a program to behave unexpectedly.",
+      "examples": [
+        "The developer fixed a bug in the app."
+      ],
+      "arabic": "خطأ برمجي",
+      "hindi": "बग",
+      "chinese": "程序错误",
+      "urdu": "بگ",
+      "pronunciation": "BUG",
+      "level": "B1",
+      "category": "technology",
+      "type": "noun",
+      "difficulty": 2,
+      "frequency": "high"
+    },
+    {
+      "word": "Troubleshooting",
+      "definition": "Finding and fixing the cause of a problem.",
+      "examples": [
+        "Troubleshooting can take time and patience."
+      ],
+      "arabic": "استكشاف الأخطاء وإصلاحها",
+      "hindi": "समस्या निवारण",
+      "chinese": "故障排除",
+      "urdu": "مسئلہ حل کرنا",
+      "pronunciation": "TRUB-uhl-shoo-ting",
+      "level": "B2",
+      "category": "technology",
+      "type": "noun",
+      "difficulty": 3,
+      "frequency": "medium"
+    },
+    {
+      "word": "User interface",
+      "definition": "The part of a system that a person uses to interact with it.",
+      "examples": [
+        "A clear user interface improves usability."
+      ],
+      "arabic": "واجهة المستخدم",
+      "hindi": "उपयोगकर्ता इंटरफ़ेस",
+      "chinese": "用户界面",
+      "urdu": "صارف انٹرفیس",
+      "pronunciation": "YOO-zer IN-ter-fays",
+      "level": "B2",
+      "category": "technology",
+      "type": "noun",
+      "difficulty": 3,
+      "frequency": "medium"
+    },
+    {
+      "word": "Database",
+      "definition": "An organized collection of data that can be accessed and managed electronically.",
+      "examples": [
+        "The database stores user progress securely."
+      ],
+      "arabic": "قاعدة بيانات",
+      "hindi": "डेटाबेस",
+      "chinese": "数据库",
+      "urdu": "ڈیٹابیس",
+      "pronunciation": "DAY-tuh-bays",
+      "level": "B2",
+      "category": "technology",
+      "type": "noun",
+      "difficulty": 3,
+      "frequency": "high"
+    },
+    {
+      "word": "Encryption",
+      "definition": "The process of converting information into a code to prevent unauthorized access.",
+      "examples": [
+        "Encryption protects sensitive data."
+      ],
+      "arabic": "تشفير",
+      "hindi": "एन्क्रिप्शन",
+      "chinese": "加密",
+      "urdu": "خفیہ کاری",
+      "pronunciation": "en-KRIP-shun",
+      "level": "B2",
+      "category": "technology",
+      "type": "noun",
+      "difficulty": 3,
+      "frequency": "high"
+    },
+    {
+      "word": "Wireless",
+      "definition": "Using radio signals instead of wires to connect devices.",
+      "examples": [
+        "Wireless headphones are convenient."
+      ],
+      "arabic": "لاسلكي",
+      "hindi": "वायरलेस",
+      "chinese": "无线",
+      "urdu": "وائرلیس",
+      "pronunciation": "WY-er-lis",
+      "level": "B1",
+      "category": "technology",
+      "type": "adjective",
+      "difficulty": 2,
+      "frequency": "high"
+    },
+    {
+      "word": "Battery life",
+      "definition": "How long a device can operate before needing to be recharged.",
+      "examples": [
+        "This phone has excellent battery life."
+      ],
+      "arabic": "عمر البطارية",
+      "hindi": "बैटरी लाइफ",
+      "chinese": "电池续航",
+      "urdu": "بیٹری کا دورانیہ",
+      "pronunciation": "BAT-uh-ree life",
+      "level": "B1",
+      "category": "technology",
+      "type": "noun",
+      "difficulty": 2,
+      "frequency": "medium"
+    },
+    {
+      "word": "Network",
+      "definition": "A system of connected computers or devices that share information.",
+      "examples": [
+        "The office network is down."
+      ],
+      "arabic": "شبكة",
+      "hindi": "नेटवर्क",
+      "chinese": "网络",
+      "urdu": "نیٹ ورک",
+      "pronunciation": "NET-wurk",
+      "level": "B1",
+      "category": "technology",
+      "type": "noun",
+      "difficulty": 2,
+      "frequency": "high"
+    },
+    {
+      "word": "Backup",
+      "definition": "A copy of data stored separately to prevent loss.",
+      "examples": [
+        "Always keep a backup of important files."
+      ],
+      "arabic": "نسخة احتياطية",
+      "hindi": "बैकअप",
+      "chinese": "备份",
+      "urdu": "بیک اپ",
+      "pronunciation": "BAK-up",
+      "level": "B1",
+      "category": "technology",
+      "type": "noun",
+      "difficulty": 2,
+      "frequency": "high"
+    },
+    {
+      "word": "Virtual reality",
+      "definition": "A computer-generated environment that can be experienced as real.",
+      "examples": [
+        "Virtual reality is used in training simulations."
+      ],
+      "arabic": "الواقع الافتراضي",
+      "hindi": "आभासी वास्तविकता",
+      "chinese": "虚拟现实",
+      "urdu": "ورچوئل ریئلٹی",
+      "pronunciation": "VUR-choo-uhl ree-AL-uh-tee",
+      "level": "B2",
+      "category": "technology",
+      "type": "noun",
+      "difficulty": 3,
+      "frequency": "medium"
+    },
+    {
+      "word": "Automation",
+      "definition": "The use of machines or software to perform tasks with minimal human input.",
+      "examples": [
+        "Automation can increase productivity."
+      ],
+      "arabic": "أتمتة",
+      "hindi": "स्वचालन",
+      "chinese": "自动化",
+      "urdu": "آٹومیشن",
+      "pronunciation": "aw-tuh-MAY-shun",
+      "level": "B2",
+      "category": "technology",
+      "type": "noun",
+      "difficulty": 3,
+      "frequency": "high"
+    }
+  ]
+}

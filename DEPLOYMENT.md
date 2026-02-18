@@ -1,8 +1,8 @@
-# German Learning App - Deployment Guide
+# IELTS Preparation App - Deployment Guide
 
 ## Overview
 
-This guide provides comprehensive instructions for deploying the German Learning application to production environments. The application is a progressive web app (PWA) built with React 18, Vite, and modern web technologies.
+This guide provides comprehensive instructions for deploying the IELTS Preparation application to production environments. The application is a progressive web app (PWA) built with React 18, Vite, and modern web technologies.
 
 ## Prerequisites
 

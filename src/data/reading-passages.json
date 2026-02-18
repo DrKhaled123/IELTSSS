@@ -1,370 +1,100 @@
 [
   {
     "id": 1,
-    "title": "The Impact of Artificial Intelligence on Modern Healthcare",
-    "titleArabic": "تأثير الذكاء الاصطناعي على الرعاية الصحية الحديثة",
-    "difficulty": "C1",
-    "story": "Artificial intelligence (AI) has revolutionized healthcare delivery in unprecedented ways. Machine learning algorithms now assist physicians in diagnosing diseases with remarkable accuracy, often detecting patterns invisible to the human eye. Medical imaging analysis, powered by AI, can identify tumors and anomalies at early stages, significantly improving patient outcomes. Furthermore, AI-driven predictive analytics help hospitals optimize resource allocation and anticipate patient needs.\n\nHowever, the integration of AI in healthcare raises important ethical considerations. Questions about data privacy, algorithmic bias, and the potential replacement of human medical professionals persist. Critics argue that over-reliance on technology might diminish the essential human element of patient care—the empathy and intuition that define compassionate medicine.\n\nDespite these concerns, the potential benefits of AI in healthcare appear substantial. From accelerating drug discovery to personalizing treatment plans, AI represents a transformative force in modern medicine. The challenge lies in harnessing its capabilities while preserving the fundamental values of medical practice.",
-    "storyArabic": "لقد أحدث الذكاء الاصطناعي ثورة في تقديم الرعاية الصحية بطرق غير مسبوقة. تساعد خوارزميات التعلم الآلي الآن الأطباء في تشخيص الأمراض بدقة ملحوظة، وغالبًا ما تكتشف أنماطًا غير مرئية للعين البشرية. يمكن لتحليل التصوير الطبي المدعوم بالذكاء الاصطناعي تحديد الأورام والشذوذات في مراحل مبكرة، مما يحسن بشكل كبير نتائج المرضى. علاوة على ذلك، تساعد التحليلات التنبؤية المدفوعة بالذكاء الاصطناعي المستشفيات على تحسين تخصيص الموارد وتوقع احتياجات المرضى.\n\nومع ذلك، فإن دمج الذكاء الاصطناعي في الرعاية الصحية يثير اعتبارات أخلاقية مهمة. تستمر الأسئلة حول خصوصية البيانات والتحيز الخوارزمي والاستبدال المحتمل للمهنيين الطبيين البشريين. يجادل النقاد بأن الاعتماد المفرط على التكنولوجيا قد يقلل من العنصر البشري الأساسي لرعاية المرضى - التعاطف والحدس الذي يعرف الطب الرحيم.\n\nعلى الرغم من هذه المخاوف، تبدو الفوائد المحتملة للذكاء الاصطناعي في الرعاية الصحية كبيرة. من تسريع اكتشاف الأدوية إلى تخصيص خطط العلاج، يمثل الذكاء الاصطناعي قوة تحويلية في الطب الحديث. يكمن التحدي في تسخير قدراته مع الحفاظ على القيم الأساسية للممارسة الطبية.",
+    "title": "Materials to Take Us Beyond Concrete",
+    "titleArabic": "مواد تأخذنا إلى ما وراء الخرسانة",
+    "source": "IELTS 18 Test 3 - Reading Passage 1",
+    "story": "Concrete is the second most used substance in the global economy, after water – and one of the world's biggest single sources of greenhouse gas emissions. The chemical process by which cement, the key ingredient of concrete, is created results in large quantities of carbon dioxide. The UN estimates that there will be 9.8 billion people living on the planet by mid-century. They will need somewhere to live. If concrete is the only answer to the construction of new cities, then carbon emissions will soar, aggravating global warming. And so scientists have started innovating with other materials, in a scramble for alternatives to a universal commodity that has underpinned our modern life for many years.\\n\\nThe problem with replacing concrete is that it is so very good at what it does. The ingredients are relatively cheap and found in abundance. Concrete is mouldable and pourable, but quickly sets hard. Steel can be used to reinforce concrete, making it far stronger.\\n\\nA possible alternative is wood. Recent years have seen tall buildings constructed almost entirely from timber in Vancouver, Vienna and Brumunddal in Norway. Cross-laminated timber is engineered wood where layers are glued together crosswise.\\n\\nFly ash and slag from iron ore are other alternatives. Fly ash can make up 15-30% of cement. However, Anna Surgenor notes that transportation costs may reduce environmental benefits.",
+    "translation": "الخرسانة هي ثاني أكثر مادة استخداماً في الاقتصاد العالمي بعد الماء، وأحد أكبر مصادر غازات الاحتباس الحراري. العملية الكيميائية لإنتاج الأسمنت، المكون الرئيسي للخرسانة، ينتج عنها كميات كبيرة من ثاني أكسيد الكربون. تقديرات الأمم المتحدة تشير إلى 9.8 مليار نسمة بحلول منتصف القرن. سيحتاجون لمكان للعيش. إذا كانت الخرسانة هي الإجابة الوحيدة، فسترتفع الانبعاثات بشكل كبير.",
+    "difficulty": "B2",
     "vocabulary": [
-      {
-        "word": "revolutionized",
-        "level": "C1",
-        "meaningEn": "Changed something completely and dramatically",
-        "meaningAr": "أحدث ثورة في",
-        "example": "The internet revolutionized how we communicate."
-      },
-      {
-        "word": "unprecedented",
-        "level": "C1",
-        "meaningEn": "Never done or experienced before",
-        "meaningAr": "غير مسبوق",
-        "example": "The pandemic brought unprecedented challenges."
-      },
-      {
-        "word": "algorithms",
-        "level": "C1",
-        "meaningEn": "Step-by-step procedures for calculations or problem-solving",
-        "meaningAr": "خوارزميات",
-        "example": "Search engines use complex algorithms."
-      },
-      {
-        "word": "physicians",
-        "level": "B2",
-        "meaningEn": "Medical doctors",
-        "meaningAr": "أطباء",
-        "example": "Physicians must complete extensive training."
-      },
-      {
-        "word": "diagnosing",
-        "level": "B2",
-        "meaningEn": "Identifying a disease or problem",
-        "meaningAr": "تشخيص",
-        "example": "Diagnosing rare diseases requires expertise."
-      },
-      {
-        "word": "remarkable",
-        "level": "B2",
-        "meaningEn": "Worthy of attention; extraordinary",
-        "meaningAr": "ملحوظ، رائع",
-        "example": "She made remarkable progress."
-      },
-      {
-        "word": "accuracy",
-        "level": "B2",
-        "meaningEn": "The quality of being correct or precise",
-        "meaningAr": "دقة",
-        "example": "Accuracy is essential in scientific research."
-      },
-      {
-        "word": "anomalies",
-        "level": "C1",
-        "meaningEn": "Things that deviate from what is standard or expected",
-        "meaningAr": "شذوذات، حالات شاذة",
-        "example": "The test revealed several anomalies."
-      },
-      {
-        "word": "outcomes",
-        "level": "B2",
-        "meaningEn": "Results or consequences",
-        "meaningAr": "نتائج",
-        "example": "The treatment led to positive outcomes."
-      },
-      {
-        "word": "predictive",
-        "level": "C1",
-        "meaningEn": "Relating to the prediction of future events",
-        "meaningAr": "تنبؤي",
-        "example": "Predictive models help forecast trends."
-      },
-      {
-        "word": "analytics",
-        "level": "C1",
-        "meaningEn": "The systematic analysis of data",
-        "meaningAr": "تحليلات",
-        "example": "Data analytics drives business decisions."
-      },
-      {
-        "word": "optimize",
-        "level": "C1",
-        "meaningEn": "Make the best or most effective use of",
-        "meaningAr": "يحسن، يُثلى",
-        "example": "Companies optimize their workflows."
-      },
-      {
-        "word": "allocation",
-        "level": "C1",
-        "meaningEn": "The distribution of resources",
-        "meaningAr": "تخصيص",
-        "example": "Budget allocation requires careful planning."
-      },
-      {
-        "word": "anticipate",
-        "level": "B2",
-        "meaningEn": "Expect or predict something",
-        "meaningAr": "يتوقع",
-        "example": "We anticipate high demand."
-      },
-      {
-        "word": "integration",
-        "level": "C1",
-        "meaningEn": "The process of combining things to work together",
-        "meaningAr": "تكامل، دمج",
-        "example": "Technology integration enhances learning."
-      },
-      {
-        "word": "ethical",
-        "level": "B2",
-        "meaningEn": "Relating to moral principles",
-        "meaningAr": "أخلاقي",
-        "example": "Ethical considerations guide research."
-      },
-      {
-        "word": "privacy",
-        "level": "B2",
-        "meaningEn": "The state of being free from public attention",
-        "meaningAr": "خصوصية",
-        "example": "Privacy protection is a fundamental right."
-      },
-      {
-        "word": "bias",
-        "level": "C1",
-        "meaningEn": "Prejudice or unfair preference",
-        "meaningAr": "تحيز",
-        "example": "The study aimed to eliminate bias."
-      },
-      {
-        "word": "persist",
-        "level": "C1",
-        "meaningEn": "Continue to exist despite difficulties",
-        "meaningAr": "يستمر، يثابر",
-        "example": "Challenges persist in the region."
-      },
-      {
-        "word": "reliance",
-        "level": "B2",
-        "meaningEn": "Dependence on something",
-        "meaningAr": "اعتماد",
-        "example": "Reliance on technology has increased."
-      },
-      {
-        "word": "diminish",
-        "level": "C1",
-        "meaningEn": "Make or become less",
-        "meaningAr": "يقلل، ينقص",
-        "example": "The pain will gradually diminish."
-      },
-      {
-        "word": "empathy",
-        "level": "B2",
-        "meaningEn": "The ability to understand others' feelings",
-        "meaningAr": "تعاطف",
-        "example": "Empathy is crucial in healthcare."
-      },
-      {
-        "word": "intuition",
-        "level": "C1",
-        "meaningEn": "The ability to understand immediately without reasoning",
-        "meaningAr": "حدس",
-        "example": "She trusted her intuition."
-      },
-      {
-        "word": "compassionate",
-        "level": "B2",
-        "meaningEn": "Showing sympathy and concern for others",
-        "meaningAr": "رحيم، عطوف",
-        "example": "Compassionate care improves patient satisfaction."
-      },
-      {
-        "word": "substantial",
-        "level": "B2",
-        "meaningEn": "Of considerable importance or size",
-        "meaningAr": "كبير، جوهري",
-        "example": "There was substantial evidence."
-      },
-      {
-        "word": "accelerating",
-        "level": "B2",
-        "meaningEn": "Increasing in speed or rate",
-        "meaningAr": "تسريع",
-        "example": "Technology is accelerating change."
-      },
-      {
-        "word": "discovery",
-        "level": "B2",
-        "meaningEn": "The act of finding something new",
-        "meaningAr": "اكتشاف",
-        "example": "Scientific discovery advances society."
-      },
-      {
-        "word": "personalizing",
-        "level": "C1",
-        "meaningEn": "Designing something for a specific person",
-        "meaningAr": "تخصيص",
-        "example": "Personalizing education improves outcomes."
-      },
-      {
-        "word": "transformative",
-        "level": "C1",
-        "meaningEn": "Causing a major change",
-        "meaningAr": "تحويلي",
-        "example": "Education is a transformative force."
-      },
-      {
-        "word": "harnessing",
-        "level": "C1",
-        "meaningEn": "Controlling and using something effectively",
-        "meaningAr": "تسخير، استغلال",
-        "example": "Harnessing solar energy reduces costs."
-      },
-      {
-        "word": "fundamental",
-        "level": "B2",
-        "meaningEn": "Forming a necessary base or core",
-        "meaningAr": "أساسي، جوهري",
-        "example": "Freedom is a fundamental human right."
-      }
+      { "word": "Concrete", "meaning": "A building material made from cement, sand, and water", "arabic": "خرسانة", "level": "B1", "example": "The construction of the bridge took two years." },
+      { "word": "Emissions", "meaning": "Substances released into the air", "arabic": "انبعاثات", "level": "B2", "example": "The factory produces harmful emissions." },
+      { "word": "Abundance", "meaning": "A large quantity of something", "arabic": "وفرة", "level": "B2", "example": "The region has an abundance of natural resources." },
+      { "word": "Mouldable", "meaning": "Can be shaped easily", "arabic": "قابل للتشكيل", "level": "C1", "example": "Clay is a mouldable material." },
+      { "word": "Timber", "meaning": "Wood prepared for building", "arabic": "أخشاب", "level": "B2", "example": "The house was built with timber from local forests." },
+      { "word": "Moisture", "meaning": "Water in the air or on a surface", "arabic": "رطوبة", "level": "B2", "example": "Wood expands as it absorbs moisture." },
+      { "word": "Susceptible", "meaning": "Likely to be affected by something", "arabic": "عرضة", "level": "C1", "example": "Wood is susceptible to pests." },
+      { "word": "Adhesive", "meaning": "A substance that sticks things together", "arabic": "مادة لاصقة", "level": "C1", "example": "An adhesive is used to stick layers of timber." },
+      { "word": "Slag", "meaning": "Waste material from metal production", "arabic": "خبث", "level": "C1", "example": "Iron-ore slag can be used in concrete mixes." },
+      { "word": "Byproduct", "meaning": "Something produced while making something else", "arabic": "منتج ثانوي", "level": "C1", "example": "Fly ash is a byproduct of coal-burning." }
     ],
     "questions": [
-      {
-        "question": "What is one way AI assists physicians according to the passage?",
-        "answer": "AI assists physicians by helping them diagnose diseases with remarkable accuracy, often detecting patterns that are invisible to the human eye.",
-        "explanation": "The passage explicitly states that machine learning algorithms assist physicians in diagnosing diseases with remarkable accuracy and can detect patterns invisible to humans."
-      },
-      {
-        "question": "What ethical concerns does the passage mention regarding AI in healthcare?",
-        "answer": "The passage mentions concerns about data privacy, algorithmic bias, and the potential replacement of human medical professionals.",
-        "explanation": "These three ethical considerations are listed as important questions that arise from integrating AI in healthcare."
-      },
-      {
-        "question": "According to the passage, what challenge exists in implementing AI in healthcare?",
-        "answer": "The challenge lies in harnessing AI's capabilities while preserving the fundamental values of medical practice, particularly the human element of empathy and intuition.",
-        "explanation": "The final paragraph identifies this balance as the central challenge, emphasizing the need to maintain compassionate care while adopting new technology."
-      }
-    ]
+      { "question": "Which section contains: An explanation of industrial processes that create potential raw materials for concrete?", "options": ["A", "B", "C", "D", "E", "F", "G", "H"], "correct": "G", "explanation": "Paragraph G discusses fly ash and slag from iron ore as potential alternatives to cement and explains their production processes." },
+      { "question": "Which section contains: A reference to various locations where high-rise wooden buildings can be found?", "options": ["A", "B", "C", "D", "E", "F", "G", "H"], "correct": "D", "explanation": "Paragraph D mentions Vancouver, Vienna, Brumunddal (Norway) - these are locations of wooden buildings." },
+      { "question": "Which section contains: An indication of how widely available raw materials of concrete are?", "options": ["A", "B", "C", "D", "E", "F", "G", "H"], "correct": "C", "explanation": "Paragraph C states ingredients are 'found in abundance in most places' and are 'relatively cheap'." },
+      { "question": "Which section contains: The belief that more high-rise wooden buildings are needed before wood can be regarded as viable?", "options": ["A", "B", "C", "D", "E", "F", "G", "H"], "correct": "F", "explanation": "Paragraph F explains that while demand is increasing, more proof of effectiveness in large projects is needed." }
+    ],
+    "topicNotes": {
+      "en": "🏗️ The Concrete Dilemma: Concrete builds our cities but produces massive CO2 emissions. Scientists race to find alternatives: wood (tall timber buildings), cross-laminated timber, fly ash, and slag. But concrete is cheap, abundant, and amazing at what it does - making it hard to replace.",
+      "ar": "🏗️ معضلة الخرسانة: الخرسانة تبني مدننا لكنها تنتج انبعاثات CO2 ضخمة. العلماء يتسابقون لإيجاد بدائل: الخشب، الخشب متقاطع الطبقات، الرماد المتطاير، والخبث."
+    },
+    "memoryNotes": {
+      "paragraphMap": { "A": "Problem: Concrete = CO2 disaster", "B": "Scale is the issue", "C": "Why concrete wins: cheap, abundant", "D": "Wood alternative + 3 cities", "E": "Wood challenges + cross-laminated timber", "F": "Mannstrom: timber demand rising", "G": "Fly ash & slag + Surgenor warning", "H": "Conclusion: alternatives face barriers" },
+      "people": { "Chris Cheeseman": "Engineer at Imperial College London - says concrete is amazing and hard to replace", "Markus Mannstrom": "VP of Stora Enso - timber demand up due to climate change", "Anna Surgenor": "UK Green Building Council - warns about transportation reducing environmental benefits" }
+    }
   },
   {
     "id": 2,
-    "title": "The Rise of E-Learning",
-    "titleArabic": "صعود التعلم الإلكتروني",
+    "title": "The Steam Car - The Doble Brothers' Story",
+    "titleArabic": "سيارة البخار - قصة إخوة دوبل",
+    "source": "IELTS 18 Test 3 - Reading Passage 2",
+    "story": "When primitive automobiles first appeared in the 1800s, their engines were based on steam power. But these early cars inherited steam's weaknesses: boilers had to be lit by hand, required 20 minutes to build pressure, and water reservoirs only lasted 30 miles.\\n\\nBut the glory days were few. The internal combustion engine appeared, offering ability to drive moments after starting. In 1912, General Motors introduced the electric starter, and steam power was gradually phased out.\\n\\nEven as the market declined, four brothers made one last effort. Between 1906-1909, while still in high school, Abner Doble and his brothers built their first steam car in their parents' basement. The Model B (1914) could accelerate 0-60 in 15 seconds.\\n\\nIn 1916, the Model C added key-based ignition. 5,390 deposits were received. But the Model C had serious glitches.\\n\\nThe Model E (1924) was the final attempt. It started in 40 seconds even after freezing overnight, reached 100+ mph, with negligible emissions. But at $18,000, only 50 were ever made. The company folded in 1931.\\n\\nIronically, those surviving Model Es still run today, some with 500,000+ miles.",
+    "translation": "عندما ظهرت السيارات الأولى في 1800s، كانت محركاتها تعمل بالبخار. لكنها ورثت ضعف البخار: الغلايات تحتاج إشعالاً يدوياً، و20 دقيقة لبناء الضغط، والماء يكفي 30 ميلاً.\\n\\nلكن أيام البخار انتهت. ظهر محرك الاحتراق الداخلي. في 1912، قدمت جنرال موتورز بادئ كهربائي، وتدريجياً تم التخلي عن البخار.\\n\\nبين 1906-1909، وهم في الثانوية، بنى أبنر دوبل وإخوته أول سيارة بخار في قبو والديهم. موديل B (1914) تسارع من 0-60 في 15 ثانية.\\n\\nفي 1916، أضاف موديل C إشعالاً بالمفتاح. استُلم 5390 عربوناً.\\n\\nموديل E (1924) كانت المحاولة الأخيرة. تبدأ في 40 ثانية بعد التجمد، 100+ ميل/ساعة، انبعاثات ضئيلة. لكن بـ18000 دولار، صُنعت 50 فقط. انهارت الشركة 1931.",
     "difficulty": "B2",
-    "story": "E-learning has emerged as a powerful tool in modern education, transforming how students access knowledge. With the advent of high-speed internet and smart devices, the barriers to education are lowering. Students can now attend lectures from top universities without leaving their homes. This accessibility is particularly beneficial for those in remote areas or with physical disabilities.\n\nHowever, e-learning is not without its challenges. The lack of face-to-face interaction can lead to feelings of isolation and decreased motivation. Furthermore, the digital divide remains a significant issue; not all students have equal access to the necessary technology. Educators must also adapt their teaching methods to engage students in a virtual environment effectively.\n\nDespite these hurdles, the flexibility of e-learning offers undeniable advantages. It allows for self-paced learning, where students can review complex materials as often as needed. As technology continues to evolve, blended learning models that combine online and traditional methods are likely to become the standard.",
-    "storyArabic": "ظهر التعلم الإلكتروني كأداة قوية في التعليم الحديث، مما أدى إلى تحويل كيفية وصول الطلاب إلى المعرفة. مع ظهور الإنترنت عالي السرعة والأجهزة الذكية، تنخفض الحواجز أمام التعليم. يمكن للطلاب الآن حضور محاضرات من أفضل الجامعات دون مغادرة منازلهم. هذه الإمكانية تفتح آفاقاً جديدة خاصة لأولئك في المناطق النائية أو ذوي الإعاقات الجسدية.\n\nومع ذلك، لا يخلو التعلم الإلكتروني من التحديات. يمكن أن يؤدي نقص التفاعل المباشر وجهاً لوجه إلى الشعور بالعزلة وانخفاض الحافز. علاوة على ذلك، لا تزال الفجوة الرقمية تمثل مشكلة كبيرة؛ ليس لدى جميع الطلاب وصول متساوٍ إلى التكنولوجيا اللازمة. يجب على المعلمين أيضًا تكييف أساليب التدريس الخاصة بهم لإشراك الطلاب في بيئة افتراضية بفعالية.\n\nعلى الرغم من هذه العقبات، توفر مرونة التعلم الإلكتروني مزايا لا يمكن إنكارها. يسمح بالتعلم الذاتي، حيث يمكن للطلاب مراجعة المواد المعقدة كلما دعت الحاجة. مع استمرار تطور التكنولوجيا، من المرجح أن تصبح نماذج التعلم المدمج التي تجمع بين الأساليب عبر الإنترنت والتقليدية هي المعيار.",
     "vocabulary": [
-      {
-        "word": "emerged",
-        "level": "B2",
-        "meaningEn": "Become apparent or prominent",
-        "meaningAr": "ظهر، برز",
-        "example": "New technologies have emerged recently."
-      },
-      {
-        "word": "transforming",
-        "level": "B2",
-        "meaningEn": "Making a thorough or dramatic change",
-        "meaningAr": "تحويل، تغيير",
-        "example": "The internet is transforming business."
-      },
-      {
-        "word": "accessibility",
-        "level": "C1",
-        "meaningEn": "The quality of being easily reached or entered",
-        "meaningAr": "إمكانية الوصول",
-        "example": "Web accessibility is crucial for everyone."
-      },
-      {
-        "word": "isolation",
-        "level": "B2",
-        "meaningEn": "The state of being alone or separated",
-        "meaningAr": "عزلة",
-        "example": "Social isolation can affect mental health."
-      },
-      {
-        "word": "flexibility",
-        "level": "B2",
-        "meaningEn": "The quality of bending easily without breaking",
-        "meaningAr": "مرونة",
-        "example": "Flexibility in scheduling helps employees."
-      }
+      { "word": "Primitive", "meaning": "Early or simple in development", "arabic": "بدائي", "level": "B2", "example": "Primitive automobiles first appeared in the 1800s." },
+      { "word": "Replenishment", "meaning": "Filling up again", "arabic": "تجديد", "level": "C1", "example": "Water reservoirs needed replenishment every 30 miles." },
+      { "word": "Phased out", "meaning": "Gradually stopped using", "arabic": "تم التخلص التدريجي", "level": "C1", "example": "Steam power was gradually phased out." },
+      { "word": "Rekindle", "meaning": "Revive or make active again", "arabic": "إعادة إشعال", "level": "C1", "example": "The brothers made one last effort to rekindle the technology." },
+      { "word": "Swift", "meaning": "Fast or rapid", "arabic": "سريع", "level": "B2", "example": "The Model B was amazingly swift." },
+      { "word": "Sluggish", "meaning": "Slow-moving", "arabic": "بطيء", "level": "C1", "example": "Buyers complained the vehicles were sluggish." },
+      { "word": "Glitches", "meaning": "Minor problems", "arabic": "أعطال", "level": "C1", "example": "The design was plagued with serious glitches." },
+      { "word": "Negligible", "meaning": "Very small or insignificant", "arabic": "ضئيل", "level": "C1", "example": "It achieved fifteen miles per gallon with negligible emissions." },
+      { "word": "Adamant", "meaning": "Refusing to change opinion", "arabic": "متمسك", "level": "C1", "example": "He remained adamant that steam was superior." }
     ],
     "questions": [
-      {
-        "question": "What is one major benefit of e-learning mentioned in the passage?",
-        "answer": "One major benefit is accessibility, allowing students to attend lectures from top universities without leaving their homes.",
-        "explanation": "The first paragraph highlights that barriers to education are lowering and students can access knowledge remotely."
-      },
-      {
-        "question": "What challenge does the passage associate with the lack of face-to-face interaction?",
-        "answer": "The lack of face-to-face interaction can lead to feelings of isolation and decreased motivation among students.",
-        "explanation": "The second paragraph explicitly states that isolation and lower motivation are potential negative outcomes of the lack of physical interaction."
-      },
-      {
-        "question": "What future trend does the passage predict for education?",
-        "answer": "The passage predicts that blended learning models, combining online and traditional methods, are likely to become the standard.",
-        "explanation": "The conclusion suggests that as technology evolves, a mix of both methods will likely become the norm."
-      }
-    ]
+      { "question": "Paragraph A heading?", "options": ["A period in cold conditions", "Marketing issues", "Good and bad aspects passed on", "A better option arises", "Further improvements", "Positive publicity", "Disappointing outcome"], "correct": "Good and bad aspects passed on", "explanation": "Paragraph A covers strengths (quick transport) and weaknesses (boilers, water needs) of early steam cars." },
+      { "question": "Paragraph B heading?", "options": ["A period in cold conditions", "Marketing issues", "Good and bad aspects", "A better option arises", "Further improvements", "Positive publicity"], "correct": "A better option arises", "explanation": "Paragraph B introduces internal combustion engine that replaced steam." },
+      { "question": "Paragraph C heading?", "options": ["A period in cold conditions", "Marketing issues", "Good and bad aspects", "Further improvements", "Positive publicity", "Disappointing outcome"], "correct": "Positive publicity", "explanation": "Paragraph C describes Model B's success: 'remarkable acceleration', 'virtual silence'." },
+      { "question": "Paragraph D heading?", "options": ["A period in cold conditions", "Marketing issues", "Good and bad aspects", "Further improvements", "Positive publicity", "Disappointing outcome"], "correct": "Further improvements", "explanation": "Paragraph D mentions '5,390 deposits' = commercial orders from Model C improvements." },
+      { "question": "What point does the writer make about the steam car in Paragraph B?", "options": ["Its success was short-lived", "Not enough cars were made", "Car companies found them hard to sell", "People found them hard to drive"], "correct": "Its success was short-lived", "explanation": "Paragraph B: 'glory days were few' and 'steam power was gradually phased out'." },
+      { "question": "When building their first steam car, the Doble brothers...", "options": ["constructed all parts themselves", "made notes at each stage", "needed several attempts", "sought advice from experienced people"], "correct": "needed several attempts", "explanation": "Paragraph C mentions 'first steam car...did not run well' then 'second and third prototype'." },
+      { "question": "In order to produce the Model C, the Doble brothers...", "options": ["moved production to a different city", "raised financial capital", "employed an additional worker", "abandoned their earlier designs"], "correct": "raised financial capital", "explanation": "Paragraph D: 'seek investment in his automobile design, which he used to open the General Engineering Company'." }
+    ],
+    "topicNotes": {
+      "en": "🚗 The Forgotten Revolution: Four brothers (still in high school!) built steam cars in their parents' basement. Model B (1914) was silent and fast. Model E (1924) started in 40 seconds after freezing, 100+ mph, clean emissions. But $18,000 price meant only 50 made. Ironically, they still run today with 500,000+ miles!",
+      "ar": "🚗 الثورة المنسية: أربعة إخوة (في الثانوية!) بنوا سيارات بخار في قبو والديهم. موديل B (1914) كانت صامتة وسريعة. موديل E (1924) تبدأ في 40 ثانية بعد التجمد، 100+ ميل/ساعة. لكن سعر 18000 دولار يعني 50 فقط صُنعت. لا تزال تعمل اليوم بـ500,000+ ميل!"
+    },
+    "memoryNotes": {
+      "modelTimeline": { "Model B (1914)": "0-60 in 15 seconds!", "Model C (1916)": "Key ignition → 5,390 orders → BUT glitches", "Model E (1924)": "40 sec startup in freezing → 100+ mph → Only 50 made" },
+      "keyNumbers": { "1906-1909": "Brothers in HIGH SCHOOL!", "20 minutes": "Steam pressure build time", "30 miles": "Water range", "$18,000": "Price in 1924", "500,000+": "Miles some cars still drive" }
+    }
   },
   {
     "id": 3,
-    "title": "Sustainable Urban Planning",
-    "titleArabic": "التخطيط الحضري المستدام",
+    "title": "How to Make Wise Decisions",
+    "titleArabic": "كيفية اتخاذ قرارات حكيمة",
+    "source": "IELTS 16 - Reading Passage",
     "difficulty": "C1",
-    "story": "As the global population continues to urbanize, the concept of sustainable urban planning has become increasingly critical. Cities are major consumers of energy and significant contributors to greenhouse gas emissions. Sustainable planning aims to mitigate these impacts by designing cities that are environmentally friendly, economically viable, and socially equitable. Key strategies include improving public transportation, increasing green spaces, and promoting energy-efficient buildings.\n\nThe integration of green infrastructure is a cornerstone of this approach. Parks, green roofs, and urban forests not only beautify the city but also combat the urban heat island effect and improve air quality. Furthermore, prioritizing pedestrian and cycling networks encourages active transportation, reducing reliance on private vehicles and lowering carbon footprints.\n\nHowever, implementing these changes requires substantial investment and political will. Cities must balance the need for development with environmental preservation. Despite the costs, the long-term benefits of resilient, healthy, and sustainable cities far outweigh the initial expenditures.",
-    "storyArabic": "مع استمرار التوسع الحضري لسكان العالم، أصبح مفهوم التخطيط الحضري المستدام بالغ الأهمية بشكل متزايد. المدن هي مستهلك رئيسي للطاقة ومساهم كبير في انبعاثات غازات الاحتباس الحراري. يهدف التخطيط المستدام إلى التخفيف من هذه الآثار من خلال تصميم مدن صديقة للبيئة وقابلة للحياة اقتصاديًا وعادلة اجتماعيًا. تشمل الاستراتيجيات الرئيسية تحسين النقل العام، وزيادة المساحات الخضراء، وتعزيز المباني الموفرة للطاقة.\n\nيعد تكامل البنية التحتية الخضراء حجر الزاوية في هذا النهج. لا تقوم المتنزهات والأسطح الخضراء والغابات الحضرية بتجميل المدينة فحسب، بل تكافح أيضًا تأثير الجزر الحرارية الحضرية وتحسن جودة الهواء. علاوة على ذلك، فإن إعطاء الأولوية لشبكات المشاة وركوب الدراجات يشجع النقل النشط، مما يقلل الاعتماد على المركبات الخاصة ويخفض البصمة الكربونية.\n\nومع ذلك، يتطلب تنفيذ هذه التغييرات استثمارًا كبيرًا وإرادة سياسية. يجب أن توازن المدن بين الحاجة إلى التنمية والحفاظ على البيئة. على الرغم من التكاليف، فإن الفوائد طويلة الأجل للمدن المرنة والصحية والمستدامة تفوق بكثير النفقات الأولية.",
+    "story": "For centuries, wisdom was considered rare—a gift for philosophers and elders. But modern research reveals wisdom isn't a personality trait you either have or don't. It's a skill that depends on context.\\n\\nProfessor Igor Grossmann discovered that wisdom varies dramatically based on situations. Your ability to reason wisely changes depending on your experiences, the culture you're in, and the specific situation you face.\\n\\nThe four keys to wise reasoning are:\\n1. Intellectual humility - knowing you don't know everything\\n2. Perspective-taking - seeing beyond your own viewpoint\\n3. Change recognition - understanding relationships evolve\\n4. Compromise - integrating different beliefs\\n\\nThe 'fly on the wall' technique: Pretend you're an outsider watching your own situation. Research proves this works. Students imagining careers as distant observers made wiser choices. Couples viewing conflicts through others' eyes found better compromises.\\n\\nWisdom has almost no connection to IQ or personality. A person can be wise in one situation and foolish in another. The situation matters more than the person.\\n\\nNext time you face a difficult decision, step back and ask: 'What would I advise a friend in this situation?' This simple shift unlocks hidden wisdom.",
+    "translation": "لقرون، اعتُبرت الحكمة نادرة—هبة للفلاسفة وكبار السن. لكن البحث الحديث يكشف أن الحكمة ليست سمة شخصية. إنها مهارة تعتمد على السياق.\\n\\nاكتشف البروفيسور إيغور غروسمان أن الحكمة تختلف بناءً على المواقف. قدرتك على التفكير بحكمة تتغير حسب تجاربك، ثقافتك، والموقف المحدد.\\n\\nالمفاتيح الأربعة للتفكير الحكيم:\\n1. التواضع الفكري\\n2. أخذ منظور الآخر\\n3. التعرف على التغيير\\n4. التوصل لحل وسط\\n\\nتقنية 'الذبابة على الحائط': تظاهر أنك خارجي يراقب موقفك. البحث يثبت أن هذا يعمل.\\n\\nالحكمة ليس لها علاقة تقريباً بمعدل الذكاء أو الشخصية. الموقف يهم أكثر من الشخص.",
     "vocabulary": [
-      {
-        "word": "urbanize",
-        "level": "C1",
-        "meaningEn": "Make or become urban in character",
-        "meaningAr": "تحضر (يصبح حضرياً)",
-        "example": "Rural areas continue to urbanize rapidly."
-      },
-      {
-        "word": "mitigate",
-        "level": "C1",
-        "meaningEn": "Make less severe, serious, or painful",
-        "meaningAr": "يخفف، يلطف",
-        "example": "We must act to mitigate climate change."
-      },
-      {
-        "word": "equitable",
-        "level": "C1",
-        "meaningEn": "Fair and impartial",
-        "meaningAr": "منصف، عادل",
-        "example": "We strive for an equitable society."
-      },
-      {
-        "word": "infrastructure",
-        "level": "B2",
-        "meaningEn": "Basic physical and organizational structures",
-        "meaningAr": "بنية تحتية",
-        "example": "Aging infrastructure needs repair."
-      },
-      {
-        "word": "resilient",
-        "level": "C1",
-        "meaningEn": "Able to withstand or recover quickly from difficult conditions",
-        "meaningAr": "مرن، قادر على الصمود",
-        "example": "Resilient cities can recover from disasters."
-      }
+      { "word": "Revered", "meaning": "Deeply respected", "arabic": "محترم", "example": "Wisdom has been considered one of the most revered human qualities." },
+      { "word": "Empirical", "meaning": "Based on observation/experiment", "arabic": "تجريبي", "example": "Empirical research examining wisdom suggests..." },
+      { "word": "Intellectual humility", "meaning": "Recognition of limits of one's knowledge", "arabic": "التواضع الفكري", "example": "One key is intellectual humility." },
+      { "word": "Compromise", "meaning": "Agreement where both sides give up something", "arabic": "حل وسط", "example": "Compromise of different attitudes is key." }
     ],
     "questions": [
-      {
-        "question": "What is the primary goal of sustainable urban planning?",
-        "answer": "The primary goal is to design cities that are environmentally friendly, economically viable, and socially equitable to mitigate the impacts of urbanization.",
-        "explanation": "The first paragraph states that sustainable planning aims to mitigate environmental impacts by creating cities with these three characteristics."
-      },
-      {
-        "question": "How does green infrastructure benefit a city?",
-        "answer": "Green infrastructure, such as parks and green roofs, beautifies the city, combats the urban heat island effect, and improves air quality.",
-        "explanation": "The second paragraph specifically lists these benefits of integrating green infrastructure."
-      },
-      {
-        "question": "What is a major challenge in implementing sustainable urban planning mentioned in the text?",
-        "answer": "A major challenge is the need for substantial investment and political will to balance development with environmental preservation.",
-        "explanation": "The final paragraph notes that implementing these changes requires significant investment and political commitment."
-      }
-    ]
+      { "question": "What point does the writer make in the first paragraph?", "options": ["Wisdom appears to be associated with old age", "A basic assumption about wisdom may be wrong", "Wisdom is only possessed by certain people", "People have assumed all human beings have wisdom"], "correct": "A basic assumption about wisdom may be wrong", "explanation": "Paragraph 1 challenges old assumption that wisdom is rare." },
+      { "question": "What does Igor Grossmann suggest about the ability to make wise decisions?", "options": ["It is not as strong now", "It has not changed much", "The importance of certain influences was underestimated", "The role of society has altered"], "correct": "The importance of certain influences was underestimated", "explanation": "Paragraph 2: 'experiential, situational, and cultural factors are even more powerful than previously imagined'." }
+    ],
+    "topicNotes": {
+      "en": "🧠 The Science of Wisdom: Wisdom isn't a rare gift—it's a skill anyone can develop! Four keys: intellectual humility, perspective-taking, change recognition, and compromise. The 'fly on the wall' technique: pretend advising a friend = wiser decisions. Wisdom barely relates to IQ!",
+      "ar": "🧠 علم الحكمة: الحكمة ليست هبة نادرة—إنها مهارة يمكن لأي شخص تطويرها! المفاتيح الأربعة: التواضع الفكري، أخذ منظور الآخر، التعرف على التغيير، والتوصل لحل وسط."
+    },
+    "memoryNotes": {
+      "keyConcepts": { "Wisdom ≠ Personality": "Wisdom changes by situation", "Third-Party View": "Pretend advising a friend = wiser decisions", "Four Keys": "Humility + Perspectives + Change + Compromise" }
+    }
   }
 ]

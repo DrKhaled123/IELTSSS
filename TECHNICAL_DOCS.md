@@ -1,4 +1,4 @@
-# German Learning App - Technical Documentation
+# IELTS Preparation App - Technical Documentation
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    German Learning App                    │
+│                    IELTS Preparation App                    │
 ├─────────────────────────────────────────────────────────────────┤
 │  Frontend (React SPA + PWA)                           │
 │  ├── Learning Modules                                      │

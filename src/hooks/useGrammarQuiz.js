@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect, useMemo } from 'react'
+import { useState, useCallback, useEffect, useMemo, useRef } from 'react'
 
 export function useGrammarQuiz() {
   const [currentQuiz, setCurrentQuiz] = useState(null)
@@ -8,6 +8,10 @@ export function useGrammarQuiz() {
   const [showResult, setShowResult] = useState(false)
   const [timeRemaining, setTimeRemaining] = useState(null)
   const [isQuizActive, setIsQuizActive] = useState(false)
+
+  // Ref to track answerQuestion for timer without causing effect restarts
+  const answerQuestionRef = useRef(null)
+  answerQuestionRef.current = answerQuestion
 
   // Quiz types with different scoring weights
   const quizTypes = {
@@ -161,15 +165,15 @@ export function useGrammarQuiz() {
     return Math.round(finalScore)
   }, [quizTypes])
 
-  // Timer effect
+  // Timer effect - uses ref to avoid stale closure and unnecessary restarts
   useEffect(() => {
     if (!isQuizActive || timeRemaining === null) return
 
     const timer = setInterval(() => {
       setTimeRemaining(prev => {
         if (prev <= 1) {
-          // Time's up - auto-submit empty answer
-          answerQuestion('')
+          // Time's up - auto-submit empty answer using ref
+          answerQuestionRef.current('')
           return 0
         }
         return prev - 1
@@ -177,7 +181,7 @@ export function useGrammarQuiz() {
     }, 1000)
 
     return () => clearInterval(timer)
-  }, [isQuizActive, timeRemaining, answerQuestion])
+  }, [isQuizActive, timeRemaining]) // Removed answerQuestion from deps - using ref instead
 
   // Get quiz statistics
   const getQuizStats = useCallback(() => {

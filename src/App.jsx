@@ -4,17 +4,15 @@ import Navigation from './components/Navigation'
 import ErrorBoundary from './components/ErrorBoundary'
 
 // Lazy load page components for better performance
-const PDFMaster = lazy(() => import('./pages/PDFMaster'))
 const Reading = lazy(() => import('./pages/Reading'))
 const Vocabulary = lazy(() => import('./pages/Vocabulary'))
 const Grammar = lazy(() => import('./pages/Grammar'))
-const Pronunciation = lazy(() => import('./pages/Pronunciation'))
 const Listening = lazy(() => import('./pages/Listening'))
 const Speaking = lazy(() => import('./pages/Speaking'))
 const Writing = lazy(() => import('./pages/Writing'))
 const ContentLife = lazy(() => import('./pages/ContentLife'))
+const Profile = lazy(() => import('./pages/Profile'))
 
-// Loading component for route transitions
 const PageLoader = () => (
      <div style={{
           display: 'flex',
@@ -22,17 +20,17 @@ const PageLoader = () => (
           alignItems: 'center',
           minHeight: '400px',
           flexDirection: 'column',
-          gap: 'var(--space-lg)'
+          gap: '16px'
      }}>
           <div style={{
                width: '40px',
                height: '40px',
-               border: '3px solid var(--color-border)',
-               borderTop: '3px solid var(--color-primary)',
+               border: '3px solid #e5e7eb',
+               borderTop: '3px solid #2563eb',
                borderRadius: '50%',
                animation: 'spin 1s linear infinite'
           }} />
-          <p style={{ color: 'var(--color-text-secondary)' }}>Loading...</p>
+          <p style={{ color: '#6b7280' }}>Loading...</p>
      </div>
 )
 
@@ -46,7 +44,7 @@ function App() {
                <Navigation />
                <main className="main-content" style={{
                     flex: 1,
-                    padding: 'var(--space-xl)',
+                    padding: '32px',
                     width: '100%',
                     maxWidth: '1600px', // Limit max width for large screens
                     margin: '0 auto'  // Center content area
@@ -63,16 +61,32 @@ function App() {
                               padding-top: 60px !important; /* Space for mobile toggle */
                          }
                     }
+        .card {
+             border-radius: 16px;
+             padding: 20px;
+             box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        }
+        .btn {
+             transition: transform 0.08s ease, box-shadow 0.08s ease;
+        }
+        .btn:active {
+             transform: scale(0.98);
+             box-shadow: 0 0 0 rgba(0,0,0,0.1);
+        }
+        body {
+             background-color: #0f172a;
+             color: #e5e7eb;
+        }
+        :root {
+             --color-primary: #2563eb;
+             --color-secondary: #10b981;
+             --color-accent: #f59e0b;
+        }
                `}</style>
                     <ErrorBoundary>
                          <Suspense fallback={<PageLoader />}>
                               <Routes>
                                    <Route path="/" element={<Navigate to="/reading" replace />} />
-                                   <Route path="/pdf-master" element={
-                                        <ErrorBoundary>
-                                             <PDFMaster />
-                                        </ErrorBoundary>
-                                   } />
                                    <Route path="/reading" element={
                                         <ErrorBoundary>
                                              <Reading />
@@ -86,11 +100,6 @@ function App() {
                                    <Route path="/grammar" element={
                                         <ErrorBoundary>
                                              <Grammar />
-                                        </ErrorBoundary>
-                                   } />
-                                   <Route path="/pronunciation" element={
-                                        <ErrorBoundary>
-                                             <Pronunciation />
                                         </ErrorBoundary>
                                    } />
                                    <Route path="/listening" element={
@@ -108,9 +117,14 @@ function App() {
                                              <Writing />
                                         </ErrorBoundary>
                                    } />
-                                   <Route path="/content" element={
+                                   <Route path="/follow-up" element={
                                         <ErrorBoundary>
                                              <ContentLife />
+                                        </ErrorBoundary>
+                                   } />
+                                   <Route path="/profile" element={
+                                        <ErrorBoundary>
+                                             <Profile />
                                         </ErrorBoundary>
                                    } />
                               </Routes>
